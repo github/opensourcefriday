@@ -1,5 +1,7 @@
 # OSS Friday
 
+Contribute to open source every Friday :beers:
+
 Inspired by https://24pullrequests.com :christmas_tree:
 
 ### Note on Patches/Pull Requests
