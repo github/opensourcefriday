@@ -1,4 +1,4 @@
-# OSS Friday :octocat:
+# OSS Friday
 
 Inspired by https://24pullrequests.com :christmas_tree:
 
