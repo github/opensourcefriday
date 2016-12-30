@@ -2,7 +2,31 @@
 
 Contribute to open source every Friday :beers:
 
-Inspired by https://24pullrequests.com :christmas_tree:
+## What is this?
+
+OSS Friday is a movement, inspired by https://24pullrequests.com, to encourage people to contribute to open source every Friday :christmas_tree:
+
+*Alternative name: 52 pull requests* 🤣 
+
+Some of the things that worked well for 24 Pull Request that I'd like replicate:
+
+- **opt-in for maintainers** - only suggesting projects that maintainers have suggested means we don't send a swarm of extra maintainer work to someone who doesn't want it or can't handle it.
+- **Wisdom of crowds** - if lots of people are doing the same thing at the same time more people will make an effort to join in
+- **Gamification** - a little bit of gamification goes a long way, I'm thinking streaks for having done some kind of contribution every Friday throughout the year
+- **Automation** - many efforts around cultivating open source contributions that require humans tend to fizzle out as the humans involved can't sustain the level of work required to keep it going, 24 Pull Requests pretty much runs itself now which is why it's been so easy to keep it going for 5 years
+- **Emails** - sending out regular reminder emails with suggested contribution content works great to give people a kick to keep them going, optional for people who hate email.
+
+Things I'd like to try:
+
+- **Focusing on issues rather than projects** - trying to find a project to contribute to and then find something to do on that project is tricky, instead let's get maintainers to label issues that they want to promote to new contributors with `ossfriday` along with related labels like `Your First PR`, `first-timers-only` and `help wanted`
+
+- **not tied to pull requests** - there are lots of ways someone can contribute to an open source project that doesn't require opening a PR on GitHub, we should encourage things like documentation, issue triage, stackoverflow answering, support forum helping, event organising, blogging as well as code contributions
+
+I'm planning on getting something basic together (in ruby of course) before 6th January, the first Friday of 2017 and we can iterate from there 🚀 
+
+Would love to hear your ideas, thoughts, feedback, contributions, gifs and emoji reactions, Happy Friday 🍻 
+
+Check out the "Hello world" issue to see see the ongoing discussion: https://github.com/ossfriday/ossfriday/issues/2
 
 ### Note on Patches/Pull Requests
 
