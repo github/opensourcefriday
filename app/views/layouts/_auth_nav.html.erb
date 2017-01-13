@@ -1,0 +1,6 @@
+<% unless current_user %>
+  <%= link_to "Sign In/Up With Github", user_github_omniauth_authorize_path %>
+<% else %>
+  <p>Hi, <%= current_user.github_username %></p>
+  <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+<% end %>
