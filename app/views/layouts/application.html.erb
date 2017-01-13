@@ -7,8 +7,10 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
-  <body>
+  <header>
+    <%= render :partial => 'layouts/auth_nav' %>
+  </header>
+  <body>    
     <%= yield %>
   </body>
 </html>
