@@ -31,6 +31,83 @@ Would love to hear your ideas, thoughts, feedback, contributions, gifs and emoji
 
 Check out the "Hello world" issue to see see the ongoing discussion: https://github.com/ossfriday/ossfriday/issues/2
 
+## Development
+
+Source hosted at [GitHub](https://github.com/ossfriday/ossfriday).
+Report issues/feature requests on [GitHub Issues](https://github.com/ossfriday/ossfriday/issues).
+
+### Getting Started
+
+New to Ruby? No worries! You can follow these instructions to install a local server.
+
+First things first, you'll need to install Ruby 2.4.0. I recommend using the excellent [rbenv](https://github.com/rbenv/rbenv),
+and [ruby-build](https://github.com/rbenv/ruby-build)
+
+```bash
+rbenv install
+```
+
+Next, you'll need to make sure that you have PostgreSQL installed. This can be
+done easily on macOS using [Homebrew](http://brew.sh) or by using [http://postgresapp.com](http://postgresapp.com).
+
+```bash
+brew install postgresql && brew services restart postgresql
+```
+
+On Debian-based Linux distributions you can use apt-get to install Postgres:
+
+```bash
+sudo apt-get install postgresql postgresql-contrib libpq-dev
+```
+
+On Windows, you can use the [Chocolatey package manager](http://chocolatey.org/) to install Postgres:
+
+```bash
+choco install postgresql
+```
+
+Now, let's install the gems from the `Gemfile` ("Gems" are synonymous with libraries in other
+languages).
+
+```bash
+gem install bundler && rbenv rehash
+bundle install
+```
+
+Once all the gems are installed, we'll need to create the databases and
+tables. Rails makes this easy through the use of "Rake" tasks.
+
+```bash
+bundle exec rake db:create:all
+bundle exec rake db:migrate
+```
+
+And we can also add some sample data with the **seed** task.
+
+```bash
+bundle exec rake db:seed
+```
+
+If you are working on anything related to the email-generation code, you can use [MailCatcher](https://github.com/sj26/mailcatcher).
+Since we use Bundler, please read the [following](https://github.com/sj26/mailcatcher#bundler) before using MailCatcher.
+
+Almost there! Now all we have to do is start up the Rails server and point
+our browser to <http://localhost:3000>
+
+```bash
+bundle exec rails s
+```
+
+### Environment variables
+
+```bash
+bundle exec figaro install
+```
+
+You'll need to set at least `github_client_id` and `github_client_secret` environment variables. The values can be obtained by [registering a new GitHub OAuth application](https://github.com/settings/applications/new) with the Authorization callback URL pointing to your application with `/users/auth/github/callback` appended.
+
+Or for more information about using figaro, see https://github.com/laserlemon/figaro
+
 ### Note on Patches/Pull Requests
 
  * Fork the project.
