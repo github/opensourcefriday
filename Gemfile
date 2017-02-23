@@ -16,8 +16,6 @@ gem 'turbolinks', '~> 5'
 
 gem "figaro"
 
-gem 'bootstrap-sass'
-
 group :development, :test do
   gem 'byebug', platform: :mri
 end
