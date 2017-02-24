@@ -11,18 +11,11 @@
     <% end %>
   </head>
   <body>
-
-    <header class="jumbotron text-center bg-gray-light mb-6 border-bottom">
-      <div class="container position-relative">
-        <h1 class="alt-h1">Open Source Friday</h1>
-        <p class="alt-lead text-gray mb-md-5 col-md-8 mx-auto"><%= @subtitle || "Contribute to open source every Friday, and help new contributors, maintainers, and companies do the same." %></p>
-        <div><%#= render :partial => 'layouts/auth_nav' %></div>
-      </div>
-    </header>
+    <%= render 'layouts/nav' unless request.path == "/" %>
 
     <%= yield %>
 
-    <footer class="border-top mt-6">
+    <footer class="border-top">
       <div class="container text-center text-gray py-6">
         <%= octicon 'code', height: 20, class: "v-align-middle fill-gray mr-1", "aria-label": "code" %>
         with
