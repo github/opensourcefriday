@@ -1,6 +1,5 @@
 @import "primer-css/index.scss";
 
-
 img {
   max-width: 100%;
 }
@@ -50,5 +49,10 @@ header {
     filter: none;
     transition: opacity 0.3s, filter 0.3s;
   }
+}
 
+.octicon {
+  display: inline-block;
+  vertical-align: text-top;
+  fill: currentColor;
 }
