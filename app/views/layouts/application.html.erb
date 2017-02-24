@@ -1,36 +1,37 @@
 <!DOCTYPE html>
-<html lang="en" class="container">
+<html lang="en">
   <head>
     <title>OSS Friday</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <% if Rails.env.development? %>
+    <% if false && Rails.env.development? %>
     <script src="https://github.com/Khan/tota11y/releases/download/0.1.3/tota11y.min.js"></script>
     <% end %>
   </head>
-  <header class="header jumbotron text-center">
-    <h1>OSS Friday</h1>
-    <h2><%= @subtitle || "Contribute to open source every Friday" %></h2>
-    <div><%#= render :partial => 'layouts/auth_nav' %></div>
-  </header>
   <body>
-    <%= yield %>
-  </body>
-  <footer class="footer">
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav navbar-left">
-          <li><a href="/contributors/">Contributors</a></li>
-          <li><a href="/maintainers/">Maintainers</a></li>
-          <li><a href="/companies/">Companies</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="/">Home</a></li>
-        </ul>
+
+    <header class="jumbotron text-center bg-gray-light mb-6 border-bottom">
+      <div class="container position-relative">
+        <h1 class="alt-h1">Open Source Friday</h1>
+        <p class="alt-lead text-gray mb-md-5 col-md-8 mx-auto"><%= @subtitle || "Contribute to open source every Friday, and help new contributors, maintainers, and companies do the same." %></p>
+        <div><%#= render :partial => 'layouts/auth_nav' %></div>
       </div>
-    </nav>
-  </footer>
+    </header>
+
+    <%= yield %>
+
+    <footer class="border-top mt-6">
+      <div class="container text-center text-gray py-6">
+        <%= octicon 'code', height: 20, class: "v-align-middle fill-gray mr-1", "aria-label": "code" %>
+        with
+        <%= octicon 'heart', height: 20, class: "v-align-middle fill-gray mx-1", "aria-label": "love" %>
+        by
+        <a href="https://github.com">
+          <%= octicon "mark-github", height: 20, class: "v-align-middle fill-gray mx-1", "aria-label": "GitHub" %>
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>

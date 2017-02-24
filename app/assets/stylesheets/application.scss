@@ -1,1 +1,54 @@
 @import "primer-css/index.scss";
+
+
+img {
+  max-width: 100%;
+}
+
+header {
+  background: no-repeat url(https://image.shutterstock.com/z/stock-vector-abstract-illustration-with-logistics-infrastructure-185865251.jpg) center 280px;
+  background-size: 1100px;
+  position: relative;
+  padding-bottom: 220px !important;
+
+  &:before {
+    position: absolute;
+    display: block;
+    left: 0; right: 0; top: 0; bottom: 0;
+    content: "";
+    background-image: radial-gradient(ellipse at 50% 40%, $bg-gray-light 30%, rgba(#000, 0) 40%);
+  }
+}
+
+.triband-hr {
+  height: 1px;
+  margin: 0;
+  clear: both;
+  background-image: linear-gradient(to right, #b8e1ff 33.3333%, #fcd2c5 33.3333%, #fcd2c5 66.6666%, #e0c5eb 66.6666%);
+  border: 0;
+}
+
+.company-logo {
+  display: inline-block;
+  max-height: 60px;
+  max-width: 160px;
+  margin: 20px;
+  vertical-align: middle;
+
+  &.smaller {
+    max-height: 45px;
+    max-width: 145px;
+  }
+}
+
+.desaturate {
+	filter: grayscale(100%);
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+    filter: none;
+    transition: opacity 0.3s, filter 0.3s;
+  }
+
+}
