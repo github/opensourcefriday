@@ -31,7 +31,7 @@ header {
   display: inline-block;
   max-height: 60px;
   max-width: 160px;
-  margin: 20px;
+  margin: 15px;
   vertical-align: middle;
 
   &.smaller {
@@ -42,7 +42,7 @@ header {
 
 .desaturate {
 	filter: grayscale(100%);
-  opacity: 0.5;
+  opacity: 0.7;
 
   &:hover {
     opacity: 1;
@@ -55,4 +55,9 @@ header {
   display: inline-block;
   vertical-align: text-top;
   fill: currentColor;
+}
+
+
+.btn-outline-red {
+  @include outline-btn($text-red);
 }
