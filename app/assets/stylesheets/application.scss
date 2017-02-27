@@ -1,4 +1,9 @@
 @import "primer-css/index.scss";
+@import "addtocalendar";
+
+img.img-responsive {
+  max-width: 100%;
+}
 
 header {
   background: no-repeat url(https://image.shutterstock.com/z/stock-vector-abstract-illustration-with-logistics-infrastructure-185865251.jpg) center 280px;
@@ -56,4 +61,8 @@ header {
 
 .btn-outline-red {
   @include outline-btn($text-red);
+}
+
+.btn-outline-purple {
+  @include outline-btn($text-purple);
 }
