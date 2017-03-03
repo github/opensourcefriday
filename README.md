@@ -1,10 +1,10 @@
-# OSS Friday
+# Open Source Friday
 
 Contribute to open source every Friday :beers:
 
 ## What is this?
 
-OSS Friday is a movement, inspired by https://24pullrequests.com, to encourage people to contribute to open source every Friday :christmas_tree:
+Open Source Friday is a movement, inspired by https://24pullrequests.com, to encourage people to contribute to open source every Friday :christmas_tree:
 
 *Alternative name: 52 pull requests* 🤣
 
