@@ -1,3 +1,5 @@
+> Audience: "developers", meaning anyone who has skills that are relevant to software development, that might be looking for ways to use those skills on an open source project.
+
 > Heading: A call to action. What is the one thing you want me to do? (3-6 words)
 
 # Make a contribution
