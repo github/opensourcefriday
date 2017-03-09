@@ -13,10 +13,9 @@ gem 'sassc-rails'
 gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
+gem 'octicons_helper'
 
 gem "figaro"
-
-gem 'bootstrap-sass'
 
 group :development, :test do
   gem 'byebug', platform: :mri
