@@ -3,5 +3,4 @@ Rails.application.routes.draw do
   root to: 'home#index'
   get '/contributors', to: 'home#contributors'
   get '/maintainers', to: 'home#maintainers'
-  get '/companies', to: 'home#companies'
 end
