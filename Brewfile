@@ -1,11 +1,6 @@
-# Brewfile
+tap 'github/bootstrap'
 
-tap 'homebrew/bundle'
-tap 'homebrew/core'
-tap "github/bootstrap"
-tap "homebrew/dupes"
-
-brew 'postgresql', restart_service: :changed
+brew 'postgresql', restart_service: true
 
 brew 'rbenv'
 brew 'ruby-build'
