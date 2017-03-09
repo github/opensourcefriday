@@ -22,17 +22,23 @@ Take one day this week to invest in the open source software you use and the com
 
 ## Join the community on Open Source Friday
 
+> Logistics: remove any barriers to making it happen this Friday
+
 ### Set aside time
 
 Encourage your employees and coworkers to schedule time to work on open source this Friday.
 
 CTA: Add to calendar
 
+> Knowledge: What if I feel like I don't know enough yet?
+
 ## Learn
 
 Learn more about why/how companies contribute to and release open source
 
 CTA: Read the guide
+
+> Onramp: Ok, I'm ready. Let's do this.
 
 ## Contribute
 
