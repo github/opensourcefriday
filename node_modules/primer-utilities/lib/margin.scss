@@ -28,6 +28,12 @@
   }
 }
 
+/* Set an auto margin on left & right */
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
 // Loop through the breakpoint values
 @each $breakpoint in map-keys($breakpoints) {
 
@@ -61,10 +67,4 @@
       }
     }
   }
-}
-
-/* Set an auto margin on left & right */
-.mx-auto {
-  margin-right: auto !important;
-  margin-left: auto !important;
 }

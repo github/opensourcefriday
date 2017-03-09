@@ -1,3 +1,12 @@
+# v1.1.0
+
+ * update version numbers in primer-product - broccolini [github/github@5301936](https://github.com/github/github/commit/5301936)
+ * missed a yellow in flash alerts: - broccolini [github/github@8725991](https://github.com/github/github/commit/8725991)
+ * update flash red variables - broccolini [github/github@2945319](https://github.com/github/github/commit/2945319)
+ * yellow flash warn variables - broccolini [github/github@5b64376](https://github.com/github/github/commit/5b64376)
+ * new flash green variables - broccolini [github/github@80401a0](https://github.com/github/github/commit/80401a0)
+ * update blues: - broccolini [github/github@9b191b6](https://github.com/github/github/commit/9b191b6)
+
 # v1.0.2
 
  * update version numbers for primer package with bold update - broccolini [github/github@5d3e089](https://github.com/github/github/commit/5d3e089)
