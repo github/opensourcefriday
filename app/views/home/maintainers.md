@@ -1,4 +1,4 @@
-> Audience: "developers", meaning anyone who has skills that are relevant to software development, that identify as a "maintainer" regularly contribute to an open source project.
+> Audience: "developers", meaning anyone who has skills that are relevant to software development, that identify as a "maintainer" or regularly contribute to an open source project.
 
 > What are you asking me to do?
 
