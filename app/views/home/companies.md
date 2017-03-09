@@ -8,7 +8,7 @@ Take one day this week to invest in the open source software you use and the com
 
 ## Your business depends on it
 
-> The deets: 3-4 of the most important reasons companies participate
+> What are the reasons companies should care about their employees contributing to and maintaining open source?
 
 - **Improve your technology** - Open source infrastructure is essential to running businesses effectively. Take control rather than relying entirely on others to maintain the software your business depends on.
 
