@@ -14,7 +14,7 @@ Take one day this week to invest in the open source software you use and the com
 
 - **Reduce overhead** - Small, regular contributions to open source allow you to stop maintaining internal versions of open source software in favor of the projects maintaining your patches
 
-- **Build your reputation** - your engineers create public artifacts, improving their reputation and , making you the cool company with fancy famous engineers; attract relevant developer talent; aiding community outreach efforts, hiring, and retention.
+- **Build your reputation** - attract relevant developer talent; your engineers create public artifacts, improving their reputation and making you the cool company with fancy famous engineers; aiding community outreach efforts, hiring, and retention.
 
 - **Work Better Together** - Help your employees learn different ways of working that they can bring back into making your organization more efficient.
 
