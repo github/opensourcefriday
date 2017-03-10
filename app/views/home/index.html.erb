@@ -1,35 +1,185 @@
 <header class="jumbotron text-center bg-gray-light mb-6 border-bottom px-3">
   <div class="container-lg position-relative">
     <h1 class="alt-h1">Open Source Friday</h1>
-    <p class="alt-lead text-gray mb-md-5 col-md-8 mx-auto"><%= @subtitle || "Contribute to open source every Friday, and help new contributors, maintainers, and companies do the same." %></p>
+    <p class="alt-lead text-gray mb-md-5 col-md-8 mx-auto"><%= @subtitle || "Contribute to open source every Friday, and help new contributors, maintainers,
+and companies do the same." %></p>
   </div>
 </header>
 
-<div class="container-lg my-6 px-3">
-  <p class="lead my-6">Open Source Friday is a movement to encourage people to contribute to open source every Friday. We commit as contributors to submit at least one contribution on an existing open source project, as maintainers to review and merge incoming contributions and as companies to encourage and help our managers, coworkers and reports to make a contribution.</p>
+<div class="container-md py-6 py-3 px-3">
+  <h2 class="alt-h2 text-purple text-center">Your business depends on it</h2>
 
-  <hr class="triband-hr my-6">
+  <p class="alt-lead text-gray col-md-11 mx-auto text-center mb-6">
+    Encourage your employees and coworkers to invest in the software you use and the community that makes it great.
+  </p>
 
-  <div class="clearfix d-md-flex gut-md my-6">
-    <div class="col-md-4">
-      <h2 class="alt-h3 my-2">
-        <a href="/contributors" class="text-blue">Contributors <%= octicon 'chevron-right', height: '26', class: 'text-inherit' %></a>
-      </h2>
-      <p class="text-gray alt-body-font">Learn more about how software is built, work with people all over the world, build your reputation, and improve the software you use.</p>
+  <div class="col-sm-6 col-md-12 float-left float-md-none pr-sm-4 pr-md-0 mb-md-4 clearfix">
+    <div class="col-12 col-md-6 float-md-left mb-4 pr-md-6">
+      <h3 class="alt-h3 mb-1">Improve your technology</h3>
+      <p class="alt-text-small text-gray mb-4">
+        Open source infrastructure is essential to running businesses effectively. Take control rather than relying entirely on others to maintain the software your business depends on.
+      </p>
+
+      <h3 class="alt-h3 mb-1">Reduce overhead</h3>
+      <p class="alt-text-small text-gray mb-4">
+        Small, regular contributions to open source allow you to stop maintaining internal versions of open source software in favour of the projects maintaining your patches
+      </p>
     </div>
 
-    <div class="col-md-4">
-      <h2 class="alt-h3 my-2">
-        <a href="/maintainers" class="text-red">Maintainers <%= octicon 'chevron-right', height: '26', class: 'text-inherit' %></a>
-      </h2>
-      <p class="text-gray alt-body-font">Having structure and a process for regular contributions on the same day allows projects to have a flow for accepting and encouraging regular new contributions.</p>
+    <div class="d-none d-md-block col-md-6 float-left pl-sm-3">
+      <img src="" alt="superfluous visualization here" class="img-responsive">
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-12 float-left float-md-none pl-sm-4 pl-md-0 clearfix">
+    <div class="col-12 col-md-6 float-md-right pl-0 pl-md-3 mb-3 mb-sm-0">
+      <h3 class="alt-h3 mb-1">Build your reputation</h3>
+      <p class="alt-text-small text-gray mb-4">
+        Build the reputation of your organisation aiding community outreach efforts and hiring.
+      </p>
+
+      <h3 class="alt-h3 mb-1">Work better together</h3>
+      <p class="alt-text-small text-gray mb-4">
+        Help your employees learn different ways of working that they can bring back into making your organisation more efficient.
+      </p>
     </div>
 
-    <div class="col-md-4">
-      <h2 class="alt-h3 my-2">
-        <a href="/companies" class="text-purple">Companies <%= octicon 'chevron-right', height: '26', class: 'text-inherit' %></a>
-      </h2>
-      <p class="text-gray alt-body-font">Every company uses open source software. Invest in the technology you depend on and fix issues affecting your business.</p>
+    <div class="d-none d-md-block col-md-6 float-md-left pr-sm-5">
+      <img src="" alt="superfluous visualization here" class="img-responsive">
+    </div>
+  </div>
+</div>
+
+<hr>
+
+
+<div id="participate" class="container-md py-6 px-3">
+  <h2 class="alt-h2 text-center">Open Source Friday in your organization</h2>
+
+  <p class="alt-lead text-gray text-center ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+  <div class="d-md-table direction-md-rtl py-6">
+    <div class="d-md-table-cell v-align-middle col-md-6 text-center">
+      <a href="https://opensource.guide/how-to-contribute/">
+        <img alt="time illustration" class="img-responsive" src="">
+      </a>
+    </div>
+    <div class="d-md-table-cell v-align-middle col-md-6 direction-md-ltr pr-md-6">
+      <h3 class="alt-h3">Set aside time</h3>
+
+      <p class="text-gray mb-4">
+        Encourage your managers, employees, and coworkers to set aside two hours on Friday morning.
+      </p>
+
+      <script type="text/javascript">(function () {
+        if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
+        if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
+            var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+            s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;
+            s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
+            var h = d[g]('body')[0];h.appendChild(s); }})();
+      </script>
+
+      <span class="addtocalendar atc-style-blue">
+      <a class="atcb-link btn btn-outline btn-large">
+        <%= octicon 'calendar', class: 'mr-2' %>
+        Add to Calendar
+      </a>
+
+      <var class="atc_event">
+          <var class="atc_date_start">2017-05-04 12:00:00</var>
+          <var class="atc_date_end">2017-05-04 18:00:00</var>
+          <var class="atc_timezone">Europe/London</var>
+          <var class="atc_title">Open Source Friday</var>
+          <var class="atc_description">Make one contribution to open source today.</var>
+          <var class="atc_location">https://ossfriday.com</var>
+          <var class="atc_ical_filename">open-source-friday</var>
+      </var>
+      </span>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="d-md-table direction-md-ltr py-6">
+    <div class="d-md-table-cell v-align-middle col-md-6 text-center">
+      <a href="https://opensource.guide/how-to-contribute/">
+        <img class="card img-responsive" src="https://opensource.guide/assets/images/cards/contribute.png">
+      </a>
+    </div>
+    <div class="d-md-table-cell v-align-middle col-md-6 direction-md-ltr pl-md-6">
+      <h3 class="alt-h3">Learn all the things</h3>
+
+      <p class="text-gray mb-4">
+        Learn what it means to contribute, how to find a project, how to orient yourself to a new project, and how to make a contribution.
+      </p>
+
+      <p>
+        <a class="btn btn-outline btn-large" href="https://opensource.guide/how-to-contribute/">
+          <%= octicon 'book', height: 18, class: 'mr-2' %>
+          Read the guide
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="pt-6">
+    <h3 class="alt-h3">Join the community</h3>
+    <p class="lead text-gray">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+
+    <div class="clearfix d-md-flex gut-md my-6">
+      <div class="col-md-6">
+        <h2 class="alt-h3 my-2">
+          <a href="/contributors" class="text-blue">Contributors <%= octicon 'chevron-right', height: '26', class: 'text-inherit' %></a>
+        </h2>
+        <p class="text-gray alt-body-font">Learn more about how software is built, work with people all over the world, build your reputation, and improve the software you use.</p>
+      </div>
+
+      <div class="col-md-6">
+        <h2 class="alt-h3 my-2">
+          <a href="/maintainers" class="text-red">Maintainers <%= octicon 'chevron-right', height: '26', class: 'text-inherit' %></a>
+        </h2>
+        <p class="text-gray alt-body-font">Having structure and a process for regular contributions on the same day allows projects to have a flow for accepting and encouraging regular new contributions.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-gray-light border-top py-6 px-3">
+  <div class="container-lg">
+    <h2 class="alt-h2 text-center">You're in good company</h2>
+
+    <div class="text-center my-6 py-6 alt-h2 text-gray-light" style="">
+      [COMPANY LOGOS HERE]
+    </div>
+
+    <div class="clearfix mt-6 pt-6 mb-4 border-top">
+      <div class="col-sm-6 float-left mb-4 mb-md-0 pr-sm-3 pr-lg-4">
+        <div>
+          <div class="d-table-cell v-align-top pr-3">
+            <img src="https://api.adorable.io/avatars/285/ossfriday.png" alt="" width="50" height="50" style="border-radius:25px;">
+          </div>
+          <blockquote class="d-table-cell v-align-top text-gray">
+            <p class="alt-mono-font alt-text-small">“Quote that talks about how some amazing company invests in open source.”</p>
+            <footer class="alt-text-small">Jane Smith, Tech Giant</footer>
+          </blockquote>
+        </div>
+      </div>
+      <div class="col-sm-6 float-left pl-sm-3 pl-lg-4">
+        <div>
+          <div class="d-table-cell v-align-top pr-3">
+            <img src="https://api.adorable.io/avatars/285/ossfriday2.png" alt="" width="50" height="50" style="border-radius:25px;">
+          </div>
+          <blockquote class="d-table-cell v-align-top text-gray">
+            <p class="alt-mono-font alt-text-small">“Another quote that talks about how Open Source Friday saved my business…and my dog.”</p>
+            <footer class="alt-text-small">Erica McGitterson, Bootstraps R Us</footer>
+          </blockquote>
+        </div>
+      </div>
     </div>
   </div>
 </div>
