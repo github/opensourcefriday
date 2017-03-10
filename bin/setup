@@ -14,7 +14,7 @@ chdir APP_ROOT do
   # This script is a starting point to setup your application.
   # Add necessary setup steps to this file.
 
-  system! 'bin/bootstrap'
+  system! 'script/bootstrap'
 
   # puts "\n== Copying sample files =="
   # unless File.exist?('config/database.yml')

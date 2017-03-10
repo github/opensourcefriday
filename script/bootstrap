@@ -4,9 +4,7 @@ set -e
 
 cd "$(dirname "$0")/.."
 
-if [ "Brewfile" ] && [ "$(uname -s)" = "Darwin" ]; then
-  echo "==> Checking for Homebrew updates…"
-
+if [ "$(uname -s)" = "Darwin" ]; then
   brew bundle check >/dev/null 2>&1  || {
     echo "==> Installing Homebrew dependencies…"
     brew bundle
@@ -19,14 +17,10 @@ if [ "Brewfile" ] && [ "$(uname -s)" = "Darwin" ]; then
   brew bootstrap-nodenv-node
 fi
 
-if [ "Gemfile" ]; then
-  echo "==> Installing gem dependencies…"
-  bundle check --path vendor/gems >/dev/null 2>&1  || {
-    bundle install --path vendor/gems --quiet --without production
-  }
-fi
+echo "==> Installing gem dependencies…"
+bundle check --path vendor/gems >/dev/null 2>&1  || {
+  bundle install --path vendor/gems --quiet --without production
+}
 
-if [ "package.json" ]; then
-  echo "==> Installing node dependencies…"
-  npm install
-fi
+echo "==> Installing node dependencies…"
+npm install
