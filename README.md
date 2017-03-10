@@ -38,23 +38,23 @@ Report issues/feature requests on [GitHub Issues](https://github.com/ossfriday/o
 
 ### Getting Started
 
-New to Ruby? No worries! You can follow these instructions to install a local server.
+If you're on macOS and have Homebrew installed to get started just run:
+```bash
+./script/bootstrap
+./script/setup
+./script/server
+```
 
-First things first, you'll need to install Ruby 2.4.0. I recommend using the excellent [rbenv](https://github.com/rbenv/rbenv),
+Otherwise, no worries! You can follow these instructions to install a local server.
+
+First things first, you'll need to install Ruby. We recommend using the excellent [rbenv](https://github.com/rbenv/rbenv),
 and [ruby-build](https://github.com/rbenv/ruby-build)
 
 ```bash
 rbenv install
 ```
 
-Next, you'll need to make sure that you have PostgreSQL installed. This can be
-done easily on macOS using [Homebrew](http://brew.sh) or by using [http://postgresapp.com](http://postgresapp.com).
-
-```bash
-brew install postgresql && brew services restart postgresql
-```
-
-On Debian-based Linux distributions you can use apt-get to install Postgres:
+Next, you'll need to make sure that you have PostgreSQL installed. On Debian-based Linux distributions you can use apt-get to install Postgres:
 
 ```bash
 sudo apt-get install postgresql postgresql-contrib libpq-dev
@@ -75,14 +75,13 @@ bundle install
 ```
 
 Once all the gems are installed, we'll need to create the databases and
-tables. Rails makes this easy through the use of "Rake" tasks.
+tables. Rails makes this easy.
 
 ```bash
-bundle exec rake db:create:all
-bundle exec rake db:migrate
+./bin/setup
 ```
 
-And we can also add some sample data with the **seed** task.
+We can also add some sample data with the **seed** task.
 
 ```bash
 bundle exec rake db:seed
@@ -95,7 +94,7 @@ Almost there! Now all we have to do is start up the Rails server and point
 our browser to <http://localhost:3000>
 
 ```bash
-bundle exec rails s
+./script/server
 ```
 
 ### Environment variables
