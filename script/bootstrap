@@ -17,9 +17,9 @@ if [ "$(uname -s)" = "Darwin" ]; then
   brew bootstrap-nodenv-node
 fi
 
-echo "==> Installing gem dependencies…"
-bundle check --path vendor/gems >/dev/null 2>&1  || {
-  bundle install --path vendor/gems --quiet --without production
+bundle check >/dev/null 2>&1 || {
+  echo "==> Installing gem dependencies…"
+  bundle install --quiet
 }
 
 echo "==> Installing node dependencies…"
