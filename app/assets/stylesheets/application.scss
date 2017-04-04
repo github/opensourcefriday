@@ -60,9 +60,9 @@ header {
 
 
 .btn-outline-red {
-  @include outline-btn($text-red);
+  @include btn-outline($text-red);
 }
 
 .btn-outline-purple {
-  @include outline-btn($text-purple);
+  @include btn-outline($text-purple);
 }
