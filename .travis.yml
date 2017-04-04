@@ -2,6 +2,6 @@ language: ruby
 rvm: 2.4.0
 cache: bundler
 sudo: false
-bundler_args: --without development production --deployment --jobs=3 --retry=3
-before_script: psql -c 'create database ossfriday_test' -U postgres
-script: bundle exec rake --trace db:migrate test
+bundler_args: --jobs=3 --retry=3
+before_install: nvm install 6.10.0
+script: ./script/cibuild
