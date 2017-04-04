@@ -25,9 +25,19 @@ Things we'd like to try:
 Source hosted at [GitHub](https://github.com/ossfriday/ossfriday).
 Report issues/feature requests on [GitHub Issues](https://github.com/ossfriday/ossfriday/issues).
 
+### Environment variables
+
+```bash
+bundle exec figaro install
+```
+
+You'll need to set at least `github_client_id` and `github_client_secret` environment variables. The values can be obtained by [registering a new GitHub OAuth application](https://github.com/settings/applications/new) with the Authorization callback URL pointing to your application with `/users/auth/github/callback` appended.
+
+Or for more information about using figaro, see https://github.com/laserlemon/figaro
+
 ### Getting Started
 
-If you're on macOS and have Homebrew installed to get started just run:
+If you're on macOS, have Homebrew installed and set the environment variables above to get started just run:
 ```bash
 ./script/bootstrap
 ./script/setup
@@ -85,16 +95,6 @@ our browser to <http://localhost:3000>
 ```bash
 ./script/server
 ```
-
-### Environment variables
-
-```bash
-bundle exec figaro install
-```
-
-You'll need to set at least `github_client_id` and `github_client_secret` environment variables. The values can be obtained by [registering a new GitHub OAuth application](https://github.com/settings/applications/new) with the Authorization callback URL pointing to your application with `/users/auth/github/callback` appended.
-
-Or for more information about using figaro, see https://github.com/laserlemon/figaro
 
 ### Note on Patches/Pull Requests
 
