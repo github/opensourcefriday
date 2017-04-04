@@ -1,31 +1,27 @@
-source 'https://rubygems.org'
-ruby '2.4.0'
+source "https://rubygems.org"
 
-gem 'rails', '~> 5.0.1'
+ruby IO.read(File.expand_path("#{File.dirname(__FILE__)}/.ruby-version")).strip
 
-gem 'pg', '~> 0.18'
-
-gem 'devise'
-gem 'omniauth-github'
-
-gem 'puma', '~> 3.0'
-gem 'sassc-rails'
-gem 'uglifier', '>= 1.3.0'
-gem 'jquery-rails'
-gem 'turbolinks', '~> 5'
-gem 'octicons_helper'
-
+gem "devise"
 gem "figaro"
+gem "jquery-rails"
+gem "octicons_helper"
+gem "omniauth-github"
+gem "pg"
+gem "puma"
+gem "rails"
+gem "sassc-rails"
+gem "turbolinks"
+gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem "uglifier"
 
 group :development, :test do
-  gem 'byebug', platform: :mri
+  gem "byebug", platform: :mri
 end
 
 group :development do
-  gem 'web-console', '>= 3.3.0'
-  gem 'listen', '~> 3.0.5'
-  gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem "listen"
+  gem "spring"
+  gem "spring-watcher-listen"
+  gem "web-console"
 end
-
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
