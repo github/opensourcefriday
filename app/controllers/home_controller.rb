@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
-  def contributors
-    render :contributors
+  def businesses
+    render :businesses
   end
 
   def maintainers
