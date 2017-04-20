@@ -1,9 +1,0 @@
-<button type="button" class="btn btn-default btn-lg">
-<% unless current_user %>
-  <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
-  <%= link_to "Log in with GitHub", user_github_omniauth_authorize_path %>
-<% else %>
-  <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
-  <p>Hi, <%= current_user.github_username %></p>
-  <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
-<% end %>
