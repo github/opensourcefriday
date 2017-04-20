@@ -2,7 +2,9 @@
   <a class="ml-4 text-blue" href="/businesses">Businesses</a>
   <a class="ml-4 text-red" href="/maintainers">Maintainers</a>
   <% if current_user %>
-    <a class="ml-4 text-blue" href="#"><%= current_user.github_username %></a>
+    <a class="ml-4 text-blue" href="/users/<%= current_user.github_username %>">
+      <%= current_user.github_username %>
+    </a>
     <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "ml-4 text-green" %>
   <% else %>
     <%= link_to "Sign up with GitHub", user_github_omniauth_authorize_path, class: "ml-4 text-green" %>
