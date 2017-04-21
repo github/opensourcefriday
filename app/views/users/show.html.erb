@@ -1,0 +1,51 @@
+<div class="bg-gray mb-6 border-bottom jumbotron px-3">
+  <div class="container-md">
+    <div class="float-left col-sm-4">
+      <img class="avatar my-3" src="<%= @avatar %>&s=400" width="200" height="200">
+    </div>
+    <div class="float-left col-sm-8">
+      <a href="https://github.com/<%= @nickname %>">
+        <h2 class="alt-h1 my-0 py-0 lh-condensed"><%= @name_or_nickname %></h2>
+      </a>
+      <% if @name %>
+      <p class="alt-h2 my-0 py-0 lh-condensed"><%= @nickname %></p>
+      <% end %>
+      <p class="alt-lead"><%= @company %></p>
+      <p class="alt-lead"><%= @location %></p>
+      <p class="alt-lead"><%= @homepage %></p>
+      <% @orgs.each do |org| %>
+      <a href="https://github.com/<%= org[:name] %>">
+        <img alt="<%= org[:name] %>" class="avatar-small avatar-link mr-2" src="<%= org[:avatar] %>&s=80" width="40" height="40">
+      </a>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="container-md py-6 py-3 px-3">
+  <p class="alt-lead text-gray col-md-11 mx-auto text-center mb-6">
+    <%= @nickname %> has
+    <% if @user_exists %>
+      joined Open Source Fridays!
+      <br>
+      <% if @prs.empty? %>
+        No pull requests opened on Fridays found in the last year.
+      <% else %>
+        <%= @prs_count %> pull requests opened on Fridays in the last year<%= " (incomplete list)" if @prs_incomplete %>:
+      <% end %>
+    <% else %>
+      not joined Open Source Fridays (yet).
+    <% end %>
+  </p>
+
+  <div class="col-md-8 text-gray mx-auto">
+    <% @prs.each do |date, prs| %>
+    <h3 class="mt-2"><%= date.to_formatted_s(:long) %></h3>
+    <% prs.each do |pr| %>
+    <ul class="my-1">
+      <li><a href="<%= pr[:url] %>"><%= pr[:title] %></a></li>
+    </ul>
+    <% end %>
+    <% end %>
+  </div>
+</div>
