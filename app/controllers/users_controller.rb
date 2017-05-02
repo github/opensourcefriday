@@ -5,6 +5,7 @@ class UsersController < ApplicationController
     @name = github_user.name
     @nickname = github_user.login
     @name_or_nickname = @name || @nickname
+    @bio = github_user.bio
     @company = github_user.company
     @location = github_user.location
     @homepage = github_user.homepage
