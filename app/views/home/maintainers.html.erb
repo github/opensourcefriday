@@ -2,6 +2,9 @@
   <div class="container-md">
     <h2 class="alt-h1 text-center text-red">Build software with help from others.</h2>
     <p class="alt-lead text-center text-gray">Once a week, give your software project some love and make it easier to others contribute.</p>
+    <% unless current_user %>
+      <%= link_to "Sign up with GitHub", user_github_omniauth_authorize_path, class: "btn btn-large btn-primary", role: "button" %>
+    <% end %>
   </div>
 </div>
 
@@ -95,7 +98,12 @@
 <div id="participate" class="container-md py-6 px-3">
   <h2 class="alt-h2 text-center">Get ready for Open Source Friday</h2>
 
-  <p class="alt-lead text-gray text-center ">Spend time now to save time later.</p>
+  <div class="text-center">
+    <p class="alt-lead text-gray">Spend time now to save time later.</p>
+    <% unless current_user %>
+      <%= link_to "Sign up with GitHub", user_github_omniauth_authorize_path, class: "btn btn-large btn-primary", role: "button" %>
+    <% end %>
+  </div>
 
   <div class="d-md-table direction-md-rtl py-6">
     <div class="d-md-table-cell v-align-middle col-md-6 text-center">

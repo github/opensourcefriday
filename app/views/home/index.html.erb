@@ -2,6 +2,9 @@
   <div class="container-lg position-relative">
     <h1 class="alt-h1">Open Source Friday</h1>
     <p class="alt-lead text-gray mb-md-5 col-md-8 mx-auto">Open source is made by people just like you. This week, contribute back to the software you use and love.</p>
+    <% unless current_user %>
+      <%= link_to "Sign up with GitHub", user_github_omniauth_authorize_path, class: "btn btn-large btn-primary", role: "button" %>
+    <% end %>
   </div>
 </header>
 
@@ -50,7 +53,12 @@
   <div id="participate" class="container-md py-6">
 
     <h2 class="alt-h2 text-center">Contribute on Open Source Friday</h2>
-    <p class="alt-lead text-gray text-center ">Make a plan and stick to it!</p>
+    <div class="text-center">
+      <p class="alt-lead text-gray">Make a plan and stick to it!</p>
+      <% unless current_user %>
+        <%= link_to "Sign up with GitHub", user_github_omniauth_authorize_path, class: "btn btn-large btn-primary", role: "button" %>
+      <% end %>
+    </div>
 
     <div class="d-md-table direction-md-rtl my-6 py-6 border-bottom">
       <div class="d-md-table-cell v-align-middle col-md-6 text-center">

@@ -6,18 +6,10 @@ img.img-responsive {
 }
 
 header {
-  background: no-repeat url(https://image.shutterstock.com/z/stock-vector-abstract-illustration-with-logistics-infrastructure-185865251.jpg) center 280px;
+  background: no-repeat url(https://image.shutterstock.com/z/stock-vector-abstract-illustration-with-logistics-infrastructure-185865251.jpg) center 355px;
   background-size: 1100px;
   position: relative;
   padding-bottom: 220px !important;
-
-  &:before {
-    position: absolute;
-    display: block;
-    left: 0; right: 0; top: 0; bottom: 0;
-    content: "";
-    background-image: radial-gradient(ellipse at 50% 40%, $bg-gray-light 30%, rgba(#000, 0) 40%);
-  }
 }
 
 .triband-hr {
