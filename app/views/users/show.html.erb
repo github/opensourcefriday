@@ -24,29 +24,39 @@
 </div>
 
 <div class="container-md py-6 py-3 px-3">
-  <p class="alt-lead text-gray col-md-11 mx-auto text-center mb-6">
+  <h3 class="alt-lead text-gray col-md-11 mx-auto text-center mb-6">
     <%= @nickname %> has
     <% if @user_exists %>
       joined Open Source Fridays!
-      <br>
-      <% if @prs.empty? %>
-        No pull requests opened on Fridays found in the last year.
-      <% else %>
-        <%= @prs_count %> pull requests opened on Fridays in the last year<%= " (incomplete list)" if @prs_incomplete %>:
-      <% end %>
     <% else %>
       not joined Open Source Fridays (yet).
     <% end %>
-  </p>
+  </h3>
 
+  <% if @user_exists %>
+
+  <h3 class="alt-lead text-gray col-md-11 mx-auto text-center my-6">
+  <% if @prs.empty? %>
+    No pull requests opened on Fridays found in the last year.
+  <% else %>
+    <%= @prs_count %> pull requests opened on Fridays in the last year<%= " (incomplete list)" if @prs_incomplete %>:
+  <% end %>
+  </h3>
   <div class="col-md-8 text-gray mx-auto">
     <% @prs.each do |date, prs| %>
     <h3 class="mt-2"><%= date.to_formatted_s(:long) %></h3>
     <% prs.each do |pr| %>
     <ul class="my-1">
-      <li><a href="<%= pr[:url] %>"><%= pr[:title] %></a></li>
+      <li>
+        <a href="https://github.com/<%= pr[:repo] %>">
+          <%= pr[:repo] %>
+        </a>:
+        <a href="<%= pr[:url] %>"><%= pr[:title] %></a>
+      </li>
     </ul>
     <% end %>
     <% end %>
   </div>
+
+  <% end %>
 </div>
