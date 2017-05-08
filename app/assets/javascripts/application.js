@@ -13,4 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require jstimezonedetect/dist/jstz
 //= require_tree .

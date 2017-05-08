@@ -4,21 +4,29 @@
       <img class="avatar my-3" src="<%= @avatar %>&s=400" width="200" height="200">
     </div>
     <div class="float-left col-sm-8">
-      <a href="https://github.com/<%= @nickname %>">
-        <h2 class="alt-h1 my-0 py-0 lh-condensed"><%= @name_or_nickname %></h2>
-      </a>
-      <% if @name %>
-      <p class="alt-h2 my-0 py-0 lh-condensed"><%= @nickname %></p>
+      <div class="clearfix">
+        <a href="https://github.com/<%= @nickname %>">
+          <h2 class="alt-h1 my-0 py-0 lh-condensed"><%= @name_or_nickname %></h2>
+        </a>
+        <% if @name %>
+        <p class="alt-h2 my-0 py-0 lh-condensed"><%= @nickname %></p>
+        <% end %>
+        <p class="alt-h3"><%= @bio %></p>
+        <p class="alt-lead"><%= @company %></p>
+        <p class="alt-lead"><%= @location %></p>
+        <p class="alt-lead"><%= @homepage %></p>
+        <% @orgs.each do |org| %>
+        <a href="https://github.com/<%= org[:name] %>" style="display: block">
+          <img alt="<%= org[:name] %>" class="avatar-small avatar-link mr-2" src="<%= org[:avatar] %>&s=80" width="40" height="40">
+        </a>
+        <% end %>
+      </div>
+      <div class="mt-3">
+      <% if @user_is_current %>
+        <%= render 'layouts/calendar' %>
+      </div>
       <% end %>
-      <p class="alt-h3"><%= @bio %></p>
-      <p class="alt-lead"><%= @company %></p>
-      <p class="alt-lead"><%= @location %></p>
-      <p class="alt-lead"><%= @homepage %></p>
-      <% @orgs.each do |org| %>
-      <a href="https://github.com/<%= org[:name] %>">
-        <img alt="<%= org[:name] %>" class="avatar-small avatar-link mr-2" src="<%= org[:avatar] %>&s=80" width="40" height="40">
-      </a>
-      <% end %>
+      </div>
     </div>
   </div>
 </div>
