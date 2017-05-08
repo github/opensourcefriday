@@ -13,18 +13,22 @@ class UsersController < ApplicationController
     orgs = octokit.organizations @nickname
     @orgs = orgs.map { |org| { name: org.login, avatar: org.avatar_url } }
 
+    @user_is_current = current_user.github_username = @nickname
+
     @user_exists = User.exists? github_username: @nickname
     if @user_exists
-      get_prs
+      query_prs
+      query_events
     end
     @prs ||= []
+    @events ||= []
 
     render :show
   end
 
   private
 
-  def get_prs
+  def query_prs
     query = "is:pr author:#{@nickname} is:public"
     friday = Date.today.beginning_of_week :friday
     52.times { |i| query += " created:#{friday - (i * 7).days}" }
@@ -45,12 +49,73 @@ class UsersController < ApplicationController
     end.group_by { |pr| pr[:date] }
   end
 
+  def query_events
+    next_saturday = (Date.today + 7).beginning_of_week :saturday
+    days_until_next_saturday = (next_saturday - Date.today).to_i
+    duration_until_next_saturday = days_until_next_saturday.days
+
+    events = Rails.cache.fetch("#{@nickname}/public_events",
+                               expires_in: duration_until_next_saturday) do
+      octokit.user_public_events(@nickname)
+    end
+
+    @events = events.map do |event|
+      action = event.action
+      payload = event.payload
+
+      url = nil
+      date = nil
+      repo = event.repo.name
+
+      title = case event.type
+      when "IssuesEvent"
+        next unless action == "closed"
+        issue = payload.issue
+        url = issue.html_url
+        date = issue.closed_at
+        next if issue.user.login == @nickname
+        "closed #{issue.title}"
+      when "PushEvent"
+        url = "https://github.com/#{repo}/compare/#{payload.before}...#{payload.head}"
+        date = event.created_at
+        branch = payload.ref.sub(%r{^refs/heads/}, "")
+        "pushed <code>#{branch}</code>".html_safe
+      when "PullRequestReviewEvent"
+        next unless action == "submitted"
+        review = event.review
+        url = review.html_url
+        date = review.submitted_at
+        "reviewed #{event.pull_request.title}"
+      when "ReleaseEvent"
+        next unless action == "published"
+        release = event.release
+        url = release.html_url
+        date = release.published_at
+        "released #{release.name || release.tag_name}"
+      end
+      next if !title || !url || !date || !repo
+
+      date = date.to_date
+      next unless date.friday?
+
+      {
+        title: title,
+        url: url,
+        date: date,
+        repo: repo,
+      }
+    end.compact
+
+    @events_count = @events.length
+    @events = @events.group_by { |event| event[:date] }
+  end
+
   def octokit
     @octokit ||= begin
       client = Octokit::Client.new
       client.configure do |config|
         config.per_page = 100
-        auto_paginate = true
+        config.auto_paginate = true
 
         if current_user
           config.access_token = current_user.oauth_token
