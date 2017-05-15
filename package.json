@@ -1,6 +1,8 @@
 {
   "private": true,
   "dependencies": {
+    "addtocalendar": "AddToCalendar/addtocalendar",
+    "jstimezonedetect": "^1.0.6",
     "primer-css": "^5.0.0"
   }
 }

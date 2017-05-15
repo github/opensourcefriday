@@ -1,0 +1,17 @@
+<span class="addtocalendar atc-style-blue">
+  <a class="atcb-link btn btn-outline btn-large">
+    <%= octicon 'calendar', class: 'mr-2' %>
+    Add next Open Source Friday to Calendar
+  </a>
+
+  <var class="atc_event">
+      <% next_friday = (Date.today + 7).beginning_of_week :friday %>
+      <var class="atc_date_start"><%= next_friday %> 12:00:00</var>
+      <var class="atc_date_end"><%= next_friday %> 18:00:00</var>
+      <var class="atc_timezone">Europe/London</var>
+      <var class="atc_title">Open Source Friday</var>
+      <var class="atc_description">Encourage everyone to work on open source today.</var>
+      <var class="atc_location">https://opensourcefriday.com</var>
+      <var class="atc_ical_filename">open-source-friday</var>
+  </var>
+</span>
