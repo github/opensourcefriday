@@ -12,15 +12,9 @@ if [ "$(uname -s)" = "Darwin" ]; then
 
   echo "==> Installing Ruby…"
   brew bootstrap-rbenv-ruby
-
-  echo "==> Installing Node…"
-  brew bootstrap-nodenv-node
 fi
 
 bundle check >/dev/null 2>&1 || {
   echo "==> Installing gem dependencies…"
   bundle install --quiet
 }
-
-echo "==> Installing node dependencies…"
-npm install
