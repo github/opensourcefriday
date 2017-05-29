@@ -12,7 +12,8 @@ class UsersController < ApplicationController
 
     @orgs = organisations
 
-    @user_is_current = current_user.github_username = @nickname
+    @user_is_current = current_user &&
+                       current_user.github_username == @nickname
 
     @user_exists = User.exists? github_username: @nickname
     if @user_exists
@@ -125,7 +126,7 @@ class UsersController < ApplicationController
         config.per_page = 100
         config.auto_paginate = true
 
-        if current_user
+        if current_user && !Rails.env.test?
           config.access_token = current_user.oauth_token
         else
           config.client_id = ENV["github_client_id"]

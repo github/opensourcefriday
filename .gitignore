@@ -21,3 +21,6 @@
 
 # Ignore generated assets
 /public/assets/*
+
+# Ignore code coverage output
+/coverage/

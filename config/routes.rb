@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users,
-             skip: [:registrations],
+             skip: %i[registrations passwords],
              controllers: { omniauth_callbacks: "omniauth_callbacks" }
   resources :users, only: [:show]
 

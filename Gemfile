@@ -33,3 +33,8 @@ end
 group :production do
   gem "redis-rails"
 end
+
+group :test do
+  gem "codecov", require: false
+  gem "vcr", require: false
+end

@@ -1,11 +1,11 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+test:
+  email: "test@example.com"
+  github_uid: "123456"
+  github_username: "TestUser"
+  github_name: "Test User"
 
-# This model initially had no columns defined. If you add columns to the
-# model remove the '{}' from the fixture names and add the columns immediately
-# below each fixture, per the syntax in the comments below
-#
-one: {}
-# column: value
-#
-two: {}
-# column: value
+MikeMcQuaid:
+  email: "mike@mikemcquaid.com"
+  github_uid: "125011"
+  github_username: "MikeMcQuaid"
+  github_name: "Mike McQuaid"
