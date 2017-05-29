@@ -10,8 +10,7 @@ class UsersController < ApplicationController
     @location = github_user.location
     @homepage = github_user.homepage
 
-    orgs = octokit.organizations @nickname
-    @orgs = orgs.map { |org| { name: org.login, avatar: org.avatar_url } }
+    @orgs = organisations
 
     @user_is_current = current_user.github_username = @nickname
 
@@ -27,6 +26,12 @@ class UsersController < ApplicationController
   end
 
   private
+
+  def organisations
+    octokit.organizations(@nickname).map do |org|
+      { name: org.login, avatar: org.avatar_url }
+    end
+  end
 
   def query_prs
     query = "is:pr author:#{@nickname} is:public"
@@ -44,9 +49,10 @@ class UsersController < ApplicationController
         title: pr.title,
         url: pr.html_url,
         date: (pr.closed_at || pr.created_at).to_date,
-        repo: repo_name,
+        repo: repo_name
       }
-    end.group_by { |pr| pr[:date] }
+    end
+    @prs = @prs.group_by { |pr| pr[:date] }
   end
 
   def query_events
@@ -59,55 +65,57 @@ class UsersController < ApplicationController
       octokit.user_public_events(@nickname)
     end
 
-    @events = events.map do |event|
-      action = event.action
-      payload = event.payload
-
-      url = nil
-      date = nil
-      repo = event.repo.name
-
-      title = case event.type
-      when "IssuesEvent"
-        next unless action == "closed"
-        issue = payload.issue
-        url = issue.html_url
-        date = issue.closed_at
-        next if issue.user.login == @nickname
-        "closed #{issue.title}"
-      when "PushEvent"
-        url = "https://github.com/#{repo}/compare/#{payload.before}...#{payload.head}"
-        date = event.created_at
-        branch = payload.ref.sub(%r{^refs/heads/}, "")
-        "pushed <code>#{branch}</code>".html_safe
-      when "PullRequestReviewEvent"
-        next unless action == "submitted"
-        review = event.review
-        url = review.html_url
-        date = review.submitted_at
-        "reviewed #{event.pull_request.title}"
-      when "ReleaseEvent"
-        next unless action == "published"
-        release = event.release
-        url = release.html_url
-        date = release.published_at
-        "released #{release.name || release.tag_name}"
-      end
-      next if !title || !url || !date || !repo
-
-      date = date.to_date
-      next unless date.friday?
-
-      {
-        title: title,
-        url: url,
-        date: date,
-        repo: repo,
-      }
-    end.compact
-
+    @events = events.map { |event| event_metadata(event) }.compact
     @events_count = @events.length
     @events = @events.group_by { |event| event[:date] }
+  end
+
+  def event_metadata(event)
+    action = event.action
+    payload = event.payload
+
+    url = nil
+    date = nil
+    repo = event.repo.name
+
+    case event.type
+    when "IssuesEvent"
+      return unless action == "closed"
+      issue = payload.issue
+      url = issue.html_url
+      date = issue.closed_at
+      return if issue.user.login == @nickname
+      title = "closed #{issue.title}"
+    when "PushEvent"
+      diff = "#{payload.before}...#{payload.head}"
+      url = "https://github.com/#{repo}/compare/#{diff}"
+      date = event.created_at
+      branch = payload.ref.sub(%r{^refs/heads/}, "")
+      title = "pushed <code>#{branch}</code>".html_safe
+    when "PullRequestReviewEvent"
+      return unless action == "submitted"
+      review = event.review
+      url = review.html_url
+      date = review.submitted_at
+      title = "reviewed #{event.pull_request.title}"
+    when "ReleaseEvent"
+      return unless action == "published"
+      release = event.release
+      url = release.html_url
+      date = release.published_at
+      title = "released #{release.name || release.tag_name}"
+    end
+    return if !title || !url || !date || !repo
+
+    date = date.to_date
+    return unless date.friday?
+
+    {
+      title: title,
+      url: url,
+      date: date,
+      repo: repo
+    }
   end
 
   def octokit

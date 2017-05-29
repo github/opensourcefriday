@@ -1,0 +1,42 @@
+AllCops:
+  TargetRubyVersion: 2.4
+  Exclude:
+    - '**/bin/**/*'
+    - '**/db/**/*'
+    - '**/script/setup'
+    - '**/vendor/**/*'
+
+Lint/AssignmentInCondition:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 80
+  IgnoredPatterns: ['\A\s*#']
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+

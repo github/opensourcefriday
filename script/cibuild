@@ -7,3 +7,4 @@ cd "$(dirname "$0")/.."
 ./script/setup
 bundle exec rake assets:precompile
 bundle exec rake test
+bundle exec rubocop

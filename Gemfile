@@ -14,7 +14,7 @@ gem "puma"
 gem "rails"
 gem "sassc-rails"
 gem "turbolinks"
-gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
 gem "uglifier"
 
 group :development, :test do
@@ -24,11 +24,8 @@ end
 group :development do
   gem "awesome_print"
   gem "listen"
+  gem "rubocop"
   gem "spring"
   gem "spring-watcher-listen"
   gem "web-console"
-end
-
-group :production do
-  gem "redis-rails"
 end
