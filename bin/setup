@@ -16,11 +16,6 @@ chdir APP_ROOT do
 
   system! 'script/bootstrap'
 
-  # puts "\n== Copying sample files =="
-  # unless File.exist?('config/database.yml')
-  #   cp 'config/database.yml.sample', 'config/database.yml'
-  # end
-
   puts "\n== Preparing database =="
   system! 'bin/rails db:setup'
 
