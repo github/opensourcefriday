@@ -28,3 +28,7 @@ group :development do
   gem "spring-watcher-listen"
   gem "web-console"
 end
+
+group :production do
+  gem "redis-rails"
+end
