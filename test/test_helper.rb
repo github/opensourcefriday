@@ -26,7 +26,7 @@ VCR.configure do |config|
   config.hook_into :faraday
   config.default_cassette_options = {
     record: ENV["CI"] ? :none : :once,
-    match_requests_on: %i[host path]
+    match_requests_on: %i[host path],
   }
   config.before_record { |i| i.request.headers.delete "Authorization" }
 end

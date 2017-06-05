@@ -50,7 +50,7 @@ class UsersController < ApplicationController
         title: pr.title,
         url: pr.html_url,
         date: (pr.closed_at || pr.created_at).to_date,
-        repo: repo_name
+        repo: repo_name,
       }
     end
     @prs = @prs.group_by { |pr| pr[:date] }
@@ -115,7 +115,7 @@ class UsersController < ApplicationController
       title: title,
       url: url,
       date: date,
-      repo: repo
+      repo: repo,
     }
   end
 

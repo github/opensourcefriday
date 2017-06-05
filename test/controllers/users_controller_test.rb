@@ -11,7 +11,7 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
         nickname: "bar",
         name: "foobar",
         email: "foo@bar.com",
-        token: "abc123"
+        token: "abc123",
       }
     Rails.application.env_config["omniauth.auth"] =
       OmniAuth.config.mock_auth[:github]
