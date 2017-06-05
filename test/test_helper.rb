@@ -24,7 +24,10 @@ require "vcr"
 VCR.configure do |config|
   config.cassette_library_dir = "test/vcr_cassettes"
   config.hook_into :faraday
-  config.default_cassette_options = { record: ENV["CI"] ? :none : :once }
+  config.default_cassette_options = {
+    record: ENV["CI"] ? :none : :once,
+    match_requests_on: %i[host path]
+  }
   config.before_record { |i| i.request.headers.delete "Authorization" }
 end
 Octokit.middleware = Faraday::RackBuilder.new

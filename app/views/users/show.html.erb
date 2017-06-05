@@ -22,6 +22,9 @@
         <% end %>
       </div>
       <div class="mt-3">
+        <h3 class="alt-lead text-gray">
+          Hi @<%= @nickname %>! This is your Open Source Friday activity page. Here's the link you can share with others: <a href="https://opensourcefriday.com/users/<%= @nickname %>">https://opensourcefriday.com/users/<%= @nickname %></a>
+        </h3>
       <% if @user_is_current %>
         <%= render 'layouts/calendar' %>
       </div>
@@ -35,9 +38,9 @@
   <h3 class="alt-lead text-gray col-md-11 mx-auto text-center mb-6">
     <%= @nickname %> has
     <% if @user_exists %>
-      joined Open Source Fridays!
+      joined Open Source Friday!
     <% else %>
-      not joined Open Source Fridays (yet).
+      not joined Open Source Friday (yet).
     <% end %>
   </h3>
 
