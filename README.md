@@ -25,23 +25,26 @@ Things we'd like to try:
 Source hosted at [GitHub](https://github.com/ossfriday/ossfriday).
 Report issues/feature requests on [GitHub Issues](https://github.com/ossfriday/ossfriday/issues).
 
-### Environment variables
+### Getting Started
 
-Create a config file for the environment variables:
+Register a [new GitHub OAuth application](https://github.com/settings/applications/new).
+
+* Set the homepage to `http://localhost:3000`.
+* Set the authorization callback URL to `http://localhost:3000/users/auth/github/callback`.
+
+Create the config file for the client ID and secret generated for your GitHub OAuth application:
 
 ```
 cp config/application.example.yml config/application.yml
 ```
 
-Register a [new GitHub OAuth application](https://github.com/settings/applications/new) with the Authorization callback URL pointing to your application with `/users/auth/github/callback` appended.
+Update `config/application.yml`, setting the `github_client_id` and `github_client_secret`.
 
-Update `config/application.yml`, setting the `github_client_id` and `github_client_secret` variables generated for your GitHub OAuth Application
+The environment variables are managed using [figaro](https://github.com/laserlemon/figaro).
 
-The environment variables are managed using [figaro][].
+#### Bootstrapping the Application
 
-### Getting Started
-
-If you're on macOS, have Homebrew installed and set the environment variables above to get started just run:
+If you're on macOS, have Homebrew installed, and you've set the environment variables above to get started just run:
 ```bash
 ./script/bootstrap
 ./script/setup
@@ -114,5 +117,3 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 ## Copyright
 
 Copyright (c) Open Source Friday contributors. See [LICENSE](https://github.com/ossfriday/ossfriday/blob/master/LICENSE.txt) for details.
-
-[figaro]: https://github.com/laserlemon/figaro
