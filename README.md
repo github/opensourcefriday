@@ -27,13 +27,17 @@ Report issues/feature requests on [GitHub Issues](https://github.com/ossfriday/o
 
 ### Environment variables
 
-```bash
-bundle exec figaro install
+Create a config file for the environment variables:
+
+```
+cp config/application.example.yml config/application.yml
 ```
 
-You'll need to set at least `github_client_id` and `github_client_secret` environment variables. The values can be obtained by [registering a new GitHub OAuth application](https://github.com/settings/applications/new) with the Authorization callback URL pointing to your application with `/users/auth/github/callback` appended.
+Register a [new GitHub OAuth application](https://github.com/settings/applications/new) with the Authorization callback URL pointing to your application with `/users/auth/github/callback` appended.
 
-Or for more information about using figaro, see https://github.com/laserlemon/figaro
+Update `config/application.yml`, setting the `github_client_id` and `github_client_secret` variables generated for your GitHub OAuth Application
+
+The environment variables are managed using [figaro][].
 
 ### Getting Started
 
@@ -110,3 +114,5 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 ## Copyright
 
 Copyright (c) Open Source Friday contributors. See [LICENSE](https://github.com/ossfriday/ossfriday/blob/master/LICENSE.txt) for details.
+
+[figaro]: https://github.com/laserlemon/figaro
