@@ -21,11 +21,11 @@
         </a>
         <% end %>
       </div>
+      <% if @user_is_current %>
       <div class="mt-3">
         <h3 class="alt-lead text-gray">
           Hi @<%= @nickname %>! This is your Open Source Friday activity page. Here's the link you can share with others: <a href="https://opensourcefriday.com/users/<%= @nickname %>">https://opensourcefriday.com/users/<%= @nickname %></a>
         </h3>
-      <% if @user_is_current %>
         <%= render 'layouts/calendar' %>
       </div>
       <% end %>
