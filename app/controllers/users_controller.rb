@@ -49,7 +49,7 @@ class UsersController < ApplicationController
       {
         title: pr.title,
         url: pr.html_url,
-        date: (pr.closed_at || pr.created_at).to_date,
+        date: pr.created_at.to_date,
         repo: repo_name,
       }
     end
