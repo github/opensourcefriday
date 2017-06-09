@@ -126,7 +126,7 @@ class UsersController < ApplicationController
         config.per_page = 100
         config.auto_paginate = true
 
-        if current_user && !Rails.env.test?
+        if current_user && current_user.oauth_token && !Rails.env.test?
           config.access_token = current_user.oauth_token
         else
           config.client_id = ENV["github_client_id"]
