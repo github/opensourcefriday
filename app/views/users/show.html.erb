@@ -27,6 +27,16 @@
           Hi @<%= @nickname %>! This is your Open Source Friday activity page. Here's the link you can share with others: <a href="https://opensourcefriday.com/users/<%= @nickname %>">https://opensourcefriday.com/users/<%= @nickname %></a>
         </h3>
         <%= render 'layouts/calendar' %>
+
+        <% if @show_newsletter_signup %>
+          <h4>TODO: NEWSLETTER SIGNUP HEADLINE</h4>
+          <p>TODO: CONVINCING COPY</p>
+          <%= form_tag("/subscriptions", method: "POST") do %>
+            <%= label_tag(:email, "Email address") %>
+            <%= text_field_tag(:email, @email) %>
+            <%= submit_tag("Sign Up") %>
+          <% end %>
+        <% end %>
       </div>
       <% end %>
       </div>

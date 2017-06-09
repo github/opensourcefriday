@@ -28,6 +28,15 @@ VCR.configure do |config|
     record: ENV["CI"] ? :none : :once,
     match_requests_on: %i[host path],
   }
+  %w[
+    mailchimp_api_key
+    mailchimp_user
+    mailchimp_list_id
+  ].each do |key|
+    config.filter_sensitive_data("<#{key}>") do
+      ENV[key]
+    end
+  end
   config.before_record { |i| i.request.headers.delete "Authorization" }
 end
 Octokit.middleware = Faraday::RackBuilder.new
