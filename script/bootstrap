@@ -1,5 +1,4 @@
 #!/bin/sh
-
 set -e
 
 cd "$(dirname "$0")/.."
@@ -10,8 +9,10 @@ if [ "$(uname -s)" = "Darwin" ]; then
     brew bundle
   }
 
-  echo "==> Installing Ruby…"
-  brew bootstrap-rbenv-ruby
+  rbenv version-name &>/dev/null || {
+    echo "==> Installing Ruby…"
+    brew bootstrap-rbenv-ruby
+  }
 fi
 
 bundle check >/dev/null 2>&1 || {
