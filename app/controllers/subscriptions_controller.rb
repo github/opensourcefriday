@@ -3,7 +3,10 @@ require_relative "../models/mailchimp"
 class SubscriptionsController < ApplicationController
   # Subscribe to the MailChimp newsletter.
   def create
-    redirect_to "/" and return unless current_user
+    unless current_user
+      redirect_to "/"
+      return
+    end
 
     error = begin
       !MailChimp.subscribe(params[:email])
