@@ -16,12 +16,13 @@ class UsersController < ApplicationController
                        current_user.github_username == @nickname
 
     @user_exists = User.exists? github_username: @nickname
+    @user_exists ||= params[:user_exists] unless Rails.env.production?
     if @user_exists
       query_prs
       query_events
+      @prs_and_events = (@prs + @events).group_by { |pr| pr[:date] }
     end
-    @prs ||= []
-    @events ||= []
+    @prs_and_events ||= []
 
     render :show
   end
@@ -37,7 +38,8 @@ class UsersController < ApplicationController
   def query_prs
     query = "is:pr author:#{@nickname} is:public"
     friday = Date.today.beginning_of_week :friday
-    52.times { |i| query += " created:#{friday - (i * 7).days}" }
+    # for the last 3 months
+    13.times { |i| query += " created:#{friday - (i * 7).days}" }
 
     prs = Rails.cache.fetch("#{@nickname}/prs", expires_in: 7.days) do
       octokit.search_issues query, sort: :created
@@ -53,7 +55,6 @@ class UsersController < ApplicationController
         repo: repo_name,
       }
     end
-    @prs = @prs.group_by { |pr| pr[:date] }
   end
 
   def query_events
@@ -68,7 +69,6 @@ class UsersController < ApplicationController
 
     @events = events.map { |event| event_metadata(event) }.compact
     @events_count = @events.length
-    @events = @events.group_by { |event| event[:date] }
   end
 
   def event_metadata(event)

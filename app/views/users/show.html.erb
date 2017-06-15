@@ -47,55 +47,27 @@
 
   <% if @user_exists %>
 
-  <h3 class="alt-lead text-gray col-md-11 mx-auto text-center my-6">
-  <% if @prs.empty? %>
-    No pull requests opened on Fridays found in the last year.
+  <h3 class="alt-lead text-gray col-md-11 mx-auto text-center">
+  <% if @prs_and_events.empty? %>
+    No Friday pull requests or events in the last 3 months.
   <% else %>
-    <%= @prs_count %> pull requests opened on Fridays in the last year<%= " (incomplete list)" if @prs_incomplete %>:
+    <%= @prs_count %> Friday pull <%= "request".pluralize(@prs_count) %> in the last 3 months<%= " (incomplete list)" if @prs_incomplete %><%= " and <br>#{@events_count} Friday events in their last 1,000 events".html_safe unless @events.empty? %>:
   <% end %>
   </h3>
   <div class="col-md-8 text-gray mx-auto">
-    <% @prs.each do |date, prs| %>
+    <% @prs_and_events.each do |date, prs_and_events| %>
     <h3 class="mt-2"><%= date.to_formatted_s(:long) %></h3>
-    <% prs.each do |pr| %>
+    <% prs_and_events.each do |pr_or_event| %>
     <ul class="my-1">
       <li>
-        <a href="https://github.com/<%= pr[:repo] %>">
-          <%= pr[:repo] %>
+        <a href="https://github.com/<%= pr_or_event[:repo] %>">
+          <%= pr_or_event[:repo] %>
         </a>:
-        <a href="<%= pr[:url] %>"><%= pr[:title] %></a>
+        <a href="<%= pr_or_event[:url] %>"><%= pr_or_event[:title] %></a>
       </li>
     </ul>
     <% end %>
     <% end %>
   </div>
-
-  <h3 class="alt-lead text-gray col-md-11 mx-auto text-center my-6">
-  <% if @events.empty? %>
-    No maintainer events made on Fridays found in
-    <br>
-    <%= @nickname %>'s last 1000 events.
-  <% else %>
-    <%= @events_count %> maintainer events made on Fridays
-    <br>
-    found in <%= @nickname %>'s last 1000 events:
-  <% end %>
-  </h3>
-  <div class="col-md-8 text-gray mx-auto">
-    <% @events.each do |date, events| %>
-    <h3 class="mt-2"><%= date.to_formatted_s(:long) %></h3>
-    <% events.each do |event| %>
-    <ul class="my-1">
-      <li>
-        <a href="https://github.com/<%= event[:repo] %>">
-          <%= event[:repo] %>
-        </a>:
-        <a href="<%= event[:url] %>"><%= event[:title] %></a>
-      </li>
-    </ul>
-    <% end %>
-    <% end %>
-  </div>
-
   <% end %>
 </div>
