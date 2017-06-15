@@ -9,11 +9,15 @@ class UsersController < ApplicationController
     @company = github_user.company
     @location = github_user.location
     @homepage = github_user.homepage
+    @email = github_user.email
 
     @orgs = organisations
 
     @user_is_current = current_user &&
                        current_user.github_username == @nickname
+
+    @show_newsletter_signup = @user_is_current &&
+                              !current_user.subscribed_to_newsletter
 
     @user_exists = User.exists? github_username: @nickname
     @user_exists ||= params[:user_exists] unless Rails.env.production?

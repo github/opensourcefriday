@@ -1,2 +1,5 @@
 github_client_id: 
 github_client_secret: 
+mailchimp_user: 
+mailchimp_api_key: 
+mailchimp_list_id: 

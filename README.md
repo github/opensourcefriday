@@ -103,6 +103,17 @@ our browser to <http://localhost:3000>
 ./script/server
 ```
 
+### Newsletter
+
+If you are going to be developing or testing the MailChimp integration, you will need
+
+* a [MailChimp account](https://mailchimp.com)
+* an [API key](http://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+* a [list ID](http://kb.mailchimp.com/lists/manage-contacts/find-your-list-id)
+
+Then you'll need to register the mailchimp-related environment variables in the
+`config/application.yml` file.
+
 ### Note on Patches/Pull Requests
 
  * Fork the project.
