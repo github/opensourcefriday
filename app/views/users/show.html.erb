@@ -29,12 +29,10 @@
         <%= render 'layouts/calendar' %>
 
         <% if @show_newsletter_signup %>
-          <h4>TODO: NEWSLETTER SIGNUP HEADLINE</h4>
-          <p>TODO: CONVINCING COPY</p>
+          <h3 class="alt-h3 mt-3">Subscribe to updates</h3>
           <%= form_tag("/subscriptions", method: "POST") do %>
-            <%= label_tag(:email, "Email address") %>
-            <%= text_field_tag(:email, @email) %>
-            <%= submit_tag("Sign Up") %>
+            <%= text_field_tag(:email, @email, placeholder: "Email Address", class: "form-input required email d-block py-2 px-3 mb-2") %>
+            <%= submit_tag("Subscribe", class: "btn btn-outline") %>
           <% end %>
         <% end %>
       </div>
