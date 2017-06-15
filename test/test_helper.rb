@@ -33,7 +33,7 @@ VCR.configure do |config|
     mailchimp_user
     mailchimp_list_id
   ].each do |key|
-    config.filter_sensitive_data("<#{key}>") do
+    config.filter_sensitive_data(key.upcase) do
       ENV[key]
     end
   end

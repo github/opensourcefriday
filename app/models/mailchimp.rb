@@ -46,10 +46,12 @@ class MailChimp
   end
 
   def subscribe_path
+    raise "mailchimp_list_id missing!" unless list_id
     format("/%s/lists/%s/members", api_version, list_id)
   end
 
   def datacenter
+    raise "mailchimp_api_key missing!" unless api_key
     api_key.to_s.split("-").last
   end
 
