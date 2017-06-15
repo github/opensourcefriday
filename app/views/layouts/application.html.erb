@@ -30,6 +30,15 @@
 
         <%= render 'layouts/nav' %>
       </div>
+
+      <% if flash[:error] %>
+      <div class="container-md mt-3 alt-h4">
+        <div class="flash flash-error flash-with-icon">
+          <%= octicon 'alert', class: "mr-1" %>
+          Error: <%= flash[:error] %>
+        </div>
+      </div>
+      <% end %>
     </div>
     <% end %>
 
