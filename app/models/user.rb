@@ -6,13 +6,17 @@ class User < ApplicationRecord
          omniauth_providers: [:github]
 
   def self.github_auth(auth)
-    where(github_uid: auth.uid).first_or_create do |user|
-      user.github_uid = auth.uid
-      user.github_username = auth.info.nickname
-      user.github_name = auth.info.name
-      user.email = auth.info.email
-      user.password = Devise.friendly_token[0, 20]
-      user.oauth_token = auth.info.token
+    user = where(github_uid: auth.uid).first_or_create do |u|
+      u.github_uid = auth.uid
+      u.github_username = auth.info.nickname
+      u.github_name = auth.info.name
+      u.email = auth.info.email
+      u.password = Devise.friendly_token[0, 20]
+      u.oauth_token = auth.credentials.token
     end
+    if user && !user.oauth_token && auth.credentials.token
+      user.update_attribute(:oauth_token, auth.credentials.token)
+    end
+    user
   end
 end

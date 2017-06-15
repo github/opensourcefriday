@@ -11,6 +11,8 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
         nickname: "bar",
         name: "foobar",
         email: "foo@bar.com",
+      },
+      credentials: {
         token: "abc123",
       }
     Rails.application.env_config["omniauth.auth"] =
