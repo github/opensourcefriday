@@ -1,4 +1,6 @@
 <nav class="float-sm-right">
+  <a class="ml-4" href="/#participate">Contributors</a>
+
   <% if request.path == "/businesses" %>
     <span class="ml-4">Businesses</span>
   <% else %>
@@ -17,8 +19,8 @@
     </a>
     <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "ml-4 text-green" %>
   <% else %>
-    <%= link_to user_github_omniauth_authorize_path, class: "ml-4 text-green"  do %>
-      <%= octicon("mark-github") %> Sign up with GitHub
+    <%= link_to user_github_omniauth_authorize_path, class: "ml-4" do %>
+      <%= octicon("mark-github", :class => "mr-1") %>Sign up with GitHub
     <% end %>
   <% end %>
 </nav>

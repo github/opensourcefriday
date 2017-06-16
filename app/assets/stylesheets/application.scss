@@ -1,9 +1,67 @@
 @import "primer-css/index.scss";
 @import "addtocalendar";
 
+
+.alt-h1 {
+  line-height: 1.25;
+}
+
 img.img-responsive {
   max-width: 100%;
 }
+
+// from GitHub.com’s About page
+.icon-twitter {
+  fill: #1da1f2; //Twitter brand blue
+  position: relative;
+  top: 2px;
+}
+
+.btn-twitter:hover,
+.btn-twitter:active {
+  .icon-twitter {
+    fill: #fff;
+  }
+}
+
+
+.pquote {
+  border: $border;
+  padding: $spacer-2;
+  margin-top: $spacer-3;
+  margin-bottom: $spacer-3;
+  text-align: center;
+  width: 100%;
+
+  @include breakpoint(md) {
+    width: 50%;
+    font-size: 18px;
+    padding: 7.5%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+  }
+
+  img.pquote-avatar {
+    border-radius: 50px;
+    border: 3px solid #F3F3F3;
+    height: 90px;
+    width: 90px;
+    display: block;
+    margin: 0 auto $spacer-2;
+    @include breakpoint(md) {
+      margin: 0 auto $spacer-4;
+    }
+  }
+
+}
+
+.pquote-credit {
+  margin-top: $spacer-3;
+  font-size: 14px;
+}
+
+
+
 
 header {
   background: no-repeat url(https://image.shutterstock.com/z/stock-vector-abstract-illustration-with-logistics-infrastructure-185865251.jpg) center 355px;

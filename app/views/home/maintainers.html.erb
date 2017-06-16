@@ -1,6 +1,6 @@
 <div class="jumbotron text-center bg-gray mb-6 border-bottom px-3">
   <div class="container-md">
-    <h2 class="alt-h1">Build software with help from others.</h2>
+    <h2 class="alt-h1 text-center pb-5">Build software with <br>help from others</h2>
     <p class="alt-lead text-gray">Once a week, give your software project some love and make it easier to others contribute.</p>
     <% unless current_user %>
       <%= link_to "Sign up with GitHub", user_github_omniauth_authorize_path, class: "btn btn-large btn-primary", role: "button" %>
@@ -139,13 +139,13 @@
       <div class="clearfix d-md-flex gut-md my-6">
         <div class="col-md-6">
           <h2 class="alt-h3 my-2">
-            <a href="/businesses">Businesses <%= octicon 'chevron-right', height: '26', class: 'text-inherit' %></a>
+            <a href="/businesses">Businesses<%= octicon 'chevron-right', height: '26', class: 'ml-2 text-inherit' %></a>
           </h2>
           <p class="text-gray alt-body-font">Your business runs on open source. Learn how to get involved.</p>
         </div>
         <div class="col-md-6">
           <h2 class="alt-h3 my-2">
-            <a href="/">Contributors <%= octicon 'chevron-right', height: '26', class: 'text-inherit' %></a>
+            <a href="/">Contributors<%= octicon 'chevron-right', height: '26', class: 'ml-2 text-inherit' %></a>
           </h2>
           <p class="text-gray alt-body-font">Learn from people all over the world how the software you already use is built and build your reputation in the process.</p>
         </div>

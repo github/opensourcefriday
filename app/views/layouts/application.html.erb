@@ -42,15 +42,13 @@
 
     <%= yield %>
 
-    <footer class="border-top">
-      <div class="container-md text-center text-gray py-6 px-3">
+    <footer class="border-top container-lg">
+      <div class="text-center text-gray py-5 px-3">
         <%= octicon 'code', height: 20, class: "v-align-middle fill-gray mr-1", "aria-label": "code" %>
         with
         <%= octicon 'heart', height: 20, class: "v-align-middle fill-gray mx-1", "aria-label": "love" %>
         by
-        <a href="https://github.com" class="text-inherit">
-          <%= octicon "mark-github", height: 20, class: "v-align-middle fill-gray mx-1", "aria-label": "GitHub" %>
-        </a>
+        <a href="https://github.com" class="text-inherit"><%= octicon "mark-github", height: 20, class: "v-align-middle mx-1", "aria-label": "GitHub" %></a>
         and <a class="text-inherit" href="https://github.com/ossfriday/ossfriday/graphs/contributors">friends</a>
       </div>
     </footer>
