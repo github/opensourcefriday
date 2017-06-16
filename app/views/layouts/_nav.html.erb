@@ -1,12 +1,24 @@
 <nav class="float-sm-right">
-  <a class="ml-4 text-blue" href="/businesses">Businesses</a>
-  <a class="ml-4 text-red" href="/maintainers">Maintainers</a>
+  <% if request.path == "/businesses" %>
+    <span class="ml-4">Businesses</span>
+  <% else %>
+    <a class="ml-4" href="/businesses">Businesses</a>
+  <% end %>
+
+  <% if request.path == "/maintainers" %>
+    <span class="ml-4">Maintainers</span>
+  <% else %>
+    <a class="ml-4" href="/maintainers">Maintainers</a>
+  <% end %>
+
   <% if current_user %>
     <a class="ml-4 text-blue" href="/users/<%= current_user.github_username %>">
       <%= current_user.github_username %>
     </a>
     <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "ml-4 text-green" %>
   <% else %>
-    <%= link_to "Sign up with GitHub", user_github_omniauth_authorize_path, class: "ml-4 text-green" %>
+    <%= link_to user_github_omniauth_authorize_path, class: "ml-4 text-green"  do %>
+      <%= octicon("mark-github") %> Sign up with GitHub
+    <% end %>
   <% end %>
 </nav>
