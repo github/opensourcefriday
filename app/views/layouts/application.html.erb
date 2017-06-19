@@ -4,6 +4,8 @@
     <title>Open Source Friday</title>
     <%= csrf_meta_tags %>
 
+    <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <% if Rails.env.development? %>
@@ -22,8 +24,8 @@
   </head>
   <body>
     <div class="py-4 border-bottom px-3">
-      <div class="container-md clearfix">
-        <h1 class="alt-h4 float-sm-left">
+      <div class="container-md d-flex flex-justify-center mx-auto flex-column flex-md-row flex-md-justify-between">
+        <h1 class="alt-h4 text-center">
           <a class="text-inherit" href="/">Open Source Friday</a>
         </h1>
 

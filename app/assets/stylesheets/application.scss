@@ -24,6 +24,16 @@ img.img-responsive {
   }
 }
 
+.pquote-container {
+  flex-direction: column;
+  padding: $spacer-6;
+
+  @include breakpoint(md) {
+    flex-direction: row;
+    padding: 0;
+  }
+
+}
 
 .pquote {
   border: $border;
@@ -32,6 +42,7 @@ img.img-responsive {
   margin-bottom: $spacer-3;
   text-align: center;
   width: 100%;
+
 
   @include breakpoint(md) {
     width: 50%;
@@ -106,13 +117,4 @@ header {
   display: inline-block;
   vertical-align: text-top;
   fill: currentColor;
-}
-
-
-.btn-outline-red {
-  @include btn-outline($text-red);
-}
-
-.btn-outline-purple {
-  @include btn-outline($text-purple);
 }
