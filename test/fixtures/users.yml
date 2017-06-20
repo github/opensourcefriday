@@ -1,11 +1,5 @@
 test:
-  email: "test@example.com"
-  github_uid: "123456"
   github_username: "TestUser"
-  github_name: "Test User"
 
 MikeMcQuaid:
-  email: "mike@mikemcquaid.com"
-  github_uid: "125011"
   github_username: "MikeMcQuaid"
-  github_name: "Mike McQuaid"
