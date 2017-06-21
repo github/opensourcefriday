@@ -16,7 +16,7 @@
         <p class="alt-lead"><%= @location %></p>
         <p class="alt-lead"><%= @homepage %></p>
         <% @orgs.each do |org| %>
-        <a href="https://github.com/<%= org[:name] %>" style="display: block">
+        <a href="https://github.com/<%= org[:name] %>">
           <img alt="<%= org[:name] %>" class="avatar-small avatar-link mr-2" src="<%= org[:avatar] %>&s=80" width="40" height="40">
         </a>
         <% end %>
@@ -38,11 +38,15 @@
 
 <div class="container-md py-6 py-3 px-3">
   <h3 class="alt-lead text-gray col-md-11 mx-auto text-center mb-6">
-    <%= @nickname %> has
-    <% if @user_exists %>
-      joined Open Source Friday!
+    <% if @user_is_current %>
+      You have joined Open Source Friday!
     <% else %>
-      not joined Open Source Friday (yet).
+      <%= @nickname %> has
+      <% if @user_exists %>
+        joined Open Source Friday!
+      <% else %>
+        not joined Open Source Friday (yet).
+      <% end %>
     <% end %>
   </h3>
 
