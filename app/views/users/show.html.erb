@@ -6,19 +6,31 @@
     <div class="float-left col-sm-8">
       <div class="clearfix">
         <a href="https://github.com/<%= @nickname %>">
-          <h2 class="alt-h1 my-0 py-0 lh-condensed"><%= @name_or_nickname %></h2>
+          <h2 class="alt-h1 mb-1"><%= @name_or_nickname %></h2>
         </a>
-        <% if @name %>
-        <p class="alt-h2 my-0 py-0 lh-condensed"><%= @nickname %></p>
-        <% end %>
-        <p class="alt-h3"><%= @bio %></p>
-        <p class="alt-lead"><%= @company %></p>
-        <p class="alt-lead"><%= @location %></p>
-        <p class="alt-lead"><%= @homepage %></p>
+        <p class="text-gray bio-details">
+          <% if @name %>
+            <span><%= @nickname %></span>
+          <% end %>
+
+          <% if @company %>
+            <span><%= @company %></span>
+          <% end %>
+
+          <% if @location %>
+            <span><%= @location %></span>
+          <% end %>
+
+          <% if @homepage %>
+            <span><%= @homepage %></span>
+          <% end %>
+        </p>
+        <p class="alt-lead mb-4">
+          <%= @bio %>
+        </p>
+
         <% @orgs.each do |org| %>
-        <a href="https://github.com/<%= org[:name] %>" style="display: block">
-          <img alt="<%= org[:name] %>" class="avatar-small avatar-link mr-2" src="<%= org[:avatar] %>&s=80" width="40" height="40">
-        </a>
+          <a href="https://github.com/<%= org[:name] %>"><img alt="<%= org[:name] %>" class="avatar-small avatar-link mr-4" src="<%= org[:avatar] %>&s=80" width="40" height="40"></a>
         <% end %>
       </div>
       <% if @user_is_current %>
@@ -52,7 +64,7 @@
 </div>
 
 <div class="container-md py-6 py-3 px-3">
-  <h3 class="alt-lead text-gray col-md-11 mx-auto text-center mb-6">
+  <h2 class="alt-h2 text-gray col-md-11 mx-auto text-center mb-6">
     <%= @nickname %> has
     <% if @user_exists %>
       joined Open Source Friday!
@@ -63,7 +75,7 @@
 
   <% if @user_exists %>
 
-  <h3 class="alt-lead text-gray col-md-11 mx-auto text-center">
+  <h3 class="alt-lead text-gray col-md-11 mb-5 mx-auto text-center">
   <% if @prs_and_events.empty? %>
     No Friday pull requests or events in the last 3 months.
   <% else %>
@@ -72,9 +84,9 @@
   </h3>
   <div class="col-md-8 text-gray mx-auto">
     <% @prs_and_events.each do |date, prs_and_events| %>
-    <h3 class="mt-2"><%= date.to_formatted_s(:long) %></h3>
+    <h3 class="alt-h3 mt-2"><%= date.to_formatted_s(:long) %></h3>
     <% prs_and_events.each do |pr_or_event| %>
-    <ul class="my-1">
+    <ul class="mb-4">
       <li>
         <a href="https://github.com/<%= pr_or_event[:repo] %>">
           <%= pr_or_event[:repo] %>
