@@ -2,7 +2,7 @@
 
   <h3 class="container-md text-center alt-h1 text-gray mb-6">
     <% if @user_is_current %>
-      You have joined Open Source Friday!
+      You have joined<br>Open Source Friday!
     <% else %>
       <a href="https://github.com/<%= @nickname %>"><%= @name_or_nickname %></a> has
       <% if @user_exists %>
@@ -47,50 +47,61 @@
     </div>
   </div>
   <% if @user_is_current %>
-  <div class="mt-6">
-    <% page_url = "https://opensourcefriday.com/users/#{@nickname}" %>
-    <h2>What should I do now?</h2>
-    <h3 class="alt-h3">Make your first contribution</h3>
-    <p><a href="https://opensource.guide/how-to-contribute/#finding-a-project-to-contribute-to">Find a project</a> to contribute to, or learn <a href="https://opensource.guide/how-to-contribute/">how to make your first pull request</a>.</p>
-    <h3 class="alt-h3">Tell your friends</h3>
-    <p class="text-gray">
-      Share
-      <% if @prs_and_events.empty? %>
-        <% tweet = "I'm contributing to open source on #OpenSourceFriday: https://opensourcefriday.com. Join me!" %>
-        Open Source Friday
-      <% else %>
-        <% tweet = "Check out my contributions to open source on #OpenSourceFriday: #{page_url}" %>
-        your Open Source Friday contributions
-      <% end %>
-      with others:
-    </p>
-    <p>
-      <a class="alt-h4" href="<%= page_url %>"><%= page_url %></a>
-      <p><%= render partial: 'layouts/twitter', locals: { tweet: tweet } %></p>
-    </p>
+    <div class="mt-6 border-top container-md ">
+      <% page_url = "https://opensourcefriday.com/users/#{@nickname}" %>
+      <h2 class="alt-h2 text-center mt-6 mb-4">
+        What should I do now?
+      </h2>
 
-    <%= render 'layouts/calendar' %>
+      <div class="d-flex flex-column flex-md-row flex-justify-between text-center">
+        <div class="col-md-3">
+          <%= octicon 'squirrel', class: 'd-block mb-2 mx-auto text-blue', width: 28 %>
+          <h3 class="alt-h3 mb-1">
+            Make your first contribution
+          </h3>
+          <p><a href="https://opensource.guide/how-to-contribute/#finding-a-project-to-contribute-to">Find a project</a> to contribute to, or learn <a href="https://opensource.guide/how-to-contribute/">how to make your first pull request</a>.</p>
+        </div>
 
-    <%= render 'layouts/mailchimp' %>
+        <div class="col-md-3">
+          <%= octicon 'smiley', class: 'd-block mb-2 mx-auto text-blue', height: 28 %>
+          <h3 class="alt-h3 mb-1">Tell your friends</h3>
+          <p class="text-gray">
+            Share
+            <% if @prs_and_events.empty? %>
+              <% tweet = "I'm contributing to open source on #OpenSourceFriday: https://opensourcefriday.com. Join me!" %>
+              Open Source Friday
+            <% else %>
+              <% tweet = "Check out my contributions to open source on #OpenSourceFriday: #{page_url}" %>
+              your Open Source Friday contributions
+            <% end %>
+            with others <a href="<%= page_url %>">using this URL</a>.
+          </p>
+          <p><%= render partial: 'layouts/twitter', locals: { tweet: tweet } %></p>
+        </div>
+        <div class="col-md-3">
+          <%= octicon 'calendar', class: 'd-block mb-2 mx-auto text-blue', width: 28 %>
+          <%= render 'layouts/calendar' %>
+        </div>
+      </div>
+    </div>
   <% end %>
-  </div>
 </div>
 
 <div class="container-md py-6 py-3 px-3">
   <% if @user_exists %>
 
-  <h3 class="alt-lead text-gray col-md-11 mb-5 mx-auto text-center">
+  <h3 class="alt-h3 col-md-11 mb-5 mx-auto text-center">
   <% if @prs_and_events.empty? %>
     No Friday pull requests or events in the last 3 months.
   <% else %>
     <%= @prs_count %> Friday pull <%= "request".pluralize(@prs_count) %> in the last 3 months<%= " (incomplete list)" if @prs_incomplete %><%= " and <br>#{@events_count} Friday events in their last 1,000 events".html_safe unless @events.empty? %>:
   <% end %>
   </h3>
-  <div class="col-md-8 text-gray mx-auto">
+  <div class="col-md-8 mb-4 mx-auto">
     <% @prs_and_events.each do |date, prs_and_events| %>
-    <h3 class="alt-h3 mt-2"><%= date.to_formatted_s(:long) %></h3>
+    <h3 class="h4 mt-2"><%= date.to_formatted_s(:long) %></h3>
     <% prs_and_events.each do |pr_or_event| %>
-    <ul class="mb-4">
+    <ul>
       <li>
         <a href="https://github.com/<%= pr_or_event[:repo] %>">
           <%= pr_or_event[:repo] %>
