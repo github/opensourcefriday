@@ -8,17 +8,17 @@
         <a href="https://github.com/<%= @nickname %>">
           <h2 class="alt-h1 mb-1"><%= @name_or_nickname %></h2>
         </a>
-        <p class="text-gray bio-details">
+        <p class="text-gray">
           <% if @name %>
-            <span><%= @nickname %></span>
+            <span class"mr-4"><%= @nickname %></span>
           <% end %>
 
           <% if @company %>
-            <span><%= @company %></span>
+            <span class"mr-4"><%= @company %></span>
           <% end %>
 
           <% if @location %>
-            <span><%= @location %></span>
+            <span class"mr-4"><%= @location %></span>
           <% end %>
 
           <% if @homepage %>
@@ -37,11 +37,13 @@
       <div class="mt-6">
         <% page_url = "https://opensourcefriday.com/users/#{@nickname}" %>
         <h2>What should I do now?</h2>
-        <h3 class="alt-h3">Share</h3>
+        <h3 class="alt-h3">Make your first contribution</h3>
+        <p><a href="https://opensource.guide/how-to-contribute/#finding-a-project-to-contribute-to">Find a project</a> to contribute to, or learn <a href="https://opensource.guide/how-to-contribute/">how to make your first pull request</a>.</p>
+        <h3 class="alt-h3">Tell your friends</h3>
         <p class="text-gray">
           Share
           <% if @prs_and_events.empty? %>
-            <% tweet = "Join me contributing to open source on #OpenSourceFriday: https://opensourcefriday.com" %>
+            <% tweet = "I'm contributing to open source on #OpenSourceFriday: https://opensourcefriday.com. Join me!" %>
             Open Source Friday
           <% else %>
             <% tweet = "Check out my contributions to open source on #OpenSourceFriday: #{page_url}" %>
@@ -64,12 +66,16 @@
 </div>
 
 <div class="container-md py-6 py-3 px-3">
-  <h2 class="alt-h2 text-gray col-md-11 mx-auto text-center mb-6">
-    <%= @nickname %> has
-    <% if @user_exists %>
-      joined Open Source Friday!
+  <h3 class="alt-h2 text-gray col-md-11 mx-auto text-center mb-6">
+    <% if @user_is_current %>
+      You have joined Open Source Friday!
     <% else %>
-      not joined Open Source Friday (yet).
+      <%= @nickname %> has
+      <% if @user_exists %>
+        joined Open Source Friday!
+      <% else %>
+        not joined Open Source Friday (yet).
+      <% end %>
     <% end %>
   </h3>
 

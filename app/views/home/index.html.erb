@@ -1,10 +1,10 @@
 <header class="jumbotron text-center bg-gray-light mb-6 border-bottom px-3">
   <div class="container-lg position-relative">
     <h1 class="alt-h1 mb-2">Open Source Friday</h1>
-    <p class="alt-lead text-gray mb-md-5 col-md-8 mx-auto">Open source is made by people just like you. This week, contribute back to the software you use and love.</p>
+    <p class="alt-lead text-gray mb-md-5 col-md-8 mx-auto">Open source is made by people just like you. This Friday, invest a few hours contributing to the software you use and love.</p>
     <% unless current_user %>
       <%= link_to user_github_omniauth_authorize_path, class: "btn btn-large btn-primary", role: "button" do %>
-        <%= octicon 'mark-github', height: 18, class: 'mr-2' %> Sign up with GitHub
+        Sign up with GitHub
       <% end %>
     <% end %>
   </div>
@@ -48,7 +48,7 @@
     <% unless current_user %>
       <p class="text-center mt-2">
         <%= link_to user_github_omniauth_authorize_path, class: "btn btn-primary", role: "button" do %>
-          <%= octicon 'mark-github', height: 18, class: 'mr-1' %> Sign up with GitHub
+          Sign up with GitHub
         <% end %>
       </p>
     <% end %>
@@ -68,7 +68,6 @@
 
         <p>
           <a class="btn btn-outline" href="https://opensource.guide/how-to-contribute/">
-            <%= octicon 'book', height: 18, class: 'mr-1' %>
             Read the guide
           </a>
         </p>
@@ -79,59 +78,34 @@
       </div>
     </div>
 
-    <div class="border-bottom">
-      <h3 class="alt-h3 mb-2">Find a project to contribute to</h3>
-      <p class="alt-lead f2 text-gray">
-        Contributing to open source happens at all levels, across projects and design, documentation, operations and code. You don’t need to overthink what exactly your first contribution will be, or how it will look.
-      </p>
-      <div class="d-md-flex gut-md my-6">
-        <div class="col-md-4 mb-6">
-          <h4 class="mb-2">A project you already use</h4>
-          <p class="text-gray">Start by thinking about the projects you already use or want to use. The projects you’ll actively contribute to are the ones you find yourself coming back to.</p>
-        </div>
-        <div class="col-md-4 mb-6">
-          <h4 class="mb-2">An issue you can fix</h4>
-
-          <p class="text-gray">Check out these sites to find a project looking for your help:</p>
-
-          <ul class="ml-3">
-            <li><a href="http://www.firsttimersonly.com/">First Timers Only</a></li>
-            <li><a href="https://yourfirstpr.github.io/">Your First PR</a></li>
-            <li><a href="https://www.codetriage.com/">CodeTriage</a></li>
-            <li><a href="http://up-for-grabs.net/">Up For Grabs</a></li>
-            <li><a href="https://contributor.ninja">Contributor-ninja</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4 mb-6">
-          <h4 class="mb-2">A warm welcome</h4>
-
-          <p>
-            Find a project that has a history and reputation for being welcoming to new contributors in the
-            <a href="https://github.com/showcases/great-for-new-contributors">Great for new contributors</a> showcase.</p>
-        </div>
+    <h3 class="alt-h3 mb-2">Find a project to contribute to</h3>
+    <p class="alt-lead f2 text-gray">
+      Contributing to open source happens at all levels, across projects and design, documentation, operations and code. You don’t need to overthink what exactly your first contribution will be, or how it will look.
+    </p>
+    <div class="d-md-flex gut-md my-6">
+      <div class="col-md-4 mb-6">
+        <h4 class="mb-2">A project you already use</h4>
+        <p class="text-gray">Start by thinking about the projects you already use or want to use. The projects you’ll actively contribute to are the ones you find yourself coming back to.</p>
       </div>
-    </div>
+      <div class="col-md-4 mb-6">
+        <h4 class="mb-2">An issue you can fix</h4>
 
-    <div class="d-md-table direction-md-ltr my-6 py-6">
-      <div class="d-md-table-cell v-align-middle col-md-6 text-center">
-        <a href="https://opensource.guide/how-to-contribute/">
-          <%= image_tag("best-practices.svg", class: "img-responsive") %>
-        </a>
+        <p class="text-gray">Check out these sites to find a project looking for your help:</p>
+
+        <ul class="ml-3">
+          <li><a href="https://yourfirstpr.github.io/">Your First PR</a></li>
+          <li><a href="http://up-for-grabs.net/">Up For Grabs</a></li>
+          <li><a href="https://www.codetriage.com/">CodeTriage</a></li>
+        </ul>
       </div>
-      <div class="d-md-table-cell v-align-middle col-md-6 direction-md-ltr pl-md-6">
-        <h3 class="alt-h3">Share with the world</h3>
-
-        <p class="text-gray mb-4">
-          Work on Open Source Friday with others. When you've made a contribution, share it with the world.
-        </p>
+      <div class="col-md-4 mb-6">
+        <h4 class="mb-2">A warm welcome</h4>
 
         <p>
-          <p><%= render partial: 'layouts/twitter',
-                        locals: { tweet: "Join me contributing to open source on #OpenSourceFriday: https://opensourcefriday.com" } %></p>
-        </p>
+          Find a project that has a history and reputation for being welcoming to new contributors in
+          <a href="https://github.com/showcases/great-for-new-contributors">GitHub's great for new contributors</a> showcase.</p>
       </div>
     </div>
-
   </div>
 </div>
 
