@@ -21,8 +21,6 @@
 
   // Flexbox classes
   // Container
-  .d#{$breakstring}-flex          { display: flex !important; }
-  .d#{$breakstring}-inline-flex   { display: inline-flex !important; }
 
   .flex#{$breakstring}-row         { flex-direction: row !important; }
   .flex#{$breakstring}-row-reverse { flex-direction: row-reverse !important; }

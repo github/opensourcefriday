@@ -1,99 +1,96 @@
 <header class="jumbotron text-center bg-gray-light mb-6 border-bottom px-3">
   <div class="container-lg position-relative">
-    <h1 class="alt-h1">Open Source Friday</h1>
+    <h1 class="alt-h1 mb-2">Open Source Friday</h1>
     <p class="alt-lead text-gray mb-md-5 col-md-8 mx-auto">Open source is made by people just like you. This week, contribute back to the software you use and love.</p>
     <% unless current_user %>
-      <%= link_to "Sign up with GitHub", user_github_omniauth_authorize_path, class: "btn btn-large btn-primary", role: "button" %>
+      <%= link_to user_github_omniauth_authorize_path, class: "btn btn-large btn-primary", role: "button" do %>
+        <%= octicon 'mark-github', height: 18, class: 'mr-2' %> Sign up with GitHub
+      <% end %>
     <% end %>
   </div>
 </header>
 
-<div class="container-lg">
-<%= render 'layouts/nav' %>
-</div>
-
-<div class="container-lg py-2 my-2 px-3">
+<div class="container-lg py-6 my-2 px-3">
   <h2 class="alt-h2 text-center">Invest in your future</h2>
 
-  <p class="alt-lead text-gray col-md-10 mx-auto text-center mb-6">
+  <p class="alt-lead text-gray col-md-7 mx-auto text-center mb-6">
     Open source software is built, well, in the open. Sharpen your skills and be part of something big.
   </p>
-  <div class="clearfix gut-lg">
-    <div class="float-left col-md-4">
-      <div class="clearfix mb-4 text-md-center">
-        <div class="float-left mr-4 float-md-none mr-md-0 mb-md-3"><img src="https://assets-cdn.github.com/images/modules/site/icons/opensource-ico-future.svg?sn" alt="" aria-hidden></div>
-        <div class="overflow-hidden">
-          <h3 class="alt-h4 mb-2">Shape the future of&nbsp;software</h3>
-          <p class="alt-text-small text-gray">Your contributions help make technology better for everyone.</p>
-        </div>
-      </div>
+
+  <div class="mx-auto col-lg-8 mb-6">
+    <%= image_tag("building.svg", class: "img-responsive") %>
+  </div>
+
+
+  <div class="gut-lg d-flex flex-column flex-md-row">
+    <div class="col-md-4 mb-4">
+      <h3 class="h4 mb-2">Shape the future of&nbsp;software</h3>
+      <p class="text-gray">Your contributions help make technology better for everyone.</p>
     </div>
-    <div class="float-left col-md-4">
-      <div class="clearfix mb-4 text-md-center">
-        <div class="float-left mr-4 float-md-none mr-md-0 mb-md-3"><img src="https://assets-cdn.github.com/images/modules/site/icons/opensource-ico-best.svg?sn" alt="" aria-hidden></div>
-        <div class="overflow-hidden">
-          <h3 class="alt-h4 mb-2">Learn from the best in the&nbsp;field</h3>
-          <p class="alt-text-small text-gray">Developers of all skill levels participate in open source. Contribute code to projects that run the world.</p>
-        </div>
-      </div>
+
+    <div class="col-md-4 mb-4">
+      <h3 class="h4 mb-2">Learn from the best in the&nbsp;field</h3>
+      <p class="text-gray">Developers of all skill levels participate in open source. Contribute code to projects that run the world.</p>
     </div>
-    <div class="float-left col-md-4">
-      <div class="clearfix mb-4 text-md-center">
-        <div class="float-left mr-4 float-md-none mr-md-0 mb-md-3"><img src="https://assets-cdn.github.com/images/modules/site/icons/opensource-ico-grow.svg?sn" alt="" aria-hidden></div>
-        <div class="overflow-hidden">
-          <h3 class="alt-h4 mb-2">Grow your skills and help&nbsp;others</h3>
-          <p class="alt-text-small text-gray">Whatever your skill level, working on open source software is a great way to learn new&nbsp;things and meet people with similar interests.</p>
-        </div>
-      </div>
+
+    <div class="col-md-4 mb-4">
+      <h3 class="h4 mb-2">Grow your skills and help&nbsp;others</h3>
+      <p class="text-gray">Whatever your skill level, working on open source software is a great way to learn new&nbsp;things and meet people with similar interests.</p>
     </div>
   </div>
 </div>
 
-<div class="bg-shade-gradient border-top py-6 px-3">
-  <div id="participate" class="container-md py-6">
+<div class="border-top py-6 px-3 bg-gray-light" id="participate">
+  <div class="container-md py-6">
 
     <h2 class="alt-h2 text-center">Contribute on Open Source Friday</h2>
-    <div class="text-center">
-      <p class="alt-lead text-gray">Make a plan and stick to it!</p>
-      <% unless current_user %>
-        <%= link_to "Sign up with GitHub", user_github_omniauth_authorize_path, class: "btn btn-large btn-primary", role: "button" %>
-      <% end %>
-    </div>
 
-    <div class="d-md-table direction-md-ltr my-6 py-6 border-bottom">
+    <% unless current_user %>
+      <p class="text-center mt-2">
+        <%= link_to user_github_omniauth_authorize_path, class: "btn btn-primary", role: "button" do %>
+          <%= octicon 'mark-github', height: 18, class: 'mr-1' %> Sign up with GitHub
+        <% end %>
+      </p>
+    <% end %>
+
+    <div class="d-md-table direction-md-ltr mb-6 py-6 border-bottom">
       <div class="d-md-table-cell v-align-middle col-md-6 text-center">
         <a href="https://opensource.guide/how-to-contribute/">
-          <img class="card img-responsive" src="https://opensource.guide/assets/images/cards/contribute.png">
+          <%= image_tag("contribute.svg", class: "img-responsive") %>
         </a>
       </div>
       <div class="d-md-table-cell v-align-middle col-md-6 direction-md-ltr pl-md-6">
-        <h3 class="alt-h3">Learn to contribute</h3>
+        <h3 class="alt-h3 mb-2">Learn to contribute</h3>
 
         <p class="text-gray mb-4">
           Learn what it means to contribute, and how to find and get started on a new project.
         </p>
 
         <p>
-          <a class="btn btn-outline btn-large" href="https://opensource.guide/how-to-contribute/">
-            <%= octicon 'book', height: 18, class: 'mr-2' %>
+          <a class="btn btn-outline" href="https://opensource.guide/how-to-contribute/">
+            <%= octicon 'book', height: 18, class: 'mr-1' %>
             Read the guide
           </a>
+        </p>
+
+        <p>
+
         </p>
       </div>
     </div>
 
     <div class="border-bottom">
-      <h3 class="alt-h3">Find a project to contribute to</h3>
-      <p class="lead text-gray">
+      <h3 class="alt-h3 mb-2">Find a project to contribute to</h3>
+      <p class="alt-lead f2 text-gray">
         Contributing to open source happens at all levels, across projects and design, documentation, operations and code. You don’t need to overthink what exactly your first contribution will be, or how it will look.
       </p>
       <div class="d-md-flex gut-md my-6">
-        <div class="col-md-4">
-          <h4 class="alt-h4 mb-2">A project you already use</h4>
+        <div class="col-md-4 mb-6">
+          <h4 class="mb-2">A project you already use</h4>
           <p class="text-gray">Start by thinking about the projects you already use or want to use. The projects you’ll actively contribute to are the ones you find yourself coming back to.</p>
         </div>
-        <div class="col-md-4">
-          <h4 class="alt-h4 mb-2">An issue you can fix</h4>
+        <div class="col-md-4 mb-6">
+          <h4 class="mb-2">An issue you can fix</h4>
 
           <p class="text-gray">Check out these sites to find a project looking for your help:</p>
 
@@ -105,8 +102,8 @@
             <li><a href="https://contributor.ninja">Contributor-ninja</a></li>
           </ul>
         </div>
-        <div class="col-md-4">
-          <h4 class="alt-h4 mb-2">A warm welcome</h4>
+        <div class="col-md-4 mb-6">
+          <h4 class="mb-2">A warm welcome</h4>
 
           <p>
             Find a project that has a history and reputation for being welcoming to new contributors in the
@@ -118,7 +115,7 @@
     <div class="d-md-table direction-md-ltr my-6 py-6">
       <div class="d-md-table-cell v-align-middle col-md-6 text-center">
         <a href="https://opensource.guide/how-to-contribute/">
-          <img class="img-responsive" src="https://assets-cdn.github.com/images/modules/site/personal-ill-share.png?sn1">
+          <%= image_tag("best-practices.svg", class: "img-responsive") %>
         </a>
       </div>
       <div class="d-md-table-cell v-align-middle col-md-6 direction-md-ltr pl-md-6">
@@ -129,24 +126,16 @@
         </p>
 
         <p>
-          <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Join%20me%20contributing%20to%20Open%20Source%20Friday" data-size="large">Tweet</a>
-
-          <script>
-            window.twttr = (function(d, s, id) {
-              var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {};
-              if (d.getElementById(id))
-                return t;
-              js = d.createElement(s);
-              js.id = id;
-              js.src = "https://platform.twitter.com/widgets.js";
-              fjs.parentNode.insertBefore(js, fjs);
-              t._e = [];
-              t.ready = function(f) {
-                t._e.push(f);
-              };
-              return t;
-            }(document, "script", "twitter-wjs"));
-          </script>
+          <a class="btn btn-outline btn-twitter" href="https://twitter.com/intent/tweet?text=Join%20me%20contributing%20to%20Open%20Source%20Friday">
+            <svg class="icon-twitter mr-1" version="1.1"
+          	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+          	 x="0px" y="0px" width="16px" height="13px" viewBox="0 0 16 13" style="enable-background:new 0 0 16 13;" xml:space="preserve"><path  d="M5,13c6,0,9.3-5,9.3-9.3c0-0.1,0-0.3,0-0.4c0.6-0.5,1.2-1,1.6-1.7c-0.6,0.3-1.2,0.4-1.9,0.5
+          	c0.7-0.4,1.2-1,1.4-1.8c-0.6,0.4-1.3,0.6-2.1,0.8c-0.6-0.6-1.5-1-2.4-1C9.3,0,7.8,1.5,7.8,3.3c0,0.3,0,0.5,0.1,0.7
+          	C5.2,3.9,2.7,2.6,1.1,0.6c-0.3,0.5-0.4,1-0.4,1.6c0,1.1,0.6,2.1,1.5,2.7c-0.5,0-1-0.2-1.5-0.4c0,0,0,0,0,0c0,1.6,1.1,2.9,2.6,3.2
+          	C3,7.9,2.7,7.9,2.4,7.9c-0.2,0-0.4,0-0.6-0.1c0.4,1.3,1.6,2.3,3.1,2.3c-1.1,0.9-2.5,1.4-4.1,1.4c-0.3,0-0.5,0-0.8,0
+          	C1.5,12.5,3.2,13,5,13"/></svg>
+            Tweet
+          </a>
         </p>
       </div>
     </div>
@@ -154,50 +143,45 @@
   </div>
 </div>
 
-<div class="bg-gray-light border-top py-6 px-3">
+<div class="border-top py-5">
   <div class="container-lg">
-    <h2 class="alt-h2 mt-6 text-center">You're in good company.</h2>
+    <h2 class="alt-h2 mt-6 text-center">You're in good company</h2>
 
-    <div class="clearfix mt-6 pt-6 mb-4 border-top">
-      <div class="col-sm-6 float-left pl-sm-3 pl-lg-4">
-        <div>
-          <div class="d-table-cell v-align-top pr-3">
-            <img src="https://avatars2.githubusercontent.com/u/9155255?v=3&s=100" alt="" width="50" height="50" style="border-radius:25px;">
-          </div>
-          <blockquote class="d-table-cell v-align-top text-gray">
-            <p class="alt-mono-font alt-text-small">Contributing to open source not only allows businesses of every size to take advantage and build upon the talents of others, it’s also an avenue for those new to coding to acclimate themselves to the development process in ways that allow them to practice, experiment, and showcase themselves as valuable and contributing members of the community.</p>
-            <footer class="alt-text-small">Kim Crayton (<a href="https://github.com/kmcrayton7">@kmcrayton7</a>), Community Engineer, Writer, Founder</footer>
-          </blockquote>
-        </div>
-      </div>
-      <div class="col-sm-6 float-left mb-4 mb-md-0 pr-sm-3 pr-lg-4">
-        <div>
-          <div class="d-table-cell v-align-top pr-3">
-            <img src="https://avatars1.githubusercontent.com/u/133209?v=3&s=100" alt="" width="50" height="50" style="border-radius:25px;">
-          </div>
-          <blockquote class="d-table-cell v-align-top text-gray">
-            <p class="alt-mono-font alt-text-small">I got to where I am today by contributing to open source software, allowing me to not only improve my skills as a software developer but also to increase my network of colleagues and to meet new and interesting friends from extremely diverse cultures. I can highly recommend it.</p>
-            <footer class="alt-text-small">Chris Lamb (<a href="https://github.com/lamby">@lamby</a>), <a href="https://www.debian.org">Debian Project</a> Leader</footer>
-          </blockquote>
-        </div>
-      </div>
+    <div class="pquote-container container-lg mt-3 mb-6 d-flex flex-justify-between">
+      <aside class="pquote">
+        <img src="https://avatars2.githubusercontent.com/u/9155255?v=3&s=400" class="pquote-avatar" alt="avatar">
+        Contributing to open source not only allows businesses of every size to take advantage and build upon the talents of others, it’s also an avenue for those new to coding to acclimate themselves to the development process in ways that allow them to practice, experiment, and showcase themselves as valuable and contributing members of the community.
+        <p markdown="1" class="pquote-credit">
+      &mdash; Kim Crayton (<a href="https://github.com/kmcrayton7">@kmcrayton7</a>),<br>Community Engineer, Writer, Founder
+        </p>
+      </aside>
+
+      <aside class="pquote">
+        <img src="https://avatars1.githubusercontent.com/u/133209?v=3&s=400" class="pquote-avatar" alt="avatar">
+        I got to where I am today by contributing to open source software, allowing me to not only improve my skills as a software developer but also to increase my network of colleagues and to meet new and interesting friends from extremely diverse cultures. I can highly recommend it.
+        <p markdown="1" class="pquote-credit">
+      &mdash; Chris Lamb (<a href="https://github.com/lamby">@lamby</a>),<br><a href="https://www.debian.org">Debian Project</a> Leader
+        </p>
+      </aside>
     </div>
+  </div>
+</div>
 
-    <div class="pt-6">
-      <div class="clearfix d-md-flex gut-md my-6">
-        <div class="col-md-6">
-          <h2 class="alt-h3 my-2">
-            <a href="/businesses" class="text-blue">Businesses <%= octicon 'chevron-right', height: '26', class: 'text-inherit' %></a>
-          </h2>
-          <p class="text-gray alt-body-font">Your business runs on open source. Learn how to get involved.</p>
-        </div>
+<div class="py-3 border-top text-center">
+  <div class="container-lg">
+    <div class="clearfix d-flex mx-2 my-6">
+      <div class="col-lg-4 col-sm-1 mx-auto">
+        <h2 class="alt-h3 my-2">
+          <a href="/businesses">Businesses<%= octicon 'chevron-right', height: '26', class: 'ml-2 text-inherit' %></a>
+        </h2>
+        <p class="text-gray f4">Your business runs on open source. Learn how to get involved.</p>
+      </div>
 
-        <div class="col-md-6">
-          <h2 class="alt-h3 my-2">
-            <a href="/maintainers" class="text-red">Maintainers <%= octicon 'chevron-right', height: '26', class: 'text-inherit' %></a>
-          </h2>
-          <p class="text-gray alt-body-font">Give your project some love to help others contribute where you need it most.</p>
-        </div>
+      <div class="col-lg-4 col-sm-1 mx-auto">
+        <h2 class="alt-h3 my-2">
+          <a href="/maintainers">Maintainers<%= octicon 'chevron-right', height: '26', class: 'ml-2 text-inherit' %></a>
+        </h2>
+        <p class="text-gray f4">Give your project some love to help others contribute where you need it most.</p>
       </div>
     </div>
   </div>

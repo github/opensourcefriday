@@ -1,154 +1,146 @@
 <div class="jumbotron text-center bg-gray mb-6 border-bottom px-3">
   <div class="container-md">
-    <h2 class="alt-h1 text-red">Build software with help from others.</h2>
-    <p class="alt-lead text-gray">Once a week, give your software project some love and make it easier to others contribute.</p>
+    <h1 class="alt-h1 mb-2">
+      Build software with <br>help from others
+    </h1>
+    <p class="alt-lead text-gray mb-md-5 col-md-9 mx-auto">Once a week, give your software project some love and make it easier to others contribute.</p>
     <% unless current_user %>
-      <%= link_to "Sign up with GitHub", user_github_omniauth_authorize_path, class: "btn btn-large btn-primary", role: "button" %>
+      <%= link_to user_github_omniauth_authorize_path, class: "btn btn-large btn-primary", role: "button" do %>
+        <%= octicon 'mark-github', height: 18, class: 'mr-2' %> Sign up with GitHub
+      <% end %>
     <% end %>
   </div>
 </div>
 
-<div class="container-md py-6 py-3 px-3">
-  <h2 class="alt-h2 text-purple text-center">Help people discover your project</h2>
-
-  <p class="alt-lead text-gray col-md-11 mx-auto text-center mb-6">
+<div class="container-md py-6 py-3 px-3 text-center">
+  <h2 class="alt-h2">Help people discover your project</h2>
+  <p class="alt-lead text-gray col-md-10 mx-auto mb-6">
     Creating a project is only the beginning. Why not spread the word?
   </p>
 
-  <div class="col-sm-6 col-md-12 float-left float-md-none pr-sm-4 pr-md-0 mb-md-4 clearfix">
-    <div class="col-12 col-md-6 float-md-left mb-4 pr-md-6">
-      <h3 class="alt-h3 mb-1">Reduce your workload</h3>
-      <p class="alt-text-small text-gray mb-4">
+  <div class="d-flex flex-wrap flex-justify-between">
+    <div class="mb-6 col-md-5 mx-auto">
+      <img src="https://assets-cdn.github.com/images/modules/site/icons/opensource-ico-future.svg?sn" class="mb-2" alt="" aria-hidden="">
+      <h3 class="h4 mb-2">Reduce your workload</h3>
+      <p class="text-gray">
         Ensure your project's README file details what your project does, its scope and contribution needs, and how to contribute.
       </p>
-
-      <h3 class="alt-h3 mb-1">Promote your work</h3>
-      <p class="alt-text-small text-gray mb-4">
-         Consider creating a Twitter account, blog posts and website for your project.
-      </p>
     </div>
-
-    <div class="d-md-table-cell v-align-middle col-md-6 text-center">
-      <a href="https://opensource.guide/finding-users/">
-        <img class="card img-responsive" src="https://opensource.guide/assets/images/cards/finding.png">
-      </a>
+    <div class="mb-6 col-md-5 mx-auto">
+      <img src="https://assets-cdn.github.com/images/modules/site/icons/opensource-ico-grow.svg?sn" class="mb-2" alt="" aria-hidden="">
+        <h3 class="h4 mb-2">Promote your work</h3>
+        <p class="text-gray">
+        Consider creating a Twitter account, blog posts and website for your project.
+      </p>
     </div>
   </div>
 </div>
 
-<hr>
-
-<div id="participate" class="container-md py-6 px-3">
-  <h2 class="alt-h2 text-center">Grow your community</h2>
-
-  <p class="alt-lead text-gray col-md-11 mx-auto text-center mb-6">
-    Everybody was new once. Ease someone else's first-time contribution jitters.
-  </p>
-  <div class="col-sm-6 col-md-12 float-left float-md-none pl-sm-4 pl-md-0 clearfix">
-    <div class="col-12 col-md-6 float-md-right pl-0 pl-md-3 mb-3 mb-sm-0">
-      <h3 class="alt-h3 mb-1">Document everything</h3>
-      <p class="alt-text-small text-gray mb-4">
-        Ensure your documentation on how to use and contribute to your project is clear.
-      </p>
-
-      <h3 class="alt-h3 mb-1">Get help</h3>
-      <p class="alt-text-small text-gray mb-4">
-        Look out for promising potential contributors or maintainers to share ownership of your project. Make an effort to welcome first-time contributors in particular.
-      </p>
-    </div>
-
-    <div class="d-md-table-cell v-align-middle col-md-6 text-center">
-      <a href="https://opensource.guide/building-community/">
-        <img class="card img-responsive" src="https://opensource.guide/assets/images/cards/building.png">
-      </a>
+<div class="py-6 px-3 text-center border-top border-bottom bg-gray-light">
+  <div class="py-6 container-md">
+    <h2 class="alt-h2">Grow your community</h2>
+    <p class="alt-lead text-gray col-md-10 mx-auto mb-6">
+      Everybody was new once. Ease someone else's first-time contribution jitters.
+    </p>
+    <div class="d-flex flex-wrap flex-justify-between">
+      <div class="mb-6 col-md-5 mx-auto">
+        <img src="https://assets-cdn.github.com/images/modules/site/icons/opensource-ico-future.svg?sn" class="mb-2" alt="" aria-hidden="">
+        <h3 class="h4 mb-2">Document everything</h3>
+        <p class="text-gray">
+          Ensure your documentation on how to use and contribute to your project is clear.
+        </p>
+      </div>
+      <div class="mb-6 col-md-5 mx-auto">
+        <img src="https://assets-cdn.github.com/images/modules/site/icons/opensource-ico-grow.svg?sn" class="mb-2" alt="" aria-hidden="">
+          <h3 class="h4 mb-2">Get help</h3>
+          <p class="text-gray">
+          Look out for promising potential contributors or maintainers to share ownership of your project. Make an effort to welcome first-time contributors in particular.
+        </p>
+      </div>
     </div>
   </div>
 </div>
 
-<hr>
-
-<div class="container-md py-6 py-3 px-3">
-  <h2 class="alt-h2 text-purple text-center">Improve your workflow</h2>
-
-  <p class="alt-lead text-gray col-md-11 mx-auto text-center mb-6">
+<div class="container-md py-6 px-3 text-center">
+  <h2 class="alt-h2">Improve your workflow</h2>
+  <p class="alt-lead text-gray col-md-10 mx-auto mb-6">
     Learn from other maintainers on how to be more effective.
   </p>
-
-  <div class="col-sm-6 col-md-12 float-left float-md-none pr-sm-4 pr-md-0 mb-md-4 clearfix">
-    <div class="col-12 col-md-6 float-md-left mb-4 pr-md-6">
-      <h3 class="alt-h3 mb-1">Set boundaries</h3>
-      <p class="alt-text-small text-gray mb-4">
+  <div class="d-flex flex-wrap flex-justify-between">
+    <div class="mb-6 col-md-5 mx-auto">
+      <img src="https://assets-cdn.github.com/images/modules/site/icons/opensource-ico-future.svg?sn" class="mb-2" alt="" aria-hidden="">
+      <h3 class="h4 mb-2">Set boundaries</h3>
+      <p class="text-gray">
         Decide on what the scope of the project is and set clear boundaries for yourself. Saying no is as important as saying yes.
       </p>
-
-      <h3 class="alt-h3 mb-1">Automation</h3>
-      <p class="alt-text-small text-gray mb-4">
-         Automate as much as possible through tests and other checks to save yourself time.
-      </p>
     </div>
-
-    <div class="d-md-table-cell v-align-middle col-md-6 text-center">
-      <a href="https://opensource.guide/best-practices/">
-        <img class="card img-responsive" src="https://opensource.guide/assets/images/cards/best-practices.png">
-      </a>
+    <div class="mb-6 col-md-5 mx-auto">
+      <img src="https://assets-cdn.github.com/images/modules/site/icons/opensource-ico-grow.svg?sn" class="mb-2" alt="" aria-hidden="">
+        <h3 class="h4 mb-2">Automation</h3>
+        <p class="text-gray">
+        Automate as much as possible through tests and other checks to save yourself time.
+      </p>
     </div>
   </div>
 </div>
 
-<div id="participate" class="container-md py-6 px-3">
-  <h2 class="alt-h2 text-center">Get ready for Open Source Friday</h2>
+<% unless current_user %>
+<div class="py-6 text-center border-top bg-gray-light">
+  <div class="container-md pt-3">
+    <h2 class="alt-h2 text-center">Get ready for Open Source Friday</h2>
 
-  <div class="text-center">
-    <p class="alt-lead text-gray">Spend time now to save time later.</p>
-    <% unless current_user %>
-      <%= link_to "Sign up with GitHub", user_github_omniauth_authorize_path, class: "btn btn-large btn-primary", role: "button" %>
+    <p class="text-gray alt-lead">Spend time now to save time later.</p>
+
+    <%= link_to user_github_omniauth_authorize_path, class: "btn btn-large btn-primary mb-4", role: "button" do %>
+      <%= octicon 'mark-github', height: 18, class: 'mr-2' %> Sign up with GitHub
     <% end %>
   </div>
 </div>
+<% end %>
 
-<div class="bg-gray-light border-top py-6 px-3">
+<div class="border-top py-5">
   <div class="container-lg">
-    <h2 class="alt-h2 mt-6 text-center">You're in good company.</h2>
+    <h2 class="alt-h2 mt-6 text-center">You're in good company</h2>
 
-    <div class="clearfix mt-6 pt-6 mb-4 border-top">
-      <div class="col-sm-6 float-left mb-4 mb-md-0 pr-sm-3 pr-lg-4">
-        <div>
-          <div class="d-table-cell v-align-top pr-3">
-            <img src="https://avatars1.githubusercontent.com/u/1162160?v=3&s=100" alt="" width="50" height="50" style="border-radius:25px;">
-          </div>
-          <blockquote class="d-table-cell v-align-top text-gray">
-            <p class="alt-mono-font alt-text-small">The thing that most open source projects lack is not money, but time. Many maintainers have full-time jobs and can't realistically cut back their hours. What almost all projects need is more contributors. Open Source Friday is a perfect way for companies to support the open source ecosystem they depend on in a meaningful way.</p>
-            <footer class="alt-text-small">Rich Harris (<a href="https://github.com/Rich-Harris">@Rich-Harris</a>), <a href="https://github.com/rollup/rollup">Rollup</a> and <a href="https://github.com/sveltejs/svelte">Svelte</a> maintainer</footer>
-          </blockquote>
-        </div>
-      </div>
-      <div class="col-sm-6 float-left pl-sm-3 pl-lg-4">
-        <div>
-          <div class="d-table-cell v-align-top pr-3">
-            <img src="https://avatars3.githubusercontent.com/u/54418?v=3&s=100" alt="" width="50" height="50" style="border-radius:25px;">
-          </div>
-          <blockquote class="d-table-cell v-align-top text-gray">
-            <p class="alt-mono-font alt-text-small">Once you are a maintainer on a project that others rely on, open source goes from "sharing the code" to "sharing the maintenance". As we all know, "maintenance" takes time which is most effectively spent in a continuous block to help make sure you can finish that e.g. code review before you start to lose context.</p>
-            <footer class="alt-text-small">Brett Cannon (<a href="https://github.com/brettcannon">@brettcannon</a>), <a href="https://github.com/python/cpython">Python core</a> developer</footer>
-          </blockquote>
-        </div>
-      </div>
+    <div class="pquote-container container-lg mt-3 mb-6 d-flex flex-justify-between">
+      <aside class="pquote">
+        <img src="https://avatars1.githubusercontent.com/u/1162160?v=3&s=100" class="pquote-avatar" alt="avatar">
+        The thing that most open source projects lack is not money, but time. Many maintainers have full-time jobs and can't realistically cut back their hours. What almost all projects need is more contributors. Open Source Friday is a perfect way for companies to support the open source ecosystem they depend on in a meaningful way.
+        <p markdown="1" class="pquote-credit">
+      &mdash; Rich Harris (<a href="https://github.com/Rich-Harris">@Rich-Harris</a>),<br><a href="https://github.com/rollup/rollup">Rollup</a> and <a href="https://github.com/sveltejs/svelte">Svelte</a> maintainer
+        </p>
+      </aside>
+
+      <aside class="pquote">
+        <img src="https://avatars3.githubusercontent.com/u/54418?v=3&s=100" class="pquote-avatar" alt="avatar">
+        Once you are a maintainer on a project that others rely on, open source goes from "sharing the code" to "sharing the maintenance". As we all know, "maintenance" takes time which is most effectively spent in a continuous block to help make sure you can finish that e.g. code review before you start to lose context.
+        <p markdown="1" class="pquote-credit">
+      &mdash; Brett Cannon (<a href="https://github.com/brettcannon">@brettcannon</a>),<br><a href="https://github.com/python/cpython">Python core</a> developer
+        </p>
+      </aside>
     </div>
+  </div>
+</div>
 
-    <div class="pt-6">
-      <div class="clearfix d-md-flex gut-md my-6">
-        <div class="col-md-6">
-          <h2 class="alt-h3 my-2">
-            <a href="/businesses" class="text-red">Businesses <%= octicon 'chevron-right', height: '26', class: 'text-inherit' %></a>
-          </h2>
-          <p class="text-gray alt-body-font">Your business runs on open source. Learn how to get involved.</p>
-        </div>
-        <div class="col-md-6">
-          <h2 class="alt-h3 my-2">
-            <a href="/" class="text-blue">Contributors <%= octicon 'chevron-right', height: '26', class: 'text-inherit' %></a>
-          </h2>
-          <p class="text-gray alt-body-font">Learn from people all over the world how the software you already use is built and build your reputation in the process.</p>
-        </div>
+
+
+
+<div class="py-3 border-top text-center">
+  <div class="container-lg">
+    <div class="clearfix d-flex mx-2 my-6">
+      <div class="col-lg-4 col-sm-1 mx-auto">
+        <h2 class="alt-h3 my-2">
+          <a href="/businesses">Businesses<%= octicon 'chevron-right', height: '26', class: 'ml-2 text-inherit' %></a>
+        </h2>
+        <p class="text-gray f4">Your business runs on open source. Learn how to get involved.</p>
+      </div>
+
+
+      <div class="col-lg-4 col-sm-1 mx-auto">
+        <h2 class="alt-h3 my-2">
+          <a href="/#participate">Contributors<%= octicon 'chevron-right', height: '26', class: 'ml-2 text-inherit' %></a>
+        </h2>
+        <p class="text-gray f4">Your business runs on open source. Learn how to get involved.</p>
       </div>
     </div>
   </div>

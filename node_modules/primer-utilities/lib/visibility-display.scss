@@ -22,6 +22,10 @@
 .d-inline       { display: inline !important; }
 /* Set the display to inline-block */
 .d-inline-block { display: inline-block !important; }
+/* Set the display to flex */
+.d-flex { display: flex !important; }
+/* Set the display to inline-flex */
+.d-inline-flex { display: inline-flex !important; }
 /* Set the display to none */
 .d-none         { display: none !important; }
 
@@ -39,6 +43,10 @@
     .d-#{$breakpoint}-inline  { display: inline !important; }
     /* Set the display to inline block at the #{$breakpoint} breakpoint */
     .d-#{$breakpoint}-inline-block  { display: inline-block !important; }
+    /* Set the display to flex at the #{$breakpoint} breakpoint */
+    .d-#{$breakpoint}-flex  { display: flex !important; }
+    /* Set the display to flex at the #{$breakpoint} breakpoint */
+    .d-#{$breakpoint}-inline-flex  { display: inline-flex !important; }
     /* Set the display to none at the #{$breakpoint} breakpoint */
     .d-#{$breakpoint}-none  { display: none !important; }
   }

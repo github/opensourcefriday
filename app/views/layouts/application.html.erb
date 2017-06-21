@@ -4,6 +4,8 @@
     <title>Open Source Friday</title>
     <%= csrf_meta_tags %>
 
+    <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <% if Rails.env.development? %>
@@ -21,10 +23,9 @@
     <% end %>
   </head>
   <body>
-    <% unless request.path == "/" %>
     <div class="py-4 border-bottom px-3">
-      <div class="container-md clearfix">
-        <h1 class="alt-h4 float-sm-left">
+      <div class="container-md d-flex flex-justify-center mx-auto flex-column flex-md-row flex-md-justify-between">
+        <h1 class="alt-h4 text-center">
           <a class="text-inherit" href="/">Open Source Friday</a>
         </h1>
 
@@ -40,19 +41,16 @@
       </div>
       <% end %>
     </div>
-    <% end %>
 
     <%= yield %>
 
-    <footer class="border-top">
-      <div class="container-md text-center text-gray py-6 px-3">
+    <footer class="border-top container-lg">
+      <div class="text-center text-gray py-5 px-3">
         <%= octicon 'code', height: 20, class: "v-align-middle fill-gray mr-1", "aria-label": "code" %>
         with
         <%= octicon 'heart', height: 20, class: "v-align-middle fill-gray mx-1", "aria-label": "love" %>
         by
-        <a href="https://github.com" class="text-inherit">
-          <%= octicon "mark-github", height: 20, class: "v-align-middle fill-gray mx-1", "aria-label": "GitHub" %>
-        </a>
+        <a href="https://github.com" class="text-inherit"><%= octicon "mark-github", height: 20, class: "v-align-middle mx-1", "aria-label": "GitHub" %></a>
         and <a class="text-inherit" href="https://github.com/ossfriday/ossfriday/graphs/contributors">friends</a>
       </div>
     </footer>

@@ -1,3 +1,8 @@
+# v2.1.2
+
+ * Bump all the version numbers for readme - Mu-An Chiou [github/github@a9d152f](https://github.com/github/github/commit/a9d152f)
+ * Fix all the travis badge URL - Mu-An Chiou [github/github@9cd6d84](https://github.com/github/github/commit/9cd6d84)
+
 # v2.1.1
 
  * update version number after color variable updates - broccolini [github/github@b2a811a](https://github.com/github/github/commit/b2a811a)
