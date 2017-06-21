@@ -1,7 +1,7 @@
 <header class="jumbotron text-center bg-gray-light mb-6 border-bottom px-3">
   <div class="container-lg position-relative">
     <h1 class="alt-h1 mb-2">Open Source Friday</h1>
-    <p class="alt-lead text-gray mb-md-5 col-md-8 mx-auto">Open source is made by people just like you. This week, contribute back to the software you use and love.</p>
+    <p class="alt-lead text-gray mb-md-5 col-md-8 mx-auto">Open source is made by people just like you. This Friday, invest a few hours contributing to the software you use and love.</p>
     <% unless current_user %>
       <%= link_to user_github_omniauth_authorize_path, class: "btn btn-large btn-primary", role: "button" do %>
         <%= octicon 'mark-github', height: 18, class: 'mr-2' %> Sign up with GitHub
@@ -95,19 +95,17 @@
           <p class="text-gray">Check out these sites to find a project looking for your help:</p>
 
           <ul class="ml-3">
-            <li><a href="http://www.firsttimersonly.com/">First Timers Only</a></li>
             <li><a href="https://yourfirstpr.github.io/">Your First PR</a></li>
-            <li><a href="https://www.codetriage.com/">CodeTriage</a></li>
             <li><a href="http://up-for-grabs.net/">Up For Grabs</a></li>
-            <li><a href="https://contributor.ninja">Contributor-ninja</a></li>
+            <li><a href="https://www.codetriage.com/">CodeTriage</a></li>
           </ul>
         </div>
         <div class="col-md-4 mb-6">
           <h4 class="mb-2">A warm welcome</h4>
 
           <p>
-            Find a project that has a history and reputation for being welcoming to new contributors in the
-            <a href="https://github.com/showcases/great-for-new-contributors">Great for new contributors</a> showcase.</p>
+            Find a project that has a history and reputation for being welcoming to new contributors in
+            <a href="https://github.com/showcases/great-for-new-contributors">GitHub's great for new contributors</a> showcase.</p>
         </div>
       </div>
     </div>
@@ -118,20 +116,7 @@
           <%= image_tag("best-practices.svg", class: "img-responsive") %>
         </a>
       </div>
-      <div class="d-md-table-cell v-align-middle col-md-6 direction-md-ltr pl-md-6">
-        <h3 class="alt-h3">Share with the world</h3>
-
-        <p class="text-gray mb-4">
-          Work on Open Source Friday with others. When you've made a contribution, share it with the world.
-        </p>
-
-        <p>
-          <p><%= render partial: 'layouts/twitter',
-                        locals: { tweet: "Join me contributing to open source on #OpenSourceFriday: https://opensourcefriday.com" } %></p>
-        </p>
-      </div>
     </div>
-
   </div>
 </div>
 
