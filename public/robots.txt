@@ -1,3 +1,2 @@
-# Ban robots until we go public
 User-agent: *
-Disallow: /
+Allow: /
