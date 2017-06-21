@@ -44,8 +44,14 @@
 
     <%= yield %>
 
-    <footer class="border-top container-lg">
-      <div class="text-center text-gray py-5 px-3">
+    <footer class="border-top container-lg text-center ">
+      <div class="col-6 mx-auto">
+        <div class="height-full p-5">
+          <%= render 'layouts/mailchimp' %>
+        </div>
+      </div>
+
+      <div class="text-gray pb-6 px-3">
         <%= octicon 'code', height: 20, class: "v-align-middle fill-gray mr-1", "aria-label": "code" %>
         with
         <%= octicon 'heart', height: 20, class: "v-align-middle fill-gray mx-1", "aria-label": "love" %>
