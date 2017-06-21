@@ -25,6 +25,9 @@ class UsersController < ApplicationController
     @prs_and_events ||= []
 
     render :show
+  rescue Octokit::NotFound
+    raise ActionController::RoutingError,
+          "GitHub user @#{params[:id]} not found!"
   end
 
   private
@@ -42,7 +45,13 @@ class UsersController < ApplicationController
     13.times { |i| query += " created:#{friday - (i * 7).days}" }
 
     prs = Rails.cache.fetch("#{@nickname}/prs", expires_in: 7.days) do
-      octokit.search_issues query, sort: :created
+      prs = octokit.search_issues query, sort: :created
+      last_response = octokit.last_response
+      while last_response.rels[:next]
+        last_response = last_response.rels[:next].get
+        prs.concat last_response.data
+      end
+      prs
     end
     @prs_count = prs.total_count
     @prs_incomplete = prs.items.size < prs.total_count
@@ -64,7 +73,15 @@ class UsersController < ApplicationController
 
     events = Rails.cache.fetch("#{@nickname}/public_events",
                                expires_in: duration_until_next_saturday) do
-      octokit.user_public_events(@nickname)
+      events = octokit.user_public_events(@nickname)
+      last_event_created = events.last.try(:created_at) || DateTime.now
+      last_response = octokit.last_response
+      while last_event_created > 3.months.ago && last_response.rels[:next]
+        last_response = last_response.rels[:next].get
+        events.concat last_response.data
+        last_event_created = events.last.try(:created_at) || DateTime.now
+      end
+      events
     end
 
     @events = events.map { |event| event_metadata(event) }.compact
@@ -124,7 +141,6 @@ class UsersController < ApplicationController
       client = Octokit::Client.new
       client.configure do |config|
         config.per_page = 100
-        config.auto_paginate = true
 
         if current_user && !Rails.env.test?
           config.access_token = current_user.oauth_token
