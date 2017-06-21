@@ -9,4 +9,5 @@ Rails.application.routes.draw do
 
   get "/businesses", to: "home#businesses"
   get "/maintainers", to: "home#maintainers"
+  get "/_boomtown", to: "home#boomtown"
 end
