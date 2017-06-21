@@ -1,76 +1,10 @@
-<div class="bg-gray mb-6 border-bottom jumbotron px-3">
-  <div class="container-md">
-    <div class="float-left col-sm-4">
-      <img class="avatar my-3" src="<%= @avatar %>&s=400" width="200" height="200">
-    </div>
-    <div class="float-left col-sm-8">
-      <div class="clearfix">
-        <a href="https://github.com/<%= @nickname %>">
-          <h2 class="alt-h1 mb-1"><%= @name_or_nickname %></h2>
-        </a>
-        <p class="text-gray">
-          <% if @name %>
-            <span class"mr-4"><%= @nickname %></span>
-          <% end %>
+<div class="bg-gray mb-6 jumbotron px-3">
 
-          <% if @company %>
-            <span class"mr-4"><%= @company %></span>
-          <% end %>
-
-          <% if @location %>
-            <span class"mr-4"><%= @location %></span>
-          <% end %>
-
-          <% if @homepage %>
-            <span><%= @homepage %></span>
-          <% end %>
-        </p>
-        <p class="alt-lead mb-4">
-          <%= @bio %>
-        </p>
-
-        <% @orgs.each do |org| %>
-          <a href="https://github.com/<%= org[:name] %>"><img alt="<%= org[:name] %>" class="avatar-small avatar-link mr-4" src="<%= org[:avatar] %>&s=80" width="40" height="40"></a>
-        <% end %>
-      </div>
-      <% if @user_is_current %>
-      <div class="mt-6">
-        <% page_url = "https://opensourcefriday.com/users/#{@nickname}" %>
-        <h2>What should I do now?</h2>
-        <h3 class="alt-h3">Make your first contribution</h3>
-        <p><a href="https://opensource.guide/how-to-contribute/#finding-a-project-to-contribute-to">Find a project</a> to contribute to, or learn <a href="https://opensource.guide/how-to-contribute/">how to make your first pull request</a>.</p>
-        <h3 class="alt-h3">Tell your friends</h3>
-        <p class="text-gray">
-          Share
-          <% if @prs_and_events.empty? %>
-            <% tweet = "I'm contributing to open source on #OpenSourceFriday: https://opensourcefriday.com. Join me!" %>
-            Open Source Friday
-          <% else %>
-            <% tweet = "Check out my contributions to open source on #OpenSourceFriday: #{page_url}" %>
-            your Open Source Friday contributions
-          <% end %>
-          with others:
-        </p>
-        <p>
-          <a class="alt-h4" href="<%= page_url %>"><%= page_url %></a>
-          <p><%= render partial: 'layouts/twitter', locals: { tweet: tweet } %></p>
-        </p>
-
-        <%= render 'layouts/calendar' %>
-
-        <%= render 'layouts/mailchimp' %>
-      <% end %>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="container-md py-6 py-3 px-3">
-  <h3 class="alt-h2 text-gray col-md-11 mx-auto text-center mb-6">
+  <h3 class="container-md text-center alt-h1 text-gray mb-6">
     <% if @user_is_current %>
       You have joined Open Source Friday!
     <% else %>
-      <%= @nickname %> has
+      <a href="https://github.com/<%= @nickname %>"><%= @name_or_nickname %></a> has
       <% if @user_exists %>
         joined Open Source Friday!
       <% else %>
@@ -79,6 +13,70 @@
     <% end %>
   </h3>
 
+  <div class="container-md mx-auto d-flex flex-column flex-sm-row flex-justify-between">
+    <div class="col-sm-3 mb-4">
+      <img class="avatar rounded-2 img-responsive" src="<%= @avatar %>&s=400">
+    </div>
+
+    <div class="col-sm-7">
+      <p class="text-gray mb-4">
+        <% if @name %>
+          <span class="d-inline-block mr-3"><%= octicon("mark-github") %> <a href="https://github.com/<%= @nickname %>"><%= @nickname %></a></span>
+        <% end %>
+
+        <% if @company %>
+          <span class="d-inline-block mr-3"><%= octicon("organization") %> <a href="https://github.com/<%= @company %>"><%= @company %></a></span>
+        <% end %>
+
+        <% if @location %>
+          <span class="d-inline-block mr-3"><%= octicon("location") %> <%= @location %></span>
+        <% end %>
+
+        <% if @homepage %>
+          <span class="d-inline-block"><%= octicon("external-link") %> <%= @homepage %></span>
+        <% end %>
+      </p>
+
+      <p class="text-gray mb-4">
+        <%= @bio %>
+      </p>
+
+      <% @orgs.each do |org| %>
+        <a href="https://github.com/<%= org[:name] %>"><img alt="<%= org[:name] %>" class="avatar-small avatar-link mr-4 rounded-1" src="<%= org[:avatar] %>&s=80" width="40" height="40"></a>
+      <% end %>
+    </div>
+  </div>
+  <% if @user_is_current %>
+  <div class="mt-6">
+    <% page_url = "https://opensourcefriday.com/users/#{@nickname}" %>
+    <h2>What should I do now?</h2>
+    <h3 class="alt-h3">Make your first contribution</h3>
+    <p><a href="https://opensource.guide/how-to-contribute/#finding-a-project-to-contribute-to">Find a project</a> to contribute to, or learn <a href="https://opensource.guide/how-to-contribute/">how to make your first pull request</a>.</p>
+    <h3 class="alt-h3">Tell your friends</h3>
+    <p class="text-gray">
+      Share
+      <% if @prs_and_events.empty? %>
+        <% tweet = "I'm contributing to open source on #OpenSourceFriday: https://opensourcefriday.com. Join me!" %>
+        Open Source Friday
+      <% else %>
+        <% tweet = "Check out my contributions to open source on #OpenSourceFriday: #{page_url}" %>
+        your Open Source Friday contributions
+      <% end %>
+      with others:
+    </p>
+    <p>
+      <a class="alt-h4" href="<%= page_url %>"><%= page_url %></a>
+      <p><%= render partial: 'layouts/twitter', locals: { tweet: tweet } %></p>
+    </p>
+
+    <%= render 'layouts/calendar' %>
+
+    <%= render 'layouts/mailchimp' %>
+  <% end %>
+  </div>
+</div>
+
+<div class="container-md py-6 py-3 px-3">
   <% if @user_exists %>
 
   <h3 class="alt-lead text-gray col-md-11 mb-5 mx-auto text-center">
