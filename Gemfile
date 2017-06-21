@@ -3,6 +3,7 @@ source "https://rubygems.org"
 ruby IO.read(File.expand_path("#{File.dirname(__FILE__)}/.ruby-version")).strip
 
 gem "devise"
+gem "failbot_rails"
 gem "faraday-http-cache"
 gem "figaro"
 gem "jquery-rails"
@@ -31,6 +32,7 @@ group :development do
 end
 
 group :production do
+  gem "heroku-deflater"
   gem "redis-rails"
 end
 

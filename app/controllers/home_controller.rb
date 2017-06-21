@@ -6,4 +6,8 @@ class HomeController < ApplicationController
   def maintainers
     render :maintainers
   end
+
+  def boomtown
+    raise "Welcome to Boom Town!"
+  end
 end
