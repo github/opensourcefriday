@@ -1,4 +1,4 @@
-Rails.application.configure do
+Rails.application.configure do # rubocop:disable Metrics/BlockLength
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
@@ -55,13 +55,26 @@ Rails.application.configure do
   # Prepend all log lines with the following tags.
   config.log_tags = [:request_id]
 
-  # Use a different cache store in production.
-  config.cache_store = :redis_store
+  # Use a memcached cache store in production.
+  client = Dalli::Client.new \
+    (ENV["MEMCACHIER_SERVERS"] || "").split(","),
+    username: ENV["MEMCACHIER_USERNAME"],
+    password: ENV["MEMCACHIER_PASSWORD"],
+    failover: true,
+    socket_timeout: 1.5,
+    socket_failure_delay: 0.2,
+    value_max_bytes: 10_485_760,
+    pool_size: ENV.fetch("RAILS_MAX_THREADS") { 5 }.to_i
+  config.action_dispatch.rack_cache = {
+    metastore: client,
+    entitystore: client,
+  }
+  config.cache_store = :dalli_store
 
   # Use a real queuing backend for Active Job (and separate queues per environment)
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "ossfriday_#{Rails.env}"
-  config.action_mailer.perform_caching = false
+  # config.action_mailer.perform_caching = false
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
