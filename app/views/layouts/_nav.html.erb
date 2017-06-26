@@ -17,7 +17,7 @@
     <a class="ml-4 text-blue d-inline-block" href="/users/<%= current_user.github_username %>">
       <%= current_user.github_username %>
     </a>
-    <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "ml-4 text-green" %>
+    <%= link_to "Sign Out", destroy_user_session_path, class: "ml-4 text-green" %>
   <% else %>
     <%= link_to user_github_omniauth_authorize_path, class: "ml-4 d-inline-block" do %>
       Sign up with GitHub
