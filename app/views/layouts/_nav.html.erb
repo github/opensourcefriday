@@ -1,4 +1,4 @@
-<nav class="float-sm-right text-center">
+<nav class="text-center">
   <a href="/#participate">Contributors</a>
 
   <% if request.path == "/businesses" %>
@@ -14,13 +14,19 @@
   <% end %>
 
   <% if current_user %>
-    <a class="ml-4 text-blue d-inline-block" href="/users/<%= current_user.github_username %>">
+    <span class="f5 mx-6 mr-sm-0 ml-sm-4 mt-3 mt-sm-0 d-block d-sm-inline-block border rounded-1">
+
+    <a class="d-inline-block py-2 px-3 border-right link-gray-dark" href="/users/<%= current_user.github_username %>">
       <%= current_user.github_username %>
     </a>
-    <%= link_to "Sign Out", destroy_user_session_path, class: "ml-4 text-green" %>
+
+    <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "py-2 px-3" %>
+
+    </span>
+
   <% else %>
-    <%= link_to user_github_omniauth_authorize_path, class: "ml-4 d-inline-block" do %>
-      Sign up with GitHub
+    <%= link_to user_github_omniauth_authorize_path, class: "mx-6 mr-sm-0 ml-sm-4 mt-3 mt-sm-0 d-block d-sm-inline-block btn btn-outline" do %>
+      Sign up
     <% end %>
   <% end %>
 </nav>

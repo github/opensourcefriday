@@ -38,30 +38,28 @@ img.img-responsive {
 
 .pquote {
   border: $border;
-  padding: $spacer-2;
+  border-radius: $border-radius * 2;
+  box-shadow: $box-shadow;
+  padding: $spacer-3;
   margin-top: $spacer-3;
   margin-bottom: $spacer-3;
   text-align: center;
-  width: 100%;
 
   @include breakpoint(md) {
-    width: 50%;
-    font-size: 18px;
-    padding: 7.5%;
-    margin-right: 2.5%;
-    margin-left: 2.5%;
+    color: $gray-600;
+    padding: $spacer-6;
   }
+}
 
-  img.pquote-avatar {
-    border-radius: 50px;
-    border: 3px solid #F3F3F3;
-    height: 90px;
-    width: 90px;
-    display: block;
-    margin: 0 auto $spacer-2;
-    @include breakpoint(md) {
-      margin: 0 auto $spacer-4;
-    }
+img.pquote-avatar {
+  border-radius: 50px;
+  border: 3px solid $gray-200;
+  height: 90px;
+  width: 90px;
+  display: block;
+  margin: 0 auto $spacer-2;
+  @include breakpoint(md) {
+    margin: 0 auto $spacer-4;
   }
 }
 
@@ -70,20 +68,17 @@ img.img-responsive {
   font-size: 14px;
 }
 
-
-header {
-  background: no-repeat url(https://image.shutterstock.com/z/stock-vector-abstract-illustration-with-logistics-infrastructure-185865251.jpg) center 255px;
-  background-size: 1100px;
-  position: relative;
-  padding-bottom: 180px !important;
+@keyframes bikeIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
-.triband-hr {
-  height: 1px;
-  margin: 0;
-  clear: both;
-  background-image: linear-gradient(to right, #b8e1ff 33.3333%, #fcd2c5 33.3333%, #fcd2c5 66.6666%, #e0c5eb 66.6666%);
-  border: 0;
+.bike-animate-in {
+  animation: 2.5s ease-out 0s 1 bikeIn;
 }
 
 .company-logo {
