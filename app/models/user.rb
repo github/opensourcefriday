@@ -18,7 +18,7 @@ class User < ApplicationRecord
       u.password = Devise.friendly_token[0, 20]
       u.oauth_token = auth.credentials.token
     end
-    if user && user.oauth_token.blank? && auth.credentials.token
+    if user && user.oauth_token != auth.credentials.token
       user.update_attribute(:oauth_token, auth.credentials.token)
     end
     user
