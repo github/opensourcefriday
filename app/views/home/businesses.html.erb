@@ -1,12 +1,19 @@
 <div class="bg-gray mb-6 border-bottom jumbotron px-3">
-  <div class="container-md text-center">
-    <h1 class="alt-h1 mb-3">Your business runs on <br> open source software</h1>
-    <p class="alt-lead text-gray mb-md-5 col-md-10 mx-auto">Once a week, every week. Take time to invest in the open source software you use and love.</p>
-    <% unless current_user %>
-      <%= link_to user_github_omniauth_authorize_path, class: "btn btn-large btn-primary mb-md-4", role: "button" do %>
-        Sign up with GitHub
+  <div class="container-lg px-3 d-md-flex flex-wrap flex-items-center">
+    <div class="col-9 col-sm-7 col-md-5 mx-auto mb-4 text-center text-md-left">
+      <%= image_tag("leadership.svg", class: "img-responsive") %>
+    </div>
+    <div class="col-md-7 pl-md-6 text-center text-md-left">
+      <h1 class="alt-h1 mb-2">
+        Your business runs on open source software
+      </h1>
+      <p class="alt-lead text-gray mb-md-5">Once a week, every week. Take time to invest in the open source software you use and&nbsp;love.</p>
+      <% unless current_user %>
+        <%= link_to user_github_omniauth_authorize_path, class: "btn btn-large btn-primary", role: "button" do %>
+          Sign up with GitHub
+        <% end %>
       <% end %>
-    <% end %>
+    </div>
   </div>
 </div>
 
