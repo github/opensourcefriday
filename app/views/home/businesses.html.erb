@@ -2,79 +2,79 @@
   <div class="container-md text-center">
     <h1 class="alt-h1 mb-3">Your business runs on <br> open source software</h1>
     <p class="alt-lead text-gray mb-md-5 col-md-10 mx-auto">Once a week, every week. Take time to invest in the open source software you use and love.</p>
+    <% unless current_user %>
+      <%= link_to user_github_omniauth_authorize_path, class: "btn btn-large btn-primary mb-md-4", role: "button" do %>
+        Sign up with GitHub
+      <% end %>
+    <% end %>
   </div>
 </div>
 
-<div class="container-md py-6 py-3 px-3 text-center">
+<div class="container-lg py-6 py-3 px-3 text-center">
   <h2 class="alt-h2">Your business depends on it</h2>
 
   <p class="alt-lead text-gray mx-auto text-center mb-6">
     Companies need open source software to run effectively.
   </p>
-
-  <div class="d-flex flex-wrap flex-justify-between">
-
-      <div class="mb-6 col-md-5 mx-auto">
-        <img src="https://assets-cdn.github.com/images/modules/site/icons/opensource-ico-future.svg?sn" class="mb-2" alt="" aria-hidden="">
-        <h3 class="h4 mb-2">Improve the technology you rely on</h3>
-        <p class="text-gray">
-          Direct participation in open source gives your organization a voice in the software you depend on.
-        </p>
-      </div>
-
-      <div class="mb-6 col-md-5 mx-auto">
-        <img src="https://assets-cdn.github.com/images/modules/site/icons/opensource-ico-best.svg?sn" class="mb-2" alt="" aria-hidden="">
-        <h3 class="h4 mb-2">Work better together</h3>
-        <p class="text-gray">
-          Open source development models are at the forefront of software collaboration. Developers who work on open source learn intuitively to improve quality, speed, and transparency at your organization.
-        </p>
-      </div>
-
-      <div class="mb-6 col-md-5 mx-auto">
-        <img src="https://assets-cdn.github.com/images/modules/site/icons/opensource-ico-grow.svg?sn" class="mb-2" alt="" aria-hidden="">
-        <h3 class="h4 mb-2">Reduce overhead</h3>
-        <p class="text-gray">
-          Contributing regularly to open source saves money and developer hours by reducing the custom software you need to maintain.
-        </p>
-      </div>
-
-      <div class="mb-6 col-md-5 mx-auto">
-        <img src="https://assets-cdn.github.com/images/modules/site/icons/opensource-ico-future.svg?sn" class="mb-2" alt="" aria-hidden="">
-        <div>
-          <h3 class="h4 mb-2">Attract and retain talent</h3>
-          <p class="text-gray">
-            Employees that work on open source boost their, and their employer's, reputation.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
+</div>
+<div class="container-lg mx-auto gut-lg text-center">
+  <div class="mb-6 col-md-6 float-md-left">
+    <%= image_tag("improve-technology.svg", class: "img-responsive mb-3", height: "100px") %>
+    <h3 class="alt-h3 mb-2">Improve the technology you rely on</h3>
+    <p class="text-gray">
+      Direct participation in open source gives your organization a voice in the software you depend on.
+    </p>
+  </div>
+  <div class="mb-6 col-md-6 float-md-left">
+    <%= image_tag("work-better.svg", class: "img-responsive mb-3", height: "100px") %>
+    <h3 class="alt-h3 mb-2">Work better together</h3>
+    <p class="text-gray">
+      Open source development models are at the forefront of software collaboration. Developers who work on open source learn intuitively to improve quality, speed, and transparency at your organization.
+    </p>
+  </div>
+</div>
+<div class="container-lg mx-auto gut-lg text-center pb-6">
+  <div class="mb-6 col-md-6 float-md-left">
+    <%= image_tag("reduce-overhead.svg", class: "img-responsive mb-3", height: "100px") %>
+    <h3 class="alt-h3 mb-2">Reduce overhead</h3>
+    <p class="text-gray">
+      Contributing regularly to open source saves money and developer hours by reducing the custom software you need to maintain.
+    </p>
+  </div>
+  <div class="mb-6 col-md-6 float-md-left">
+    <%= image_tag("attract-talent.svg", class: "img-responsive mb-3", height: "100px") %>
+    <h3 class="alt-h3 mb-2">Attract and retain talent</h3>
+    <p class="text-gray">
+      Employees that work on open source boost their, and their employer's, reputation.
+    </p>
   </div>
 </div>
 
 <div class="border-top py-5 bg-gray-light">
-  <div class="pt-4 pb-3 container-md">
-    <h2 class="alt-h2 text-center">Open Source Friday in your organization</h2>
+  <div class="py-4 py-md-6 container-lg">
+    <h2 class="alt-h2 lh-condensed mb-2 text-center">Open Source Friday in your organization</h2>
+    <p class="alt-lead text-gray mx-auto text-center mb-md-6 col-md-8">Improving your developer culture is too important to be left unplanned.</p>
 
-    <p class="alt-lead text-gray mx-auto text-center mb-6 col-8">Improving your developer culture is too important to be left unplanned.</p>
-
-    <div class="py-6 d-flex flex-wrap flex-justify-between">
+    <div class="py-6 px-3 d-flex flex-wrap flex-justify-between">
 
       <div class="col-md-7">
-        <div class="d-flex flex-content-end flex-items-center">
-          <img src="https://assets-cdn.github.com/images/modules/site/icons/opensource-ico-future.svg?sn" class="pr-4" alt="" aria-hidden="">
-          <div>
-            <h3 class="h4 mb-2">Set aside time</h3>
+        <div class="clearfix mb-4 mb-md-6">
+          <div class="float-left mr-4">
+            <%= image_tag("set-aside-time.svg", class: "img-responsive mb-3", width: "100px") %>
+          </div>
+          <div class="overflow-hidden">
+            <h3 class="alt-h3 mb-2">Set aside time</h3>
             <p class="text-gray">
               Each Friday, encourage your managers, employees, and coworkers to spend at least two hours working on the open source projects your organization already uses.
             </p>
           </div>
         </div>
-        <div class="d-flex my-4 flex-content-end flex-items-center">
-          <img src="https://assets-cdn.github.com/images/modules/site/icons/opensource-ico-grow.svg?sn" class="pr-4" alt="" aria-hidden="">
-          <div>
-            <h3 class="h4 mb-2">Make it a habit</h3>
+        <div class="clearfix">
+          <div class="float-left mr-4">
+            <%= image_tag("make-habit.svg", class: "img-responsive mb-3", width: "100px") %>
+          </div>
+          <div class="overflow-hidden">
+            <h3 class="alt-h3 mb-2">Make it a habit</h3>
             <p class="text-gray">
               Create clear, internal policies so employees can easily and consistently contribute to open source.
             </p>
@@ -82,7 +82,7 @@
         </div>
       </div>
 
-      <div class="col-md-4 p-4 text-center d-flex flex-wrap flex-content-center flex-items-center border flex-justify-center bg-white">
+      <div class="col-md-4 p-4 mt-4 text-center d-flex flex-wrap flex-content-center flex-items-center border flex-justify-center bg-white rounded-2 box-shadow">
         <%= render 'layouts/calendar' %>
       </div>
 
@@ -97,7 +97,7 @@
 
     <div class="pquote-container container-lg mt-3 mb-6 d-flex flex-justify-between">
       <aside class="pquote">
-        <img src="https://avatars1.githubusercontent.com/u/691109?v=3&s=180" class="pquote-avatar" alt="avatar">
+        <img src="https://avatars1.githubusercontent.com/u/691109?v=3&s=100" class="pquote-avatar" alt="avatar">
         Open source aligns with our mission to make the world more open and connected. Working with the community gives us an opportunity to share our work and the challenges we’re aiming to solve, and encourages talented people to contribute their ideas and effort to move the world forward.
         <p markdown="1" class="pquote-credit">
       &mdash; Christine Abernathy (<a href="https://github.com/caabernathy">@caabernathy</a>),<br>Open Source at <a href="https://github.com/facebook">Facebook</a>
@@ -105,7 +105,7 @@
       </aside>
 
       <aside class="pquote">
-        <img src="https://avatars0.githubusercontent.com/u/1112?v=3&s=180" class="pquote-avatar" alt="avatar">
+        <img src="https://avatars0.githubusercontent.com/u/1112?v=3&s=100" class="pquote-avatar" alt="avatar">
         Contributing to open source not only allows businesses of every size to take advantage and build upon the talents of others, it’s also an avenue for those new to coding to acclimate themselves to the development process in ways that allow them to practice, experiment, and showcase themselves as valuable and contributing members of the community.
         <p markdown="1" class="pquote-credit">
       &mdash; Will Norris (<a href="https://github.com/willnorris">@willnorris</a>),<br>Open Source at <a href="https://github.com/google">Google</a>
@@ -114,13 +114,13 @@
     </div>
 
     <div class="my-6 d-flex flex-column flex-wrap flex-sm-row flex-justify-center flex-items-center">
-      <a href="https://opensource.google.com"><img class="company-logo smaller" src="/logos/google.png"></a>
-      <a href="https://open.microsoft.com"><img class="company-logo smaller" src="/logos/microsoft.png"></a>
-      <a href="https://code.facebook.com/projects/"><img class="company-logo smaller" src="/logos/facebook.png"></a>
-      <a href="http://comcast.com"><img class="company-logo smaller" src="/logos/comcast.png"></a>
-      <a href="https://travis-ci.com"><img class="company-logo smaller" src="/logos/travisci.png"></a>
-      <a href="https://thoughtbot.com"><img class="company-logo smaller" src="/logos/thoughtbot.png"></a>
-      <a href="https://github.com/open-source"><img class="company-logo smaller" src="/logos/github.png"></a>
+      <a href="https://opensource.google.com"><img class="company-logo smaller desaturate" src="/logos/google.png"></a>
+      <a href="https://open.microsoft.com"><img class="company-logo smaller desaturate" src="/logos/microsoft.png"></a>
+      <a href="https://code.facebook.com/projects/"><img class="company-logo smaller desaturate" src="/logos/facebook.png"></a>
+      <a href="http://comcast.com"><img class="company-logo smaller desaturate" src="/logos/comcast.png"></a>
+      <a href="https://travis-ci.com"><img class="company-logo smaller desaturate" src="/logos/travisci.png"></a>
+      <a href="https://thoughtbot.com"><img class="company-logo smaller desaturate" src="/logos/thoughtbot.png"></a>
+      <a href="https://github.com/open-source"><img class="company-logo smaller desaturate" src="/logos/github.png"></a>
     </div>
 
   </div>
@@ -131,14 +131,14 @@
     <div class="d-flex flex-column flex-sm-row mx-2 my-6">
       <div class="col-lg-4 mx-auto">
         <h2 class="alt-h3 my-2">
-          <a href="/#participate">Contributors<%= octicon 'chevron-right', height: '26', class: 'ml-2 text-inherit' %></a>
+          <a href="/#participate">Contributors<%= octicon 'chevron-right', height: '20', class: 'ml-2 v-align-middle' %></a>
         </h2>
         <p class="text-gray f4">Your business runs on open source. Learn how to get involved.</p>
       </div>
 
       <div class="col-lg-4 mx-auto">
         <h2 class="alt-h3 my-2">
-          <a href="/maintainers">Maintainers<%= octicon 'chevron-right', height: '26', class: 'ml-2 text-inherit' %></a>
+          <a href="/maintainers">Maintainers<%= octicon 'chevron-right', height: '20', class: 'ml-2 v-align-middle' %></a>
         </h2>
         <p class="text-gray f4">Give your project some love to help others contribute where you need it most.</p>
       </div>
