@@ -1,18 +1,20 @@
 <div class="bg-gray mb-6 border-bottom jumbotron px-3">
-  <div class="container-lg px-3 d-md-flex flex-wrap flex-items-center">
-    <div class="col-7 col-sm-5 mx-auto mb-4 text-center text-md-left">
-      <%= image_tag("best-practices.svg", class: "img-responsive") %>
-    </div>
-    <div class="col-md-7 pl-md-6 text-center text-md-left">
-      <h1 class="alt-h1 mb-2">
-        Build software with help from&nbsp;others
-      </h1>
-      <p class="alt-lead text-gray mb-md-5">Every Friday, give your software project some love and make it easier to others&nbsp;contribute.</p>
-      <% unless current_user %>
-        <%= link_to user_github_omniauth_authorize_path, class: "btn btn-large btn-primary", role: "button" do %>
-          Sign up with GitHub
+  <div class="container-lg px-3">
+    <div class="d-md-flex flex-wrap flex-items-center">
+      <div class="col-7 col-sm-5 mx-auto mb-4 text-center text-md-left">
+        <%= image_tag("best-practices.svg", class: "img-responsive") %>
+      </div>
+      <div class="col-md-7 pl-md-6 text-center text-md-left">
+        <h1 class="alt-h1 mb-2">
+          Build software with help from&nbsp;others
+        </h1>
+        <p class="alt-lead text-gray mb-md-5">Every Friday, give your software project some love and make it easier to others&nbsp;contribute.</p>
+        <% unless current_user %>
+          <%= link_to user_github_omniauth_authorize_path, class: "btn btn-large btn-primary", role: "button" do %>
+            Sign up with GitHub
+          <% end %>
         <% end %>
-      <% end %>
+      </div>
     </div>
   </div>
 </div>
