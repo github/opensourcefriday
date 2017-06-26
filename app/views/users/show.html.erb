@@ -1,6 +1,6 @@
-<div class="bg-gray mb-6 jumbotron px-3">
+<div class="bg-gray mb-6 py-6">
 
-  <h3 class="container-md text-center alt-h2 mb-6">
+  <h3 class="container-lg px-3 text-center alt-h2 mb-6 pt-sm-6">
     <% if @user_is_current %>
       You have joined Open Source Friday!
     <% else %>
@@ -13,33 +13,33 @@
     <% end %>
   </h3>
 
-  <div class="container-md mx-auto d-flex flex-column flex-sm-row flex-justify-between">
+  <div class="container-lg px-3 mx-auto d-flex flex-column flex-sm-row flex-items-center flex-justify-between pb-sm-6">
     <div class="col-sm-3 mb-4">
       <img class="avatar rounded-2 img-responsive" src="<%= @avatar %>&s=400">
     </div>
 
     <div class="col-sm-7">
-      <p class="text-gray mb-2">
+      <p class="mb-2">
         <% if @name %>
           <span class="d-inline-block mr-3"><%= octicon("mark-github") %> <a href="https://github.com/<%= @nickname %>"><%= @nickname %></a></span>
         <% end %>
       </p>
-      <p class="text-gray mb-2">
+      <p class="mb-2">
         <% if @company %>
           <span class="d-inline-block mr-3"><%= octicon("organization") %> <a href="https://github.com/<%= @company %>"><%= @company %></a></span>
         <% end %>
       </p>
-      <p class="text-gray mb-2">
+      <p class="mb-2">
         <% if @location %>
           <span class="d-inline-block mr-3"><%= octicon("location") %> <%= @location %></span>
         <% end %>
       </p>
-      <p class="text-gray mb-2">
+      <p class="mb-2">
         <% if @homepage %>
           <span class="d-inline-block"><%= octicon("external-link") %> <%= @homepage %></span>
         <% end %>
       </p>
-      <p class="text-gray mb-2">
+      <p class="text-gray mb-2 f5 mb-4">
         <%= @bio %>
       </p>
       <% @orgs.each do |org| %>
@@ -86,23 +86,24 @@
   <% end %>
 </div>
 
-<div class="container-md py-6 py-3 px-3">
+<div class="container-lg py-6 py-3 px-3">
   <% if @user_exists %>
 
-  <h3 class="alt-h3 col-md-11 mb-5 mx-auto text-center">
-  <% if @prs_and_events.empty? %>
-    No Friday pull requests or events in the last 3 months.
-  <% else %>
-    <%= @prs_count %> Friday pull <%= "request".pluralize(@prs_count) %> in the last 3 months<%= " (incomplete list)" if @prs_incomplete %><%= " and <br>#{@events_count} Friday events in their last 1,000 events".html_safe unless @events.empty? %>:
-  <% end %>
-  </h3>
   <div class="col-md-8 mb-4 mx-auto">
+    <h3 class="alt-h3 mb-5 mx-auto">
+    <% if @prs_and_events.empty? %>
+      No Friday pull requests or events in the last 3 months.
+    <% else %>
+      <%= @prs_count %> Friday pull <%= "request".pluralize(@prs_count) %> in the last 3 months<%= "(incomplete list)" if @prs_incomplete %><%= "and #{@events_count} Friday events in their last 1,000 events".html_safe unless @events.empty? %>:
+    <% end %>
+    </h3>
+
     <% @prs_and_events.each do |date, prs_and_events| %>
-    <h3 class="h4 mt-2"><%= date.to_formatted_s(:long) %></h3>
+    <h3 class="h4 pb-2 mb-3 mt-5 border-bottom"><%= date.to_formatted_s(:long) %></h3>
     <% prs_and_events.each do |pr_or_event| %>
-    <ul>
-      <li>
-        <a href="https://github.com/<%= pr_or_event[:repo] %>">
+    <ul class="ml-3">
+      <li class="mb-2">
+        <a href="https://github.com/<%= pr_or_event[:repo] %>" class="link-gray">
           <%= pr_or_event[:repo] %>
         </a>:
         <a href="<%= pr_or_event[:url] %>"><%= pr_or_event[:title] %></a>
