@@ -11,9 +11,9 @@ img.img-responsive {
   max-width: 100%;
 }
 
-// from GitHub.com’s About page
+// Tweet button based on GitHub.com’s About page
 .icon-twitter {
-  fill: #1da1f2; //Twitter brand blue
+  fill: #1da1f2 !important; //Twitter brand blue
   position: relative;
   top: 2px;
 }
@@ -25,6 +25,7 @@ img.img-responsive {
   }
 }
 
+// Pullquote stylings from opensource.guide
 .pquote-container {
   flex-direction: column;
   padding: $spacer-6;
@@ -33,7 +34,6 @@ img.img-responsive {
     flex-direction: row;
     padding: 0;
   }
-
 }
 
 .pquote {
@@ -43,7 +43,6 @@ img.img-responsive {
   margin-bottom: $spacer-3;
   text-align: center;
   width: 100%;
-
 
   @include breakpoint(md) {
     width: 50%;
@@ -64,7 +63,6 @@ img.img-responsive {
       margin: 0 auto $spacer-4;
     }
   }
-
 }
 
 .pquote-credit {
@@ -73,13 +71,11 @@ img.img-responsive {
 }
 
 
-
-
 header {
-  background: no-repeat url(https://image.shutterstock.com/z/stock-vector-abstract-illustration-with-logistics-infrastructure-185865251.jpg) center 355px;
+  background: no-repeat url(https://image.shutterstock.com/z/stock-vector-abstract-illustration-with-logistics-infrastructure-185865251.jpg) center 255px;
   background-size: 1100px;
   position: relative;
-  padding-bottom: 220px !important;
+  padding-bottom: 180px !important;
 }
 
 .triband-hr {
