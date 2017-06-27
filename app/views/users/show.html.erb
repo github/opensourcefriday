@@ -29,7 +29,13 @@
       </p>
       <p class="mb-2">
         <% if @company %>
-          <span class="d-inline-block mr-3"><%= octicon("organization") %> <a href="https://github.com/<%= @company %>"><%= @company %></a></span>
+          <span class="d-inline-block mr-3"><%= octicon("organization") %>
+            <% if @company.start_with?("@") %>
+              <a href="https://github.com/<%= @company.sub("@", "") %>"><%= @company %></a>
+            <% else %>
+              <%= @company %>
+            <% end %>
+          </span>
         <% end %>
       </p>
       <p class="mb-2">
