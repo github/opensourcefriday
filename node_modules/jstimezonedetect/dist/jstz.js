@@ -344,7 +344,7 @@ var jstz = (function () {
          * Builds up the current timezones DST rules for the years defined
          * in the jstz.olson.dst_rules.years array.
          *
-         * If there are no DST occurences for those years, immediately returns
+         * If there are no DST occurrences for those years, immediately returns
          * the preliminary timezone. Otherwise proceeds and tries to solve
          * ambiguities.
          *
