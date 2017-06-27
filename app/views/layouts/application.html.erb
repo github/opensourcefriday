@@ -13,9 +13,10 @@
     <% end %>
     <meta name="description" content="<%= yield :description %>">
     <meta property="og:title" content="<%= yield :title %>" />
+    <meta property="og:description" content="<%= yield :description %>" />
     <meta property="og:url" content="<%= request.original_url %>" />
     <meta property="og:site_name" content="<%= @site_name %>">
-    <%= tag :meta, property: 'og:image', content: image_url("social-graphic.jpg") %>
+    <meta property="og:image" content="<%= image_url("social-graphic.jpg") %>">
     <meta name="twitter:card" content="summary_large_image">
 
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
