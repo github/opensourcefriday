@@ -181,7 +181,7 @@ A vertical list of filters. Grey text on white background. Selecting a filter fr
 `.subnav` is navigation that is typically used when on a dashboard type interface with another set of navigation above it. This helps distinguish navigation hierarchy.
 
 ```html
-<nav class="subnav" aria-label="Respository">
+<nav class="subnav" aria-label="Repository">
   <a href="#url" class="subnav-item selected" aria-current="page">Item 1</a>
   <a href="#url" class="subnav-item">Item 2</a>
   <a href="#url" class="subnav-item">Item 3</a>
