@@ -1,3 +1,6 @@
+<% content_for(:title, "Your business runs on open source software") %>
+<% content_for(:description, "Once a week, every week. Take time to invest in the open source software you use and love.") %>
+
 <div class="bg-gray mb-6 border-bottom jumbotron px-3">
   <div class="container-lg px-3">
     <div class="d-md-flex flex-wrap flex-items-center">
@@ -5,10 +8,8 @@
         <%= image_tag("leadership.svg", class: "img-responsive") %>
       </div>
       <div class="col-md-7 pl-md-6 text-center text-md-left">
-        <h1 class="alt-h1 mb-2">
-          Your business runs on open source software
-        </h1>
-        <p class="alt-lead text-gray mb-md-5">Once a week, every week. Take time to invest in the open source software you use and&nbsp;love.</p>
+        <h1 class="alt-h1 mb-2"><%= yield :title %></h1>
+        <p class="alt-lead text-gray mb-md-5"><%= nbsp_last_word(yield(:description)) %></p>
         <% unless current_user %>
           <%= link_to user_github_omniauth_authorize_path, class: "btn btn-large btn-primary", role: "button" do %>
             Sign up with GitHub
@@ -126,13 +127,13 @@
       </div>
     </div>
     <div class="my-6 d-flex flex-column flex-wrap flex-sm-row flex-justify-center flex-items-center">
-      <a href="https://opensource.google.com"><img class="company-logo smaller desaturate" src="/logos/google.png"></a>
-      <a href="https://open.microsoft.com"><img class="company-logo smaller desaturate" src="/logos/microsoft.png"></a>
-      <a href="https://code.facebook.com/projects/"><img class="company-logo smaller desaturate" src="/logos/facebook.png"></a>
-      <a href="http://comcast.com"><img class="company-logo smaller desaturate" src="/logos/comcast.png"></a>
-      <a href="https://travis-ci.com"><img class="company-logo smaller desaturate" src="/logos/travisci.png"></a>
-      <a href="https://thoughtbot.com"><img class="company-logo smaller desaturate" src="/logos/thoughtbot.png"></a>
-      <a href="https://github.com/open-source"><img class="company-logo smaller desaturate" src="/logos/github.png"></a>
+      <a href="https://opensource.google.com"><img class="company-logo smaller desaturate" src="<%= image_url("logos/google.png") %>/"></a>
+      <a href="https://open.microsoft.com"><img class="company-logo smaller desaturate" src="<%= image_url("logos/microsoft.png") %>/"></a>
+      <a href="https://code.facebook.com/projects/"><img class="company-logo smaller desaturate" src="<%= image_url("logos/facebook.png") %>/"></a>
+      <a href="http://comcast.com"><img class="company-logo smaller desaturate" src="<%= image_url("logos/comcast.png") %>/"></a>
+      <a href="https://travis-ci.com"><img class="company-logo smaller desaturate" src="<%= image_url("logos/travisci.png") %>/"></a>
+      <a href="https://thoughtbot.com"><img class="company-logo smaller desaturate" src="<%= image_url("logos/thoughtbot.png") %>/"></a>
+      <a href="https://github.com/open-source"><img class="company-logo smaller desaturate" src="<%= image_url("logos/github.png") %>/"></a>
     </div>
   </div>
 </div>

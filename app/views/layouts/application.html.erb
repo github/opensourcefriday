@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Open Source Friday</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width">
     <%= csrf_meta_tags %>
 
-    <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+    <% @site_name = "Open Source Friday" %>
+    <% if content_for?(:full_title) %>
+      <title><%= yield :full_title %></title>
+    <% else %>
+      <title><%= yield :title %> | <%= @site_name %></title>
+    <% end %>
+    <meta name="description" content="<%= yield :description %>">
+    <meta property="og:title" content="<%= yield :title %>" />
+    <meta property="og:url" content="<%= request.original_url %>" />
+    <meta property="og:site_name" content="<%= @site_name %>">
+    <%= tag :meta, property: 'og:image', content: image_url("social-graphic.jpg") %>
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>

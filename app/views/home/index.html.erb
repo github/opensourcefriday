@@ -1,7 +1,11 @@
+<% content_for(:full_title, "Open Source Friday | This Friday, invest a few hours contributing to the software you use and love.") %>
+<% content_for(:title, "Open Source Friday") %>
+<% content_for(:description, "Open source is made by people just like you. This Friday, invest a few hours contributing to the software you use and love.") %>
+
 <header class="jumbotron text-center bg-gray px-3 pb-0">
   <div class="container-lg position-relative">
-    <h1 class="alt-h0 mb-2">Open Source Friday</h1>
-    <p class="alt-lead text-gray mb-md-5 col-md-8 mx-auto">Open source is made by people just like you. This Friday, invest a few hours contributing to the software you use and&nbsp;love.</p>
+    <h1 class="alt-h0 mb-2"><%= yield :title %></h1>
+    <p class="alt-lead text-gray mb-md-5 col-md-8 mx-auto"><%= nbsp_last_word(yield(:description)) %></p>
     <% unless current_user %>
       <%= link_to user_github_omniauth_authorize_path, class: "btn btn-large btn-primary mb-md-4", role: "button" do %>
         Sign up with GitHub
