@@ -4,21 +4,17 @@ Open source is made by people just like you. This Friday, invest a few hours con
 
 ## What is this?
 
+This repository is the source code for https://ossfriday.com
+
 Open Source Friday is a movement to encourage companies, people and maintainers to contribute a few hours contributing to open source every Friday.
 
-*Alternative name: 52 pull requests*
+Open Source (OSS) is the backbone of most of the software, tools, apps, electronics and more that we use every day. Not only is OSS Friday about encouraging people to contribute, but it's about encouraging businesses to give back to the software they use by setting aside time for our colleagues to work on OSS on the clock.
 
-Things that worked well for @andrew's 24 Pull Requests that we're replicating:
+By signing up to the website, you can view yours and your friends Friday contributions. You'll also find a number of guides on getting started with open source, but also ones on being a good maintainer. 
 
-- **opt-in for maintainers** - only point to projects that maintainers have agreed so we don't send a swarm of extra maintainer work to someone who doesn't want it or can't handle it.
-- **wisdom of crowds** - if lots of people are doing the same thing at the same time more people will make an effort to join in
-- **avoid rewards** - Getting free t-shirts or other kinds of gifts tends to bring out bad behaviour like PRs that change a single line of whitespace, which waste maintainers time and energy, the rewards should be less tangible
+### What this isn't
 
-Things we're trying:
-
-- **not tied to pull requests** - we're also considering maintainers events on issues, pushes, pull request reviews and releases.
-
-- **Three target audiences** - Individual contributors, maintainers and companies are the three types of audience we should be catering to, with documentation for each one on how to get involved.
+We are not a place where you're going to get free t-shirts or other kinds of gifts for your contributions. This tends to bring out bad behaviour like PRs that change a single line of whitespace, which waste maintainers time and energy, the rewards should be less tangible.
 
 ## Development
 
