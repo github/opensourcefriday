@@ -26,8 +26,8 @@ class UsersController < ApplicationController
 
     render :show
   rescue Octokit::NotFound
-    raise ActionController::RoutingError,
-          "GitHub user @#{params[:id]} not found!"
+    flash[:error] = "GitHub user @#{params[:id]} not found!"
+    redirect_to root_path
   end
 
   private
