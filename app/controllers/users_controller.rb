@@ -1,16 +1,24 @@
 class UsersController < ApplicationController
   def show
-    github_user = octokit.user params[:id]
-    @avatar = github_user.avatar_url
-    @name = github_user.name
-    @nickname = github_user.login
+    @avatar, @name, @nickname, @bio, @company, @location, @homepage, @orgs =
+      Rails.cache.fetch(
+        "#{params[:id]}/user_metadata",
+        expires_in: 1.day
+      ) do
+        github_user = octokit.user params[:id]
+        nickname = github_user.login
+        [
+          github_user.avatar_url,
+          github_user.name,
+          nickname,
+          github_user.bio,
+          github_user.company,
+          github_user.location,
+          github_user.homepage,
+          organisations(nickname),
+        ]
+      end
     @name_or_nickname = @name || @nickname
-    @bio = github_user.bio
-    @company = github_user.company
-    @location = github_user.location
-    @homepage = github_user.homepage
-
-    @orgs = organisations
 
     @user_is_current = current_user &&
                        current_user.github_username == @nickname
@@ -18,61 +26,63 @@ class UsersController < ApplicationController
     @user_exists = User.exists? github_username: @nickname
     @user_exists ||= params[:user_exists] unless Rails.env.production?
     if @user_exists
-      query_prs
-      query_events
+      @prs_count, @prs_incomplete, @prs = query_prs
+      @events_count, @events = query_events
       @prs_and_events = (@prs + @events).group_by { |pr| pr[:date] }
     end
     @prs_and_events ||= []
 
     render :show
   rescue Octokit::NotFound
-    raise ActionController::RoutingError,
-          "GitHub user @#{params[:id]} not found!"
+    flash[:error] = "GitHub user @#{params[:id]} not found!"
+    redirect_to root_path
   end
 
   private
 
-  def organisations
-    octokit.organizations(@nickname).map do |org|
+  def organisations(user)
+    octokit.organizations(user).map do |org|
       { name: org.login, avatar: org.avatar_url }
     end
   end
 
   def query_prs
-    query = "is:pr author:#{@nickname} is:public"
-    friday = Date.today.beginning_of_week :friday
-    # for the last 3 months
-    13.times { |i| query += " created:#{friday - (i * 7).days}" }
+    Rails.cache.fetch(
+      "#{@nickname}/prs_metadata",
+      expires_in: duration_until_next_saturday
+    ) do
+      query = "is:pr author:#{@nickname} is:public"
+      friday = Date.today.beginning_of_week :friday
+      # for the last 3 months
+      13.times { |i| query += " created:#{friday - (i * 7).days}" }
 
-    prs = Rails.cache.fetch("#{@nickname}/prs", expires_in: 7.days) do
       prs = octokit.search_issues query, sort: :created
       last_response = octokit.last_response
       while last_response.rels[:next]
         last_response = last_response.rels[:next].get
         prs.concat last_response.data
       end
-      prs
-    end
-    @prs_count = prs.total_count
-    @prs_incomplete = prs.items.size < prs.total_count
-    @prs = prs.items.map do |pr|
-      repo_name = pr.repository_url.sub(%r{^https://api.github.com/repos/}, "")
-      {
-        title: pr.title,
-        url: pr.html_url,
-        date: pr.created_at.to_date,
-        repo: repo_name,
-      }
+      total = prs.total_count
+      incomplete = prs.items.size < total
+      prs = prs.items.map do |pr|
+        repo_name = pr.repository_url
+                      .sub(%r{^https://api.github.com/repos/}, "")
+        {
+          title: pr.title,
+          url: pr.html_url,
+          date: pr.created_at.to_date,
+          repo: repo_name,
+        }
+      end
+      [total, incomplete, prs]
     end
   end
 
   def query_events
-    next_saturday = (Date.today + 7).beginning_of_week :saturday
-    days_until_next_saturday = (next_saturday - Date.today).to_i
-    duration_until_next_saturday = days_until_next_saturday.days
-
-    events = Rails.cache.fetch("#{@nickname}/public_events",
-                               expires_in: duration_until_next_saturday) do
+    Rails.cache.fetch(
+      "#{@nickname}/public_events_metadata",
+      expires_in: duration_until_next_saturday
+    ) do
       events = octokit.user_public_events(@nickname)
       last_event_created = events.last.try(:created_at) || DateTime.now
       last_response = octokit.last_response
@@ -81,11 +91,18 @@ class UsersController < ApplicationController
         events.concat last_response.data
         last_event_created = events.last.try(:created_at) || DateTime.now
       end
-      events
+      count = events.length
+      events = events.map { |event| event_metadata(event) }.compact
+      [count, events]
     end
+  end
 
-    @events = events.map { |event| event_metadata(event) }.compact
-    @events_count = @events.length
+  def duration_until_next_saturday
+    @duration_until_next_saturday ||= begin
+      next_saturday = (Date.today + 7).beginning_of_week :saturday
+      days_until_next_saturday = (next_saturday - Date.today).to_i
+      days_until_next_saturday.days
+    end
   end
 
   def event_metadata(event)
