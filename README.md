@@ -6,11 +6,11 @@ Open source is made by people just like you. This Friday, invest a few hours con
 
 This repository is the source code for https://ossfriday.com
 
-Open Source Friday is a movement to encourage companies, people and maintainers to contribute a few hours contributing to open source every Friday.
+Open Source Friday is a movement to encourage people, companies,and maintainers to contribute a few hours to open source software every Friday.
 
-Open Source (OSS) is the backbone of most of the software, tools, apps, electronics and more that we use every day. Not only is OSS Friday about encouraging people to contribute, but it's about encouraging businesses to give back to the software they use by setting aside time for our colleagues to work on OSS on the clock.
+Open Source Software (OSS) is the backbone of most of software, tools, apps, electronics and more that we use every day. Not only is OSS Friday about encouraging people to contribute, but it's about encouraging businesses to give back to the software they use by setting aside time for our colleagues to work on OSS on the clock.
 
-By signing up to the website, you can view yours and your friends Friday contributions. You'll also find a number of guides on getting started with open source, but also ones on being a good maintainer. 
+By signing up to the website, you can view and share your contributions as well as check to see your friends' Friday contributions. You'll also find a number of guides on getting started with open source, and also guides on being a good maintainer.
 
 ### What this isn't
 
@@ -47,7 +47,7 @@ If you're on macOS, have Homebrew installed, and you've set the environment vari
 ./script/server
 ```
 
-Otherwise, no worries! You can follow these instructions to install a local server.
+This should get you started with a local copy of this project on your local machine. Otherwise, if things don't go well. No worries! You can follow the following instructions to install all dependencies and setup a local server.
 
 First, you'll need to install Ruby. We recommend using the excellent [rbenv](https://github.com/rbenv/rbenv),
 and [ruby-build](https://github.com/rbenv/ruby-build)
@@ -93,9 +93,11 @@ our browser to <http://localhost:3000>
 ### Note on Patches/Pull Requests
 
  * Fork the project.
+ * Clone your fork to your local machine.
+ * Create a new branch for your feature/fix.
  * Make your feature addition or bug fix.
  * Add tests for it. This is important so we don't break it in a future version unintentionally.
- * Send a pull request. Bonus points for topic branches.
+ * Submit a pull request. Bonus points for topic branches.
 
 ### Code of Conduct
 
