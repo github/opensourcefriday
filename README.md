@@ -8,7 +8,7 @@ This repository is the source code for https://ossfriday.com
 
 Open Source Friday is a movement to encourage people, companies,and maintainers to contribute a few hours to open source software every Friday.
 
-Open Source Software (OSS) is the backbone of most of software, tools, apps, electronics and more that we use every day. Not only is OSS Friday about encouraging people to contribute, but it's about encouraging businesses to give back to the software they use by setting aside time for our colleagues to work on OSS on the clock.
+Open Source Software (OSS) is the backbone of most software, tools, apps, electronics and more that we use and love every day. Not only is OSS Friday about encouraging people to contribute, but it's about encouraging businesses to give back to the software they use by setting aside time for our colleagues to work on OSS on the clock.
 
 By signing up to the website, you can view and share your contributions as well as check to see your friends' Friday contributions. You'll also find a number of guides on getting started with open source, and also guides on being a good maintainer.
 
