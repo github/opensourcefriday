@@ -103,7 +103,7 @@
     <% if @prs_and_events.empty? %>
       No Friday pull requests or events in the last 3 months.
     <% else %>
-      <%= @prs_count %> Friday pull <%= "request".pluralize(@prs_count) %> in the last 3 months<%= "(incomplete list)" if @prs_incomplete %><%= " and #{@events_count} Friday events in their last 1,000 events".html_safe unless @events.empty? %>:
+      <%= @prs_count %> Friday pull <%= "request".pluralize(@prs_count) %> in the last 3 months<%= "(incomplete list)" if @prs_incomplete %><%= " and #{@events_count} Friday events in #{@user_is_current ? "your" : "their"} last 1,000 events".html_safe unless @events.empty? %>:
     <% end %>
     </h3>
 
