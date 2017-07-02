@@ -6,7 +6,7 @@ Open source is made by people just like you. This Friday, invest a few hours con
 
 This repository is the source code for https://ossfriday.com
 
-Open Source Friday is a movement to encourage people, companies,and maintainers to contribute a few hours to open source software every Friday.
+Open Source Friday is a movement to encourage people, companies, and maintainers to contribute a few hours to open source software every Friday.
 
 Open Source Software (OSS) is the backbone of most software, tools, apps, electronics and more that we use and love every day. Not only is OSS Friday about encouraging people to contribute, but it's about encouraging businesses to give back to the software they use by setting aside time for our colleagues to work on OSS on the clock.
 
