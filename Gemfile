@@ -14,6 +14,7 @@ gem "pg"
 gem "puma"
 gem "rails"
 gem "sassc-rails"
+gem "sitemap_generator"
 gem "turbolinks"
 gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
 gem "uglifier"
