@@ -28,7 +28,8 @@ class UsersController < ApplicationController
     if @user_exists
       @prs_count, @prs_incomplete, @prs = query_prs
       @events_count, @events = query_events
-      @prs_and_events = (@prs + @events).group_by { |pr| pr[:date] }
+      @prs_and_events = (@prs + @events).sort { |a, b| b[:date] <=> a[:date] }
+                                        .group_by { |pr| pr[:date] }
     end
     @prs_and_events ||= []
 
