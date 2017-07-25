@@ -56,4 +56,14 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     end
     assert_response :success
   end
+
+  test "should sign in with locale url parameter" do
+    mock_omniauth!
+    VCR.use_cassette("user_foobar") do
+      get user_github_omniauth_authorize_url, params: { locale: "en" }
+      follow_redirect!
+      follow_redirect!
+    end
+    assert_response :success
+  end
 end

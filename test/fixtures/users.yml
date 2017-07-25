@@ -1,5 +1,6 @@
 test:
   github_username: "TestUser"
+  language: "ja"
 
 MikeMcQuaid:
   github_username: "MikeMcQuaid"
