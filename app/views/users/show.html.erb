@@ -5,13 +5,13 @@
 
   <h3 class="container-lg px-3 text-center alt-h2 mb-6 pt-sm-6">
     <% if @user_is_current %>
-      You have joined Open Source Friday!
+      <%=t "users.welcome" %>
     <% else %>
-      <a href="https://github.com/<%= @nickname %>"><%= @name_or_nickname %></a> has
+      <a href="https://github.com/<%= @nickname %>"><%= @name_or_nickname %></a>
       <% if @user_exists %>
-        joined Open Source Friday!
+        <%=t "users.joined" %>
       <% else %>
-        not joined Open Source Friday (yet).
+        <%=t "users.not_joined" %>
       <% end %>
     <% end %>
   </h3>
@@ -60,29 +60,27 @@
     <div class="mt-6 border-top container-lg gut-md mx-auto text-center">
       <% page_url = "https://opensourcefriday.com/users/#{@nickname}" %>
       <h2 class="alt-h2 text-center mt-6 mb-4">
-        What should I do now?
+        <%=t "users.nextstep" %>
       </h2>
 
       <div class="col-md-4 float-md-left">
         <%= octicon 'squirrel', class: 'd-block mb-2 mx-auto', width: 28 %>
         <h3 class="alt-h3 mb-3">
-          Make your first contribution
+          <%=t "users.firststep" %>
         </h3>
-        <p><a href="https://opensource.guide/how-to-contribute/#finding-a-project-to-contribute-to">Find a project</a> to contribute to, or learn <a href="https://opensource.guide/how-to-contribute/#how-to-submit-a-contribution">how to make your first pull request</a>.</p>
+        <p><%=t("users.Find_a_project_html", how_to_contribute: "https://opensource.guide/how-to-contribute/#finding-a-project-to-contribute-to", submit_a_contribution: "https://opensource.guide/how-to-contribute/#how-to-submit-a-contribution") %></p>
       </div>
       <div class="col-md-4 float-md-left">
         <%= octicon 'smiley', class: 'd-block mb-2 mx-auto', height: 28 %>
-        <h3 class="alt-h3 mb-3">Tell your friends</h3>
+        <h3 class="alt-h3 mb-3"><%=t "users.friends" %></h3>
         <p class="text-gray">
-          Share
           <% if @prs_and_events.empty? %>
-            <% tweet = "I'm contributing to open source on #OpenSourceFriday: https://opensourcefriday.com. Join me!" %>
-            Open Source Friday
+            <%=t("users.share_will.description_html", url: page_url) %>
+            <% tweet = t("users.share_will.message_html") %>
           <% else %>
-            <% tweet = "Check out my contributions to open source on #OpenSourceFriday: #{page_url}" %>
-            your Open Source Friday contributions
+            <%=t("users.share_activity.description_html", url: page_url) %>
+            <% tweet = t("users.share_activity.message_html", url: page_url) %>
           <% end %>
-          with others <a href="<%= page_url %>">using this URL</a>.
         </p>
         <p><%= render partial: 'layouts/twitter', locals: { tweet: tweet } %></p>
       </div>
@@ -101,7 +99,7 @@
   <div class="col-md-8 mb-4 mx-auto">
     <h3 class="alt-h3 mb-5 mx-auto">
     <% if @prs_and_events.empty? %>
-      No Friday pull requests or events in the last 3 months.
+      <%=t "users.No_Friday_PR" %>
     <% else %>
       <%= @prs_count %> Friday pull <%= "request".pluralize(@prs_count) %> in the last 3 months<%= "(incomplete list)" if @prs_incomplete %><%= " and #{@events_count} Friday events in #{@user_is_current ? "your" : "their"} last 1,000 events".html_safe unless @events.empty? %>:
     <% end %>
