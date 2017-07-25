@@ -1,0 +1,178 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other # than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+ja:
+  full_title: "オープンソース フライデー | 今週の金曜日は、利用しているお気に入りのソフトウエアを数時間助けてみよう。"
+  Open Source Friday: "オープンソース フライデー"
+  full_description: "オープンソースは、あなたのような人が作ってます。今週の金曜日は、利用しているお気に入りのソフトウエアを数時間助けてみよう。"
+  Contributors: "貢献者"
+  Businesses: "ビジネス"
+  Maintainers: "メンテナ"
+  headline:
+    businesses: "ビジネスはオープンソースで動いている。参加方法を学ぼう。"
+    maintainers: "一番助けがほしいとき、 貢献してもらえるよう、 プロジェクトに愛情を注ごう。"
+    contributors: "貢献の意味、 プロジェクトの見つけ方、 そして、 プロジェクトを開始する方法を学ぶ。"
+  Sign up with GitHub: "GitHubでユーザ登録"
+  Sign up: "サインアップ"
+  Sign Out: "サインアウト"
+  
+  # app/views/home/index.html.erb
+  index:
+    main:
+      title: "オープンソースな金曜日に貢献する"
+      contribution: "貢献の方法を学ぶ"
+      link_html: "<a class=\"\" href=\"https://opensource.guide/how-to-contribute/\">ガイドを読む%{icon}</a>"
+    find:
+      title: "貢献するプロジェクトを見つける"
+      description: "さまざまなプロジェクトに渡って、デザイン、文書、運用、コードの全てのレベルでオープンソースへの貢献ができます。最初の貢献がどうあるべきかとか、どのようになるのか、を考えすぎないで。"
+      used:
+        title: "利用中のプロジェクト"
+        description: "使っていたり、使いたいプロジェクトについて考えることから始めよう。あなたが積極的に貢献するプロジェクトには、貴方が何度でも戻ってきたくなるはず。 "
+      issue:
+        title: "あなたが修正できる課題"
+        description: "次のサイトをみて、助けるプロジェクトを見つけよう:"
+        first: "最初のプルリク"
+        grabs: "Up For Grabs"
+        triage: "CodeTriage"
+      welcome:
+        title: "A warm welcome"
+        description_html: "GitHub の新規貢献者むけ<a href=\"%{url}\">プロジェクト一覧</a>で歴史があり、新規貢献者を歓迎する評判のよいプロジェクトを見つける。"
+
+  # app/views/home/business.html.erb
+  business:
+    title: "ビジネスはOSS上で動いている"
+    description: "毎週一回。 貴方が利用していて気に入っているオープンソース・ソフトウエアへ時間を投資しよう。"
+    reason:
+      title: "ビジネス拡大に不可欠"
+      description : "企業は、オープンソース・ソフトウエアを有効に使う必要があります。"
+      technology: 
+        title: "ビジネス基盤の技術を進化させる"
+        description: "オープンソースに直接参加して、組織の声を利用しているソフトウエアに反映させる。"
+    models:
+      title: "一緒に仕事を良くする"
+      description: "オープンソース開発モデルは、ソフトウエアのコラボレーションの最先端に位置づけられます。オープンソースで働く開発者は、組織の品質やスピード、そして透明性を高める方法を効果的に学ぶことができます。"
+    cost:
+      title: "オーバーヘッドの削減"
+      description: "オープンソースに定常的に貢献することで、維持メンテナンスしなければならないカスタムソフトウエアを削減することに繋がり、コストと開発者の時間を節約できます。"
+    reputation:
+      title: "有識者を引き付け留保しつづける"
+      description: "オープンソースに従事する社員は、彼ら自身と働く会社の評判を上げることになります。"
+    plan:
+      title: "あなたの会社や組織でのオープンソース・フライデー"
+      description: "企業の開発者カルチャーの向上はとても重要、計画しないなんて。"
+      encourage:
+        title: "時間を確保する"
+        description: "毎週金曜日に、あなたのチームの管理職や社員、パートナーメンバーに働きかけて、2時間を、チームが利用しているオープンソースプロジェクトのために過ごすことを推奨しよう。"
+      policy:
+        title: "習慣にしていこう"
+        description: "明確な内部ルールを策定しよう。社員は、安心して継続的にオープンソースに貢献できるようになります。"
+
+  # app/views/home/maitainers.html.erb
+  maintainers:
+    title: "他の人の助けを受けながらソフトウエアを作る"
+    description:  "毎週金曜日に、ソフトウエアプロジェクトに愛情を注いで、他の貢献者が参加しやすくする。"
+    involve:
+      title: "あなたのプロジェクトを見つけてもらう"
+      description: "プロジェクトの立ち上げは、ほんの最初のステップ。さあ、拡げて行きましょう。"
+      workload:
+        title: "負担を削減する:"
+        description_html: "<a href=\"%{url}\">コミュニティを活用するため</a>、プロジェクトのREADMEファイルに、プロジェクトが何をやっているか、そのスコープは何か、貢献を求めていること、そして、貢献の仕方を詳細に記載しよう。"
+      promote:
+        title: "ソフトウエアをPRする"
+        description_html: "Twitterアカウントを作ったり、ブログを開設したり、webサイトを立ち上げよう。<a href=\"%{url}\">みんなに知ってもらい、プロジェクトに注目</a>してもらうんだ。"
+    growing:
+      title: "コミュニティを拡大しよう"
+      description: "誰しも最初は初心者。他人のはじめての貢献の不安を和らげよう。"
+      document:
+        title: "すべてを文書に記載する"
+        description_html: "<a href=\"%{survey}\">GitHubの2017のオープンソース調査</a>で分かったことは、オープンソースユーザにとって、不完全な分かり難いドキュメントを見せられることが、最大の問題です。プロジェクトに貢献する方法の<a href=\"%{guide}\">確実な文書化を定着</a>させましょう。"
+      help:
+        title: "援助を得る"
+        Look_out_html: "未来ある潜在的な貢献者やメンテナに目配りをして<a href=\"%{url}\">プロジェクトの当事者意識を共有していきましょう</a>。とくに、最初の貢献を歓迎する努力をしよう。"
+    workflow:
+      title: "ワークフローを改善する"
+      description: "他のメンテナがどんな風にうまくやっているか、学びましょう。"
+      boundaries:
+        title: "境界線を引く"
+        description_html: "プロジェクトのスコープを決定し、<a href=\"%{pause}\">自分自身に明確な境界線を引きましょう</a>。NOと言う事は、<a href=\"%{sayno}\">YESと同じだけ大事です</a>。"
+      automation:
+        title: "自動化"
+        description_html: "あなたの時間をつくるため、<a href=\"%{url\">ロボットを導入し</a>、テストや他のチェックは出来るだけ自動化させよう。"
+    visitor:
+      title: "オープンソース フライデーの準備万端"
+      description: "いま時間を使って、将来に楽する。"
+
+  endosement:
+    title: "いい会社だね"
+    Kim_Crayton:
+      title_html: '&mdash; Kim Crayton (<a href="https://github.com/kmcrayton7">@kmcrayton7</a>),<br>Community Engineer, Writer, Founder'
+      message_html: "オープンオースへの貢献は、様々なサイズのビジネスに優位性をもたらし、有識者を育てることに繋がり、コーディングしたことのない人に、開発プロセスを通じて自己研鑽する方法を提供することにつながります。一人ひとりにとっても、練習になり、経験をつみ、スキルの証明になり、そして、コミュニティの貢献メンバーになることができます。"
+    Chris_Lamb:
+      title_html: '&mdash; Chris Lamb (<a href="https://github.com/lamby">@lamby</a>),<br><a href="https://www.debian.org">Debian Project</a> Leader'
+      message_html:  "I got to where I am today by contributing to open source software, allowing me to not only improve my skills as a software developer but also to increase my network of colleagues and to meet new and interesting friends from extremely diverse cultures. I can highly recommend it."
+    Will_Norris:
+      title_html: "&mdash; Will Norris (<a href=\"https://github.com/willnorris\">@willnorris</a>),<br>Open Source at <a href=\"https://github.com/google\">Google</a>"
+      message_html: "Contributing to open source projects continues to be one of the most popular 20% projects for Google engineers. Open source plays such an important role in so much of what we do, so we try to make <a href=\"https://opensource.google.com/docs/patching/\"> the process </a> as easy as possible."
+    Christine_Abernathy:
+      title_html: '&mdash; Christine Abernathy (<a href="https://github.com/caabernathy">@caabernathy</a>),<br>Open Source at <a href="https://github.com/facebook">Facebook</a>'
+      message_html: "Open source aligns with our mission to make the world more open and connected. Working with the community gives us an opportunity to share our work and the challenges we’re aiming to solve, and encourages talented people to contribute their ideas and effort to move the world forward."
+    Rich_Harris:
+      title_html: '&mdash; Rich Harris (<a href="https://github.com/Rich-Harris">@Rich-Harris</a>),<br><a href="https://github.com/rollup/rollup">Rollup</a> and <a href="https://github.com/sveltejs/svelte">Svelte</a> maintainer'
+      message_html: "The thing that most open source projects lack is not money, but time. Many maintainers have full-time jobs and can't realistically cut back their hours. What almost all projects need is more contributors. Open Source Friday is a perfect way for companies to support the open source ecosystem they depend on in a meaningful way."
+    Brett_Cannon:
+      title_html: '&mdash; Brett Cannon (<a href="https://github.com/brettcannon">@brettcannon</a>),<br><a href="https://github.com/python/cpython">Python core</a> developer'
+      message_html: 'Once you are a maintainer on a project that others rely on, open source goes from "sharing the code" to "sharing the maintenance". As we all know, "maintenance" takes time which is most effectively spent in a continuous block to help make sure you can finish that e.g. code review before you start to lose context.'
+
+  # app/views/users/show.rb
+  users:
+    welcome: "オープンソース フライデーに参加しました!"
+    joined: "はオープンソース フライデーに参加しました!"
+    not_joined:  "は、オープンソース フライデーに（まだ）参加してません。"
+    nextstep: "次はどうしよう？"
+    firststep: "最初の貢献をしてみよう"
+    friends: "友達におしえよう"
+    No_Friday_PR: "過去3か月間には、金曜日プルリクエストやイベントは無かったみたい。"
+    Find_a_project_html: "<a href=\"%{how_to_contribute}\">貢献するプロジェクトを見つける</a>、あるいは <a href=\"%{submit_a_contribution}\">最初のプルリクエストを送る方法を学ぶ</a>。"
+    share_will:
+      description_html: "<a href=\"%{url}\">このURL</a>を他の人に送って、Open Source Fridayを共有する。"
+      message_html: "#OpenSourceFriday に賛同して、OSS貢献しようとおもいます https://opensourcefriday.com 一緒に貢献しよう！"
+    share_activity:
+      description_html: "他の人にあなたのOpen Source Fridayでの貢献を共有して、<a href=\"%{url}\">このURL</a>を共有するメッセージを送る。"
+      message_html: "私の #OpenSourceFriday でのOSS貢献を %{url} で共有するよ！"
+ 
+  # app/views/layouts/_calendar.erb
+  calender:
+    title: "予定を入れる"
+    description: "次の金曜日にオープンソース フライデーの予定を入れる。"
+    button:  "予定表に追加"
+
+  # app/views/layouts/_mailchimp.html.erb
+  mailchimp:
+    title: "配信をうけとる"
+    description: "GitHubの最新オープンソース技術情報を真っ先にうけとろう。"
+
+  # app/views/layouts/application.html.erb
+  Error: "エラー: "
+  # (code icon) with  (love icon) by (github icon) and friends
+  with: "は"
+  by: "を込めて"
+  and: "と"
+  friends: "同志から"
+
