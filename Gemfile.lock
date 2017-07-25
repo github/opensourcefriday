@@ -203,6 +203,8 @@ GEM
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.1)
+    sitemap_generator (5.3.1)
+      builder (~> 3.0)
     spring (2.0.1)
       activesupport (>= 4.2)
     spring-watcher-listen (2.0.1)
@@ -266,6 +268,7 @@ DEPENDENCIES
   rails
   rubocop
   sassc-rails
+  sitemap_generator
   spring
   spring-watcher-listen
   turbolinks

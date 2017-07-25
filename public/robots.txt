@@ -1,2 +1,2 @@
 User-agent: *
-Allow: /
+Sitemap: https://opensourcefriday.com/sitemap.xml.gz
