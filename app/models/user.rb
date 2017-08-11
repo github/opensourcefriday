@@ -17,6 +17,7 @@ class User < ApplicationRecord
       u.github_username = github_username
       u.password = Devise.friendly_token[0, 20]
       u.oauth_token = auth.credentials.token
+      u.language = I18n.locale
     end
     if user && user.oauth_token != auth.credentials.token
       user.update_attribute(:oauth_token, auth.credentials.token)
