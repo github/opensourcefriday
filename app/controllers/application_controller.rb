@@ -12,7 +12,13 @@ class ApplicationController < ActionController::Base
   end
 
   def default_url_options(*)
-    { locale: I18n.locale == I18n.default_locale ? nil : I18n.locale }
+    { locale:
+        if !I18n.locale || !available_language?(I18n.locale) ||
+           I18n.locale == I18n.default_locale # omit when default
+          nil
+        else
+          I18n.locale
+        end, }
   end
 
   def after_sign_in_path_for(_resource)
