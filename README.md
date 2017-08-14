@@ -4,21 +4,17 @@ Open source is made by people just like you. This Friday, invest a few hours con
 
 ## What is this?
 
-Open Source Friday is a movement to encourage companies, people and maintainers to contribute a few hours contributing to open source every Friday.
+This repository is the source code for https://opensourcefriday.com.
 
-*Alternative name: 52 pull requests*
+Open Source Friday is a movement to encourage people, companies, and maintainers to contribute a few hours to open source software every Friday.
 
-Things that worked well for @andrew's 24 Pull Requests that we're replicating:
+Open Source Software (OSS) is the backbone of most software, tools, apps, electronics and more that we use every day. Not only is Open Source Friday about encouraging people to contribute, but it's about encouraging businesses to give back to the software they use by setting aside time for our colleagues to work on OSS on the clock.
 
-- **opt-in for maintainers** - only point to projects that maintainers have agreed so we don't send a swarm of extra maintainer work to someone who doesn't want it or can't handle it.
-- **wisdom of crowds** - if lots of people are doing the same thing at the same time more people will make an effort to join in
-- **avoid rewards** - Getting free t-shirts or other kinds of gifts tends to bring out bad behaviour like PRs that change a single line of whitespace, which waste maintainers time and energy, the rewards should be less tangible
+By signing up to the website, you can view and share you and your friends' Friday contributions. You'll also find a number of guides on getting started with open source and being a good maintainer.
 
-Things we're trying:
+### What this isn't
 
-- **not tied to pull requests** - we're also considering maintainers events on issues, pushes, pull request reviews and releases.
-
-- **Three target audiences** - Individual contributors, maintainers and companies are the three types of audience we should be catering to, with documentation for each one on how to get involved.
+We are not a place where you're going to get free t-shirts or other kinds of gifts for your contributions. This tends to bring out bad behaviour like PRs that change a single line of whitespace, which waste maintainers time and energy, the rewards should be less tangible.
 
 ## Development
 
@@ -51,7 +47,7 @@ If you're on macOS, have Homebrew installed, and you've set the environment vari
 ./script/server
 ```
 
-Otherwise, no worries! You can follow these instructions to install a local server.
+This should get you started with a this project on your machine. Otherwise, no worries! You can use the following instructions to install all dependencies and setup a local server.
 
 First, you'll need to install Ruby. We recommend using the excellent [rbenv](https://github.com/rbenv/rbenv),
 and [ruby-build](https://github.com/rbenv/ruby-build)
@@ -97,9 +93,11 @@ our browser to <http://localhost:3000>
 ### Note on Patches/Pull Requests
 
  * Fork the project.
+ * Clone your fork to your machine.
+ * Create a new branch for your feature/fix.
  * Make your feature addition or bug fix.
  * Add tests for it. This is important so we don't break it in a future version unintentionally.
- * Send a pull request. Bonus points for topic branches.
+ * Submit a pull request.
 
 ### Code of Conduct
 
