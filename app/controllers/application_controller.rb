@@ -3,19 +3,21 @@ class ApplicationController < ActionController::Base
   before_action :set_language
 
   def set_language
-    I18n.locale = if user_signed_in?
-      current_user.language
-    else
-      determine_language
-    end
+    I18n.locale =
+      if user_signed_in?
+        current_user.language
+      else
+        determine_language
+      end
   end
 
   def default_url_options(*)
-    locale = if I18n.locale && available_language?(I18n.locale) &&
-                I18n.locale != I18n.default_locale
-      I18n.locale
-    end
-    
+    locale =
+      if I18n.locale && available_language?(I18n.locale) &&
+         I18n.locale != I18n.default_locale
+        I18n.locale
+      end
+
     {
       locale: locale,
     }
@@ -31,13 +33,11 @@ class ApplicationController < ActionController::Base
     if params[:locale].present? && available_language?(params[:locale])
       return params[:locale]
     end
-    
+
     language = request.env["HTTP_ACCEPT_LANGUAGE"] || ""
     language = language.scan(/^[a-z]{2}/).first
-    if available_language?(language)
-      return language
-    end
-    
+    return language if available_language?(language)
+
     I18n.default_locale
   end
 
