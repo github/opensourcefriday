@@ -60,6 +60,7 @@ GEM
       railties (>= 4.1.0, < 5.1)
       responders
       warden (~> 1.2.3)
+    devise-i18n (1.1.2)
     docile (1.1.5)
     erubis (2.7.0)
     execjs (2.7.0)
@@ -251,6 +252,7 @@ DEPENDENCIES
   connection_pool
   dalli
   devise
+  devise-i18n
   failbot_rails
   faraday-http-cache
   figaro
@@ -281,4 +283,4 @@ RUBY VERSION
    ruby 2.4.1p111
 
 BUNDLED WITH
-   1.14.6
+   1.15.1
