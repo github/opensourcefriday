@@ -122,22 +122,22 @@ ja:
   endorsement:
     title: "いい会社だね"
     Kim_Crayton:
-      title_html: 'コミュニティ技術者、著者、設立者<br> Kim Crayton (<a href="https://github.com/%{id}">@%{id}</a>)'
+      title_html: 'コミュニティ技術者、著者、設立者<br> Kim Crayton (%{url})'
       message_html: "オープンオースへの貢献は、様々なサイズのビジネスに優位性をもたらし、有識者を育てることに繋がり、コーディングしたことのない人に、開発プロセスを通じて自己研鑽する方法を提供することにつながります。一人ひとりにとっても、練習になり、経験をつみ、スキルの証明になり、そして、コミュニティの貢献メンバーになることができます。"
     Chris_Lamb:
-      title_html: '<a href="https://www.debian.org/">Debianプロジェクト</a>リーダー<br> Chris Lamb (<a href="https://github.com/%{id}">@%{id}</a>)'
+      title_html: '%{company_url}リーダー<br>Chris Lamb (%{url})'
       message_html:  "I got to where I am today by contributing to open source software, allowing me to not only improve my skills as a software developer but also to increase my network of colleagues and to meet new and interesting friends from extremely diverse cultures. I can highly recommend it."
     Will_Norris:
-      title_html: '<a href="https://github.com/google">Google</a>のオープンソース担当<br>Will Norris (<a href="https://github.com/%{id}">@%{id}</a>)'
+      title_html: '%{company_url}のオープンソース担当<br>Will Norris (%{url})'
       message_html: "Contributing to open source projects continues to be one of the most popular 20% projects for Google engineers. Open source plays such an important role in so much of what we do, so we try to make <a href=\"https://opensource.google.com/docs/patching/\"> the process </a> as easy as possible."
     Christine_Abernathy:
-      title_html: '<a href="https://github.com/facebook">Facebook</a>のオープンソース担当<br>Christine Abernathy (<a href="https://github.com/%{id}">@%{id}</a>)'
+      title_html: '%{company_url}のオープンソース担当<br>Christine Abernathy (%{url})'
       message_html: "Open source aligns with our mission to make the world more open and connected. Working with the community gives us an opportunity to share our work and the challenges we’re aiming to solve, and encourages talented people to contribute their ideas and effort to move the world forward."
     Rich_Harris:
-      title_html: '<a href="https://github.com/rollup/rollup">Rollup</a> と <a href="https://github.com/sveltejs/svelte">Svelte</a> のメンテナ<br> Rich Harris (<a href="https://github.com/%{id}">@%{id}</a>)'
+      title_html: '%{project1_url}と%{project2_url}のメンテナ<br> Rich Harris (%{url})'
       message_html: "The thing that most open source projects lack is not money, but time. Many maintainers have full-time jobs and can't realistically cut back their hours. What almost all projects need is more contributors. Open Source Friday is a perfect way for companies to support the open source ecosystem they depend on in a meaningful way."
     Brett_Cannon:
-      title_html: '<a href="https://github.com/python/cpython">Python コア</a>開発者<br>Brett Cannon (<a href="https://github.com/%{id}">@%{id}</a>)'
+      title_html: '%{project_url}開発者<br>Brett Cannon (%{url})'
       message_html: 'Once you are a maintainer on a project that others rely on, open source goes from "sharing the code" to "sharing the maintenance". As we all know, "maintenance" takes time which is most effectively spent in a continuous block to help make sure you can finish that e.g. code review before you start to lose context.'
 
   # app/views/users/show.rb

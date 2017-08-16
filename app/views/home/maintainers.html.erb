@@ -109,7 +109,9 @@
             <img src="https://avatars.githubusercontent.com/Rich-Harris?s=180" class="pquote-avatar" alt="avatar">
             <%=t "endorsement.Rich_Harris.message_html" %>
             <p markdown="1" class="pquote-credit">
-            &mdash; <%=t("endorsement.Rich_Harris.title_html", id: "Rich-Harris") %>
+            &mdash; <%=t("endorsement.Rich_Harris.title_html", url: link_to("@Rich-Harris", "https://github.com/Rich-Harris"),
+                         project1_url: link_to("Rollup","https://github.com/rollup/rollup"),
+                         project2_url: link_to("Svelte", "https://github.com/sveltejs/svelte")) %>
             </p>
           </aside>
         </div>
@@ -118,7 +120,8 @@
             <img src="https://avatars.githubusercontent.com/brettcannon?s=180" class="pquote-avatar" alt="avatar">
             <%=t "endorsement.Brett_Cannon.message_html" %>
             <p markdown="1" class="pquote-credit">
-            &mdash; <%=t("endorsement.Brett_Cannon.title_html", id: "brettcannon") %>
+            &mdash; <%=t("endorsement.Brett_Cannon.title_html", url: link_to("@brettcannon", "https://github.com/brettcannon"),
+                        project_url: link_to("Python core", "https://github.com/python/cpython")) %>
             </p>
           </aside>
         </div>
