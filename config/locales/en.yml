@@ -120,7 +120,7 @@ en:
     title: "Get ready for Open Source Friday"
     description: "Spend time now to save time later."
 
-  endosement:
+  endorsement:
     title: "You're in good company" 
     Kim_Crayton:
       title_html: 'Kim Crayton (<a href="https://github.com/%{id}">@%{id}</a>),<br>Community Engineer, Writer, Founder'
