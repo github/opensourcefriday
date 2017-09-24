@@ -19,8 +19,9 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 ja:
-  full_title: "オープンソース フライデー | 今週の金曜日は、利用しているお気に入りのソフトウエアを数時間助けてみよう。"
+  # common part
   Open Source Friday: "オープンソース フライデー"
+  full_title_desc: "今週の金曜日は、利用しているお気に入りのソフトウエアを数時間助けてみよう。"
   full_description: "オープンソースは、あなたのような人が作ってます。今週の金曜日は、利用しているお気に入りのソフトウエアを数時間助けてみよう。"
   Contributors: "貢献者"
   Businesses: "ビジネス"
@@ -30,15 +31,16 @@ ja:
     maintainers: "一番助けがほしいとき、 貢献してもらえるよう、 プロジェクトに愛情を注ごう。"
     contributors: "貢献の意味、 プロジェクトの見つけ方、 そして、 プロジェクトを開始する方法を学ぶ。"
   Sign up with GitHub: "GitHubでユーザ登録"
-  Sign up: "サインアップ"
-  Sign Out: "サインアウト"
+  # app/views/layouts/_nav.html.erb
+  Sign up: "ユーザ登録"
+  Sign out: "サインアウト"
   
   # app/views/home/index.html.erb
   index:
     main:
       title: "オープンソースな金曜日に貢献する"
       contribution: "貢献の方法を学ぶ"
-      link_html: "<a class=\"\" href=\"https://opensource.guide/how-to-contribute/\">ガイドを読む%{icon}</a>"
+      link_html: '<a class="" href="${url}">ガイドを読む%{icon}</a>'
     find:
       title: "貢献するプロジェクトを見つける"
       description: "さまざまなプロジェクトに渡って、デザイン、文書、運用、コードの全てのレベルでオープンソースへの貢献ができます。最初の貢献がどうあるべきかとか、どのようになるのか、を考えすぎないで。"

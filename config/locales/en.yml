@@ -20,8 +20,9 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  full_title: "Open Source Friday | This Friday, invest a few hours contributing to the software you use and love."
+  # common part
   Open Source Friday: "Open Source Friday"
+  full_title_desc: "This Friday, invest a few hours contributing to the software you use and love."
   full_description: "Open source is made by people just like you. This Friday, invest a few hours contributing to the software you use and love."
   Contributors: "Contributors"
   Businesses: "Businesses"
@@ -31,15 +32,16 @@ en:
     maintainers: "Give your project some love to help others contribute where you need it most."
     contributors: "Learn what it means to contribute, and how to find and get started on a new project."
   Sign up with GitHub: "Sign up with GitHub"
+  # app/views/layouts/_nav.html.erb
   Sign up: "Sign up"
-  Sign Out: "Sign out"
+  Sign out: "Sign out"
 
   # app/views/home/index.html.erb
   index:
     main:
       title: "Contribute on Open Source Friday"
       contribution: "Learn to contribute"
-      link_html: "<a class=\"\" href=\"https://opensource.guide/how-to-contribute/\">Read the guide%{icon}</a>"
+      link_html: '<a class="" href="${url}">Read the guide%{icon}</a>'
     find:
       title: "Find a project to contribute to"
       description: "Contributing to open source happens at all levels, across projects and design, documentation, operations and code. You don’t need to overthink what exactly your first contribution will be, or how it will look"
@@ -94,10 +96,10 @@ en:
       description: "Creating a project is only the beginning. Why not spread the&nbsp;word?"
       workload:
         title: "Reduce your workload:"
-        description_html: "Ensure your project's README file details what your project does, its scope and contribution needs, and how to contribute to < a href=\"%{url}\">leverage your community</a>."
+        description_html: 'Ensure your README file details what your project does, its scope and contribution needs, and how to contribute to < a href="%{url}">leverage your community</a>.'
       promote:
         title: "Promote your work"
-        description_html: "Consider creating a Twitter account, blog posts and website to <a href=\"%{url}\">help people find and follow your project</a>."
+        description_html: 'Consider creating a Twitter account, blog posts and website to <a href="%{url}">help people find and follow your project</a>.'
     growing:
       title: "Grow your community"
       description: "Everybody was new once. Ease someone else's first-time contribution jitters."

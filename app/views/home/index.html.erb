@@ -1,4 +1,4 @@
-<% content_for(:full_title, t("full_title")) %>
+<% content_for(:full_title_desc, t("full_title_desc")) %>
 <% content_for(:title, t("Open Source Friday")) %>
 <% content_for(:description, t("full_description")) %>
 
@@ -34,7 +34,8 @@
         </p>
 
         <p>
-          <%=t "index.main.link_html", icon: octicon('chevron-right', height: '18', class: 'ml-2 v-align-middle') %>
+          <%=t "index.main.link_html", url:"https://opensource.guide/how-to-contribute/",
+               icon: octicon('chevron-right', height: '18', class: 'ml-2 v-align-middle') %>
         </p>
 
       </div>
