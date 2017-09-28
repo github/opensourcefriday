@@ -65,7 +65,7 @@
 
  * Bump version, and including build/build.css in npm package - Jon Rohan [github/github@09cb3a3](https://github.com/github/github/commit/09cb3a3)
  * setup unless installed - Jon Rohan [github/github@a798fb0](https://github.com/github/github/commit/a798fb0)
- * Using a simplier script setup - Jon Rohan [github/github@be103f4](https://github.com/github/github/commit/be103f4)
+ * Using a simpler script setup - Jon Rohan [github/github@be103f4](https://github.com/github/github/commit/be103f4)
  * Renaming to compile - Jon Rohan [github/github@196d7ef](https://github.com/github/github/commit/196d7ef)
  * Updating modules to run on prepublish to include build.css in distribution - Jon Rohan [github/github@5b573a0](https://github.com/github/github/commit/5b573a0)
  * Re-ordering the docs to the bottom of the readme - Jon Rohan [github/github@9c1f291](https://github.com/github/github/commit/9c1f291)

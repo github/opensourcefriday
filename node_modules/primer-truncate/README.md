@@ -40,7 +40,7 @@ title: Truncate
 status: Stable
 -->
 
-`.css-truncate` will shorten text with an ellipsis. The maximum width of the truncated text can be changed by overriding the max-width of `.css-truncate-target`. Unless the full text is so long that it affects performace, always add `title` to the truncated element so the full text can still be seen.
+`.css-truncate` will shorten text with an ellipsis. The maximum width of the truncated text can be changed by overriding the max-width of `.css-truncate-target`. Unless the full text is so long that it affects performance, always add `title` to the truncated element so the full text can still be seen.
 
 ```html
 <span class="branch-ref css-truncate css-truncate-target" title="really-long-branch-name">
