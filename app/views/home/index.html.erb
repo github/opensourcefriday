@@ -82,7 +82,8 @@
             <img src="https://avatars.githubusercontent.com/kmcrayton7?s=180" class="pquote-avatar" alt="avatar">
             <%=t "endorsement.Kim_Crayton.message_html" %>
             <p markdown="1" class="pquote-credit">
-            &mdash; <%=t("endorsement.Kim_Crayton.title_html", url: link_to("@kmcrayton7", "https://github.com/kmcrayton7")) %>
+            &mdash; <%=t("endorsement.Kim_Crayton.name_html") %> <br>
+            <%=t("endorsement.Kim_Crayton.title_html", url: link_to("@kmcrayton7", "https://github.com/kmcrayton7")) %>
             </p>
           </aside>
         </div>
@@ -91,7 +92,8 @@
             <img src="https://avatars.githubusercontent.com/lamby?s=180" class="pquote-avatar" alt="avatar">
             <%=t "endorsement.Chris_Lamb.message_html" %>
             <p markdown="1" class="pquote-credit">
-            &mdash; <%=t("endorsement.Chris_Lamb.title_html", url:  link_to("@lamby", "https://github.com/lamby"), company_url: link_to("Debian Project", "https://www.debian.org")) %>
+            &mdash; <%=t("endorsement.Chris_Lamb.name_html", url: link_to("@lamby", "https://github.com/lamby")) %><br>
+                    <%= t("endorsement.Chris_Lamb.title_html", company_url: link_to("Debian Project", "https://www.debian.org")) %>
             </p>
           </aside>
         </div>
