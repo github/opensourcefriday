@@ -1,5 +1,5 @@
-<% content_for(:title, "Build software with help from others") %>
-<% content_for(:description, "Every Friday, give your software project some love and make it easier for others to contribute.") %>
+<% content_for(:title, t("maintainers.title")) %>
+<% content_for(:description, t("maintainers.description")) %>
 
 <div class="bg-gray mb-6 border-bottom jumbotron px-3">
   <div class="container-lg px-3">
@@ -12,7 +12,7 @@
         <p class="alt-lead text-gray mb-md-5"><%= nbsp_last_word(yield(:description)) %></p>
         <% unless current_user %>
           <%= link_to user_github_omniauth_authorize_path, class: "btn btn-large btn-primary", role: "button" do %>
-            Sign up with GitHub
+            <%=t "Sign up with GitHub" %>
           <% end %>
         <% end %>
       </div>
@@ -21,66 +21,66 @@
 </div>
 
 <div class="container-lg mx-auto gut-lg py-md-6 text-center">
-  <h2 class="alt-h2">Help people discover your project</h2>
+  <h2 class="alt-h2"><%=t "maintainers.involve.title" %></h2>
   <p class="alt-lead text-gray col-md-8 mx-auto mb-6">
-    Creating a project is only the beginning. Why not spread the&nbsp;word?
+    <%=t "maintainers.involve.description" %>
   </p>
   <div class="mb-6 col-md-6 float-md-left">
     <%= image_tag("reduce-workload.svg", class: "img-responsive mb-3", height: "100px") %>
-    <h3 class="alt-h3 mb-2">Reduce your workload</h3>
+    <h3 class="alt-h3 mb-2"><%=t "maintainers.involve.workload.title" %></h3>
     <p class="text-gray">
-      Ensure your project's README file details what your project does, its scope and contribution needs, and how to contribute to <a href="https://opensource.guide/best-practices/#leverage-your-community">leverage your community</a>.
+    <%=t("maintainers.involve.workload.description_html", url: "https://opensource.guide/best-practices/#leverage-your-community") %>
     </p>
   </div>
   <div class="mb-6 col-md-6 float-md-left">
     <%= image_tag("promote-work.svg", class: "img-responsive mb-3", height: "100px") %>
-      <h3 class="alt-h3 mb-2">Promote your work</h3>
+    <h3 class="alt-h3 mb-2"><%=t "maintainers.involve.promote.title" %></h3>
       <p class="text-gray">
-      Consider creating a Twitter account, blog posts and website to <a href="https://opensource.guide/finding-users/#help-people-find-and-follow-your-project">help people find and follow your project</a>.
+      <%=t("maintainers.involve.promote.description_html", url: "https://opensource.guide/finding-users/#help-people-find-and-follow-your-project") %>
     </p>
   </div>
 </div>
 
 <div class="py-6 px-3 text-center border-top border-bottom bg-gray-light">
   <div class="container-lg mx-auto gut-lg py-md-6 text-center">
-    <h2 class="alt-h2">Grow your community</h2>
+    <h2 class="alt-h2"><%=t "maintainers.growing.title" %></h2>
     <p class="alt-lead text-gray col-md-8 mx-auto mb-6">
-      Everybody was new once. Ease someone else's first-time contribution jitters.
+      <%=t "maintainers.growing.description" %>
     </p>
     <div class="mb-6 col-md-6 float-md-left">
       <%= image_tag("document-everything.svg", class: "img-responsive mb-3", height: "100px") %>
-      <h3 class="alt-h3 mb-2">Document everything</h3>
+      <h3 class="alt-h3 mb-2"><%=t "maintainers.growing.document.title" %></h3>
       <p class="text-gray">
-        <a href="http://opensourcesurvey.org/2017/">GitHub's 2017 Open Source Survey</a> showed incomplete or confusing documentation is the biggest problem for open source users. Ensure you are <a href="https://opensource.guide/best-practices/#documenting-your-processes">documenting your processes</a> for how to contribute to your project.
+      <%= t("maintainers.growing.document.description_html", survey:"http://opensourcesurvey.org/2017/", guide:"https://opensource.guide/best-practices/#documenting-your-processes") %>
       </p>
     </div>
     <div class="mb-6 col-md-6 float-md-left">
       <%= image_tag("get-help.svg", class: "img-responsive mb-3", height: "100px") %>
-      <h3 class="alt-h3 mb-2">Get help</h3>
+      <h3 class="alt-h3 mb-2"><%=t "maintainers.growing.help.title" %></h3>
       <p class="text-gray">
-        Look out for promising potential contributors or maintainers to <a href="https://opensource.guide/building-community/#share-ownership-of-your-project">share ownership of your project</a>. Make an effort to welcome first-time contributors in particular.
+        <%=t("maintainers.growing.help.Look_out_html", url:"https://opensource.guide/building-community/#share-ownership-of-your-project") %>
       </p>
     </div>
   </div>
 </div>
 
 <div class="container-lg mx-auto gut-lg py-md-6 text-center">
-  <h2 class="alt-h2 mt-4">Improve your workflow</h2>
+  <h2 class="alt-h2 mt-4"><%=t "maintainers.workflow.title" %></h2>
   <p class="alt-lead text-gray col-md-8 mx-auto mb-6">
-    Learn from other maintainers on how to be more effective.
+    <%=t "maintainers.workflow.description" %>
   </p>
   <div class="mb-6 col-md-6 float-md-left">
     <%= image_tag("set-boundaries.svg", class: "img-responsive mb-3", height: "100px") %>
-    <h3 class="alt-h3 mb-2">Set boundaries</h3>
+    <h3 class="alt-h3 mb-2"><%=t "maintainers.workflow.boundaries.title" %></h3>
     <p class="text-gray">
-      Decide on what the scope of the project is and <a href="https://opensource.guide/best-practices/#its-okay-to-hit-pause">set clear boundaries for yourself</a>. <a href="https://opensource.guide/best-practices/#learning-to-say-no">Saying no</a> is as important as saying yes.
+    <%=t("maintainers.workflow.boundaries.description_html", pause: "https://opensource.guide/best-practices/#its-okay-to-hit-pause", sayno:"https://opensource.guide/best-practices/#learning-to-say-no") %>
     </p>
   </div>
   <div class="mb-6 col-md-6 float-md-left">
     <%= image_tag("automation.svg", class: "img-responsive mb-3", height: "100px") %>
-    <h3 class="alt-h3 mb-2">Automation</h3>
+    <h3 class="alt-h3 mb-2"><%=t "maintainers.workflow.automation.title" %></h3>
     <p class="text-gray">
-    <a href="https://opensource.guide/best-practices/#bring-in-the-robots">Bring in the robots</a> to automate as much as possible through tests and other checks to save yourself time.
+      <%=t("maintainers.workflow.automation.description_html", url: "https://opensource.guide/best-practices/#bring-in-the-robots") %>
     </p>
   </div>
 </div>
@@ -88,12 +88,12 @@
 <% unless current_user %>
 <div class="py-6 text-center border-top bg-gray-light">
   <div class="container-md pt-3">
-    <h2 class="alt-h2 text-center">Get ready for Open Source Friday</h2>
+    <h2 class="alt-h2 text-center"><%=t "maintainers.visitor.title" %></h2>
 
-    <p class="text-gray alt-lead">Spend time now to save time later.</p>
+    <p class="text-gray alt-lead"><%=t "maintainers.visitor.description" %></p>
 
     <%= link_to user_github_omniauth_authorize_path, class: "btn btn-large btn-primary mb-4", role: "button" do %>
-      Sign up with GitHub
+      <%=t "Sign up with GitHub" %>
     <% end %>
   </div>
 </div>
@@ -101,24 +101,29 @@
 
 <div class="border-top py-5">
   <div class="container-lg">
-    <h2 class="alt-h2 mt-6 text-center">You're in good company</h2>
+    <h2 class="alt-h2 mt-6 text-center"><%=t "endorsement.title" %></h2>
     <div class="mt-3 pb-6">
       <div class="d-flex flex-wrap flex-items-stretch gut-md">
         <div class="col-md-6">
           <aside class="pquote height-full">
             <img src="https://avatars.githubusercontent.com/Rich-Harris?s=180" class="pquote-avatar" alt="avatar">
-            The thing that most open source projects lack is not money, but time. Many maintainers have full-time jobs and can't realistically cut back their hours. What almost all projects need is more contributors. Open Source Friday is a perfect way for companies to support the open source ecosystem they depend on in a meaningful way.
+            <%=t "endorsement.Rich_Harris.message_html" %>
             <p markdown="1" class="pquote-credit">
-              &mdash; Rich Harris (<a href="https://github.com/Rich-Harris">@Rich-Harris</a>),<br><a href="https://github.com/rollup/rollup">Rollup</a> and <a href="https://github.com/sveltejs/svelte">Svelte</a> maintainer
+            &mdash; <%=t("endorsement.Rich_Harris.name_html", url: link_to("@Rich-Harris", "https://github.com/Rich-Harris")) %><br>
+            <%=t("endorsement.Rich_Harris.title_html",
+                         project1_url: link_to("Rollup","https://github.com/rollup/rollup"),
+                         project2_url: link_to("Svelte", "https://github.com/sveltejs/svelte")) %>
             </p>
           </aside>
         </div>
         <div class="col-md-6">
           <aside class="pquote height-full">
             <img src="https://avatars.githubusercontent.com/brettcannon?s=180" class="pquote-avatar" alt="avatar">
-            Once you are a maintainer on a project that others rely on, open source goes from "sharing the code" to "sharing the maintenance". As we all know, "maintenance" takes time which is most effectively spent in a continuous block to help make sure you can finish that e.g. code review before you start to lose context.
+            <%=t "endorsement.Brett_Cannon.message_html" %>
             <p markdown="1" class="pquote-credit">
-              &mdash; Brett Cannon (<a href="https://github.com/brettcannon">@brettcannon</a>),<br><a href="https://github.com/python/cpython">Python core</a> developer
+            &mdash; <%=t("endorsement.Brett_Cannon.name_html", url: link_to("@brettcannon", "https://github.com/brettcannon")) %><br>
+            <%=t("endorsement.Brett_Cannon.title_html",
+                        project_url: link_to("Python core", "https://github.com/python/cpython")) %>
             </p>
           </aside>
         </div>
@@ -132,15 +137,15 @@
     <div class="d-flex flex-column flex-sm-row mx-2 my-6">
       <div class="col-lg-4 mx-auto">
         <h2 class="alt-h3 my-2">
-          <a href="/businesses">Businesses<%= octicon 'chevron-right', height: '20', class: 'ml-2 v-align-middle' %></a>
+          <a href="/businesses"><%=t "Businesses" %><%= octicon 'chevron-right', height: '20', class: 'ml-2 v-align-middle' %></a>
         </h2>
-        <p class="text-gray f4">Your business runs on open source. Learn how to get involved.</p>
+        <p class="text-gray f4"><%=t "headline.businesses" %></p>
       </div>
       <div class="col-lg-4 mx-auto">
         <h2 class="alt-h3 my-2">
-          <a href="/#participate">Contributors<%= octicon 'chevron-right', height: '20', class: 'ml-2 v-align-middle' %></a>
+          <a href="/#participate"><%=t "Contributors" %><%= octicon 'chevron-right', height: '20', class: 'ml-2 v-align-middle' %></a>
         </h2>
-        <p class="text-gray f4">Your business runs on open source. Learn how to get involved.</p>
+        <p class="text-gray f4"><%=t "headline.contributors" %></p>
       </div>
     </div>
   </div>
