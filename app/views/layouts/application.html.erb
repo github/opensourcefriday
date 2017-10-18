@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width">
     <%= csrf_meta_tags %>
 
-    <% @site_name = t("Open Source Friday") %>
-    <title><%= yield :title %> |  <% if content_for?(:full_title_desc) %><<%= yield :full_title_desc %></title><% else %><%= @site_name %> <% end %> </title>
+    <% @site_name = "Open Source Friday" %>
+    <% if content_for?(:full_title) %>
+      <title><%= yield :full_title %></title>
+    <% else %>
+      <title><%= yield :title %> | <%= @site_name %></title>
+    <% end %>
     <meta name="description" content="<%= yield :description %>">
     <meta property="og:title" content="<%= yield :title %>" />
     <meta property="og:description" content="<%= yield :description %>" />
@@ -39,7 +43,7 @@
       <div class="container-lg p-responsive">
         <div class="d-md-flex mx-auto flex-justify-between flex-items-center">
           <h1 class="alt-h4 text-center mb-4 mb-md-0">
-            <a class="text-inherit" href="/"><%=t "Open Source Friday" %></a>
+            <a class="text-inherit" href="/">Open Source Friday</a>
           </h1>
 
           <%= render 'layouts/nav' %>
@@ -50,7 +54,7 @@
       <div class="container-md mt-3 alt-h4">
         <div class="flash flash-error flash-with-icon">
           <%= octicon 'alert', class: "mr-1" %>
-          <%=t "Error" %><%= flash[:error] %>
+          Error: <%= flash[:error] %>
         </div>
       </div>
       <% end %>
@@ -68,11 +72,11 @@
 
         <div class="text-gray pb-6 px-3">
           <%= octicon 'code', height: 20, class: "v-align-middle fill-gray mr-1", "aria-label": "code" %>
-          <%=t "with" %>
+          with
           <%= octicon 'heart', height: 20, class: "v-align-middle fill-gray mx-1", "aria-label": "love" %>
-          <%=t "by" %>
+          by
           <a href="https://github.com" class="text-inherit"><%= octicon "mark-github", height: 20, class: "v-align-middle mx-1", "aria-label": "GitHub" %></a>
-          <%=t "and" %><a class="text-inherit" href="https://github.com/ossfriday/ossfriday/graphs/contributors"><%=t "friends" %></a>
+          and <a class="text-inherit" href="https://github.com/ossfriday/ossfriday/graphs/contributors">friends</a>
         </div>
       </footer>
     </div>

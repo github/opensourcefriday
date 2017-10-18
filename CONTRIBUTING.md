@@ -6,7 +6,6 @@ Want to contribute to Open Source Friday? That's great! Here are a couple of gui
 
 * [Contribution workflow](#contribution-workflow)
 * [Setup instructions](#setup-instructions)
-* [Localisation](#localisation)
 * [Reporting a bug](#reporting-a-bug)
 * [Additional info](#additional-info)
 
@@ -20,16 +19,6 @@ Want to contribute to Open Source Friday? That's great! Here are a couple of gui
 ## Setup instructions
 
 You can find in-depth instructions to install the correct Ruby version, Postgres, and to set up the database in our [README](https://github.com/ossfriday/ossfriday/blob/master/README.md#getting-started).
-
-## Localisation
-
- * Fork the project.
- * Clone your fork to your machine.
- * Create a new branch for your translation work.
- * Copy `config/locale/en.yml` to target locale file e.g. `config/locale/es.yml`.
- * Add target language in `config/initializers/locale.rb`:`I18n.available_locales = %i[en, ja]`
- * Translate messages in new locale file.
- * Send a pull request.
 
 ## Reporting a bug
 
