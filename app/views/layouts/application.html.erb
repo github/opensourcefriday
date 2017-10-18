@@ -6,7 +6,7 @@
     <%= csrf_meta_tags %>
 
     <% @site_name = t("Open Source Friday") %>
-    <title><%= yield :title %> |  <% if content_for?(:full_title_desc) %><<%= yield :full_title_desc %></title><% else %><%= @site_name %> <% end %> </title>
+    <title><%= yield :title %> | <%= content_for?(:full_title_desc) ? yield(:full_title_desc) : @site_name %></title>
     <meta name="description" content="<%= yield :description %>">
     <meta property="og:title" content="<%= yield :title %>" />
     <meta property="og:description" content="<%= yield :description %>" />
