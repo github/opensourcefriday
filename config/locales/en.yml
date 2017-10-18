@@ -65,7 +65,7 @@ en:
     reason:
       title: "Your business depends on it"
       description: "Companies need open source software to run effectively."
-      technology: 
+      technology:
         title: "Improve the technology you rely on"
         description: "Direct participation in open source gives your organization a voice in the software you depend on."
     models:
@@ -93,10 +93,10 @@ en:
     description:  "Every Friday, give your software project some love and make it easier for others to contribute."
     involve:
       title: "Help people discover your project"
-      description: "Creating a project is only the beginning. Why not spread the&nbsp;word?"
+      description: "Creating a project is only the beginning. Why not spread the word?"
       workload:
         title: "Reduce your workload:"
-        description_html: 'Ensure your README file details what your project does, its scope and contribution needs, and how to contribute to < a href="%{url}">leverage your community</a>.'
+        description_html: 'Ensure your README file details what your project does, its scope and contribution needs, and how to contribute to <a href="%{url}">leverage your community</a>.'
       promote:
         title: "Promote your work"
         description_html: 'Consider creating a Twitter account, blog posts and website to <a href="%{url}">help people find and follow your project</a>.'
@@ -118,12 +118,12 @@ en:
       automation:
         title: "Automation"
         description_html: "<a href=\"%{url}\">Bring in the robots</a> to automate as much as possible through tests and other checks to save yourself time."
-  visitor:
-    title: "Get ready for Open Source Friday"
-    description: "Spend time now to save time later."
+    visitor:
+      title: "Get ready for Open Source Friday"
+      description: "Spend time now to save time later."
 
   endorsement:
-    title: "You're in good company" 
+    title: "You're in good company"
     Kim_Crayton:
       title_html: 'Community Engineer, Writer, Founder'
       name_html:  'Kim Crayton (%{url})'
@@ -158,7 +158,7 @@ en:
     firststep: "Make your first contribution"
     friends: "Tell your friends"
     No_Friday_PR: "No Friday pull requests or events in the last 3 months."
-    Find_a_project_html: "<a href=\"%{how_to_contribute}\">Find a project to contribute to </a>, or learn <a href=\"%{submit_a_contribution}\">how to make your first pull request</a>."
+    Find_a_project_html: "<a href=\"%{how_to_contribute}\">Find a project to contribute to</a>, or learn <a href=\"%{submit_a_contribution}\">how to make your first pull request</a>."
     share_will:
       description_html: "Share Open Source Friday with others <a href=\"%{url}\">using this URL</a>."
       message_html: "I'm contributing to open source on #OpenSourceFriday: https://opensourcefriday.com. Join me!"
@@ -168,7 +168,7 @@ en:
 
   # app/views/layouts/_calendar.erb
   calendar:
-    title: "Set a reminder"  
+    title: "Set a reminder"
     description: "Add Open Source Friday to your calendar next Friday."
     button:  "Add to Calendar"
 
