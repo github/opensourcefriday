@@ -1,16 +1,16 @@
 <nav class="text-center">
-  <a href="/#participate"><%=t "Contributors" %></a>
+  <a href="/#participate">Contributors</a>
 
   <% if request.path == "/businesses" %>
-    <span class="ml-4"><%=t "Businesses" %></span>
+    <span class="ml-4">Businesses</span>
   <% else %>
-    <a class="ml-4" href="/businesses"><%=t "Businesses" %></a>
+    <a class="ml-4" href="/businesses">Businesses</a>
   <% end %>
 
   <% if request.path == "/maintainers" %>
-    <span class="ml-4"><%=t "Maintainers" %></span>
+    <span class="ml-4">Maintainers</span>
   <% else %>
-    <a class="ml-4" href="/maintainers"><%=t "Maintainers" %></a>
+    <a class="ml-4" href="/maintainers">Maintainers</a>
   <% end %>
 
   <% if current_user %>
@@ -20,13 +20,13 @@
       <%= current_user.github_username %>
     </a>
 
-    <%= link_to t("Sign out"), destroy_user_session_path, class: "py-2 px-3" %>
+    <%= link_to "Sign Out", destroy_user_session_path, class: "py-2 px-3" %>
 
     </span>
 
   <% else %>
     <%= link_to user_github_omniauth_authorize_path, class: "mx-6 mr-sm-0 ml-sm-4 mt-3 mt-sm-0 d-block d-sm-inline-block btn btn-outline" do %>
-      <%=t "Sign up" %>
+      Sign up
     <% end %>
   <% end %>
 </nav>
