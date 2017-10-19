@@ -40,7 +40,7 @@ ja:
     main:
       title: "オープンソースな金曜日に貢献する"
       contribution: "貢献の方法を学ぶ"
-      link_html: '<a class="" href="${url}">ガイドを読む%{icon}</a>'
+      link_html: '<a class="" href="%{url}">ガイドを読む%{icon}</a>'
     find:
       title: "貢献するプロジェクトを見つける"
       description: "さまざまなプロジェクトに渡って、デザイン、文書、運用、コードの全てのレベルでオープンソースへの貢献ができます。最初の貢献がどうあるべきかとか、どのようになるのか、を考えすぎないで。"
