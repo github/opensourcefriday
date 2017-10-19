@@ -41,7 +41,7 @@ en:
     main:
       title: "Contribute on Open Source Friday"
       contribution: "Learn to contribute"
-      link_html: '<a class="" href="${url}">Read the guide%{icon}</a>'
+      link_html: '<a class="" href="%{url}">Read the guide%{icon}</a>'
     find:
       title: "Find a project to contribute to"
       description: "Contributing to open source happens at all levels, across projects and design, documentation, operations and code. You don’t need to overthink what exactly your first contribution will be, or how it will look"
