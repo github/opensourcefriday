@@ -29,4 +29,9 @@
       <%=t "Sign up" %>
     <% end %>
   <% end %>
+  <div>
+    <% I18n.available_locales.map do |l| %>
+      <a href="/?locale=<%= l.to_s %>"> <%=t( l.to_s ) %> </a>
+    <% end %>
+  </div>
 </nav>
