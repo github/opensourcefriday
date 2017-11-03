@@ -39,8 +39,6 @@ en:
     # language selecter
     language:
       title: "LANG"
-      en: EN
-      ja: JA
 
   # app/views/home/index.html.erb
   index:

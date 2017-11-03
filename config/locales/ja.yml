@@ -37,8 +37,6 @@ ja:
   nav:
     language:
       title: "言語"
-      en: "英"
-      ja: "日"
 
   # app/views/home/index.html.erb
   index:

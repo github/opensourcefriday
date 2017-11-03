@@ -32,7 +32,7 @@
     <span class="d-sm-inline-block ml-4 border-right dropdown"><%=t "nav.language.title" %>
     <div class="dropdown-content">
     <% I18n.available_locales.map do |l| %>
-       <div> <a href="/?locale=<%= l.to_s %>"> <%=t( "nav.language."+l.to_s ) %> </a> </div>
+      <div> <a href="/?locale=<%= l.to_s %>"> <%= language_name(l) %> </a> </div>
     <% end %>
     </div>
     </span>
