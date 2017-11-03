@@ -29,9 +29,11 @@
       <%=t "Sign up" %>
     <% end %>
   <% end %>
-  <div>
+    <span class="d-sm-inline-block ml-4 border-right dropdown"><%=t "nav.language.title" %>
+    <div class="dropdown-content">
     <% I18n.available_locales.map do |l| %>
-      <a href="/?locale=<%= l.to_s %>"> <%=t( l.to_s ) %> </a>
+       <div> <a href="/?locale=<%= l.to_s %>"> <%=t( "nav.language."+l.to_s ) %> </a> </div>
     <% end %>
-  </div>
+    </div>
+    </span>
 </nav>

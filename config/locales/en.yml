@@ -35,9 +35,12 @@ en:
   # app/views/layouts/_nav.html.erb
   Sign up: "Sign up"
   Sign out: "Sign out"
-  # language selecter
-  en: EN
-  ja: JA
+  nav:
+    # language selecter
+    language:
+      title: "LANG"
+      en: EN
+      ja: JA
 
   # app/views/home/index.html.erb
   index:
