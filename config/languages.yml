@@ -185,3 +185,6 @@ production:
 
 development: 
   <<: *defaults
+
+test:
+  <<: *defaults
