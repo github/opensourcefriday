@@ -27,3 +27,13 @@
 
 # Ignore code coverage output
 /coverage/
+
+# Ignore node_modules folder
+/node_modules/
+
+# ignore ruby and node version management stuff
+.ruby-version
+.ruby-gemset
+.rbenv
+.rbenv-gemsets
+.node-version
