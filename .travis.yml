@@ -3,4 +3,5 @@ cache: bundler
 sudo: false
 bundler_args: --jobs=3 --retry=3
 before_install: nvm install $(cat .node-version)
+before_script: npm install
 script: ./script/cibuild
