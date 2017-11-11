@@ -5,5 +5,11 @@ cache: bundler
 sudo: false
 bundler_args: --jobs=3 --retry=3
 before_install: nvm install 6.10.2
-before_script: npm install
-script: ./script/cibuild
+before_script:
+  - npm install
+  - bundle exec rails db:setup
+  - bundle exec rails log:clear
+  - bundle exec rails tmp:clear
+script:
+  - bundle exec rake test
+  - bundle exec rubocop
