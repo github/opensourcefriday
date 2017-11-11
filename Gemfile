@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby IO.read(File.expand_path("#{File.dirname(__FILE__)}/.ruby-version")).strip
+ruby "2.4.1"
 
 gem "devise"
 gem "devise-i18n"
