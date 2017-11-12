@@ -36,6 +36,14 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should get show when logged in and viewing japanese own page" do
+    sign_in users(:Miurahr)
+    VCR.use_cassette("user_miurahr") do
+      get user_url("Miurahr")
+    end
+    assert_response :success
+  end
+
   test "should sign in" do
     mock_omniauth!
     VCR.use_cassette("user_foobar") do
@@ -60,9 +68,10 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
   test "should sign in with locale url parameter" do
     mock_omniauth!
     VCR.use_cassette("user_foobar") do
-      get user_github_omniauth_authorize_url, params: { locale: "en" }
+      get user_github_omniauth_authorize_url, params: { locale: "ja" }
       follow_redirect!
       follow_redirect!
+      get root_url(locale: "en")
     end
     assert_response :success
   end

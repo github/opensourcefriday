@@ -4,3 +4,8 @@ test:
 
 MikeMcQuaid:
   github_username: "MikeMcQuaid"
+  language: "en"
+
+Miurahr:
+  github_username: "miurahr"
+  language: "ja"
