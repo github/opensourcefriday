@@ -3,7 +3,7 @@ module ApplicationHelper
     string.sub(/ ([a-z]+\.?)$/, "&nbsp;\\1").html_safe
   end
 
-  def language_name(l)
-    Rails.configuration.Languages[l.to_s]
+  def language_name(locale)
+    Rails.configuration.Languages[locale.to_s]
   end
 end
