@@ -34,9 +34,6 @@ ja:
   # app/views/layouts/_nav.html.erb
   Sign up: "ユーザ登録"
   Sign out: "サインアウト"
-  nav:
-    language:
-      title: "言語"
 
   # app/views/home/index.html.erb
   index:
