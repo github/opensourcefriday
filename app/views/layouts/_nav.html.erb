@@ -29,4 +29,13 @@
       <%=t "Sign up" %>
     <% end %>
   <% end %>
+    <form id="locale-form" class="ml-4" action="<%= request.path %>" method="get">
+      <select name="locale" class="form-select" onchange="this.form.submit()">
+        <% I18n.available_locales.map do |l| %>
+          <option value="<%= l %>" <%= "selected" if l == I18n.locale %>>
+            <%= language_name(l) %>
+          </option>
+        <% end %>
+      </select>
+    </form>
 </nav>

@@ -34,7 +34,7 @@ ja:
   # app/views/layouts/_nav.html.erb
   Sign up: "ユーザ登録"
   Sign out: "サインアウト"
-  
+
   # app/views/home/index.html.erb
   index:
     main:

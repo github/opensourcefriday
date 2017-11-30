@@ -5,6 +5,9 @@ class ApplicationController < ActionController::Base
   def set_language
     I18n.locale =
       if user_signed_in?
+        if params[:locale].present? && available_language?(params[:locale])
+          current_user.update_attribute(:language, params[:locale])
+        end
         current_user.language
       else
         determine_language
