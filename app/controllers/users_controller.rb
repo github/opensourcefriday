@@ -20,8 +20,7 @@ class UsersController < ApplicationController
       end
     @name_or_nickname = @name || @nickname
 
-    @user_is_current = current_user &&
-                       current_user.github_username == @nickname
+    @user_is_current = current_user&.github_username == @nickname
 
     @user_exists = User.exists? github_username: @nickname
     @user_exists ||= params[:user_exists] unless Rails.env.production?
@@ -85,12 +84,12 @@ class UsersController < ApplicationController
       expires_in: duration_until_next_saturday
     ) do
       events = octokit.user_public_events(@nickname)
-      last_event_created = events.last.try(:created_at) || DateTime.now
+      last_event_created = events.last.try(:created_at) || Time.now
       last_response = octokit.last_response
       while last_event_created > 3.months.ago && last_response.rels[:next]
         last_response = last_response.rels[:next].get
         events.concat last_response.data
-        last_event_created = events.last.try(:created_at) || DateTime.now
+        last_event_created = events.last.try(:created_at) || Time.now
       end
       count = events.length
       events = events.map { |event| event_metadata(event) }.compact

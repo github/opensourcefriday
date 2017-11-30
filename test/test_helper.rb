@@ -11,11 +11,12 @@ SimpleCov.start("rails") do
 end
 
 require "codecov"
-if ENV["CI"]
-  SimpleCov.formatters = [SimpleCov::Formatter::Codecov]
-else
-  SimpleCov.formatters = [SimpleCov::Formatter::HTMLFormatter]
-end
+SimpleCov.formatters =
+  if ENV["CI"]
+    [SimpleCov::Formatter::Codecov]
+  else
+    [SimpleCov::Formatter::HTMLFormatter]
+  end
 
 require File.expand_path("../../config/environment", __FILE__)
 require "rails/test_help"
