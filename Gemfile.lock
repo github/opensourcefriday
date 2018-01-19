@@ -140,7 +140,7 @@ GEM
     pg (0.21.0)
     powerpack (0.1.1)
     public_suffix (3.0.1)
-    puma (3.11.0)
+    puma (3.11.1)
     rack (2.0.3)
     rack-cache (1.7.1)
       rack (>= 0.4)
