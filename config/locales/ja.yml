@@ -1,25 +1,4 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other # than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 ja:
-  # common part
   Open Source Friday: "オープンソース フライデー"
   full_title_desc: "今週の金曜日は、利用しているお気に入りのソフトウエアを数時間助けてみよう。"
   full_description: "オープンソースは、あなたのような人が作ってます。今週の金曜日は、利用しているお気に入りのソフトウエアを数時間助けてみよう。"
@@ -31,11 +10,8 @@ ja:
     maintainers: "一番助けがほしいとき、 貢献してもらえるよう、 プロジェクトに愛情を注ごう。"
     contributors: "貢献の意味、 プロジェクトの見つけ方、 そして、 プロジェクトを開始する方法を学ぶ。"
   Sign up with GitHub: "GitHubでユーザ登録"
-  # app/views/layouts/_nav.html.erb
   Sign up: "ユーザ登録"
   Sign out: "サインアウト"
-
-  # app/views/home/index.html.erb
   index:
     main:
       title: "オープンソースな金曜日に貢献する"
@@ -56,15 +32,13 @@ ja:
       welcome:
         title: "A warm welcome"
         description_html: "GitHub の新規貢献者むけ<a href=\"%{url}\">プロジェクト一覧</a>で歴史があり、新規貢献者を歓迎する評判のよいプロジェクトを見つける。"
-
-  # app/views/home/business.html.erb
   business:
     title: "ビジネスはOSS上で動いている"
     description: "毎週一回。 貴方が利用していて気に入っているオープンソース・ソフトウエアへ時間を投資しよう。"
     reason:
       title: "ビジネス拡大に不可欠"
-      description : "企業は、オープンソース・ソフトウエアを有効に使う必要があります。"
-      technology: 
+      description: "企業は、オープンソース・ソフトウエアを有効に使う必要があります。"
+      technology:
         title: "ビジネス基盤の技術を進化させる"
         description: "オープンソースに直接参加して、組織の声を利用しているソフトウエアに反映させる。"
     models:
@@ -85,20 +59,18 @@ ja:
       policy:
         title: "習慣にしていこう"
         description: "明確な内部ルールを策定しよう。社員は、安心して継続的にオープンソースに貢献できるようになります。"
-
-  # app/views/home/maitainers.html.erb
   maintainers:
     title: "他の人の助けを受けながらソフトウエアを作る"
-    description:  "毎週金曜日に、ソフトウエアプロジェクトに愛情を注いで、他の貢献者が参加しやすくする。"
+    description: "毎週金曜日に、ソフトウエアプロジェクトに愛情を注いで、他の貢献者が参加しやすくする。"
     involve:
       title: "あなたのプロジェクトを見つけてもらう"
       description: "プロジェクトの立ち上げは、ほんの最初のステップ。さあ、拡げて行きましょう。"
       workload:
         title: "負担を削減する:"
-        description_html: "<a href=\"%{url}\">コミュニティを活用するため</a>、プロジェクトのREADMEファイルに、プロジェクトが何をやっているか、そのスコープは何か、貢献を求めていること、そして、貢献の仕方を詳細に記載しよう。"
+        description_html: '<a href="%{url}">コミュニティを活用するため</a>、プロジェクトのREADMEファイルに、プロジェクトが何をやっているか、そのスコープは何か、貢献を求めていること、そして、貢献の仕方を詳細に記載しよう。'
       promote:
         title: "ソフトウエアをPRする"
-        description_html: "Twitterアカウントを作ったり、ブログを開設したり、webサイトを立ち上げよう。<a href=\"%{url}\">みんなに知ってもらい、プロジェクトに注目</a>してもらうんだ。"
+        description_html: 'Twitterアカウントを作ったり、ブログを開設したり、webサイトを立ち上げよう。<a href="%{url}">みんなに知ってもらい、プロジェクトに注目</a>してもらうんだ。'
     growing:
       title: "コミュニティを拡大しよう"
       description: "誰しも最初は初心者。他人のはじめての貢献の不安を和らげよう。"
@@ -120,7 +92,6 @@ ja:
     visitor:
       title: "オープンソース フライデーの準備万端"
       description: "いま時間を使って、将来に楽する。"
-
   endorsement:
     title: "いい会社だね"
     Kim_Crayton:
@@ -130,7 +101,7 @@ ja:
     Chris_Lamb:
       title_html: '%{company_url}リーダー'
       name_html: 'Chris Lamb (%{url})'
-      message_html:  "I got to where I am today by contributing to open source software, allowing me to not only improve my skills as a software developer but also to increase my network of colleagues and to meet new and interesting friends from extremely diverse cultures. I can highly recommend it."
+      message_html: "I got to where I am today by contributing to open source software, allowing me to not only improve my skills as a software developer but also to increase my network of colleagues and to meet new and interesting friends from extremely diverse cultures. I can highly recommend it."
     Will_Norris:
       title_html: '%{company_url}のオープンソース担当'
       name_html: 'Will Norris (%{url})'
@@ -142,17 +113,15 @@ ja:
     Rich_Harris:
       title_html: '%{project1_url}と%{project2_url}のメンテナ'
       name_html: ' Rich Harris (%{url})'
-      message_html: "The thing that most open source projects lack is not money, but time. Many maintainers have full-time jobs and can't realistically cut back their hours. What almost all projects need is more contributors. Open Source Friday is a perfect way for companies to support the open source ecosystem they depend on in a meaningful way."
+      message_html: "多くのOSSプロジェクトでは、資金ではなく掛ける時間が不足しています。メンテナの多くは、フルタイムの仕事をしていて、その時間を削ることが難しい状況です。全てのプロジェクトで必要とされるのは、貢献者です。オープンソース フライデーは、事業が依存しているOSSエコシステムへ意味あるサポートを行う、企業にとって完璧な方法です。"
     Brett_Cannon:
       title_html: '%{project_url}開発者'
       name_html: 'Brett Cannon (%{url})'
       message_html: 'Once you are a maintainer on a project that others rely on, open source goes from "sharing the code" to "sharing the maintenance". As we all know, "maintenance" takes time which is most effectively spent in a continuous block to help make sure you can finish that e.g. code review before you start to lose context.'
-
-  # app/views/users/show.rb
   users:
     welcome: "オープンソース フライデーに参加しました!"
-    joined: "はオープンソース フライデーに参加しました!"
-    not_joined:  "は、オープンソース フライデーに（まだ）参加してません。"
+    'joined:': "オープンソース フライデーに参加しました!"
+    not_joined: "は、オープンソース フライデーに（まだ）参加してません。"
     nextstep: "次はどうしよう？"
     firststep: "最初の貢献をしてみよう"
     friends: "友達におしえよう"
@@ -164,23 +133,15 @@ ja:
     share_activity:
       description_html: "他の人にあなたのOpen Source Fridayでの貢献を共有して、<a href=\"%{url}\">このURL</a>を共有するメッセージを送る。"
       message_html: "私の #OpenSourceFriday でのOSS貢献を %{url} で共有するよ！"
- 
-  # app/views/layouts/_calendar.erb
-  calender:
-    title: "予定を入れる"
-    description: "次の金曜日にオープンソース フライデーの予定を入れる。"
-    button:  "予定表に追加"
-
-  # app/views/layouts/_mailchimp.html.erb
+  calendar:
+    title: "アラームを設定"
+    description: "カレンダーの次の金曜日に、オープンソース フライデーをいれる"
+    button: "カレンダーに追加"
   mailchimp:
     title: "配信をうけとる"
     description: "GitHubの最新オープンソース技術情報を真っ先にうけとろう。"
-
-  # app/views/layouts/application.html.erb
   Error: "エラー: "
-  # (code icon) with  (love icon) by (github icon) and friends
   with: "は"
   by: "を込めて"
   and: "と"
   friends: "同志から"
-

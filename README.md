@@ -16,6 +16,16 @@ By signing up to the website, you can view and share you and your friends' Frida
 
 We are not a place where you're going to get free t-shirts or other kinds of gifts for your contributions. This tends to bring out bad behaviour like PRs that change a single line of whitespace, which waste maintainers time and energy, the rewards should be less tangible.
 
+## Translation
+
+### Transifex
+
+[Help Translate "Open Source Friday"](https://www.transifex.com/github-open-source/open-source-friday/dashboard/) on Transifex.
+
+### GitHub Pull Request
+
+See [CONTRIBUTING.md#Translation](https://github.com/ossfriday/ossfriday/blob/master/CONTRIBUTING.md#Translation).
+
 ## Development
 
 Source hosted at [GitHub](https://github.com/ossfriday/ossfriday).
