@@ -102,4 +102,11 @@ Rails.application.configure do # rubocop:disable Metrics/BlockLength
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # Redirect to opensourcefriday.com.
+  host_redirects = {
+    "www.opensourcefriday.com" => "opensourcefriday.com",
+    "github-open-source-friday.herokuapp.com" => "opensourcefriday.com",
+  }
+  config.middleware.use Rack::HostRedirect, host_redirects
 end
