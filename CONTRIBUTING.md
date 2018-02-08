@@ -21,7 +21,7 @@ Want to contribute to Open Source Friday? That's great! Here are a couple of gui
 
 You can find in-depth instructions to install the correct Ruby version, Postgres, and to set up the database in our [README](https://github.com/ossfriday/ossfriday/blob/master/README.md#getting-started).
 
-## Localisation
+## Translation
 
  * Fork the project.
  * Clone your fork to your machine.
