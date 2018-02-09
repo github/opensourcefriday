@@ -120,7 +120,7 @@ ja:
       message_html: 'Once you are a maintainer on a project that others rely on, open source goes from "sharing the code" to "sharing the maintenance". As we all know, "maintenance" takes time which is most effectively spent in a continuous block to help make sure you can finish that e.g. code review before you start to lose context.'
   users:
     welcome: "オープンソース フライデーに参加しました!"
-    'joined:': "オープンソース フライデーに参加しました!"
+    joined: "オープンソース フライデーに参加しました!"
     not_joined: "は、オープンソース フライデーに（まだ）参加してません。"
     nextstep: "次はどうしよう？"
     firststep: "最初の貢献をしてみよう"

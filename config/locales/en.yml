@@ -152,7 +152,7 @@ en:
   # app/views/users/show.rb
   users:
     welcome: "You have joined Open Source Friday!"
-    joined:: "has joined Open Source Friday!"
+    joined: "has joined Open Source Friday!"
     not_joined:  "has not joined Open Source Friday (yet)."
     nextstep: "What should I do now?"
     firststep: "Make your first contribution"
