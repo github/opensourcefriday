@@ -76,6 +76,8 @@ class UsersController < ApplicationController
       end
       [total, incomplete, prs]
     end
+  rescue Octokit::UnprocessableEntity
+    [0, true, []]
   end
 
   def query_events

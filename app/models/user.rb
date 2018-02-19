@@ -3,6 +3,10 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable, :omniauthable,
          omniauth_providers: [:github]
 
+  def email
+    nil
+  end
+
   def email_required?
     false
   end
