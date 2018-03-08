@@ -21,7 +21,7 @@
       <img class="avatar rounded-2 img-responsive" src="<%= @avatar %>&s=490">
     </div>
 
-    <div class="col-sm-7">
+    <div class="col-sm-9 pl-sm-6">
       <p class="mb-2">
         <% if @name %>
           <span class="d-inline-block mr-3"><%= octicon("mark-github") %> <a href="https://github.com/<%= @nickname %>"><%= @nickname %></a></span>
@@ -59,7 +59,7 @@
     </div>
   </div>
   <% if @user_is_current %>
-    <div class="mt-6 border-top container-lg gut-md mx-auto text-center">
+    <div class="mt-6 border-top container-lg clearfix gutter mx-auto text-center">
       <% page_url = "https://opensourcefriday.com/users/#{@nickname}" %>
       <h2 class="alt-h2 text-center mt-6 mb-4">
         <%=t "users.nextstep" %>

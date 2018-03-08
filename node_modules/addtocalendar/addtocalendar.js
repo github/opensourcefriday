@@ -155,7 +155,8 @@
         'ru': 'Добавить в календарь',
         'sv': 'Lägg till i kalender',
         'uk': 'Додати в календар',
-        'zh': '添加到日历'
+        'zh': '添加到日历',
+        'no': 'Legg til i kalender'
     };
 
     addtocalendar.calendar_urls = {}
