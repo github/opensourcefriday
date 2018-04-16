@@ -65,7 +65,7 @@ GEM
       railties (>= 4.1.0, < 6.0)
       responders
       warden (~> 1.2.3)
-    devise-i18n (1.6.1)
+    devise-i18n (1.6.2)
       devise (>= 4.4)
     docile (1.1.5)
     erubi (1.7.1)
