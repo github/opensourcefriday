@@ -19,7 +19,7 @@ Want to contribute to Open Source Friday? That's great! Here are a couple of gui
 
 ## Setup instructions
 
-You can find in-depth instructions to install the correct Ruby version, Postgres, and to set up the database in our [README](https://github.com/ossfriday/ossfriday/blob/master/README.md#getting-started).
+You can find in-depth instructions to install the correct Ruby version, Postgres, and to set up the database in our [README](README.md#getting-started).
 
 ## Translation
 
@@ -33,7 +33,7 @@ You can find in-depth instructions to install the correct Ruby version, Postgres
 
 ## Reporting a bug
 
-So you've found a bug, and want to help us fix it? Before filing a bug report, please double-check the bug hasn't already been reported. You can do so [on our issue tracker](https://github.com/ossfriday/ossfriday/issues?q=is%3Aissue+is%3Aopen+label%3Abug). If something hasn't been raised, you can go ahead and create a new issue with the following information:
+So you've found a bug, and want to help us fix it? Before filing a bug report, please double-check the bug hasn't already been reported. You can do so [on our issue tracker](https://github.com/github/opensourcefriday/issues?q=is%3Aissue+is%3Aopen+label%3Abug). If something hasn't been raised, you can go ahead and create a new issue with the following information:
 
 * On which page did the error happen?
 * How can the error be reproduced?
