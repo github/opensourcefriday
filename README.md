@@ -24,12 +24,12 @@ We are not a place where you're going to get free t-shirts or other kinds of gif
 
 ### GitHub Pull Request
 
-See [CONTRIBUTING.md#Translation](https://github.com/ossfriday/ossfriday/blob/master/CONTRIBUTING.md#Translation).
+See [CONTRIBUTING.md#Translation](CONTRIBUTING.md#Translation).
 
 ## Development
 
-Source hosted at [GitHub](https://github.com/ossfriday/ossfriday).
-Report issues/feature requests on [GitHub Issues](https://github.com/ossfriday/ossfriday/issues).
+Source hosted at [GitHub](https://github.com/github/opensourcefriday).
+Report issues/feature requests on [GitHub Issues](https://github.com/github/opensourcefriday/issues).
 
 ### Getting Started
 
@@ -115,4 +115,4 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 
 ## Copyright
 
-Copyright (c) Open Source Friday contributors. See [LICENSE](https://github.com/ossfriday/ossfriday/blob/master/LICENSE.txt) for details.
+Copyright (c) Open Source Friday contributors. See [LICENSE](https://github.com/github/opensourcefriday/blob/master/LICENSE.txt) for details.
