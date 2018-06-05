@@ -56,7 +56,7 @@ GEM
       simplecov
       url
     concurrent-ruby (1.0.5)
-    connection_pool (2.2.1)
+    connection_pool (2.2.2)
     crass (1.0.4)
     dalli (2.7.8)
     devise (4.4.3)
