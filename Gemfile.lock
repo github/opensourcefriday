@@ -130,7 +130,7 @@ GEM
     octicons_helper (4.3.0)
       octicons (= 5.3.0)
       rails
-    octokit (4.8.0)
+    octokit (4.9.0)
       sawyer (~> 0.8.0, >= 0.5.3)
     omniauth (1.7.1)
       hashie (>= 3.4.6, < 3.6.0)
@@ -147,7 +147,7 @@ GEM
       ast (~> 2.4.0)
     pg (1.0.0)
     powerpack (0.1.2)
-    public_suffix (3.0.1)
+    public_suffix (3.0.2)
     puma (3.11.4)
     rack (2.0.5)
     rack-cache (1.8.0)
