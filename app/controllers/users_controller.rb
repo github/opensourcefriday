@@ -118,10 +118,12 @@ class UsersController < ApplicationController
     case event.type
     when "IssuesEvent"
       return unless action == "closed"
+
       issue = payload.issue
       url = issue.html_url
       date = issue.closed_at
       return if issue.user.login == @nickname
+
       title = "closed #{issue.title}"
     when "PushEvent"
       diff = "#{payload.before}...#{payload.head}"
@@ -131,12 +133,14 @@ class UsersController < ApplicationController
       title = "pushed <code>#{branch}</code>".html_safe
     when "PullRequestReviewEvent"
       return unless action == "submitted"
+
       review = event.review
       url = review.html_url
       date = review.submitted_at
       title = "reviewed #{event.pull_request.title}"
     when "ReleaseEvent"
       return unless action == "published"
+
       release = event.release
       url = release.html_url
       date = release.published_at
