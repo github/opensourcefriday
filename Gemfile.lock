@@ -51,7 +51,7 @@ GEM
     bindex (0.5.0)
     builder (3.2.3)
     byebug (10.0.2)
-    codecov (0.1.11)
+    codecov (0.1.13)
       json
       simplecov
       url
