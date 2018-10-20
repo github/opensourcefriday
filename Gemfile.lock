@@ -58,7 +58,7 @@ GEM
     concurrent-ruby (1.0.5)
     connection_pool (2.2.2)
     crass (1.0.4)
-    dalli (2.7.8)
+    dalli (2.7.9)
     devise (4.5.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
