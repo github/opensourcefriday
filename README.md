@@ -57,7 +57,7 @@ If you're on macOS, have Homebrew installed, and you've set the environment vari
 ./script/server
 ```
 
-This should get you started with a this project on your machine. Otherwise, no worries! You can use the following instructions to install all dependencies and setup a local server.
+This should get you started with this project on your machine. Otherwise, no worries! You can use the following instructions to install all dependencies and setup a local server.
 
 First, you'll need to install Ruby. We recommend using the excellent [rbenv](https://github.com/rbenv/rbenv),
 and [ruby-build](https://github.com/rbenv/ruby-build)
