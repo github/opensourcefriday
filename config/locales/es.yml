@@ -1,7 +1,7 @@
 es:
   Open Source Friday: "Viernes de Código Abierto"
   full_title_desc: "Este viernes, invierte algunas horas contribuyendo al software que amas y usas."
-  full_description: "El codigo abierto se hace por personas como tu. Este viernes, invierte algunas horas contribuyendo al software que amas y usas."
+  full_description: "El código abierto se hace por personas como tú. Este viernes, invierte algunas horas contribuyendo al software que amas y usas."
   Contributors: "Colaboradores"
   Businesses: "Negocios"
   Maintainers: "Mantenedores"
@@ -9,7 +9,7 @@ es:
     businesses: "Tu negocio funciona con código abierto. Aprende a como formar parte."
     maintainers: "Dale a tu proyecto algo de amor para ayudar a otros a contribuir donde tu más lo necesitas."
     contributors: "Aprende que significa contribuir, y a como encontrar y empezar a trabajar en nuevos proyectos."
-  Sign up with GitHub: "Registrate en GitHub"
+  Sign up with GitHub: "Regístrate en GitHub"
   Sign up: "Registrate"
   Sign out: "Desconectar"
   index:
@@ -57,7 +57,7 @@ es:
         title: "Reservar tiempo"
         description: "Cada viernes, aliente a sus gerentes, empleados y compañeros de trabajo a dedicar al menos dos horas a trabajar en los proyectos de código abierto que su organización ya utiliza."
       policy:
-        title: "Hacerlo un habito"
+        title: "Hacerlo un hábito"
         description: "Cree políticas internas claras para que los empleados puedan contribuir de manera fácil y consistente al código abierto."
   maintainers:
     title: "Construir software con ayuda de otros"
@@ -70,7 +70,7 @@ es:
         description_html: 'Asegúrate que tu documento LÉEME detalle lo que hace tu proyecto, su propósito y las necesidades de contribución, y como contribuir a <a href="%{url}">distribuir la carga de tu comunidad</a>.'
       promote:
         title: "Promociona tu trabajo"
-        description_html: 'Considere crearse una cuenta en Twitter, entradas en una bitácora y un sitio de internet to <a href="%{url}">ayudar a la gente encontrar y seguir su proyecto</a>.'
+        description_html: "Considere crearse una cuenta en Twitter, entradas en una bitácora y un sitio de internet to <a href="%{url}">ayudar a la gente encontrar y seguir su proyecto</a>.'
     growing:
       title: "Haz crecer tu comunidad"
       description: "Todos fueron nuevos una vez. Alivie el nerviosismo de la contribución de otra persona por primera vez."
