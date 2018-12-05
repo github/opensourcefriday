@@ -4,6 +4,6 @@ module ApplicationHelper
   end
 
   def language_name(locale)
-    Rails.configuration.Languages[locale.to_s]
+    Rails.configuration.Languages[locale.to_s].capitalize
   end
 end
