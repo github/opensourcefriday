@@ -85,7 +85,7 @@ fr:
         description: "Chaque vendredi, encouragez vos responsables, vos employé·e·s et vos collègues à consacrer au moins deux heures aux projets open source déjà utilisés par votre entreprise."
       policy:
         title: "Faites-en une habitude"
-        description: "Créez des politiques internes claires pour que les employés puissent contribuer facilement et de manière cohérente à l'open source."
+        description: "Créez des politiques internes claires pour que les employé·e·s puissent contribuer facilement et de manière cohérente à l'open source."
 
   # app/views/home/maintainers.html.erb
   maintainers:
@@ -105,7 +105,7 @@ fr:
       description: "Tout le monde a été nouveau un jour. Soulagez la peur de contribuer pour la première fois de quelqu'un."
       document:
         title: "Documentez tout"
-        description_html: "Le <a href=\"%{survey}\">Sondage 2017 de GitHub sur l'Open Source</a> a fait ressortir qu'une documentation incomplète ou confuse est le plus gros problème pour les utilisateurs d'open source. Assurez-vous de <a href=\"%{guide}\">documenter vos processus</a> expliquant comment contribuer à votre projet."
+        description_html: "Le <a href=\"%{survey}\">Sondage 2017 de GitHub sur l'Open Source</a> a fait ressortir qu'une documentation incomplète ou confuse est le plus gros problème pour les utilisateurs·trices d'open source. Assurez-vous de <a href=\"%{guide}\">documenter vos processus</a> expliquant comment contribuer à votre projet."
       help:
         title: "Trouvez de l'aide"
         Look_out_html: "Cherchez de potentiels contributeurs·trices ou mainteneurs·neuses pour <a href=\"%{url}\">partager la possession de votre projet</a>. Faites un effort pour accueillir des contributeurs·trices novices en particulier."
