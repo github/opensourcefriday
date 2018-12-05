@@ -1,0 +1,187 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+fr:
+  # common part
+  Open Source Friday: "Vendredi Open Source"
+  full_title_desc: "Ce vendredi, investissez quelques heures pour contribuer aux logiciels que vous utilisez et adorez."
+  full_description: "Ce sont des personnes comme vous qui construisent l'open source. Ce vendredi, investissez quelques heures pour contribuer aux logiciels que vous utilisez et adorez."
+  Contributors: "Contributeurs·trices"
+  Businesses: "Entreprises"
+  Maintainers: "Mainteneurs·neuses"
+  headline:
+    businesses: "Votre entreprise est basée sur de l'open source. Découvrez comment vous impliquer."
+    maintainers: "Donnez à votre projet un peu d'amour afin d'aider les autres à contribuer là où vous en avez le plus besoin."
+    contributors: "Apprenez ce que cela signifie de contribuer et découvrez comment débuter sur un nouveau projet."
+  Sign up with GitHub: "S'inscrire avec GitHub"
+  # app/views/layouts/_nav.html.erb
+  Sign up: "S'inscrire"
+  Sign out: "Déconnexion"
+
+  # app/views/home/index.html.erb
+  index:
+    main:
+      title: "Contribuez lors du Vendredi Open Source"
+      contribution: "Apprenez à contribuer"
+      link_html: '<a class="" href="%{url}">Lire le guide%{icon}</a>'
+    find:
+      title: "Trouvez un projet auquel contribuer"
+      description: "Contribuer à l'open source se passe à tous les niveaux, à travers les projets et la conception, la documentation, la logistique et le code. Vous n'avez pas besoin de vous prendre la tête avec ce que sera exactement votre première contribution, ou ce à quoi elle ressemblera."
+      used:
+        title: "Un projet que vous utilisez déjà"
+        description: "Commencez par penser aux projets que vous utilisez déjà ou que vous voulez utiliser. Les projets auxquels vous contribuerez activement sont ceux vers lesquels vous revenez souvent."
+      issue:
+        title: "Une issue que vous pouvez corriger"
+        description: "Découvrez ces sites pour trouver un projet cherchant votre aide :"
+        first: "Your First PR"
+        grabs: "Up For Grabs"
+        triage: "CodeTriage"
+      welcome:
+        title: "Un accueil chaleureux"
+        description_html: "Trouvez un projet qui a l'histoire et la réputation d'être accueillant envers les nouveaux·velles contributeurs·trices dans la vitrine de GitHub <a href=\"%{url}\">Projets géniaux pour les nouveaux·velles contributeurs·trices</a>."
+
+  # app/views/home/business.html.erb
+  business:
+    title: "Votre entreprise est basée sur des logiciels open source"
+    description: "Une fois par semaine, chaque semaine. Prenez le temps d'investir dans les logiciels open source que vous utilisez et adorez."
+    reason:
+      title: "Votre entreprise en dépend"
+      description: "Les entreprises ont besoin de logiciels open source pour fonctionner efficacement."
+      technology:
+        title: "Améliorez la technologie dont vous dépendez"
+        description: "Une participation directe à l'open source donne à votre entreprise une voix au sein des logiciels dont vous dépendez."
+    models:
+      title: "Travaillez mieux ensemble"
+      description: "Les modèles de développement open source sont à la pointe de la collaboration logicielle. Les développeur·euse·s qui travaillent sur de l'open source apprennent intuitivement à améliorer la qualité, la rapidité, et la transparence au sein de votre entreprise."
+    cost:
+      title: "Réduisez les frais"
+      description: "Contribuer régulièrement à de l'open source permet d'économiser de l'argent et des heures de développeur·euse·s en réduisant les logiciels personnalisés que vous devez maintenir."
+    reputation:
+      title: "Attirez et retenez les talents"
+      description: "Les employé·e·s qui travaillent sur de l'open source augmentent leur réputation ainsi que celle de leur employeur."
+    plan:
+      title: "Vendredi Open Source dans votre entreprise"
+      description: "Améliorez votre culture du développement est trop important pour être laissé à l'abandon."
+      encourage:
+        title: "Mettez du temps de côté"
+        description: "Chaque vendredi, encouragez vos responsables, vos employé·e·s et vos collègues à consacrer au moins deux heures aux projets open source déjà utilisés par votre entreprise."
+      policy:
+        title: "Faites-en une habitude"
+        description: "Créez des politiques internes claires pour que les employés puissent contribuer facilement et de manière cohérente à l'open source."
+
+  # app/views/home/maintainers.html.erb
+  maintainers:
+    title: "Construisez des logiciels avec l'aide d'autres personnes"
+    description: "Chaque vendredi, donnez un peu d'amour à votre projet logiciel et facilitez les contributions d'autres personnes."
+    involve:
+      title: "Aidez les gens à découvrir votre projet"
+      description: "Créer un projet n'est que le début. Pourquoi ne pas passer le mot ?"
+      workload:
+        title: "Réduisez votre charge de travail :"
+        description_html: "Assurez-vous que votre README comporte les détails de ce que fait votre projet, sa portée et ses besoins en contributions, et comment contribuer afin d'<a href=%{url}>influencer votre communauté</a>."
+      promote:
+        title: "Promouvez votre travail"
+        description_html: 'Envisagez de créer un compte Twitter, des articles de blog et un site internet pour <a href="%{url}">aider les gens à trouver et suivre vos projets</a>.'
+    growing:
+      title: "Développez votre communauté"
+      description: "Tout le monde a été nouveau un jour. Soulagez la peur de contribuer pour la première fois de quelqu'un."
+      document:
+        title: "Documentez tout"
+        description_html: "Le <a href=\"%{survey}\">Sondage 2017 de GitHub sur l'Open Source</a> a fait ressortir qu'une documentation incomplète ou confuse est le plus gros problème pour les utilisateurs d'open source. Assurez-vous de <a href=\"%{guide}\">documenter vos processus</a> expliquant comment contribuer à votre projet."
+      help:
+        title: "Trouvez de l'aide"
+        Look_out_html: "Cherchez de potentiels contributeurs·trices ou mainteneurs·neuses pour <a href=\"%{url}\">partager la possession de votre projet</a>. Faites un effort pour accueillir des contributeurs·trices novices en particulier."
+    workflow:
+      title: "Améliorez votre flux de travail"
+      description: "Apprenez à être plus efficace grâce à d'autres mainteneurs·neuses."
+      boundaries:
+        title: "Définissez des limites"
+        description_html: "Décidez quelle est la portée de votre projet et <a href=\"%{pause}\">définissez des limites claires pour vous-même</a>. Dire non <a href=\"%{sayno}\"> est aussi important que dire oui</a>."
+      automation:
+        title: "Automatisation"
+        description_html: "<a href=\"%{url}\">Faites entrer les robots</a> pour automatiser autant de choses de possible à travers des tests et autres vérifications afin de vous économiser du temps."
+    visitor:
+      title: "Préparez-vous pour le Vendredi Open Source"
+      description: "Dépensez du temps maintenant pour en économiser plus tard."
+
+  endorsement:
+    title: "Vous êtes en bonne compagnie"
+    Kim_Crayton:
+      title_html: 'Ingénieure Communauté, Autrice, Fondatrice'
+      name_html:  'Kim Crayton (%{url})'
+      message_html: "Contribuer à l'open source permet non seulement aux entreprises de chaque taille de bénéficier du savoir-faire d'autres talents et de construire avec eux, mais c'est aussi une occasion pour ceux qui sont novices dans la programmation de s'adapter aux processus de développement de telle sorte à ce que cela leur permettent de s'entrainer, expérimenter, et de se montrer comme étant des membres précieux et contributeurs de la communauté."
+    Chris_Lamb:
+      title_html: 'Leader du %{company_url}'
+      name_html:  'Chris Lamb (%{url})'
+      message_html:  "Je suis arrivé où j'en suis aujourd'hui en contribuant à des logiciels open source, me permettant ainsi non seulement d'améliorer mes compétences en tant que développeur logiciel, mais aussi d'augmenter mon réseau de collègues et de rencontrer de nouveaux amis intéressants issus de cultures extrêmement diverses. Je le recommande fortement."
+    Will_Norris:
+      title_html: 'Open Source chez %{company_url}'
+      name_html:  'Will Norris (%{url})'
+      message_html: "Contribuer à des projets open source continue d’être l’un des projets les plus populaires à 20% pour les ingénieurs de Google. L’open source joue un rôle si important dans une bonne partie de notre travail que nous essayons donc de faire en sorte que <a href=\"https://opensource.google.com/docs/patching/\"> le processus </a> soit le plus facile possible."
+    Christine_Abernathy:
+      title_html: 'Open Source chez %{company_url}'
+      name_html:  'Christine Abernathy (%{url})'
+      message_html: "L'open source s'aligne avec notre mission de rendre le monde plus ouvert et connecté. Travailler avec la communauté nous donne l'occasion de partager notre travail et les défis que nous cherchons à résoudre, et encourage les personnes talentueuses à amener leurs idées et leurs efforts pour faire avancer le monde."
+    Rich_Harris:
+      title_html: 'Mainteneur de %{project1_url} et %{project2_url}'
+      name_html:  'Rich Harris (%{url})'
+      message_html: "La chose qui manque le plus à la plupart des projets open source n’est pas l’argent, mais le temps. De nombreux·reuses mainteneurs·neuses ont des emplois à temps plein et ne peuvent pas réduire leurs heures de manière réaliste. Presque tous les projets ont besoin de plus de contributeurs·trices. Le Vendredi Open Source est un moyen idéal pour les entreprises de soutenir de manière significative l’écosystème open source dont elles dépendent."
+    Brett_Cannon:
+      title_html: 'Développeur du %{project_url}'
+      name_html:  'Brett Cannon (%{url})'
+      message_html: "Une fois que vous êtes responsable d’un projet auquel d'autres personnes dépendent, l’open source passe de \"partager du code\" à \"partager de la maintenance\". Comme nous le savons tous, la \"maintenance\" prend du temps, un temps qui est utilisé plus efficacement d'un seul trait pour être certain de terminer ce qu'on a commencé. Cela peut être, par exemple, une revue de code avant que vous ne commenciez à perdre le contexte."
+
+  # app/views/users/show.rb
+  users:
+    welcome: "Vous avez rejoint le Vendredi Open Source !"
+    joined: "a rejoint le Vendredi Open Source !"
+    not_joined:  "n'a pas (encore) rejoint le Vendredi Open Source."
+    nextstep: "Qu'est-ce que je dois faire maintenant ?"
+    firststep: "Faites votre première contribution"
+    friends: "Parlez-en à vos amis"
+    No_Friday_PR: "Aucune Pull Request du vendredi ou évènements dans les 3 derniers mois."
+    Find_a_project_html: "<a href=\"%{how_to_contribute}\">Trouvez un projet auquel contribuer</a>, ou apprenez <a href=\"%{submit_a_contribution}\">comment créer votre première Pull Request</a>."
+    share_will:
+      description_html: "Partagez le Vendredi Open Source avec les autres <a href=\"%{url}\">en utilisant cette URL</a>."
+      message_html: "Je contribue à l'open source pendant #OpenSourceFriday: https://opensourcefriday.com. Rejoignez-moi !"
+    share_activity:
+      description_html: "Partagez vos contributions du Vendredi Open Source avec les autres <a href=\"%{url}\">en utilisant cette URL</a>."
+      message_html: "Découvrez mes contributions à l'open source pendant #OpenSourceFriday: %{url}"
+
+  # app/views/layouts/_calendar.erb
+  calendar:
+    title: "Définir un rappel"
+    description: "Ajoutez le Vendredi Open Source à votre calendrier vendredi prochain."
+    button:  "Ajouter au Calendrier"
+
+  # app/views/layouts/_mailchimp.html.erb
+  mailchimp:
+    title: "Gardez le contact"
+    description: "Soyez le ou la premier·ère à connaître les derniers conseils et ressources de GitHub sur l'open source."
+
+  # app/views/layouts/application.html.erb
+  Error: "Erreur : "
+  # (code icon) with  (love icon) by (github icon) and friends
+  with: "avec"
+  by: "par"
+  and: "et "
+  friends: "ses ami·e·s"
+
