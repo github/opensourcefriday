@@ -86,7 +86,7 @@ GEM
     hashie (3.6.0)
     heroku-deflater (0.6.3)
       rack (>= 1.4.5)
-    i18n (1.5.2)
+    i18n (1.5.3)
       concurrent-ruby (~> 1.0)
     jaro_winkler (1.5.2)
     jquery-rails (4.3.3)
