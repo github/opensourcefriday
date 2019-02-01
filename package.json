@@ -4,6 +4,6 @@
     "addtocalendar": "AddToCalendar/addtocalendar",
     "jstimezonedetect": "^1.0.6",
     "primer-core": "^7.0.0",
-    "primer-marketing": "^6.3.3"
+    "primer-marketing": "^7.0.0"
   }
 }
