@@ -148,7 +148,7 @@ GEM
     pg (1.1.4)
     psych (3.1.0)
     public_suffix (3.0.3)
-    puma (3.12.0)
+    puma (3.12.1)
     rack (2.0.6)
     rack-cache (1.9.0)
       rack (>= 0.4)
