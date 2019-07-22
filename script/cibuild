@@ -3,6 +3,8 @@ set -e
 
 cd "$(dirname "$0")/.."
 
+gem install bundler
+
 ./script/setup
 
 set +e
