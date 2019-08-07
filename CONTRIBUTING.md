@@ -26,7 +26,7 @@ You can find in-depth instructions to install the correct Ruby version, Postgres
  * Fork the project.
  * Clone your fork to your machine.
  * Create a new branch for your translation work.
- * Copy `config/locale/en.yml` to target locale file e.g. `config/locale/es.yml`.
+ * Copy `config/locales/en.yml` to target locale file e.g. `config/locales/es.yml`.
  * Add target language in `config/initializers/locale.rb`:`I18n.available_locales = %i[en, ja]`
  * Translate messages in new locale file.
  * Send a pull request.
