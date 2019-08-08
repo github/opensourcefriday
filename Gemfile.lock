@@ -147,7 +147,7 @@ GEM
       ast (~> 2.4.0)
     pg (1.1.4)
     public_suffix (3.1.1)
-    puma (4.0.1)
+    puma (4.1.0)
       nio4r (~> 2.0)
     rack (2.0.7)
     rack-cache (1.9.0)
