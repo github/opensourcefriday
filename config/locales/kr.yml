@@ -70,57 +70,58 @@ en:
         description: "직접 오픈 소스에 참여하여 소프트웨어를 통해 당신의 기업을 알리세요 Direct participation in open source gives your organization a voice in the software you depend on."
     models:
       title: "함께 발전하기 Work better together"
-      description: "Open source development models are at the forefront of software collaboration. Developers who work on open source learn intuitively to improve quality, speed, and transparency at your organization."
+      description: "오픈 소스 개발 모델은 소프트 협업의 최전방에 있습니다. 개발자는 오픈소스를 통해 직관적으로 기업 소프트웨어의 질과 속도, 그리고 투명성을 개선합니다. Open source development models are at the forefront of software collaboration. Developers who work on open source learn intuitively to improve quality, speed, and transparency at your organization."
     cost:
       title: "오버헤드 줄이기 Reduce overhead"
-      description: "Contributing regularly to open source saves money and developer hours by reducing the custom software you need to maintain."
+      description: "정기적으로 오픈소스에 기여하여 커스텀 소프트웨어 유지보수하는데 쓰이는 시간과 돈을 줄일 수 있습니다.  Contributing regularly to open source saves money and developer hours by reducing the custom software you need to maintain."
     reputation:
       title: "인재 찾기 Attract and retain talent"
-      description: "Employees that work on open source boost their, and their employer's, reputation."
+      description: "오픈 소스를 통해 사원 그리고 기업 평판을 올리세요 Employees that work on open source boost their, and their employer's, reputation."
     plan:
       title: "오픈 소스 금요일을 기업에서 시행하기 Open Source Friday in your organization"
-      description: "Improving your developer culture is too important to be left unplanned."
+      description: "이번 기회에 개발자 문화를 개선해보세요 Improving your developer culture is too important to be left unplanned."
       encourage:
         title: "시간 내기 Set aside time"
-        description: "Each Friday, encourage your managers, employees, and coworkers to spend at least two hours working on the open source projects your organization already uses."
+        description: "매주 금요일, 당신의 상사, 직원 그리고 동료들과 2 시간 이상 기업이 사용하는 오픈소스 프로젝트로 시간을 보내보세요. Each Friday, encourage your managers, employees, and coworkers to spend at least two hours working on the open source projects your organization already uses."
       policy:
         title: "습관으로 만들기 Make it a habit"
-        description: "Create clear, internal policies so employees can easily and consistently contribute to open source."
+        description: "사원들이 오픈소스에 기여할 수 있도록 명확한 사내정책을 만들어보세요. Create clear, internal policies so employees can easily and consistently contribute to open source."
 
   # app/views/home/maintainers.html.erb
   maintainers:
-    title: "Build software with help from others"
-    description:  "Every Friday, give your software project some love and make it easier for others to contribute."
+    title: "누군가의 도움을 받아 소프트웨어 만들기 Build software with help from others"
+    description:  "매주 금요일, 다른이들이 기여할 수 있도록 프로젝트에 관심을 주세요 Every Friday, give your software project some love and make it easier for others to contribute."
     involve:
-      title: "Help people discover your project"
-      description: "Creating a project is only the beginning. Why not spread the word?"
+      title: "당신의 프로젝트를 찾을 수 있도록 돕기 Help people discover your project"
+      description: "프로젝트를 만드는 것은 시작일 뿐입니다. 어서 프로젝트를 알려보세요 Creating a project is only the beginning. Why not spread the word?"
       workload:
-        title: "Reduce your workload:"
-        description_html: 'Ensure your README file details what your project does, its scope and contribution needs, and how to contribute to <a href="%{url}">leverage your community</a>.'
+        title: "업무량을 줄이기 Reduce your workload:"
+        description_html: '<a href="%{url}">커뮤니티의 도움을 최대한 효과적으로 얻기</a> 위해 당신의 README 파일에 당신의 프로젝트가 무엇을 하는지, 스코프는 무엇인지, 기여가 필요한 부분은 어디인지, 기여하는 방법은 무엇인지 적어주세요 Ensure your README file details what your project does, its scope and contribution needs, and how to contribute to <a href="%{url}">leverage your community</a>.'
       promote:
-        title: "Promote your work"
-        description_html: 'Consider creating a Twitter account, blog posts and website to <a href="%{url}">help people find and follow your project</a>.'
+        title: "프로젝트를 홍보하기 Promote your work"
+        description_html: '트위터 계정이나 블로그, 웹사이트를 통해 <a href="%{url}">사람들이 당신의 프로젝트를 찾을 수 있도록 하세요</a> Consider creating a Twitter account, blog posts and website to <a href="%{url}">help people find and follow your project</a>.'
     growing:
-      title: "Grow your community"
-      description: "Everybody was new once. Ease someone else's first-time contribution jitters."
+      title: "커뮤니티를 키우기 Grow your community"
+      description: "누구나 처음은 있습니다. 첫 컨트리뷰션을 누구나 쉽게 시작할 수 있도록 도와주세요. Everybody was new once. Ease someone else's first-time contribution jitters."
       document:
-        title: "Document everything"
-        description_html: "<a href=\"%{survey}\">GitHub's 2017 Open Source Survey</a> showed incomplete or confusing documentation is the biggest problem for open source users. Ensure you are <a href=\"%{guide}\">documenting your processes </a>  for how to contribute to your project."
+        title: "모든 것을 문서화 Document everything"
+        description_html: "<a href=\"%{survey}\">2017년 깃헙 오픈소스 설문조사</a>에 따르면 불완전하고 헷갈리는 문서는 컨트리뷰터가 오픈소스에 기여하는데 가장 큰 문제가 되었습니다. 당신의 프로젝트에 어떻게 기여할 수 있는지 <a href=\"%{guide}\">프로세스를 문서화</a>하세요.
+        <a href=\"%{survey}\">GitHub's 2017 Open Source Survey</a> showed incomplete or confusing documentation is the biggest problem for open source users. Ensure you are <a href=\"%{guide}\">documenting your processes </a>  for how to contribute to your project."
       help:
-        title: "Get help"
+        title: "도움 얻기 Get help"
         Look_out_html: "Look out for promising potential contributors or maintainers to <a href=\"%{url}\"> share ownership of your project.</a> Make an effort to welcome first-time contributors in particular."
     workflow:
-      title: "Improve your workflow"
-      description: "Learn from other maintainers on how to be more effective."
+      title: "워크플로우 향상하기 Improve your workflow"
+      description: "다른 관리자는 어떻게 효과적으로 프로젝트를 관리하는지 배워보세요 Learn from other maintainers on how to be more effective."
       boundaries:
         title: "Set boundaries"
         description_html: "Decide on what the scope of the project is and <a href=\"%{pause}\">set clear boundaries for yourself</a>. Saying no <a href=\"%{sayno}\"> is as important as saying yes</a>."
       automation:
-        title: "Automation"
-        description_html: "<a href=\"%{url}\">Bring in the robots</a> to automate as much as possible through tests and other checks to save yourself time."
+        title: "자동화 Automation"
+        description_html: "<a href=\"%{url}\">로봇을 이용해</a> 자동화된 테스트 프로세스로 시간을 절약하세요 <a href=\"%{url}\">Bring in the robots</a> to automate as much as possible through tests and other checks to save yourself time."
     visitor:
-      title: "Get ready for Open Source Friday"
-      description: "Spend time now to save time later."
+      title: "오픈소스 금요일 준비하기 Get ready for Open Source Friday"
+      description: "나중을 위해 지금 참여하세요 Spend time now to save time later."
 
   endorsement:
     title: "You're in good company"
