@@ -152,12 +152,12 @@ en:
 
   # app/views/users/show.rb
   users:
-    welcome: "You have joined Open Source Friday!"
-    joined: "has joined Open Source Friday!"
-    not_joined:  "has not joined Open Source Friday (yet)."
-    nextstep: "What should I do now?"
-    firststep: "Make your first contribution"
-    friends: "Tell your friends"
+    welcome: "오픈소스 금요일에 가입하셨습니다 You have joined Open Source Friday!"
+    joined: "오픈소스 금요일에 가입하셨습니다 has joined Open Source Friday!"
+    not_joined:  "아직 오픈 소스에 가입하지 않았습니다 has not joined Open Source Friday (yet)."
+    nextstep: "이제 무엇을 해야하나요? What should I do now?"
+    firststep: "당신의 첫 컨트리뷰션을 만들어보세요 Make your first contribution"
+    friends: "친구에게 알리세요 Tell your friends"
     No_Friday_PR: "No Friday pull requests or events in the last 3 months."
     Find_a_project_html: "<a href=\"%{how_to_contribute}\">Find a project to contribute to</a>, or learn <a href=\"%{submit_a_contribution}\">how to make your first pull request</a>."
     share_will:
@@ -169,17 +169,17 @@ en:
 
   # app/views/layouts/_calendar.erb
   calendar:
-    title: "Set a reminder"
-    description: "Add Open Source Friday to your calendar next Friday."
-    button:  "Add to Calendar"
+    title: "리마인더 만들기 Set a reminder"
+    description: "오픈소스 금요일을 당신의 캘린더에 저장하세요 Add Open Source Friday to your calendar next Friday."
+    button:  "캘린더에 넣기 Add to Calendar"
 
   # app/views/layouts/_mailchimp.html.erb
   mailchimp:
-    title: "Stay in touch"
-    description: "Be the first to hear about GitHub's latest open source tips and resources."
+    title: "연락하기 Stay in touch"
+    description: "깃헙의 가장 최신 팁과 리소스 정보를 빠르게 얻어보세요 Be the first to hear about GitHub's latest open source tips and resources."
 
   # app/views/layouts/application.html.erb
-  Error: "Error: "
+  Error: "오류: "
   # (code icon) with  (love icon) by (github icon) and friends
   with: "with"
   by: "by"
