@@ -1,6 +1,6 @@
 ru:
   # common part
-  Open Source Friday: "Open Source Пятница"
+  Open Source Friday: "Open Source Friday"
   full_title_desc: "В эту пятницу потратьте несколько часов на разработку программного обеспечения, которые вы используете и любите"
   full_description: "Открытый исходный код пишут такие же люди, как и Вы. В эту пятницу потратьте несколько часов на разработку программного обеспечения, которые вы используете и любите"
   Contributors: "Участники"
@@ -18,7 +18,7 @@ ru:
   # app/views/home/index.html.erb
   index:
     main:
-      title: "Внесите свой вклад в Open Source Пятницу"
+      title: "Внесите свой вклад в Open Source Friday"
       contribution: "Учитесь вносить свой вклад"
       link_html: '<a class="" href="%{url}">Читать руководство%{icon}</a>'
     find:
