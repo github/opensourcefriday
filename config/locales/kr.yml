@@ -162,7 +162,7 @@ en:
     Find_a_project_html: "<a href=\"%{how_to_contribute}\">기여할 프로젝트를 찾거나</a>, <a href=\"%{submit_a_contribution}\">어떻게 첫 pull requests를 만드는 지</a> 배워보세요."
     share_will:
       description_html: "<a href=\"%{url}\">이 URL로</a> 오픈소스 금요일을 공유해보세요"
-      message_html: "저는 #OpenSourceFriday: https://opensourcefriday.com 에서 오픈소스 프로젝트에 기여하고 있습니다. 같이 시작해봐요!"
+      message_html: "저는 #OpenSourceFriday: https://opensourcefriday.com 를 통해 오픈소스 프로젝트에 기여하고 있습니다. 같이 시작해봐요!"
     share_activity:
       description_html: "<a href=\"%{url}\">이 URL로</a>당신의 오픈소스 금요일 컨트리뷰션을 공유하세요."
       message_html: "#OpenSourceFriday: %{url}에서 제 오픈소스 컨트리뷰션을 확인할 수 있습니다."
