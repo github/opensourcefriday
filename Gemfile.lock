@@ -57,7 +57,7 @@ GEM
       url
     concurrent-ruby (1.1.5)
     connection_pool (2.2.2)
-    crass (1.0.4)
+    crass (1.0.5)
     dalli (2.7.10)
     devise (4.7.1)
       bcrypt (~> 3.0)
