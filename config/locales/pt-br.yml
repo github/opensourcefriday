@@ -1,0 +1,165 @@
+pt-br:
+  # common part
+  Open Source Friday: "Open Source Friday"
+  full_title_desc: "Nesta sexta-feira, invista algumas horas contribuindo para o software que você usa e adora."
+  full_description: "O código aberto é criado por pessoas como você. Nesta sexta-feira, invista algumas horas contribuindo para o software que você usa e adora."
+  Contributors: "Contribuidores"
+  Businesses: "Empresas"
+  Maintainers: "Mantenedores"
+  headline:
+    businesses: "Sua empresa funciona em código aberto. Aprenda a se envolver."
+    maintainers: "Dê amor ao seu projeto para ajudar outras pessoas a contribuir para onde você mais precisa."
+    contributors: "Aprenda o que significa contribuir e como encontrar e começar um novo projeto."
+  Sign up with GitHub: "Entrar com GitHub"
+  # app/views/layouts/_nav.html.erb
+  Sign up: "Entrar"
+  Sign out: "Sair"
+
+  # app/views/home/index.html.erb
+  index:
+    main:
+      title: "Contribua em Open Source Friday"
+      contribution: "Aprenda como contribuir"
+      link_html: '<a class="" href="%{url}">Leia o guia%{icon}</a>'
+    find:
+      title: "Encontre um projeto para contribuir"
+      description: "A contribuição para o código aberto acontece em todos os níveis, nos projetos e design, documentação, operações e código. Você não precisa pensar demais sobre qual será exatamente a sua primeira contribuição ou como ela ficará"
+      used:
+        title: "Um projeto que você já usa"
+        description: "Comece pensando nos projetos que você já usa ou deseja usar. Os projetos com os quais você contribuirá ativamente são aqueles em que você se volta."
+      issue:
+        title: "Um problema que você pode corrigir"
+        description: "Confira esses sites para encontrar um projeto procurando sua ajuda:"
+        first: "Seu primeiro PR"
+        grabs: "Em Disputa"
+        triage: "CódigoTriagem"
+      welcome:
+        title: "Uma calorosa recepção"
+        description_html: "Encontre um projeto que tenha histórico e reputação de ser bem-vindo a novos colaboradores na vitrine de <a href=\"%{url}\">ótimo para novos colaboradores</a>."
+
+  # app/views/home/business.html.erb
+  business:
+    title: "Sua empresa funciona com software de código aberto"
+    description: "Uma vez por semana, toda semana. Reserve um tempo para investir no software de código aberto que você usa e adora."
+    reason:
+      title: "Sua empresa depende disso"
+      description: "As empresas precisam de software de código aberto para funcionar de maneira eficaz."
+      technology:
+        title: "Melhore a tecnologia em que você confia"
+        description: "A participação direta no código aberto dá à sua organização uma voz no software do qual você depende."
+    models:
+      title: "Trabalhe melhor junto"
+      description: "Os modelos de desenvolvimento de código aberto estão na vanguarda da colaboração de software. Os desenvolvedores que trabalham em código aberto aprendem intuitivamente a melhorar a qualidade, velocidade e transparência em sua organização."
+    cost:
+      title: "Reduzir sobrecarga"
+      description: "Contribuir regularmente para o código aberto economiza tempo e dinheiro do desenvolvedor, reduzindo o software personalizado que você precisa manter."
+    reputation:
+      title: "Atrair e reter talentos"
+      description: "Os funcionários que trabalham em código aberto aumentam a reputação deles e de seus empregadores."
+    plan:
+      title: "Open Source Friday na sua organização"
+      description: "Melhorar sua cultura de desenvolvimento é muito importante para não ser planejado."
+      encourage:
+        title: "Reserve um tempo"
+        description: "Toda sexta-feira, incentive seus gerentes, funcionários e colegas de trabalho a passar pelo menos duas horas trabalhando nos projetos de código aberto que sua organização já usa."
+      policy:
+        title: "Criar um hábito"
+        description: "Crie políticas internas claras para que os funcionários possam contribuir de maneira fácil e consistente com projetos de código aberto."
+
+  # app/views/home/maintainers.html.erb
+  maintainers:
+    title: "Crie software com a ajuda de outras pessoas"
+    description:  "Toda sexta-feira, dê amor ao seu projeto de software e facilite a contribuição de outras pessoas."
+    involve:
+      title: "Ajude as pessoas a descobrir seu projeto"
+      description: "Criar um projeto é apenas o começo. Por que não espalhar a palavra?"
+      workload:
+        title: "Reduza sua carga de trabalho:"
+        description_html: 'Garanta que o seu arquivo LEIA-ME detalhe o que o seu projeto faz, seu escopo e necessidades de contribuição e como contribuir para <a href="%{url}">alavancar sua comunidade</a>.'
+      promote:
+        title: "Promova seu trabalho"
+        description_html: 'Considere criar uma conta no Twitter, postagens de blog e site para <a href="%{url}">ajudar as pessoas a encontrar e seguir seu projeto</a>.'
+    growing:
+      title: "Aumente sua comunidade"
+      description: "Todo mundo tem uma primeira vez. Facilite o nervosismo de contribuição pela primeira vez de outra pessoa."
+      document:
+        title: "Documente tudo"
+        description_html: "<a href=\"%{survey}\">GitHub's 2017 Open Source Survey</a> mostrou que documentação incompleta ou confusa é o maior problema para usuários de código aberto. Verifique se você está <a href=\"%{guide}\">documentando o processo </a>  sobre como contribuir para o seu projeto."
+      help:
+        title: "Peça ajuda"
+        Look_out_html: "Fique atento a possíveis colaboradores ou mantenedores promissores para<a href=\"%{url}\"> compartilhar a propriedade do seu projeto.</a> Faça um esforço para dar as boas-vindas aos contribuidores iniciantes em particular."
+    workflow:
+      title: "Melhore seu fluxo de trabalho"
+      description: "Aprenda com outros mantenedores sobre como ser mais eficaz."
+      boundaries:
+        title: "Estabeleça limites"
+        description_html: "Decida qual é o escopo do projeto e <a href=\"%{pause}\">estabeleça limites claros para si mesmo</a>. Dizer não <a href=\"%{sayno}\"> é tão importante quanto dizer sim</a>."
+      automation:
+        title: "Automação"
+        description_html: "<a href=\"%{url}\">Traga os robôs</a> para automatizar o máximo possível através de testes e outras verificações para economizar tempo."
+    visitor:
+      title: "Prepare-se para Open Source Friday"
+      description: "Invista tempo agora para economizar mais tarde."
+
+  endorsement:
+    title: "Você está em boa companhia"
+    Kim_Crayton:
+      title_html: 'Engenheiro Comunitário, Escritor, Fundador'
+      name_html:  'Kim Crayton (%{url})'
+      message_html: "Contribuir para o código-fonte aberto não apenas permite que empresas de todos os tamanhos aproveitem e desenvolvam os talentos de outras pessoas, mas também é um caminho para os iniciantes em codificação se acostumarem ao processo de desenvolvimento de maneiras que lhes permitam praticar, experimentar e exibir como membros valiosos e contribuintes da comunidade."
+    Chris_Lamb:
+      title_html: 'Líder %{company_url}'
+      name_html:  'Chris Lamb (%{url})'
+      message_html:  "Cheguei aonde estou hoje contribuindo para o software de código aberto, permitindo não apenas melhorar minhas habilidades como desenvolvedor de software, mas também aumentar minha rede de colegas e conhecer novos e interessantes amigos de culturas extremamente diversas. Eu recomendo."
+    Will_Norris:
+      title_html: 'Código Aberto em %{company_url}'
+      name_html:  'Will Norris (%{url})'
+      message_html: "Contribuir para projetos de código aberto continua sendo um dos projetos mais populares de 20% para os engenheiros do Google. O código aberto desempenha um papel tão importante em muito do que fazemos, por isso tentamos fazer <a href=\"https://opensource.google.com/docs/patching/\"> o processo </a> o mais fácil possível."
+    Christine_Abernathy:
+      title_html: 'Código Aberto em %{company_url}'
+      name_html:  'Christine Abernathy (%{url})'
+      message_html: "O código aberto se alinha à nossa missão de tornar o mundo mais aberto e conectado. Trabalhar com a comunidade nos dá a oportunidade de compartilhar nosso trabalho e os desafios que pretendemos solucionar e encoraja pessoas talentosas a contribuir com suas idéias e esforços para fazer avançar o mundo."
+    Rich_Harris:
+      title_html: 'Mantenedor %{project1_url} e %{project2_url}'
+      name_html:  'Rich Harris (%{url})'
+      message_html: "O que falta à maioria dos projetos de código aberto não é dinheiro, mas tempo. Muitos mantenedores têm empregos em período integral e não podem reduzir realisticamente o horário. O que quase todos os projetos precisam é de mais colaboradores. Open Source Friday é uma maneira perfeita para as empresas apoiarem o ecossistema de código aberto de que elas dependem de maneira significativa."
+    Brett_Cannon:
+      title_html: 'Desenvolvedor %{project_url}'
+      name_html:  'Brett Cannon (%{url})'
+      message_html: 'Quando você é mantenedor de um projeto no qual outras pessoas confiam, o código aberto passa de "compartilhando o código" para "compartilhando a manutenção". Como todos sabemos, "manutenção" leva um tempo que é gasto com mais eficiência em um bloco contínuo para ajudar a garantir que você possa concluir isso, por exemplo. revisão de código antes de começar a perder o contexto.'
+
+  # app/views/users/show.rb
+  users:
+    welcome: "Você ingressou no Open Source Friday!"
+    joined: "ingressou no Open Source Friday!"
+    not_joined:  "não ingressou no Open Source Friday (ainda)."
+    nextstep: "O que eu deveria fazer agora?"
+    firststep: "Faça sua primeira contribuição"
+    friends: "Conte para seus amigos"
+    No_Friday_PR: "Nenhum pull request ou eventos em sexta-feira nos últimos 3 meses"
+    Find_a_project_html: "<a href=\"%{how_to_contribute}\">Encontre um projeto para contribuir</a>, ou aprenda <a href=\"%{submit_a_contribution}\">como fazer seu primeiro pull request</a>."
+    share_will:
+      description_html: "Compartilhe Open Source Friday com outros <a href=\"%{url}\">usando essa URL</a>."
+      message_html: "Estou contribuindo para o código aberto em #OpenSourceFriday: https://opensourcefriday.com. Junte-se a mim!"
+    share_activity:
+      description_html: "Compartilhe suas contribuições Open Source Friday com outros <a href=\"%{url}\">usando essa URL</a>."
+      message_html: "Confira minhas contribuições para o código aberto em #OpenSourceFriday: %{url}"
+
+  # app/views/layouts/_calendar.erb
+  calendar:
+    title: "Definir um lembrete"
+    description: "Adicionar Open Source Friday ao seu calendário na próxima sexta-feira."
+    button:  "Adicionar ao calendário"
+
+  # app/views/layouts/_mailchimp.html.erb
+  mailchimp:
+    title: "Mantenha contato"
+    description: "Seja o primeiro a saber das últimas dicas e recursos de código aberto do GitHub."
+
+  # app/views/layouts/application.html.erb
+  Error: "Erro: "
+  # (code icon) with  (love icon) by (github icon) and friends
+  with: "com"
+  by: "por"
+  and: "e "
+  friends: "amigos"
