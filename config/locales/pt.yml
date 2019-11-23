@@ -1,13 +1,34 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
 pt:
   # common part
   Open Source Friday: "Open Source Friday"
-  full_title_desc: "Nesta sexta-feira, invista algumas horas contribuindo para o software que você usa e adora."
-  full_description: "O código aberto é criado por pessoas como você. Nesta sexta-feira, invista algumas horas contribuindo para o software que você usa e adora."
+  full_title_desc: "Nesta Sexta, invista algumas horas contribuindo para o software que você usa e ama."
+  full_description: "O código aberto é feito por pessoas assim como você. Nesta Sexta, invista algumas horas contribuindo para o software que você usa e ama."
   Contributors: "Contribuidores"
   Businesses: "Empresas"
   Maintainers: "Mantenedores"
   headline:
-    businesses: "Sua empresa funciona em código aberto. Aprenda a se envolver."
+    businesses: "Seu negócio funciona em código aberto. Aprenda a se envolver."
     maintainers: "Dê amor ao seu projeto para ajudar outras pessoas a contribuir para onde você mais precisa."
     contributors: "Aprenda o que significa contribuir e como encontrar e começar um novo projeto."
   Sign up with GitHub: "Entrar com GitHub"
@@ -18,12 +39,12 @@ pt:
   # app/views/home/index.html.erb
   index:
     main:
-      title: "Contribua em Open Source Friday"
+      title: "Contribua no Open Source Friday"
       contribution: "Aprenda como contribuir"
       link_html: '<a class="" href="%{url}">Leia o guia%{icon}</a>'
     find:
-      title: "Encontre um projeto para contribuir"
-      description: "A contribuição para o código aberto acontece em todos os níveis, nos projetos e design, documentação, operações e código. Você não precisa pensar demais sobre qual será exatamente a sua primeira contribuição ou como ela ficará"
+      title: "Encontre um projeto pra contribuir"
+      description: "A contribuição para o código aberto acontece em todos os níveis do projeto: design, documentação, operações e código. Você não precisa pensar demais como será exatamente sua primeira contribuição ou como ela vai ser vista."
       used:
         title: "Um projeto que você já usa"
         description: "Comece pensando nos projetos que você já usa ou deseja usar. Os projetos com os quais você contribuirá ativamente são aqueles em que você se volta."
@@ -31,15 +52,15 @@ pt:
         title: "Um problema que você pode corrigir"
         description: "Confira esses sites para encontrar um projeto procurando sua ajuda:"
         first: "Seu primeiro PR"
-        grabs: "Em Disputa"
-        triage: "CódigoTriagem"
+        grabs: "Up For Grabs"
+        triage: "CodeTriage"
       welcome:
         title: "Uma calorosa recepção"
-        description_html: "Encontre um projeto que tenha histórico e reputação de ser bem-vindo a novos colaboradores na vitrine de <a href=\"%{url}\">ótimo para novos colaboradores</a>."
+        description_html: "Encontre um projeto que tenha histórico e reputação de ser acolhedor para novos colaboradores na vitrine de <a href=\"%{url}\">ótimo para novos colaboradores</a>."
 
   # app/views/home/business.html.erb
   business:
-    title: "Sua empresa funciona com software de código aberto"
+    title: "Seu negócio funciona com software de código aberto"
     description: "Uma vez por semana, toda semana. Reserve um tempo para investir no software de código aberto que você usa e adora."
     reason:
       title: "Sua empresa depende disso"
@@ -48,27 +69,27 @@ pt:
         title: "Melhore a tecnologia em que você confia"
         description: "A participação direta no código aberto dá à sua organização uma voz no software do qual você depende."
     models:
-      title: "Trabalhe melhor junto"
+      title: "Trabalhem melhor juntos"
       description: "Os modelos de desenvolvimento de código aberto estão na vanguarda da colaboração de software. Os desenvolvedores que trabalham em código aberto aprendem intuitivamente a melhorar a qualidade, velocidade e transparência em sua organização."
     cost:
-      title: "Reduzir sobrecarga"
+      title: "Reduza a sobrecarga"
       description: "Contribuir regularmente para o código aberto economiza tempo e dinheiro do desenvolvedor, reduzindo o software personalizado que você precisa manter."
     reputation:
-      title: "Atrair e reter talentos"
+      title: "Atraia e retenha talentos"
       description: "Os funcionários que trabalham em código aberto aumentam a reputação deles e de seus empregadores."
     plan:
       title: "Open Source Friday na sua organização"
-      description: "Melhorar sua cultura de desenvolvimento é muito importante para não ser planejado."
+      description: "Melhorar a cultura do desenvolvedor é muito importante para não ser planejado."
       encourage:
         title: "Reserve um tempo"
         description: "Toda sexta-feira, incentive seus gerentes, funcionários e colegas de trabalho a passar pelo menos duas horas trabalhando nos projetos de código aberto que sua organização já usa."
       policy:
-        title: "Criar um hábito"
-        description: "Crie políticas internas claras para que os funcionários possam contribuir de maneira fácil e consistente com projetos de código aberto."
+        title: "Crie um hábito"
+        description: "Crie políticas internas claras para que os funcionários possam contribuir de maneira fácil e consistente em projetos de código aberto."
 
   # app/views/home/maintainers.html.erb
   maintainers:
-    title: "Crie software com a ajuda de outras pessoas"
+    title: "Construa software com ajuda de outras pessoas"
     description:  "Toda sexta-feira, dê amor ao seu projeto de software e facilite a contribuição de outras pessoas."
     involve:
       title: "Ajude as pessoas a descobrir seu projeto"
