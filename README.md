@@ -10,7 +10,7 @@ Open Source Friday is a movement to encourage people, companies, and maintainers
 
 Open Source Software (OSS) is the backbone of most software, tools, apps, electronics and more that we use every day. Not only is Open Source Friday about encouraging people to contribute, but it's about encouraging businesses to give back to the software they use by setting aside time for our colleagues to work on OSS on the clock.
 
-By signing up to the website, you can view and share your and your friends' Friday contributions. You'll also find a number of guides on getting started with open source and being a good maintainer.
+Line 13 has been revised to: Signing up for this OSS allows viewing and sharing amongst friends. This OSS supplies manuals on open source and maintenance.
 
 ### What this isn't
 
