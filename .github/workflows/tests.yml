@@ -1,0 +1,48 @@
+name: GitHub Actions CI
+on:
+  push:
+    branches: master
+  pull_request: []
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Set up Git repository
+      uses: actions/checkout@v1
+
+    - name: Get Ruby version
+      run: echo "::set-output name=RUBY_VERSION::$(cat .ruby-version)"
+      id: ruby_version
+
+    - name: Set up Ruby
+      uses: actions/setup-ruby@v1
+      with:
+        ruby-version: "${{ steps.ruby_version.outputs.RUBY_VERSION }}"
+
+    - name: Get NodeJS version
+      run: echo "::set-output name=NODE_VERSION::$(cat .node-version)"
+      id: node_version
+
+    - name: Set up NodeJS
+      uses: actions/setup-node@v1
+      with:
+        node-version: "${{ steps.node_version.outputs.NODE_VERSION }}"
+
+    - name: Set up PostgreSQL
+      run: |
+        sudo apt-get install postgresql libpq-dev
+        sudo -u postgres createuser --superuser "$USER"
+
+    - name: Bootstrap
+      run: script/bootstrap
+
+    - name: Set up Rails
+      run: script/setup
+      env:
+        RAILS_ENV: test
+
+    - name: Run tests
+      run: bundle exec rake test
+
+    - name: Run RuboCop
+      run: bundle exec rubocop
