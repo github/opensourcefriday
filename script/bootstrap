@@ -19,3 +19,6 @@ bundle check >/dev/null 2>&1 || {
   echo "==> Installing gem dependencies…"
   bundle install --quiet
 }
+
+echo "==> Installing npm dependencies…"
+npm install
