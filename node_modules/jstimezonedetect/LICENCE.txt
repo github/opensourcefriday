@@ -1,7 +1,7 @@
 MIT License 
 
 Copyright (c) 2012 Jon Nylander, project maintained at 
-https://bitbucket.org/pellepim/jstimezonedetect
+https://github.com/pellepim/jstimezonedetect/blob/master/LICENCE.txt
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to deal 
