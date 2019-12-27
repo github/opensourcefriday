@@ -22,15 +22,15 @@
 zh:
   # common part
   Open Source Friday: "开源星期五"
-  full_title_desc: "这个星期五，给你在用的喜欢的项目投资一点时间。"
-  full_description: "开源是由你我推动的。这个星期五，给你在用的、喜欢的项目投资一点时间。"
+  full_title_desc: "这个星期五，给你在用的喜欢的项目投资少许时间。"
+  full_description: "众人拾柴火焰高。这个星期五，为你在用的、喜欢的项目做出贡献。"
   Contributors: "贡献者"
-  Businesses: "商务"
+  Businesses: "业务"
   Maintainers: "维护者"
   headline:
-    businesses: "你的商业基于开源。了解如何参与。"
-    maintainers: "给你的项目一些关爱，好让他人做出你急需的贡献。"
-    contributors: "学习贡献是什么、如何发现和着手一个新项目。"
+    businesses: "你的业务基于开源。了解如何参与。"
+    maintainers: "给予你的项目多些关爱，好让他人做出你急需的贡献。"
+    contributors: "了解贡献的意义，以及如何探索和开始贡献新项目。"
   Sign up with GitHub: "用 GitHub 账号登录"
   # app/views/layouts/_nav.html.erb
   Sign up: "登录"
@@ -43,15 +43,15 @@ zh:
       contribution: "学习如何贡献"
       link_html: '<a class="" href="%{url}">阅读指南%{icon}</a>'
     find:
-      title: "找一个要贡献的项目"
-      description: "贡献发生在各个层面，包括项目、设计、文档、操作和代码。你不必过度思考第一个贡献要做什么，或者看起来是什么样子的"
+      title: "发现一个要贡献的项目"
+      description: "贡献到项目的各个层面，包括项目、设计、文档、运作和代码。不必反复斟酌你的首次贡献。"
       used:
         title: "一个你在用的项目"
         description: "从一个你在用或想用的项目着手。你会持续贡献的项目，是那些你发现自己会不断翻出来看的。"
       issue:
-        title: "一个你能修复的问题"
+        title: "一个你能解决的问题"
         description: "从下列网站中找一个等着你出手相助的项目："
-        first: "你的第一个合并请求"
+        first: "Your First PR"
         grabs: "Up For Grabs"
         triage: "CodeTriage"
       welcome:
@@ -60,7 +60,7 @@ zh:
 
   # app/views/home/business.html.erb
   business:
-    title: "你的业务跑在开源软件上面"
+    title: "你的业务基于开源软件"
     description: "每周一次，周周坚持。投资些时间给在用和喜欢的开源软件。"
     reason:
       title: "你的业务依赖于它"
@@ -70,7 +70,7 @@ zh:
         description: "直接参与开源，在你所依赖的软件中，会给你的组织带来话语权。"
     models:
       title: "更好地协作"
-      description: "开源开发模式是一线的软件协作活动。从事开源工作的开发者，直观地从你的组织中学习，从而改进质量，速度，和透明度。"
+      description: "开源开发模式是前沿的软件协作。从事开源工作的开发者，直观地从你的组织中学习，从而改进编码质量，编码速度，和易读型。"
     cost:
       title: "减少日常成本"
       description: "减少那些需要你维护的定制软件，经常给开源项目做出贡献，来节约费用和开发者的时间。"
@@ -89,32 +89,32 @@ zh:
 
   # app/views/home/maintainers.html.erb
   maintainers:
-    title: "在他人协助下构建软件"
+    title: "与他人协助构建软件"
     description:  "每个星期五，给你的软件项目一些爱，让别人更容易地给它贡献。"
     involve:
       title: "帮助人们发现你的项目"
       description: "创建了项目仅仅是个开始。为什么不把它推向世界？"
       workload:
         title: "减少你的工作量"
-        description_html: '确保你的 README 文件写了你的项目是做什么的，它的范围和贡献需求，以及如何做出贡献，以<a href="%{url}">借力社区</a>。'
+        description_html: '确保你的 README 文件写了你的项目作用，它的范围和贡献需求，以及如何<a href="%{url}">借助社区</a>。'
       promote:
         title: "推广你的作品"
-        description_html: '考虑创建一个 Twitter 账号、博客博文及网站, 去<a href="%{url}">帮助人们找到和关注你的项目</a>。'
+        description_html: '考虑创建一个 Twitter 账号、博客博文及网站, 以<a href="%{url}">帮助人们找到和关注你的项目</a>。'
     growing:
       title: "让你的社区成长"
-      description: "每个人都曾是新手。让他人在第一次贡献时不要紧张。"
+      description: "每个人都曾是新手。缓解他人在首次贡献时的紧张。"
       document:
         title: "配上文档"
         description_html: "<a href=\"%{survey}\">GitHub 2017 年开源调查</a>显示，对开源用户来说，不完整、模糊的文档是最大问题。确保有<a href=\"%{guide}\">贡献流程文档</a>。"
       help:
         title: "取得帮助"
-        Look_out_html: "挑选有希望的潜在贡献者或维护者，<a href=\"%{url}\">共享你项目的所有权</a>。尽力用独特的方式去欢迎第一次贡献者。"
+        Look_out_html: "挑选有希望的潜在贡献者或维护者，<a href=\"%{url}\">共享你项目的所有权</a>。尽力用独特的方式去欢迎首次贡献者。"
     workflow:
-      title: "改进你的工作流"
+      title: "改进你的工作流程"
       description: "在提高效率上向其他维护者学习。"
       boundaries:
         title: "设定边界"
-        description_html: "决定项目范围并<a href=\"%{pause}\">给自己划定明确界线</a>。拒绝<a href=\"%{sayno}\">和接受同等重要</a>。"
+        description_html: "确定项目范围并<a href=\"%{pause}\">给自己划定明确界线</a>。拒绝<a href=\"%{sayno}\">和接受同等重要</a>。"
       automation:
         title: "自动化"
         description_html: "尽可能通过<a href=\"%{url}\">引进机器人</a>来自动化测试和检测来节约你的时间。"
@@ -129,9 +129,9 @@ zh:
       name_html:  'Kim Crayton (%{url})'
       message_html: "给开源做贡献不仅允许各种规模的商业机构，在他人智慧的基础上获益，对那些刚开始接触编程，通过实际操作、试验来适应开发过程，证明自己是对社区有价值的贡献者的人来说，也是康庄大道。"
     Chris_Lamb:
-      title_html: '%{company_url} 领导者'
+      title_html: '%{company_url} 项目负责人'
       name_html:  'Chris Lamb (%{url})'
-      message_html:  "今天我必定贡献的开源软件，不仅让我提高了软件开发者技能，也让我认识了各种不同文化中有意思的新朋友，拓宽了行业朋友圈。我强烈推荐它。"
+      message_html:  "今天通过为开源项目做贡献，让我提高了软件开发者技能，也让我认识了多元文化中有意思的新朋友，拓宽了行业朋友圈。我强烈推荐它。"
     Will_Norris:
       title_html: '在 %{company_url} 做开源'
       name_html:  'Will Norris (%{url})'
@@ -147,7 +147,7 @@ zh:
     Brett_Cannon:
       title_html: '%{project_url} 开发者'
       name_html:  'Brett Cannon (%{url})'
-      message_html: '一旦你成为一个其他人都在依赖的项目的维护者，开源就从“分享代码”变为“分享维护”。众所周知，用确保能完成它的一段连续的时间进行“维护”是最有效果的，比如在你遗忘当时情景前进行代码审查。'
+      message_html: '一旦你成为一个其他人都在依赖的项目的维护者，开源就从“共享代码”变为“共享维护”。众所周知，最有效用的一段连续时间进行“维护”，以帮助在当你遗忘当时情景前进行代码审查。'
 
   # app/views/users/show.rb
   users:
@@ -158,7 +158,7 @@ zh:
     firststep: "做出第一个贡献"
     friends: "告诉朋友们"
     No_Friday_PR: "最近 3 个月没有星期五的请求合并或事件。"
-    Find_a_project_html: "<a href=\"%{how_to_contribute}\">找一个要贡献的项目</a>， 或者学习<a href=\"%{submit_a_contribution}\">如何做出你的第一个合并请求</a>。"
+    Find_a_project_html: "<a href=\"%{how_to_contribute}\">找一个要贡献的项目</a>， 或者学习<a href=\"%{submit_a_contribution}\">如何贡献你的首次合并请求</a>。"
     share_will:
       description_html: "<a href=\"%{url}\">通过这个链接</a> 与其他人分享开源星期五。"
       message_html: "我正在 #OpenSourceFriday: https://opensourcefriday.com 上给开源项目做贡献。一起来玩吧！"
@@ -175,7 +175,7 @@ zh:
   # app/views/layouts/_mailchimp.html.erb
   mailchimp:
     title: "保持联系"
-    description: "获取 GitHub 第一手的最新开源提示和资源。"
+    description: "获取 GitHub 最新开源提示和资源, 成为第一个吃螃蟹的人。"
 
   # app/views/layouts/application.html.erb
   Error: "错误："
