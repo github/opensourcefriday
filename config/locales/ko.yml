@@ -19,7 +19,7 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
+ko:
   # common part
   Open Source Friday: "오픈소스 금요일"
   full_title_desc: "이번 주 금요일, 당신이 좋아하고 자주 이용하는 소프트웨어에 몇 시간만 투자해 컨트리뷰션 해보세요."
@@ -185,4 +185,3 @@ en:
   by: "by"
   and: "and "
   friends: "friends"
-
