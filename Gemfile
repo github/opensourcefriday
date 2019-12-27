@@ -18,11 +18,10 @@ gem "rails"
 gem "sassc-rails"
 gem "sitemap_generator"
 gem "turbolinks"
-gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
 gem "uglifier"
 
 group :development, :test do
-  gem "byebug", platform: :mri
+  gem "byebug"
 end
 
 group :development do
@@ -44,6 +43,6 @@ group :production do
 end
 
 group :test do
-  gem "codecov", require: false
+  gem "simplecov", require: false
   gem "vcr", require: false
 end
