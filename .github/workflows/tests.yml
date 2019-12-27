@@ -36,6 +36,17 @@ jobs:
     - name: Bootstrap
       run: script/bootstrap
 
+    - name: Check for uncommitted NodeJS modules
+      run: |
+        git diff --stat --exit-code node_modules || {
+          echo '\n\nError: you must commit all NodeJS modules!'
+          exit 1
+        }
+        grep -qr alt-h0 node_modules || {
+          echo 'Error: Primer NodeJS modules must contain alt-h0!'
+          exit 1
+        }
+
     - name: Set up Rails
       run: script/setup
       env:

@@ -30,3 +30,6 @@
 
 # Ignore `brew bundle` lock file
 Brewfile.lock.json
+
+# Ignore npm files with embedded filesystem paths
+node_modules/**/package.json
