@@ -142,9 +142,9 @@ GEM
       omniauth (~> 1.9)
     orm_adapter (0.5.0)
     parallel (1.19.1)
-    parser (2.7.0.0)
+    parser (2.6.5.0)
       ast (~> 2.4.0)
-    pg (1.2.0)
+    pg (1.1.4)
     public_suffix (4.0.1)
     puma (4.3.1)
       nio4r (~> 2.0)
@@ -182,7 +182,7 @@ GEM
     rainbow (3.0.0)
     rake (13.0.1)
     rb-fsevent (0.10.3)
-    rb-inotify (0.10.1)
+    rb-inotify (0.10.0)
       ffi (~> 1.0)
     responders (3.0.0)
       actionpack (>= 5.0)
@@ -211,7 +211,7 @@ GEM
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.2)
-    sitemap_generator (6.1.0)
+    sitemap_generator (6.0.2)
       builder (~> 3.0)
     spring (2.1.0)
     spring-watcher-listen (2.0.1)
@@ -230,7 +230,7 @@ GEM
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
-    tzinfo (1.2.6)
+    tzinfo (1.2.5)
       thread_safe (~> 0.1)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
@@ -287,7 +287,7 @@ DEPENDENCIES
   web-console
 
 RUBY VERSION
-   ruby 2.5.3p105
+   ruby 2.6.3p62
 
 BUNDLED WITH
-   1.16.4
+   1.17.2
