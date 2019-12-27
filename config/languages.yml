@@ -1,16 +1,16 @@
 # The list of languages local names
 # referd ISO639.2 and wikimedia
 #    https://meta.wikimedia.org/wiki/Template:List_of_language_names_ordered_by_code
-# 
-defaults: &defaults
+#
+default: &default
   aa: qafar
-  ab: аԥсшәа 
+  ab: аԥсшәа
   af: Afrikaans
   ak: Akana
   am: አማርኛ
   an: Aragonés
   ar: العربية
-  as: অসমীয়া 
+  as: অসমীয়া
   av: Авар
   ay: Aymar
   az: آذربايجان
@@ -22,7 +22,7 @@ defaults: &defaults
   bi: Bislama
   bm: Bamanankan
   bn: বাংলা
-  bo: བོད་ཡིག 
+  bo: བོད་ཡིག
   br: Brezhoneg
   bs: Bosanski
   ca: Català
@@ -113,13 +113,13 @@ defaults: &defaults
   ne: नेपाली
   ng: Oshiwambo
   nl: Nederlands
-  nn:	Norsk (nynorsk)
-  no: Norsk
+  nn: Norsk (nynorsk)
+  "no": Norsk
   nr: isiNdebele
   nv: Diné bizaad
   ny: Chi-Chewa
   oc: Occitan
-  oj: ᐊᓂᔑᓈᐯᒧᐎᓐ 
+  oj: ᐊᓂᔑᓈᐯᒧᐎᓐ
   om: Oromoo
   or: ଓଡ଼ିଆ
   os: Иронау
@@ -175,16 +175,16 @@ defaults: &defaults
   vi: Việtnam
   wo: Wollof
   xh: isiXhosa
-  yi: en:Yiddish 
+  yi: en:Yiddish
   yo: Yorùbá
   za: Cuengh
   zh: 中文
 
 production:
-  <<: *defaults
+  <<: *default
 
-development: 
-  <<: *defaults
+development:
+  <<: *default
 
 test:
-  <<: *defaults
+  <<: *default

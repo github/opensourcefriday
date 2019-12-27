@@ -10,13 +10,7 @@ SimpleCov.start("rails") do
   minimum_coverage 80
 end
 
-require "codecov"
-SimpleCov.formatters =
-  if ENV["CI"]
-    [SimpleCov::Formatter::Codecov]
-  else
-    [SimpleCov::Formatter::HTMLFormatter]
-  end
+SimpleCov.formatters = [SimpleCov::Formatter::HTMLFormatter]
 
 require File.expand_path("../config/environment", __dir__)
 require "rails/test_help"
