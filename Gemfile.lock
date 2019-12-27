@@ -144,7 +144,7 @@ GEM
     parallel (1.19.1)
     parser (2.7.0.0)
       ast (~> 2.4.0)
-    pg (1.1.4)
+    pg (1.2.0)
     public_suffix (4.0.1)
     puma (4.3.1)
       nio4r (~> 2.0)
