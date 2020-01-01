@@ -22,15 +22,15 @@
 fa:
   # common part
   Open Source Friday: "جمعه منبع آزاد"
-  full_title_desc: "این جمعه ، چند ساعت برای کمک به نرم افزاری که استفاده می کنید و دوست دارید سرمایه گذاری کنید و آنرا توسعه دهید."
-  full_description: "منبع آزاد توسط افرادی درست مثل شما ساخته می شود. این جمعه ، چند ساعت برای کمک به نرم افزاری که استفاده می کنید و دوست دارید وقت بزارید."
+  full_title_desc: "این جمعه، چند ساعت برای کمک به نرم افزاری که استفاده می کنید و دوست دارید سرمایه گذاری کنید و آنرا توسعه دهید."
+  full_description: "منبع آزاد توسط افرادی درست مثل شما ساخته می شود. این جمعه، چند ساعت برای کمک به نرم افزاری که استفاده می کنید و دوست دارید وقت بزارید."
   Contributors: "مشارکت کنندگان"
   Businesses: "کسب و کار ها"
   Maintainers: "نگهبانان"
   headline:
     businesses: "تجارت شما با منبع آزاد اجرا می شود. یاد بگیرید که چگونه درگیر شوید."
     maintainers: "به پروژه خود عشق ببخشید تا به دیگران کمک کنید در جایی که بیشتر به آن احتیاج دارید کمک کنند."
-    contributors: "بدانید منظور از مشارکت چیست ، و روش یافتن و شروع کار در یک پروژه جدید چگونه است."
+    contributors: "بدانید منظور از مشارکت چیست، و روش یافتن و شروع کار در یک پروژه جدید چگونه است."
   Sign up with GitHub: "ثبت نام با گیت هاب"
   # app/views/layouts/_nav.html.erb
   Sign up: "ثبت نام"
@@ -61,19 +61,19 @@ fa:
   # app/views/home/business.html.erb
   business:
     title: "مشاغل و کسب و کار شما با نرم افزار های منبع آزاد اجرا می شود"
-    description: "Once a week, every week. Take time to invest in the open source software you use and love."
+    description: "هفته ای یک بار ، هر هفته. برای سرمایه گذاری روی نرم افزار منبع باز که استفاده می کنید و دوست دارید ، وقت بگذارید."
     reason:
       title: "کسب و کار شما به آن وابسته است"
       description: "شرکتها برای اجرای موثر به نرم افزار های منبع آزاد نیاز دارند."
       technology:
         title: "فناوری هایی که به آنها وابسته هستید را توسعه دهید"
-        description: "مشارکت مستقیم در منبع آزاد به سازمان شما صدای نرم افزاری را که به آن وابسته هستید ، می دهد."
+        description: "مشارکت مستقیم در منبع آزاد به سازمان شما صدای نرم افزاری را که به آن وابسته هستید، می دهد."
     models:
       title: "با هم بهتر کار کنیم"
-      description: "مدل های توسعه منبع باز در صدر همکاری نرم افزار قرار دارند. توسعه دهندگان که روی منبع آزاد کار می کنند بطور شهودی یاد می گیرند تا کیفیت ، سرعت و شفافیت در سازمان شما را بهبود دهند."
+      description: "مدل های توسعه منبع آزاد در صدر همکاری نرم افزار قرار دارند. توسعه دهندگان که روی منبع آزاد کار می کنند بطور شهودی یاد می گیرند تا کیفیت، سرعت و شفافیت در سازمان شما را بهبود دهند."
     cost:
       title: "سربار را کاهش دهید"
-      description: "مشارکت منظم در منبع باز با کاهش پول و زمان توسعه همراه با کاهش توسعه نرم افزار های سفارشی می شود که نیاز به حفظ و مراقبت همیشگی دارند."
+      description: "مشارکت منظم در منبع آزاد با کاهش پول و زمان توسعه همراه با کاهش توسعه نرم افزار های سفارشی می شود که نیاز به حفظ و مراقبت همیشگی دارند."
     reputation:
       title: "جذب و حفظ استعداد"
       description: "کارمندانی که روی منبع آزاد کار می کنند باعث تقویت شهرت و کارفرمایشان می شوند."
@@ -82,7 +82,7 @@ fa:
       description: "بهبود فرهنگ توسعه دهنده شما بسیار مهم است تا بدون برنامه رها شوید."
       encourage:
         title: "زمانی را در نظر بگیرید"
-        description: "هر جمعه ، مدیران ، کارمندان و همکاران خود را ترغیب کنید که حداقل دو ساعت در پروژه های منبع آزاد که سازمان شما از آنها قبلا استفاده کرده است یا به آنها وابسته است."
+        description: "هر جمعه، مدیران، کارمندان و همکاران خود را ترغیب کنید که حداقل دو ساعت در پروژه های منبع آزاد که سازمان شما از آنها قبلا استفاده کرده است یا به آنها وابسته است."
       policy:
         title: "آن را به یک عادت تبدیل کنید"
         description: "سیاست های داخلی و واضحی ایجاد کنید تا کارکنان بتوانند به راحتی و به طور مداوم در منبع آزاد مشارکت کنند."
@@ -90,7 +90,7 @@ fa:
   # app/views/home/maintainers.html.erb
   maintainers:
     title: "با کمک دیگران نرم افزار بسازید"
-    description:  "هر جمعه ، به پروژه نرم افزاری خود عشق ورزیده و مشارکت دیگران را آسانتر کنید."
+    description:  "هر جمعه، به پروژه نرم افزاری خود عشق ورزیده و مشارکت دیگران را آسانتر کنید."
     involve:
       title: "به افراد کمک کنید تا پروژه شما را کشف کنند"
       description: "ایجاد یک پروژه فقط آغاز است. چرا برای بسیار از افراد پیام ارسال نمی کنید؟"
@@ -125,7 +125,7 @@ fa:
   endorsement:
     title: "شما در شرکت خوبی هستید"
     Kim_Crayton:
-      title_html: 'Community Engineer, Writer, Founder'
+      title_html: 'مهندس جامعه ، نویسنده ، بنیانگذار'
       name_html:  'Kim Crayton (%{url})'
       message_html: "Contributing to open source not only allows businesses of every size to take advantage and build upon the talents of others, it’s also an avenue for those new to coding to acclimate themselves to the development process in ways that allow them to practice, experiment, and showcase themselves as valuable and contributing members of the community."
     Chris_Lamb:
@@ -137,7 +137,7 @@ fa:
       name_html:  'Will Norris (%{url})'
       message_html: "Contributing to open source projects continues to be one of the most popular 20% projects for Google engineers. Open source plays such an important role in so much of what we do, so we try to make <a href=\"https://opensource.google.com/docs/patching/\"> the process </a> as easy as possible."
     Christine_Abernathy:
-      title_html: 'منبع باز در %{company_url}'
+      title_html: 'منبع آزاد در %{company_url}'
       name_html:  'Christine Abernathy (%{url})'
       message_html: "Open source aligns with our mission to make the world more open and connected. Working with the community gives us an opportunity to share our work and the challenges we’re aiming to solve, and encourages talented people to contribute their ideas and effort to move the world forward."
     Rich_Harris:
@@ -145,7 +145,7 @@ fa:
       name_html:  'Rich Harris (%{url})'
       message_html: "The thing that most open source projects lack is not money, but time. Many maintainers have full-time jobs and can't realistically cut back their hours. What almost all projects need is more contributors. Open Source Friday is a perfect way for companies to support the open source ecosystem they depend on in a meaningful way."
     Brett_Cannon:
-      title_html: '%{project_url} توسعه دهنده'
+      title_html: 'توسعه دهنده %{project_url}'
       name_html:  'Brett Cannon (%{url})'
       message_html: 'Once you are a maintainer on a project that others rely on, open source goes from "sharing the code" to "sharing the maintenance". As we all know, "maintenance" takes time which is most effectively spent in a continuous block to help make sure you can finish that e.g. code review before you start to lose context.'
 
@@ -160,11 +160,12 @@ fa:
     No_Friday_PR: "در 3 ماه گذشته هیچ درخواست مشارکت و رویدادی مربوط به جمعه وجود ندارد."
     Find_a_project_html: "<a href=\"%{how_to_contribute}\">Find a project to contribute to</a>, or learn <a href=\"%{submit_a_contribution}\">how to make your first pull request</a>."
     share_will:
-      description_html: "Share Open Source Friday with others <a href=\"%{url}\">using this URL</a>."
-      message_html: "I'm contributing to open source on #OpenSourceFriday: https://opensourcefriday.com. Join me!"
+      description_html: "با استفاده از این URL، جمعه منبع آزاد را با دیگران به اشتراک بگذارید."
+      message_html: "من در زمینه منبع آزاد در #OpenSourceFriday مشارکت می کنم: https://opensourcefriday.com. به من ملحق شو!"
     share_activity:
       description_html: "Share your Open Source Friday contributions with others <a href=\"%{url}\">using this URL</a>."
-      message_html: "Check out my contributions to open source on #OpenSourceFriday: %{url}"
+      description_html: "با استفاده از <a href=\"%{url}\">این URL</a>، کمکهای جمعه منبع آزاد جمعه خود را با دیگران به اشتراک بگذارید."
+      message_html: "مشارکتهای من برای منبع آزاد در #OpenSourceFriday: %{url}"
 
   # app/views/layouts/_calendar.erb
   calendar:
