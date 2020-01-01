@@ -12,7 +12,7 @@ en:
       invalid: "%{authentication_keys} یا گذرواژه نامعتبر است."
       locked: "حساب شما قفل شده است."
       last_attempt: "قبل از اینکه حساب شما قفل شود، یک بار دیگر تلاش دارید."
-      not_found_in_database: "Invalid %{authentication_keys} or password."
+      not_found_in_database: "%{authentication_keys} یا گذرواژه نامعتبر است."
       timeout: "نشست فعال شما منقضی شده است. لطفاً برای ادامه دوباره وارد سیستم شوید."
       unauthenticated: "قبل از ادامه باید وارد سیستم یا ثبت نام کنید."
       unconfirmed: "شما باید آدرس ایمیل خود را قبل از ادامه تأیید کنید."
@@ -29,13 +29,13 @@ en:
       failure: "نمی توانیم شما را از %{kind} به دلیل \"%{reason}\" تأیید و اعتبار سنجی کنیم."
       success: "شما با موفقیت از %{kind} تأیید شدید."
     passwords:
-      no_token: "You can't access this page without coming from a password reset email. If you do come from a password reset email, please make sure you used the full URL provided."
+      no_token: "شما نمی توانید به این صفحه دسترسی پیدا کنید بدون آنکه از ایمیل بازنشانی گذرواژه استفاده کنید. اگر از ایمیل بازنشانی گذرواژه آمده اید ، لطفاً اطمینان حاصل کنید که از URL کامل ارائه شده استفاده کرده اید."
       send_instructions: "بزودی شما یک ایمیل در مورد دستورالعمل نحوه تنظیم مجدد گذرواژه خود دریتفن خواهید کرد."
-      send_paranoid_instructions: "If your email address exists in our database, you will receive a password recovery link at your email address in a few minutes."
+      send_paranoid_instructions: "اگر آدرس ایمیل شما در پایگاه داده ما وجود داشته باشد ، شما طی چند دقیقه پیوند بازیابی رمز عبور را در آدرس ایمیل خود دریافت خواهید کرد."
       updated: "گذرواژه ی شما با موفقیت تغییر کرد. اکنون وارد سیستم شده اید."
       updated_not_active: "گذرواژه ی شما با موفقیت تغییر کرد."
     registrations:
-      destroyed: "Bye! Your account has been successfully cancelled. We hope to see you again soon."
+      destroyed: "خدا حافظ! حساب شما با موفقیت لغو شد، امیدواریم به زودی ببینیمت."
       signed_up: "خوش آمدی! شما با موفقیت ثبت نام کرده اید."
       signed_up_but_inactive: "شما با موفقیت ثبت نام کرده اید با این حال، ما نمی توانیم شما را وارد سیستم کنیم زیرا حساب شما هنوز فعال نشده است."
       signed_up_but_locked: "شما با موفقیت ثبت نام کرده اید با این حال، ما نمی توانیم شما را وارد سیستم کنیم زیرا حساب شما قفل است."
@@ -54,9 +54,9 @@ en:
     messages:
       already_confirmed: " تأیید شده است، لطفاً وارد سیستم شوید"
       confirmation_period_expired: "باید در %{period} تأیید شود، لطفاً یک مورد جدید درخواست کنید"
-      expired: "has expired, please request a new one"
+      expired: "منقضی شده است ، لطفاً درخواست جدید کنید"
       not_found: "پیدا نشد"
       not_locked: "قفل نشده بود"
       not_saved:
-        one: "1 error prohibited this %{resource} from being saved:"
-        other: "%{count} errors prohibited this %{resource} from being saved:"
+        one: "1 خطا در ذخیره این %{resource} منع شده است:"
+        other: "%{count} خطا در ذخیره این %{resource} منع شده است:"
