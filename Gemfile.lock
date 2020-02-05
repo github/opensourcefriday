@@ -138,7 +138,8 @@ GEM
     octicons_helper (9.3.1)
       octicons (= 9.3.1)
       rails
-    octokit (4.14.0)
+    octokit (4.16.0)
+      faraday (>= 0.9)
       sawyer (~> 0.8.0, >= 0.5.3)
     omniauth (1.9.0)
       hashie (>= 3.4.6, < 3.7.0)
@@ -154,7 +155,7 @@ GEM
     parser (2.7.0.1)
       ast (~> 2.4.0)
     pg (1.2.0)
-    public_suffix (4.0.2)
+    public_suffix (4.0.3)
     puma (4.3.1)
       nio4r (~> 2.0)
     rack (2.0.8)
