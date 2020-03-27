@@ -1,0 +1,187 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  # common part
+  Open Source Friday: "Open Source Friday"
+  full_title_desc: "This Friday, invest a few hours contributing to the software you use and love."
+  full_description: "Open source is made by people just like you. This Friday, invest a few hours contributing to the software you use and love."
+  Contributors: "Contributors"
+  Businesses: "Businesses"
+  Maintainers: "Maintainers"
+  headline:
+    businesses: "Your business runs on open source. Learn how to get involved."
+    maintainers: "Give your project some love to help others contribute where you need it most."
+    contributors: "Learn what it means to contribute, and how to find and get started on a new project."
+  Sign up with GitHub: "Sign up with GitHub"
+  # app/views/layouts/_nav.html.erb
+  Sign up: "Sign up"
+  Sign out: "Sign out"
+
+  # app/views/home/index.html.erb
+  index:
+    main:
+      title: "Contribute on Open Source Friday"
+      contribution: "Learn to contribute"
+      link_html: '<a class="" href="%{url}">Read the guide%{icon}</a>'
+    find:
+      title: "Find a project to contribute to"
+      description: "Contributing to open source happens at all levels, across projects and design, documentation, operations and code. You don’t need to overthink what exactly your first contribution will be, or how it will look"
+      used:
+        title: "A project you already use"
+        description: "Start by thinking about the projects you already use or want to use. The projects you’ll actively contribute to are the ones you find yourself coming back to."
+      issue:
+        title: "An issue you can fix"
+        description: "Check out these sites to find a project looking for your help:"
+        first: "Your First PR"
+        grabs: "Up For Grabs"
+        triage: "CodeTriage"
+      welcome:
+        title: "A warm welcome"
+        description_html: "Find a project that has a history and reputation for being welcoming to new contributors in <a href=\"%{url}\">GitHub&apos;s great for new contributors</a> showcase."
+
+  # app/views/home/business.html.erb
+  business:
+    title: "Your business runs on open source software"
+    description: "Once a week, every week. Take time to invest in the open source software you use and love."
+    reason:
+      title: "Your business depends on it"
+      description: "Companies need open source software to run effectively."
+      technology:
+        title: "Improve the technology you rely on"
+        description: "Direct participation in open source gives your organization a voice in the software you depend on."
+    models:
+      title: "Work better together"
+      description: "Open source development models are at the forefront of software collaboration. Developers who work on open source learn intuitively to improve quality, speed, and transparency at your organization."
+    cost:
+      title: "Reduce overhead"
+      description: "Contributing regularly to open source saves money and developer hours by reducing the custom software you need to maintain."
+    reputation:
+      title: "Attract and retain talent"
+      description: "Employees that work on open source boost their, and their employer's, reputation."
+    plan:
+      title: "Open Source Friday in your organization"
+      description: "Improving your developer culture is too important to be left unplanned."
+      encourage:
+        title: "Set aside time"
+        description: "Each Friday, encourage your managers, employees, and coworkers to spend at least two hours working on the open source projects your organization already uses."
+      policy:
+        title: "Make it a habit"
+        description: "Create clear, internal policies so employees can easily and consistently contribute to open source."
+
+  # app/views/home/maintainers.html.erb
+  maintainers:
+    title: "Build software with help from others"
+    description:  "Every Friday, give your software project some love and make it easier for others to contribute."
+    involve:
+      title: "Help people discover your project"
+      description: "Creating a project is only the beginning. Why not spread the word?"
+      workload:
+        title: "Reduce your workload:"
+        description_html: 'Ensure your README file details what your project does, its scope and contribution needs, and how to contribute to <a href="%{url}">leverage your community</a>.'
+      promote:
+        title: "Promote your work"
+        description_html: 'Consider creating a Twitter account, blog posts and website to <a href="%{url}">help people find and follow your project</a>.'
+    growing:
+      title: "Grow your community"
+      description: "Everybody was new once. Ease someone else's first-time contribution jitters."
+      document:
+        title: "Document everything"
+        description_html: "<a href=\"%{survey}\">GitHub's 2017 Open Source Survey</a> showed incomplete or confusing documentation is the biggest problem for open source users. Ensure you are <a href=\"%{guide}\">documenting your processes </a>  for how to contribute to your project."
+      help:
+        title: "Get help"
+        Look_out_html: "Look out for promising potential contributors or maintainers to <a href=\"%{url}\"> share ownership of your project.</a> Make an effort to welcome first-time contributors in particular."
+    workflow:
+      title: "Improve your workflow"
+      description: "Learn from other maintainers on how to be more effective."
+      boundaries:
+        title: "Set boundaries"
+        description_html: "Decide on what the scope of the project is and <a href=\"%{pause}\">set clear boundaries for yourself</a>. Saying no <a href=\"%{sayno}\"> is as important as saying yes</a>."
+      automation:
+        title: "Automation"
+        description_html: "<a href=\"%{url}\">Bring in the robots</a> to automate as much as possible through tests and other checks to save yourself time."
+    visitor:
+      title: "Get ready for Open Source Friday"
+      description: "Spend time now to save time later."
+
+  endorsement:
+    title: "You're in good company"
+    Kim_Crayton:
+      title_html: 'Community Engineer, Writer, Founder'
+      name_html:  'Kim Crayton (%{url})'
+      message_html: "Contributing to open source not only allows businesses of every size to take advantage and build upon the talents of others, it’s also an avenue for those new to coding to acclimate themselves to the development process in ways that allow them to practice, experiment, and showcase themselves as valuable and contributing members of the community."
+    Chris_Lamb:
+      title_html: '%{company_url} Leader'
+      name_html:  'Chris Lamb (%{url})'
+      message_html:  "I got to where I am today by contributing to open source software, allowing me to not only improve my skills as a software developer but also to increase my network of colleagues and to meet new and interesting friends from extremely diverse cultures. I can highly recommend it."
+    Will_Norris:
+      title_html: 'Open Source at %{company_url}'
+      name_html:  'Will Norris (%{url})'
+      message_html: "Contributing to open source projects continues to be one of the most popular 20% projects for Google engineers. Open source plays such an important role in so much of what we do, so we try to make <a href=\"https://opensource.google.com/docs/patching/\"> the process </a> as easy as possible."
+    Christine_Abernathy:
+      title_html: 'Open Source at %{company_url}'
+      name_html:  'Christine Abernathy (%{url})'
+      message_html: "Open source aligns with our mission to make the world more open and connected. Working with the community gives us an opportunity to share our work and the challenges we’re aiming to solve, and encourages talented people to contribute their ideas and effort to move the world forward."
+    Rich_Harris:
+      title_html: '%{project1_url} and %{project2_url} maintainer'
+      name_html:  'Rich Harris (%{url})'
+      message_html: "The thing that most open source projects lack is not money, but time. Many maintainers have full-time jobs and can't realistically cut back their hours. What almost all projects need is more contributors. Open Source Friday is a perfect way for companies to support the open source ecosystem they depend on in a meaningful way."
+    Brett_Cannon:
+      title_html: '%{project_url} developer'
+      name_html:  'Brett Cannon (%{url})'
+      message_html: 'Once you are a maintainer on a project that others rely on, open source goes from "sharing the code" to "sharing the maintenance". As we all know, "maintenance" takes time which is most effectively spent in a continuous block to help make sure you can finish that e.g. code review before you start to lose context.'
+
+  # app/views/users/show.rb
+  users:
+    welcome: "You have joined Open Source Friday!"
+    joined: "has joined Open Source Friday!"
+    not_joined:  "has not joined Open Source Friday (yet)."
+    nextstep: "What should I do now?"
+    firststep: "Make your first contribution"
+    friends: "Tell your friends"
+    No_Friday_PR: "No Friday pull requests or events in the last 3 months."
+    Find_a_project_html: "<a href=\"%{how_to_contribute}\">Find a project to contribute to</a>, or learn <a href=\"%{submit_a_contribution}\">how to make your first pull request</a>."
+    share_will:
+      description_html: "Share Open Source Friday with others <a href=\"%{url}\">using this URL</a>."
+      message_html: "I'm contributing to open source on #OpenSourceFriday: https://opensourcefriday.com. Join me!"
+    share_activity:
+      description_html: "Share your Open Source Friday contributions with others <a href=\"%{url}\">using this URL</a>."
+      message_html: "Check out my contributions to open source on #OpenSourceFriday: %{url}"
+
+  # app/views/layouts/_calendar.erb
+  calendar:
+    title: "Set a reminder"
+    description: "Add Open Source Friday to your calendar next Friday."
+    button:  "Add to Calendar"
+
+  # app/views/layouts/_mailchimp.html.erb
+  mailchimp:
+    title: "Stay in touch"
+    description: "Be the first to hear about GitHub's latest open source tips and resources."
+
+  # app/views/layouts/application.html.erb
+  Error: "Error: "
+  # (code icon) with  (love icon) by (github icon) and friends
+  with: "with"
+  by: "by"
+  and: "and "
+  friends: "friends"
+
