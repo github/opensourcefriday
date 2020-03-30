@@ -19,7 +19,7 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
+pl:
   # common part
   Open Source Friday: "Open Source Friday"
   full_title_desc: "W ten piątek, poświęć kilka godzin, aby współtworzyć oprogramowanie, którego używasz i które kochasz."
@@ -184,4 +184,3 @@ en:
   by: "od"
   and: "i "
   friends: "znajomi"
-
