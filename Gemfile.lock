@@ -64,7 +64,7 @@ GEM
     bindex (0.8.1)
     builder (3.2.4)
     byebug (11.0.1)
-    concurrent-ruby (1.1.5)
+    concurrent-ruby (1.1.6)
     connection_pool (2.2.2)
     crass (1.0.5)
     dalli (2.7.10)
