@@ -63,7 +63,7 @@ GEM
     bcrypt (3.1.13)
     bindex (0.8.1)
     builder (3.2.4)
-    byebug (11.1.1)
+    byebug (11.1.2)
     concurrent-ruby (1.1.6)
     connection_pool (2.2.2)
     crass (1.0.6)
