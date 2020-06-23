@@ -31,6 +31,7 @@ jobs:
     - name: Set up PostgreSQL
       run: |
         sudo apt-get install postgresql libpq-dev
+        rm /usr/local/var/postgres/postmaster.pid
         sudo -u postgres createuser --superuser "$USER"
 
     - name: Bootstrap
