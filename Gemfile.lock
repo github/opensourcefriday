@@ -58,7 +58,7 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    ast (2.4.0)
+    ast (2.4.1)
     awesome_print (1.8.0)
     bcrypt (3.1.13)
     bindex (0.8.1)
