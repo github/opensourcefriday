@@ -95,7 +95,7 @@ GEM
     hashie (4.1.0)
     heroku-deflater (0.6.3)
       rack (>= 1.4.5)
-    i18n (1.8.3)
+    i18n (1.8.4)
       concurrent-ruby (~> 1.0)
     jquery-rails (4.4.0)
       rails-dom-testing (>= 1, < 3)
