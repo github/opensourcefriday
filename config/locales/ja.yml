@@ -88,7 +88,7 @@ ja:
         description_html: "プロジェクトのスコープを決定し、<a href=\"%{pause}\">自分自身に明確な境界線を引きましょう</a>。NOと言う事は、<a href=\"%{sayno}\">YESと同じだけ大事です</a>。"
       automation:
         title: "自動化"
-        description_html: "あなたの時間をつくるため、<a href=\"%{url\">ロボットを導入し</a>、テストや他のチェックは出来るだけ自動化させよう。"
+        description_html: "あなたの時間をつくるため、<a href=\"%{url}\">ロボットを導入し</a>、テストや他のチェックは出来るだけ自動化させよう。"
     visitor:
       title: "オープンソース フライデーの準備万端"
       description: "いま時間を使って、将来に楽する。"
