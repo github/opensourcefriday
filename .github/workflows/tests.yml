@@ -19,6 +19,9 @@ jobs:
       with:
         ruby-version: "${{ steps.ruby_version.outputs.RUBY_VERSION }}"
 
+    - name: Check for correct Ruby version in Gemfile.lock
+      run: git grep -o "   ruby ${{ steps.ruby_version.outputs.RUBY_VERSION }}" HEAD -- Gemfile.lock
+
     - name: Get NodeJS version
       run: echo "::set-output name=NODE_VERSION::$(cat .node-version)"
       id: node_version
