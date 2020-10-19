@@ -83,8 +83,9 @@ GEM
     failbot_rails (0.5.0)
       failbot (>= 0.9.2, < 3)
       rails (>= 4)
-    faraday (1.0.1)
+    faraday (1.1.0)
       multipart-post (>= 1.2, < 3)
+      ruby2_keywords
     faraday-http-cache (2.2.0)
       faraday (>= 0.8)
     ffi (1.13.1)
@@ -211,6 +212,7 @@ GEM
     rubocop-ast (0.8.0)
       parser (>= 2.7.1.5)
     ruby-progressbar (1.10.1)
+    ruby2_keywords (0.0.2)
     sassc (2.4.0)
       ffi (~> 1.9)
     sassc-rails (2.1.2)
