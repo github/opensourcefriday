@@ -64,7 +64,7 @@ Rails.application.configure do # rubocop:disable Metrics/BlockLength
     socket_timeout: 1.5,
     socket_failure_delay: 0.2,
     value_max_bytes: 10_485_760,
-    pool_size: ENV.fetch("RAILS_MAX_THREADS") { 5 }.to_i
+    pool_size: ENV.fetch("RAILS_MAX_THREADS", 5).to_i
   config.action_dispatch.rack_cache = {
     metastore: client,
     entitystore: client,
@@ -95,7 +95,7 @@ Rails.application.configure do # rubocop:disable Metrics/BlockLength
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
 
   if ENV["RAILS_LOG_TO_STDOUT"].present?
-    logger           = ActiveSupport::Logger.new(STDOUT)
+    logger           = ActiveSupport::Logger.new($stdout)
     logger.formatter = config.log_formatter
     config.logger = ActiveSupport::TaggedLogging.new(logger)
   end
