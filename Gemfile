@@ -47,4 +47,4 @@ group :test do
   gem "vcr", require: false
 end
 
-gem 'rtl'
+gem "rtl"
