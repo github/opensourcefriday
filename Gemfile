@@ -19,6 +19,7 @@ gem "sassc-rails"
 gem "sitemap_generator"
 gem "turbolinks"
 gem "uglifier"
+gem "rtl"
 
 group :development, :test do
   gem "byebug"
@@ -46,5 +47,3 @@ group :test do
   gem "simplecov", require: false
   gem "vcr", require: false
 end
-
-gem "rtl"
