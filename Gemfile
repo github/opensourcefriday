@@ -15,11 +15,11 @@ gem "pg"
 gem "puma"
 gem "rack-host-redirect"
 gem "rails"
+gem "rtl"
 gem "sassc-rails"
 gem "sitemap_generator"
 gem "turbolinks"
 gem "uglifier"
-gem "rtl"
 
 group :development, :test do
   gem "byebug"
