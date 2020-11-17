@@ -200,6 +200,7 @@ GEM
       actionpack (>= 5.0)
       railties (>= 5.0)
     rexml (3.2.4)
+    rtl (0.2.4)
     rubocop (1.3.1)
       parallel (~> 1.10)
       parser (>= 2.7.1.5)
@@ -291,6 +292,7 @@ DEPENDENCIES
   rack-cache
   rack-host-redirect
   rails
+  rtl
   rubocop
   sassc-rails
   simplecov
