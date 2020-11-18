@@ -16,16 +16,14 @@
   <% if current_user %>
     <span class="f5 mx-6 mr-sm-0 ml-sm-4 mt-3 mt-sm-0 d-block d-sm-inline-block border rounded-1">
 
-    <a class="d-inline-block py-2 px-3 border-right link-gray-dark" href="/users/<%= current_user.github_username %>">
+    <a class="d-inline-block py-2 px-3 link-gray-dark" href="/users/<%= current_user.github_username %>">
       <%= current_user.github_username %>
     </a>
-
-    <%= button_to t("Sign out"), destroy_user_session_path, class: "py-2 px-3" %>
 
     </span>
 
   <% else %>
-    <%= button_to user_github_omniauth_authorize_path, class: "mx-6 mr-sm-0 ml-sm-4 mt-3 mt-sm-0 d-block d-sm-inline-block btn btn-outline" do %>
+    <%= link_to user_github_omniauth_authorize_path, class: "mx-6 mr-sm-0 ml-sm-4 mt-3 mt-sm-0 d-block d-sm-inline-block btn btn-outline", method: :post do %>
       <%=t "Sign up" %>
     <% end %>
   <% end %>
