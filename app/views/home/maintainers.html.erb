@@ -11,7 +11,7 @@
         <h1 class="alt-h1 mb-2"><%= nbsp_last_word(yield(:title)) %></h1>
         <p class="alt-lead text-gray mb-md-5"><%= nbsp_last_word(yield(:description)) %></p>
         <% unless current_user %>
-          <%= button_to user_github_omniauth_authorize_path, class: "btn btn-large btn-primary", role: "button", method: :post do %>
+          <%= link_to user_github_omniauth_authorize_path, class: "btn btn-large btn-primary", role: "button", method: :post do %>
             <%=t "Sign up with GitHub" %>
           <% end %>
         <% end %>
@@ -92,7 +92,7 @@
 
     <p class="text-gray alt-lead"><%=t "maintainers.visitor.description" %></p>
 
-    <%= button_to user_github_omniauth_authorize_path, class: "btn btn-large btn-primary mb-4", role: "button" do %>
+    <%= link_to user_github_omniauth_authorize_path, class: "btn btn-large btn-primary mb-4", role: "button", method: :post do %>
       <%=t "Sign up with GitHub" %>
     <% end %>
   </div>
