@@ -20,12 +20,12 @@
       <%= current_user.github_username %>
     </a>
 
-    <%= link_to t("Sign out"), destroy_user_session_path, class: "py-2 px-3" %>
+    <%= button_to t("Sign out"), destroy_user_session_path, class: "py-2 px-3" %>
 
     </span>
 
   <% else %>
-    <%= link_to user_github_omniauth_authorize_path, class: "mx-6 mr-sm-0 ml-sm-4 mt-3 mt-sm-0 d-block d-sm-inline-block btn btn-outline" do %>
+    <%= button_to user_github_omniauth_authorize_path, class: "mx-6 mr-sm-0 ml-sm-4 mt-3 mt-sm-0 d-block d-sm-inline-block btn btn-outline" do %>
       <%=t "Sign up" %>
     <% end %>
   <% end %>
