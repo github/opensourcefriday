@@ -1,16 +1,16 @@
 <nav class="text-center">
-  <a href="/?locale=<% I18n.locale %>#participate"><%=t "Contributors" %></a>
+  <a href="/?locale=<%= I18n.locale %>#participate"><%=t "Contributors" %></a>
 
   <% if request.path == "/businesses" %>
     <span class="ml-4"><%=t "Businesses" %></span>
   <% else %>
-    <a class="ml-4" href="/businesses?locale=<% I18n.locale %>"><%=t "Businesses" %></a>
+    <a class="ml-4" href="/businesses?locale=<%= I18n.locale %>"><%=t "Businesses" %></a>
   <% end %>
 
   <% if request.path == "/maintainers" %>
     <span class="ml-4"><%=t "Maintainers" %></span>
   <% else %>
-    <a class="ml-4" href="/maintainers?locale=<% I18n.locale %>"><%=t "Maintainers" %></a>
+    <a class="ml-4" href="/maintainers?locale=<%= I18n.locale %>"><%=t "Maintainers" %></a>
   <% end %>
 
   <% if current_user %>
