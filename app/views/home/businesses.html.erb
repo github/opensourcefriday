@@ -11,7 +11,7 @@
         <h1 class="alt-h1 mb-2"><%= yield :title %></h1>
         <p class="alt-lead text-gray mb-md-5"><%= nbsp_last_word(yield(:description)) %></p>
         <% unless current_user %>
-          <%= link_to user_github_omniauth_authorize_path, class: "btn btn-large btn-primary", role: "button", method: :post do %>
+          <%= button_to user_github_omniauth_authorize_path, class: "btn btn-large btn-primary", role: "button" do %>
             <% t("Sign up with GitHub") %>
           <% end %>
         <% end %>
