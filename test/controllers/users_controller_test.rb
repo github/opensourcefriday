@@ -47,7 +47,7 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
   test "should sign in" do
     mock_omniauth!
     VCR.use_cassette("user_foobar") do
-      post user_github_omniauth_authorize_url
+      get user_github_omniauth_authorize_url
       follow_redirect!
       follow_redirect!
     end
@@ -58,7 +58,7 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     mock_omniauth!
     OmniAuth.config.mock_auth[:github] = :invalid_credentials
     VCR.use_cassette("user_foobar") do
-      post user_github_omniauth_authorize_url
+      get user_github_omniauth_authorize_url
       follow_redirect!
       follow_redirect!
     end
@@ -68,7 +68,7 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
   test "should sign in with locale url parameter" do
     mock_omniauth!
     VCR.use_cassette("user_foobar") do
-      post user_github_omniauth_authorize_url, params: { locale: "ja" }
+      get user_github_omniauth_authorize_url, params: { locale: "ja" }
       follow_redirect!
       follow_redirect!
       get root_url(locale: "en")
