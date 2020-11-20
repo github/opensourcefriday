@@ -1,6 +1,10 @@
 <nav class="text-center">
-  <a href="#participate"><%=t "Contributors" %></a>
-
+  <% if I18n.locale == :en %>
+  <a href="/#participate"><%=t "Contributors" %></a>
+  <% else %>
+  <a href="/?locale=<%= I18n.locale %>#participate"><%=t "Contributors" %></a>
+  <% end %>
+  
   <% if request.path == "/businesses" %>
     <span class="ml-4"><%=t "Businesses" %></span>
   <% else %>
