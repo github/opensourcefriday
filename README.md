@@ -2,7 +2,7 @@
 
 Open source is made by people just like you. This Friday, invest a few hours contributing to the software you use and love.
 
-## What is this?
+## What this is
 
 This repository is the source code for https://opensourcefriday.com.
 
@@ -40,7 +40,7 @@ Register a [new GitHub OAuth application](https://github.com/settings/applicatio
 
 Create the config file for the client ID and secret generated for your GitHub OAuth application:
 
-```
+```console
 cp config/application.example.yml config/application.yml
 ```
 
@@ -51,7 +51,8 @@ The environment variables are managed using [figaro](https://github.com/laserlem
 #### Bootstrapping the Application
 
 If you're on macOS, have Homebrew installed, and you've set the environment variables above to get started run:
-```bash
+
+```console
 ./script/bootstrap
 ./script/setup
 ./script/server
@@ -62,26 +63,26 @@ This should get you started with this project on your machine. Otherwise, no wor
 First, you'll need to install Ruby. We recommend using the excellent [rbenv](https://github.com/rbenv/rbenv),
 and [ruby-build](https://github.com/rbenv/ruby-build)
 
-```bash
+```console
 rbenv install
 ```
 
 Next, you'll need to make sure that you have PostgreSQL installed. On Debian-based Linux distributions you can use apt-get to install Postgres:
 
-```bash
+```console
 sudo apt-get install postgresql postgresql-contrib libpq-dev
 ```
 
 On Windows, you can use the [Chocolatey package manager](http://chocolatey.org/) to install Postgres:
 
-```bash
+```console
 choco install postgresql
 ```
 
 Now, let's install the gems from the `Gemfile` ("Gems" are synonymous with libraries in other
 languages).
 
-```bash
+```console
 gem install bundler && rbenv rehash
 bundle install
 ```
@@ -89,25 +90,25 @@ bundle install
 Once all the gems are installed, we'll need to create the databases and
 tables. Rails makes this easy.
 
-```bash
+```console
 ./bin/setup
 ```
 
 Now all we have to do is start up the Rails server and point
 our browser to <http://localhost:3000>
 
-```bash
+```console
 ./script/server
 ```
 
 ### Note on Patches/Pull Requests
 
- * Fork the project.
- * Clone your fork to your machine.
- * Create a new branch for your feature/fix.
- * Make your feature addition or bug fix.
- * Add tests for it. This is important so we don't break it in a future version unintentionally.
- * Submit a pull request.
+* Fork the project.
+* Clone your fork to your machine.
+* Create a new branch for your feature/fix.
+* Make your feature addition or bug fix.
+* Add tests for it. This is important so we don't break it in a future version unintentionally.
+* Submit a pull request.
 
 ### Code of Conduct
 
