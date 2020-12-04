@@ -11,7 +11,7 @@
     <% if current_user %>
       <a class="ml-4" href="/businesses"><%=t "Businesses" %></a>
     <% else %>
-      <a class="ml-4" href="/businesses?locale=<%= I18n.locale %>"><%=t "Businesses" %></a>
+      <a class="ml-4" href="/businesses<%= "?locale=#{I18n.locale}" if I18n.locale != :en %>"><%=t "Businesses" %></a>
     <% end %>
   <% end %>
 
@@ -21,7 +21,7 @@
     <% if current_user %>
       <a class="ml-4" href="/maintainers"><%=t "Maintainers" %></a>
     <% else %>
-      <a class="ml-4" href="/maintainers?locale=<%= I18n.locale %>"><%=t "Maintainers" %></a>
+      <a class="ml-4" href="/maintainers<%= "?locale=#{I18n.locale}" if I18n.locale != :en %>"><%=t "Maintainers" %></a>
     <% end %>
   <% end %>
 
