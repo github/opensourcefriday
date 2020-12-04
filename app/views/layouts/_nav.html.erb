@@ -1,16 +1,28 @@
 <nav class="text-center">
-  <a href="/<%= "?locale=#{I18n.locale}" if I18n.locale != :en %>#participate"><%=t "Contributors" %></a>
+  <% if current_user %>
+    <a href="/#participate"><%=t "Contributors" %></a>
+  <% else %>
+    <a href="/<%= "?locale=#{I18n.locale}" if I18n.locale != :en %>#participate"><%=t "Contributors" %></a>
+  <% end %>
   
   <% if request.path == "/businesses" %>
     <span class="ml-4"><%=t "Businesses" %></span>
   <% else %>
-    <a class="ml-4" href="/businesses?locale=<%= I18n.locale %>"><%=t "Businesses" %></a>
+    <% if current_user %>
+      <a class="ml-4" href="/businesses"><%=t "Businesses" %></a>
+    <% else %>
+      <a class="ml-4" href="/businesses?locale=<%= I18n.locale %>"><%=t "Businesses" %></a>
+    <% end %>
   <% end %>
 
   <% if request.path == "/maintainers" %>
     <span class="ml-4"><%=t "Maintainers" %></span>
   <% else %>
-    <a class="ml-4" href="/maintainers?locale=<%= I18n.locale %>"><%=t "Maintainers" %></a>
+    <% if current_user %>
+      <a class="ml-4" href="/maintainers"><%=t "Maintainers" %></a>
+    <% else %>
+      <a class="ml-4" href="/maintainers?locale=<%= I18n.locale %>"><%=t "Maintainers" %></a>
+    <% end %>
   <% end %>
 
   <% if current_user %>
