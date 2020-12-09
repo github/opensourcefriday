@@ -132,10 +132,10 @@ GEM
       multi_json (~> 1.3)
       multi_xml (~> 0.5)
       rack (>= 1.2, < 3)
-    octicons (11.1.0)
+    octicons (11.2.0)
       nokogiri (>= 1.6.3.1)
-    octicons_helper (11.1.0)
-      octicons (= 11.1.0)
+    octicons_helper (11.2.0)
+      octicons (= 11.2.0)
       rails
     octokit (4.19.0)
       faraday (>= 0.9)
