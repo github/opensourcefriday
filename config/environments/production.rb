@@ -28,7 +28,8 @@ Rails.application.configure do # rubocop:disable Metrics/BlockLength
   # Set cache headers for static assets
   config.public_file_server.headers = {
     "Cache-Control" => "public, max-age=31536000",
-    "Expires" => 6.months.from_now.to_formatted_s(:rfc822),
+    # 6 months from now
+    "Expires" => (Date.today + 180).to_datetime.to_formatted_s(:rfc822),
   }
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
