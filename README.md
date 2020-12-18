@@ -1,6 +1,6 @@
 # Open Source Friday
 
-Open source is made by people just like you. This Friday, invest a few hours contributing to the software you use and love.
+Open source is made by people just like you. This Friday, invest a few hours contributing to the software you use and love!
 
 ## What this is
 
