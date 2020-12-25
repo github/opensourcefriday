@@ -31,7 +31,7 @@ zh:
     businesses: "你的业务基于开源。了解如何参与。"
     maintainers: "给予你的项目多些关爱，好让他人做出你急需的贡献。"
     contributors: "了解贡献的意义，以及如何探索和开始贡献新项目。"
-  Sign up with GitHub: "用 GitHub 账号登录"
+  Sign up with GitHub: "用 GitHub 帐户登录"
   # app/views/layouts/_nav.html.erb
   Sign up: "登录"
   Sign out: "退出"
@@ -51,7 +51,7 @@ zh:
       issue:
         title: "一个你能解决的问题"
         description: "从下列网站中找一个等着你出手相助的项目："
-        first: "Your First PR"
+        first: "你的第一个拉取请求"
         grabs: "Up For Grabs"
         triage: "CodeTriage"
       welcome:
@@ -99,7 +99,7 @@ zh:
         description_html: '确保你的 README 文件写了你的项目作用，它的范围和贡献需求，以及如何<a href="%{url}">借助社区</a>。'
       promote:
         title: "推广你的作品"
-        description_html: '考虑创建一个 Twitter 账号、博客博文及网站, 以<a href="%{url}">帮助人们找到和关注你的项目</a>。'
+        description_html: '考虑创建一个 Twitter 帐号、博客博文及网站, 以<a href="%{url}">帮助人们找到和关注你的项目</a>。'
     growing:
       title: "让你的社区成长"
       description: "每个人都曾是新手。缓解他人在首次贡献时的紧张。"
