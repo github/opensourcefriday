@@ -133,7 +133,7 @@ GEM
     octicons_helper (11.2.0)
       octicons (= 11.2.0)
       rails
-    octokit (4.19.0)
+    octokit (4.20.0)
       faraday (>= 0.9)
       sawyer (~> 0.8.0, >= 0.5.3)
     omniauth (1.9.1)
