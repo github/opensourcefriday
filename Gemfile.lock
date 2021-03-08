@@ -86,7 +86,7 @@ GEM
     faraday-http-cache (2.2.0)
       faraday (>= 0.8)
     faraday-net_http (1.0.1)
-    ffi (1.14.2)
+    ffi (1.15.0)
     figaro (1.2.0)
       thor (>= 0.14.0, < 2)
     globalid (0.4.2)
