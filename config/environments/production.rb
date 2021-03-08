@@ -70,7 +70,7 @@ Rails.application.configure do # rubocop:disable Metrics/BlockLength
     metastore: client,
     entitystore: client,
   }
-  config.cache_store = :dalli_store
+  config.cache_store = :mem_cache_store
 
   # Use a real queuing backend for Active Job (and separate queues per environment)
   # config.active_job.queue_adapter     = :resque
