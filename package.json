@@ -3,7 +3,7 @@
   "dependencies": {
     "addtocalendar": "AddToCalendar/addtocalendar",
     "jstimezonedetect": "^1.0.7",
-    "primer-core": "6.7.0",
+    "primer-core": "7.0.0",
     "primer-marketing": "6.2.0"
   }
 }
