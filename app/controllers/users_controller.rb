@@ -130,7 +130,7 @@ class UsersController < ApplicationController
       url = "https://github.com/#{repo}/compare/#{diff}"
       date = event.created_at
       branch = payload.ref.sub(%r{^refs/heads/}, "")
-      title = "pushed <code>#{branch}</code>".html_safe
+      title = helpers.safe_join(["pushed ", helpers.tag.code(branch)])
     when "PullRequestReviewEvent"
       return unless action == "submitted"
 
