@@ -96,8 +96,6 @@ GEM
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     hashie (4.1.0)
-    heroku-deflater (0.6.3)
-      rack (>= 1.4.5)
     i18n (1.8.9)
       concurrent-ruby (~> 1.0)
     jquery-rails (4.4.0)
@@ -283,7 +281,6 @@ DEPENDENCIES
   devise-i18n
   faraday-http-cache
   figaro
-  heroku-deflater
   jquery-rails
   kgio
   listen
