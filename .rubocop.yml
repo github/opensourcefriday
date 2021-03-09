@@ -6,10 +6,10 @@ AllCops:
   TargetRubyVersion: 2.7
   NewCops: enable
   Exclude:
-    - '**/bin/**/*'
-    - '**/db/**/*'
-    - '**/script/setup'
-    - '**/vendor/**/*'
+    - "**/bin/**/*"
+    - "**/db/**/*"
+    - "**/script/setup"
+    - "**/vendor/**/*"
 
 Lint/AssignmentInCondition:
   Enabled: false
