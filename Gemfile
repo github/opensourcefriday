@@ -36,7 +36,6 @@ end
 group :production do
   gem "connection_pool"
   gem "dalli"
-  gem "heroku-deflater"
   gem "kgio"
   gem "memcachier"
   gem "rack-cache"
