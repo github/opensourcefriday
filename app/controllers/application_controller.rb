@@ -6,7 +6,8 @@ class ApplicationController < ActionController::Base
     I18n.locale =
       if user_signed_in?
         if params[:locale].present? && available_language?(params[:locale])
-          current_user.update_attribute(:language, params[:locale])
+          current_user.language = params[:locale]
+          current_user.save!
         end
         current_user.language
       else

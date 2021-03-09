@@ -30,7 +30,8 @@ class User < ApplicationRecord
     return unless user
 
     if user.oauth_token != auth.credentials.token
-      user.update_attribute(:oauth_token, auth.credentials.token)
+      user.oauth_token = auth.credentials.token
+      user.save!
     end
     user
   end
