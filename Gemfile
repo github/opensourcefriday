@@ -2,7 +2,9 @@ source "https://rubygems.org"
 
 ruby IO.read(File.expand_path("#{File.dirname(__FILE__)}/.ruby-version")).strip
 
-gem "devise"
+# Include https://github.com/heartcombo/devise/pull/5327 for OmniAuth 2
+gem "devise", github: "heartcombo/devise",
+              ref: "743b6937e2251cdfd0e857d6d4fa97df4aca5791"
 gem "devise-i18n"
 gem "faraday-http-cache"
 gem "figaro"
@@ -10,6 +12,7 @@ gem "jquery-rails"
 gem "octicons_helper"
 gem "octokit"
 gem "omniauth-github"
+gem "omniauth-rails_csrf_protection"
 gem "pg"
 gem "puma"
 gem "rack-host-redirect"

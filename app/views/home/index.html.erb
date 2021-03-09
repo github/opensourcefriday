@@ -7,8 +7,8 @@
     <h1 class="alt-h0 mb-2"><%= yield :title %></h1>
     <p class="alt-lead text-gray mb-md-5 col-md-8 mx-auto"><%= nbsp_last_word(yield(:description)) %></p>
     <% unless current_user %>
-      <%= link_to user_github_omniauth_authorize_path, class: "btn btn-large btn-primary mb-md-4", role: "button" do %>
-        <% t("Sign up with GitHub") %>
+      <%= form_with url: user_github_omniauth_authorize_path do |form| %>
+        <%= form.submit t("Sign up with GitHub"), class: "btn btn-large btn-primary mb-md-4" %>
       <% end %>
     <% end %>
     <%= image_tag("oss-bike.svg", class: "img-responsive bike-animate-in mt-4 mt-md-6 mb-n2") %>
