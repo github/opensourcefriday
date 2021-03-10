@@ -52,7 +52,7 @@ class UsersController < ApplicationController
       expires_in: duration_until_next_saturday
     ) do
       query = "is:pr author:#{@nickname} is:public"
-      friday = Date.today.beginning_of_week :friday
+      friday = Time.zone.today.beginning_of_week :friday
       # for the last 3 months
       13.times { |i| query += " created:#{friday - (i * 7).days}" }
 
@@ -86,12 +86,12 @@ class UsersController < ApplicationController
       expires_in: duration_until_next_saturday
     ) do
       events = octokit.user_public_events(@nickname)
-      last_event_created = events.last.try(:created_at) || Time.now
+      last_event_created = events.last.try(:created_at) || Time.zone.now
       last_response = octokit.last_response
       while last_event_created > 3.months.ago && last_response.rels[:next]
         last_response = last_response.rels[:next].get
         events.concat last_response.data
-        last_event_created = events.last.try(:created_at) || Time.now
+        last_event_created = events.last.try(:created_at) || Time.zone.now
       end
       count = events.length
       events = events.map { |event| event_metadata(event) }.compact
@@ -101,8 +101,8 @@ class UsersController < ApplicationController
 
   def duration_until_next_saturday
     @duration_until_next_saturday ||= begin
-      next_saturday = (Date.today + 7).beginning_of_week :saturday
-      days_until_next_saturday = (next_saturday - Date.today).to_i
+      next_saturday = (Time.zone.today + 7).beginning_of_week :saturday
+      days_until_next_saturday = (next_saturday - Time.zone.today).to_i
       days_until_next_saturday.days
     end
   end
@@ -130,7 +130,7 @@ class UsersController < ApplicationController
       url = "https://github.com/#{repo}/compare/#{diff}"
       date = event.created_at
       branch = payload.ref.sub(%r{^refs/heads/}, "")
-      title = "pushed <code>#{branch}</code>".html_safe
+      title = helpers.safe_join(["pushed ", helpers.tag.code(branch)])
     when "PullRequestReviewEvent"
       return unless action == "submitted"
 

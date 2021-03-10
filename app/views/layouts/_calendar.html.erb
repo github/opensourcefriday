@@ -6,7 +6,7 @@
   </a>
 
   <var class="atc_event">
-      <% next_friday = (Date.today + 7).beginning_of_week :friday %>
+      <% next_friday = (Time.zone.today + 7).beginning_of_week :friday %>
       <var class="atc_date_start"><%= next_friday %> 12:00:00</var>
       <var class="atc_date_end"><%= next_friday %> 18:00:00</var>
       <var class="atc_timezone">Europe/London</var>
