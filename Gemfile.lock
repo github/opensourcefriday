@@ -132,7 +132,7 @@ GEM
     nokogiri (1.11.2)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
-    oauth2 (1.4.4)
+    oauth2 (1.4.7)
       faraday (>= 0.8, < 2.0)
       jwt (>= 1.0, < 3.0)
       multi_json (~> 1.3)
