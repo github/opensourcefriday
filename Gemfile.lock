@@ -109,7 +109,7 @@ GEM
       thor (>= 0.14, < 2.0)
     jwt (2.2.2)
     kgio (2.11.3)
-    listen (3.5.0)
+    listen (3.5.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     loofah (2.9.0)
