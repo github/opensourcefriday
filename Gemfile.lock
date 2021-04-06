@@ -210,7 +210,7 @@ GEM
     responders (3.0.1)
       actionpack (>= 5.0)
       railties (>= 5.0)
-    rexml (3.2.4)
+    rexml (3.2.5)
     rtl (0.2.4)
     rubocop (1.12.0)
       parallel (~> 1.10)
