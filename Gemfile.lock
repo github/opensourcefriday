@@ -125,7 +125,7 @@ GEM
     memcachier (0.0.2)
     method_source (1.0.0)
     mini_mime (1.0.3)
-    mini_portile2 (2.5.0)
+    mini_portile2 (2.5.1)
     minitest (5.14.4)
     multi_json (1.15.0)
     multi_xml (0.6.0)
