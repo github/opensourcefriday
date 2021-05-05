@@ -146,7 +146,7 @@ GEM
       actionview
       octicons (= 13.0.0)
       railties
-    octokit (4.20.0)
+    octokit (4.21.0)
       faraday (>= 0.9)
       sawyer (~> 0.8.0, >= 0.5.3)
     omniauth (2.0.4)
