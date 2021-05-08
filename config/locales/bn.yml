@@ -49,7 +49,7 @@ bn:
         description: "ওপেন সোর্সে সরাসরি অংশগ্রহণ আপনার সংগঠনকে বোঝায় সেই সফটওয়্যারের উপর আপনার নির্ভরশীলতা।"
     models:
       title: "একসাথে আরো ভালোভাবে কাজ করুন"
-      description: "Open source development models are at the forefront of software collaboration. Developers who work on open source learn intuitively to improve quality, speed, and transparency at your organization."
+      description: "ওপেন সোর্স ডেভেলপমেন্ট মডেল সফটওয়্যার সহযোগিতায় প্রধান ভূমিকা রাখে। ডেভেলপাররা যারা ওপেন সোর্সে কাজ করে স্বজ্ঞাতভাবে শেখে দক্ষতা, দ্রুততা, এবং স্বচ্ছতা উন্নত করতে আপনার সংগঠনে।"
     cost:
       title: "খরচ কমান"
       description: "নিয়মিত ওপেন সোর্সে অবদান রাখায় টাকা এবং ডেভেলপারদের সময় সাশ্রয় হয় কাস্টম সফটওয়্যার কমানোর দ্বারা যেগুলো আপনাকে মেইনটেইন করতে হয়।"
@@ -87,7 +87,7 @@ bn:
         description_html: '<a href="%{survey}">গিটহাবের ২০১৭ সালের ওপেন সোর্স জরিপ</a> দেখায় অসম্পূর্ণ ও বিভ্রান্তিকর ডকুমেন্টেনশন হচ্ছে সবচেয়ে বড় সমস্যা ওপেন সোর্স ইউজারদের জন্য। নিশ্চিত করুন আপনি <a href="%{guide}">ডকুমেন্ট করছেন আপনার প্রক্রিয়াগুলোকে </a>  কীভাবে আপনার প্রোজেক্টে অবদান রাখতে হয় তার জন্য।'
       help:
         title: "সাহায্য নিন"
-        Look_out_html: 'Look out for promising potential contributors or maintainers to <a href="%{url}"> share ownership of your project.</a> Make an effort to welcome first-time contributors in particular.'
+        Look_out_html: 'খোঁজ করুন প্রতিশ্রুতিবদ্ধ অবদানকারীদের বা রক্ষণাবেক্ষণকারীদের <a href="%{url}"> আপনার প্রোজেক্টের অধিকার ভাগ করার জন্য।</a> চেষ্টা করুন প্রথমবার অবদানকারীদের স্বাগতম জানাতে আলাদাভাবে।'
     workflow:
       title: "আপনার কর্মধারাকে উন্নত করুন"
       description: "অন্যান্য রক্ষণাবেক্ষণকারীদের কাছ থেকে শিখুন কীভাবে আরো কার্যকরী হতে হয়।"
@@ -106,7 +106,7 @@ bn:
     Kim_Crayton:
       title_html: "কমিউনিটি ইঞ্জিনিয়ার, লেখক, প্রতিষ্ঠাতা"
       name_html: "Kim Crayton (%{url})"
-      message_html: "Contributing to open source not only allows businesses of every size to take advantage and build upon the talents of others, it’s also an avenue for those new to coding to acclimate themselves to the development process in ways that allow them to practice, experiment, and showcase themselves as valuable and contributing members of the community."
+      message_html: "ওপেন সোর্স শুধুমাত্র যে প্রত্যেক সাইজের ব্যবসাগুলোকে সুবিধা নিতে এবং অন্যের প্রতিভার উপর ভিত্তি করতে দেয় তা নয়, এটি একটি উপায় তাদের জন্য যারা কোডিং এ নতুন নিজেদেরকে অভ্যস্ত করতে ডেভেলপমেন্ট প্রক্রিয়ায় যা তাদের অনুশীলন, পরীক্ষা করতে এবং নিজেদেরকে প্রদর্শন করতে দেবে কমিউনিটি এর একজন মূল্যবান ও অবদানকারী সদস্য হিসেবে।"
     Chris_Lamb:
       title_html: "%{company_url} লিডার"
       name_html: "Chris Lamb (%{url})"
@@ -114,11 +114,11 @@ bn:
     Will_Norris:
       title_html: "%{company_url}-এ ওপেন সোর্স"
       name_html: "Will Norris (%{url})"
-      message_html: 'Contributing to open source projects continues to be one of the most popular 20% projects for Google engineers. Open source plays such an important role in so much of what we do, so we try to make <a href="https://opensource.google.com/docs/patching/"> the process </a> as easy as possible.'
+      message_html: 'ওপেন সোর্স প্রোজেক্টে অবদান রাখা গুগল ইঞ্জিনিয়ারদের সবচেয়ে জনপ্রিয় ২০% প্রোজেক্টগুলোর মধ্যে একটি। আমরা যা করি ওপেন সোর্স তার মধ্যে অনেক গুরুত্বপূর্ণ ভূমিকা পালন করে, তাই আমরা চেষ্টা করি <a href="https://opensource.google.com/docs/patching/"> প্রক্রিয়াটিকে </a> যতটা সম্ভব সহজ করার।'
     Christine_Abernathy:
       title_html: "%{company_url}-এ ওপেন সোর্স"
       name_html: "Christine Abernathy (%{url})"
-      message_html: "Open source aligns with our mission to make the world more open and connected. Working with the community gives us an opportunity to share our work and the challenges we’re aiming to solve, and encourages talented people to contribute their ideas and effort to move the world forward."
+      message_html: "ওপেন সোর্স আমাদের লক্ষ্যতে সহযোগিতা করে, বিশ্বকে আরো উন্মুক্ত এবং সংযুক্ত করার। কমিউনিটির সাথে কাজ করা আমাদের সুযোগ দেয় আমাদের কাজগুলো শেয়ার করার এবং চ্যালেঞ্জগুলো যেগুলো আমরা সমাধান করতে চাই, এবং উৎসাহিত করে প্রতিভাশালী মানুষদের তাদের তাদের ধারণায় এবং প্রচেষ্টায় অবদান রাখতে বিশ্বটাকে এগিয়ে নিয়ে যেতে।"
     Rich_Harris:
       title_html: "%{project1_url} এবং %{project2_url} রক্ষণাবেক্ষণকারী"
       name_html: "Rich Harris (%{url})"
@@ -126,7 +126,7 @@ bn:
     Brett_Cannon:
       title_html: "%{project_url} ডেভেলপার"
       name_html: "Brett Cannon (%{url})"
-      message_html: 'Once you are a maintainer on a project that others rely on, open source goes from "sharing the code" to "sharing the maintenance". As we all know, "maintenance" takes time which is most effectively spent in a continuous block to help make sure you can finish that e.g. code review before you start to lose context.'
+      message_html: 'যখন আপনি একটি রক্ষণাবেক্ষণকারী হন একটি প্রোজেক্টে যার উপর অন্যরা নির্ভর করে, ওপেন সোর্স হয়ে যায় "কোড ভাগ করা" থেকে "রক্ষণাবেক্ষণ ভাগ করা"। আমরা সবাই জানি যে, "রক্ষণাবেক্ষণ" সময় নেয় যা ব্যয় হয় একটানা কাজে, নিশ্চিত করার জন্য যে আপনি সেই কাজটি শেষ করতে পারেন যেমন কোড রিভিউ, প্রসঙ্গ হারানোর আগে।'
 
   # app/views/users/show.rb
   users:
@@ -154,7 +154,7 @@ bn:
   # app/views/layouts/_mailchimp.html.erb
   mailchimp:
     title: "সাথে থাকুন"
-    description: "প্রথম হন গিটহাবের সর্বশেষ ওপেন সোর্স পরামর্শ এবং রিসোর্সগুলো শুনতে।"
+    description: "প্রথম হন গিটহাবের সর্বশেষ ওপেন সোর্স পরামর্শ এবং রিসোর্সগুলো পেতে।"
 
   # app/views/layouts/application.html.erb
   Error: "ত্রুটি: "
