@@ -1,15 +1,3 @@
-GIT
-  remote: https://github.com/heartcombo/devise.git
-  revision: 743b6937e2251cdfd0e857d6d4fa97df4aca5791
-  ref: 743b6937e2251cdfd0e857d6d4fa97df4aca5791
-  specs:
-    devise (4.7.3)
-      bcrypt (~> 3.0)
-      orm_adapter (~> 0.1)
-      railties (>= 4.1.0)
-      responders
-      warden (~> 1.2.3)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -83,6 +71,12 @@ GEM
     connection_pool (2.2.5)
     crass (1.0.6)
     dalli (2.7.11)
+    devise (4.8.0)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 4.1.0)
+      responders
+      warden (~> 1.2.3)
     devise-i18n (1.9.4)
       devise (>= 4.7.1)
     docile (1.3.5)
@@ -297,7 +291,7 @@ DEPENDENCIES
   byebug
   connection_pool
   dalli
-  devise!
+  devise
   devise-i18n
   faraday-http-cache
   figaro
