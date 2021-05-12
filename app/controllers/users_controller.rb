@@ -94,7 +94,7 @@ class UsersController < ApplicationController
         last_event_created = events.last.try(:created_at) || Time.zone.now
       end
       count = events.length
-      events = events.map { |event| event_metadata(event) }.compact
+      events = events.filter_map { |event| event_metadata(event) }
       [count, events]
     end
   end
