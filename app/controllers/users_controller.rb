@@ -168,8 +168,8 @@ class UsersController < ApplicationController
         if current_user && !Rails.env.test?
           config.access_token = current_user.oauth_token
         else
-          config.client_id = ENV["github_client_id"]
-          config.client_secret = ENV["github_client_secret"]
+          config.client_id = ENV["github_client_id"]           # rubocop:disable Rails/EnvironmentVariableAccess
+          config.client_secret = ENV["github_client_secret"]   # rubocop:disable Rails/EnvironmentVariableAccess
         end
       end
       client
