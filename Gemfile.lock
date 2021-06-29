@@ -214,7 +214,7 @@ GEM
       railties (>= 5.0)
     rexml (3.2.5)
     rtl (0.2.4)
-    rubocop (1.17.0)
+    rubocop (1.18.0)
       parallel (~> 1.10)
       parser (>= 3.0.0.0)
       rainbow (>= 2.2.2, < 4.0)
