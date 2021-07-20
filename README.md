@@ -18,12 +18,6 @@ We are not a place where you're going to get free t-shirts or other kinds of gif
 
 ## Translation
 
-### Transifex
-
-[Help Translate "Open Source Friday"](https://www.transifex.com/github-open-source/open-source-friday/dashboard/) on Transifex.
-
-### GitHub Pull Request
-
 See [CONTRIBUTING.md#Translation](CONTRIBUTING.md#Translation).
 
 ## Development
