@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 ruby File.read(
-  File.expand_path("#{File.dirname(__FILE__)}/.ruby-version"),
+  File.expand_path("#{File.dirname(__FILE__)}/.ruby-version")
 ).strip
 
 # Include https://github.com/heartcombo/devise/pull/5327 for OmniAuth 2
