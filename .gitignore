@@ -7,16 +7,16 @@
 # Ignore macOS thumbnail file
 .DS_Store
 
-# Ignore bundler config.
+# Ignore bundler config
 /.bundle
 
-# Ignore all logfiles and tempfiles.
+# Ignore all logfiles and tempfiles
 /log/*
 /tmp/*
 !/log/.keep
 !/tmp/.keep
 
-# Ignore Byebug command history file.
+# Ignore Byebug command history file
 .byebug_history
 
 # Ignore application configuration
