@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: opensourcefriday
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: opensourcefriday
+  template:
+    metadata:
+      labels:
+        app: opensourcefriday
+      annotations:
+        observability.github.com/logger: fluent-bit
+    spec:
+      dnsPolicy: Default
+      containers:
+      - name: opensourcefriday
+        image: opensourcefriday
+        ports:
+        - name: http
+          containerPort: 3000
+          protocol: TCP
+        envFrom:
+          - configMapRef:
+              name: kube-cluster-metadata

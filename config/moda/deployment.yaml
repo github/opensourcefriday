@@ -1,0 +1,8 @@
+environments:
+- name: production
+  cluster_selector:
+    profile: general
+    region: iad
+notifications:
+  slack_channels:
+  - "#communities-oss-reviewers-alerts"
