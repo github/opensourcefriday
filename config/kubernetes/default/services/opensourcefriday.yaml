@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: opensourcefriday
+  labels:
+    service: opensourcefriday
+  annotations:
+    # https://moda.githubapp.com/docs/features/load-balancing/#using-variables-in-domain-names
+    # For example, this will render out to opensourcefriday-production.service.iad.github.net
+    # if this is your production deployment in iad.
+    moda.github.net/domain-name: "opensourcefriday-%environment%.service.%region%.github.net"
+spec:
+  ports:
+  - name: http
+    port: 8080
+    protocol: TCP
+    targetPort: http
+  selector:
+    app: opensourcefriday
+  type: LoadBalancer

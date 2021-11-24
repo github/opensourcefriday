@@ -1,0 +1,30 @@
+---
+version: 1
+ownership:
+# ownership.yaml describes who is responsible for a service, and how to contact them. If your service is made up
+# of multiple components, you can define multiple entries in this file.
+#
+# Additional documentation on ownership.yaml fields is available at: https://thehub.github.com/engineering/products/service-catalog/service-ownership/#attributes-of-durable-ownership
+# Questions? Ask in #sre on Slack.
+- team: # Your team from https://github.com/orgs/github/teams e.g. github/sre
+  repo: https://github.com/github/opensourcefriday
+  name: opensourcefriday
+  kind: moda
+  long_name: # A human friendly name for your app. e.g. Service Catalog
+  description: # A description of what your service does. e.g. Tracks service ownership and SLOs.
+  maintainer: # One person who can make technical decisions about the service. Participates in the on-call rotation.
+  exec_sponsor: # The engineering director/VP sponsoring the service.
+  product_manager: # The product manager sponsoring the service. Omit this field if the service doesn't have a product manager.
+  qos: # One of: critical, best_effort, maintenance, deprecated, down, unowned, experimental.
+  tier: # How critical the service is to the company, e.g. 0 (most critical), 1, 2, 3 (least critical).
+  sev1:
+    pagerduty: # Link to the PagerDuty escalation policy (not schedule) for this service. 
+    tta: # Expected response time to ack a page. e.g. 30m, 1 day [m (month), d (day), w (week) are supported]
+  sev2:
+    issue: # Link to GitHub Issue tracker.
+    tta: # Expected response time to ack a page. e.g. 30m, 1 day [m (month), d (day), w (week) are supported]
+  sev3:
+    slack: # Name of Slack channel. Omit the leading #
+    tta: # Expected response time to ack a page. e.g. 30m, 1 day [m (month), d (day), w (week) are supported]
+  dependencies:
+  - # A list of other services this service depends on. e.g. databases, internal APIs. The dependency must match its name in the Service Catalog.
