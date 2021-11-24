@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: opensourcefriday
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: opensourcefriday
+  template:
+    metadata:
+      labels:
+        app: opensourcefriday
+      annotations:
+        # These two configure logging for your application. For more details, see
+        # https://thehub.github.com/engineering/development-and-ops/observability/logging/fluent-bit/
+        observability.github.com/logger: fluent-bit
+        # fluentbit.io/parser: logfmt
+    spec:
+# The following line is to fix transient dns issues in deployed environments
+# https://moda.githubapp.com/docs/frequently-asked-questions/#i-m-seeing-a-lot-of-dns-exceptions-what-gives
+      dnsPolicy: Default
+      containers:
+      - name: opensourcefriday
+        image: opensourcefriday
+        ports:
+        - name: http
+          containerPort: 8080
+          protocol: TCP
+        envFrom:
+          - configMapRef:
+              name: kube-cluster-metadata
