@@ -100,7 +100,7 @@ GEM
     faraday-http-cache (2.2.0)
       faraday (>= 0.8)
     faraday-httpclient (1.0.1)
-    faraday-multipart (1.0.2)
+    faraday-multipart (1.0.3)
       multipart-post (>= 1.2, < 3)
     faraday-net_http (1.0.1)
     faraday-net_http_persistent (1.2.0)
