@@ -107,7 +107,7 @@ GEM
     faraday-patron (1.0.0)
     faraday-rack (1.0.0)
     faraday-retry (1.0.3)
-    ffi (1.15.4)
+    ffi (1.15.5)
     figaro (1.2.0)
       thor (>= 0.14.0, < 2)
     globalid (1.0.0)
@@ -213,7 +213,7 @@ GEM
       method_source
       rake (>= 0.13)
       thor (~> 1.0)
-    rainbow (3.0.0)
+    rainbow (3.1.1)
     rake (13.0.6)
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
