@@ -286,10 +286,7 @@ GEM
     simplecov_json_formatter (0.1.3)
     sitemap_generator (6.2.1)
       builder (~> 3.0)
-    spring (2.1.1)
-    spring-watcher-listen (2.0.1)
-      listen (>= 2.7, < 4.0)
-      spring (>= 1.2, < 3.0)
+    spring (4.0.0)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -354,7 +351,6 @@ DEPENDENCIES
   simplecov
   sitemap_generator
   spring
-  spring-watcher-listen
   turbolinks
   uglifier
   vcr
@@ -364,4 +360,4 @@ RUBY VERSION
    ruby 3.1.0p0
 
 BUNDLED WITH
-   2.2.15
+   2.3.6
