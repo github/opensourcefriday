@@ -17,7 +17,7 @@ gem "omniauth-rails_csrf_protection"
 gem "pg"
 gem "puma"
 gem "rack-host-redirect"
-gem "rails", "~> 6.1"
+gem "rails", "~> 7.0"
 gem "rtl"
 gem "sassc-rails"
 gem "sitemap_generator"
@@ -34,7 +34,6 @@ group :development do
   gem "rubocop-performance"
   gem "rubocop-rails"
   gem "spring"
-  gem "spring-watcher-listen"
   gem "web-console"
 end
 
