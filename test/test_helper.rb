@@ -7,7 +7,7 @@ SimpleCov.start("rails") do
   add_filter "/bin/"
   add_filter "/test/"
   add_filter "/vendor/"
-  minimum_coverage 80
+  minimum_coverage 60
 end
 
 SimpleCov.formatters = [SimpleCov::Formatter::HTMLFormatter]
