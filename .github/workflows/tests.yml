@@ -10,14 +10,8 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v1
 
-      - name: Get Ruby version
-        run: echo "::set-output name=RUBY_VERSION::$(cat .ruby-version)"
-        id: ruby_version
-
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: "${{ steps.ruby_version.outputs.RUBY_VERSION }}"
 
       - name: Check for correct Ruby version in Gemfile.lock
         run: git grep -o "   ruby ${{ steps.ruby_version.outputs.RUBY_VERSION }}" HEAD -- Gemfile.lock
