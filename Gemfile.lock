@@ -89,7 +89,7 @@ GEM
     docile (1.4.0)
     erubi (1.10.0)
     execjs (2.8.1)
-    faraday (1.9.3)
+    faraday (1.10.0)
       faraday-em_http (~> 1.0)
       faraday-em_synchrony (~> 1.0)
       faraday-excon (~> 1.1)
