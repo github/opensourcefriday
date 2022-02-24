@@ -101,7 +101,7 @@ ja:
     Chris_Lamb:
       title_html: '%{company_url}リーダー'
       name_html: 'Chris Lamb (%{url})'
-      message_html: "I got to where I am today by contributing to open source software, allowing me to not only improve my skills as a software developer but also to increase my network of colleagues and to meet new and interesting friends from extremely diverse cultures. I can highly recommend it."
+      message_html: "オープンソースへ貢献することが無ければ、今の私は居ないでしょう。そこでは、ソフトウェア開発のスキルの向上だけでなく、仲間との絆も深まり、多様で素晴らしい文化を持った面白い仲間たちと出会うこともできました。オープンソースに貢献することをとてもオススメします。"
     Will_Norris:
       title_html: '%{company_url}のオープンソース担当'
       name_html: 'Will Norris (%{url})'
