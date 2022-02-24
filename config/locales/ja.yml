@@ -101,11 +101,11 @@ ja:
     Chris_Lamb:
       title_html: '%{company_url}リーダー'
       name_html: 'Chris Lamb (%{url})'
-      message_html: "オープンソースへ貢献することが無ければ、今の私は居ないでしょう。そこでは、ソフトウェア開発のスキルの向上だけでなく、仲間との絆も深まり、多様で素晴らしい文化を持った面白い仲間たちと出会うこともできました。オープンソースに貢献することをとてもオススメします。"
+      message_html: "オープンソースへ貢献することが無ければ、今の私は居ないでしょう。そこでは、ソフトウェア開発のスキルの向上だけでなく、仲間との絆も深まり、多様で素晴らしい文化を持った面白い友人たちと出会うこともできました。オープンソースに貢献することをとてもオススメします。"
     Will_Norris:
       title_html: '%{company_url}のオープンソース担当'
       name_html: 'Will Norris (%{url})'
-      message_html: "Contributing to open source projects continues to be one of the most popular 20% projects for Google engineers. Open source plays such an important role in so much of what we do, so we try to make <a href=\"https://opensource.google.com/docs/patching/\"> the process </a> as easy as possible."
+      message_html: "オープンソースプロジェクトへの貢献は、Googleエンジニアにとって最も人気のある20%のプロジェクトの一つであり続けています。オープンソースは、私たちが行う多くのことにおいて非常に重要な役割を果たしているため、<a href=\"https://opensource.google.com/docs/patching/\"> プロセス </a>を可能な限り簡単にするよう努めています。"
     Christine_Abernathy:
       title_html: '%{company_url}のオープンソース担当'
       name_html: 'Christine Abernathy (%{url})'
