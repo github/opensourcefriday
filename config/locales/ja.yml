@@ -128,10 +128,10 @@ ja:
     No_Friday_PR: "過去3か月間には、金曜日プルリクエストやイベントは無かったみたい。"
     Find_a_project_html: "<a href=\"%{how_to_contribute}\">貢献するプロジェクトを見つける</a>、あるいは <a href=\"%{submit_a_contribution}\">最初のプルリクエストを送る方法を学ぶ</a>。"
     share_will:
-      description_html: "<a href=\"%{url}\">このURL</a>を他の人に送って、Open Source Fridayを共有する。"
+      description_html: "<a href=\"%{url}\">このURL</a>を他の人に送って、オープンソースフライデーを共有する。"
       message_html: "#OpenSourceFriday に賛同して、OSS貢献しようとおもいます https://opensourcefriday.com 一緒に貢献しよう！"
     share_activity:
-      description_html: "他の人にあなたのOpen Source Fridayでの貢献を共有して、<a href=\"%{url}\">このURL</a>を共有するメッセージを送る。"
+      description_html: "他の人にあなたのオープンソースフライデーでの貢献を共有して、<a href=\"%{url}\">このURL</a>を共有するメッセージを送る。"
       message_html: "私の #OpenSourceFriday でのOSS貢献を %{url} で共有するよ！"
   calendar:
     title: "アラームを設定"
