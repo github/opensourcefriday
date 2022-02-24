@@ -109,7 +109,7 @@ ja:
     Christine_Abernathy:
       title_html: '%{company_url}のオープンソース担当'
       name_html: 'Christine Abernathy (%{url})'
-      message_html: "Open source aligns with our mission to make the world more open and connected. Working with the community gives us an opportunity to share our work and the challenges we’re aiming to solve, and encourages talented people to contribute their ideas and effort to move the world forward."
+      message_html: "オープンソースは、世界をよりオープンでつながりのあるものにするという私たちの使命と一致しています。 コミュニティと協力することで、私たちの仕事と解決しようとしている課題を共有する機会が得られ、才能ある人々が考えた世界を前進させるためのアイデアや努力に貢献することができます。"
     Rich_Harris:
       title_html: '%{project1_url}と%{project2_url}のメンテナ'
       name_html: ' Rich Harris (%{url})'
