@@ -30,8 +30,8 @@ ja:
         grabs: "Up For Grabs"
         triage: "CodeTriage"
       welcome:
-        title: "A warm welcome"
-        description_html: "GitHub の新規貢献者むけ<a href=\"%{url}\">プロジェクト一覧</a>で歴史があり、新規貢献者を歓迎する評判のよいプロジェクトを見つける。"
+        title: "あなたを待っています"
+        description_html: "GitHubの<a href=\"%{url}\">プロジェクト一覧</a>で歴史があり、評判の良い新規貢献者向けのプロジェクトを見つける。"
   business:
     title: "ビジネスはOSS上で動いている"
     description: "毎週一回。 貴方が利用していて気に入っているオープンソース・ソフトウエアへ時間を投資しよう。"
