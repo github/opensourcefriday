@@ -1,0 +1,62 @@
+name: Deploy Rails app to Azure
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: 'Production'
+      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v1
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+
+      - name: Check for correct Ruby version in Gemfile.lock
+        run: git grep -o "   ruby ${{ steps.ruby_version.outputs.RUBY_VERSION }}" HEAD -- Gemfile.lock
+
+      - name: Get NodeJS version
+        run: echo "::set-output name=NODE_VERSION::$(cat .node-version)"
+        id: node_version
+
+      - name: Set up NodeJS
+        uses: actions/setup-node@v1
+        with:
+          node-version: "${{ steps.node_version.outputs.NODE_VERSION }}"
+
+      - name: Bootstrap
+        run: script/bootstrap
+
+      - name: Check for uncommitted NodeJS modules
+        run: |
+          git diff --stat --exit-code node_modules || {
+            echo '\n\nError: you must commit all NodeJS modules!'
+            exit 1
+          }
+          grep -qr alt-h0 node_modules || {
+            echo 'Error: Primer NodeJS modules must contain alt-h0!'
+            exit 1
+          }
+
+      - name: Set up Rails
+        run: script/setup
+        env:
+          RAILS_ENV: prod
+
+      - name: 'Deploy to Azure Web App'
+        id: deploy-to-webapp
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: 'OpenSourceFriday'
+          slot-name: 'Production'
+          publish-profile: ${{ secrets.PROD_PROFILE }}
+          package: .
