@@ -51,13 +51,17 @@ jobs:
         env:
           RAILS_ENV: production
           SECRET_KEY_BASE: ${{ secrets.SECRET_KEY_BASE }}
+          DB_URL: ${{ secrets.DB_URL }}
+          DB_USERNAME: ${{ secrets.DB_USERNAME }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         env:
-          DB_URL: ${{ secrets.DB_URL }}
+          RAILS_ENV: production
           SECRET_KEY_BASE: ${{ secrets.SECRET_KEY_BASE }}
+          DB_URL: ${{ secrets.DB_URL }}
           DB_USERNAME: ${{ secrets.DB_USERNAME }}
           DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
         with:
