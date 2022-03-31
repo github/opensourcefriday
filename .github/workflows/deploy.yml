@@ -3,7 +3,7 @@ name: Deploy Rails app to Azure
 on:
   push:
     branches:
-      - main
+      - master
   workflow_dispatch:
 
 jobs:
