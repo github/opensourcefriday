@@ -8,7 +8,6 @@ ruby File.read(
 gem "devise"
 gem "devise-i18n"
 gem "faraday-http-cache"
-gem "figaro"
 gem "jquery-rails"
 gem "octicons_helper"
 gem "octokit"
