@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: ossfriday_production
-  username: ossfriday
-  password: <%= ENV['OSSFRIDAY_DATABASE_PASSWORD'] %>
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
