@@ -67,7 +67,7 @@ Next, you'll need to make sure that you have PostgreSQL installed. On Debian-bas
 sudo apt-get install postgresql postgresql-contrib libpq-dev
 ```
 
-On Windows, you can use the [Chocolatey package manager](http://chocolatey.org/) to install Postgres:
+On Windows, you can use the [Chocolatey package manager](https://chocolatey.org/) to install Postgres:
 
 ```console
 choco install postgresql
