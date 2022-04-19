@@ -53,5 +53,10 @@ jobs:
       - name: Run tests
         run: bundle exec rake test
 
-      - name: Run RuboCop
-        run: bundle exec rubocop
+      - name: Run rubocop
+        uses: wearerequired/lint-action@v1
+        with:
+          auto_fix: true
+          rubocop: true
+          rubocop_command_prefix: bundle exec
+          
