@@ -1,0 +1,124 @@
+es:
+  locale_name: Español
+  OpenSourceFriday: "Viernes de Código Abierto"
+  full_description: "El codigo abierto se hace por personas como tu. Este viernes, invierte algunas horas contribuyendo al software que amas y usas."
+  Contributors: "Colaboradores"
+  Businesses: "Negocios"
+  Maintainers: "Mantenedores"
+  YouTube: "YouTube"
+  headline:
+    businesses: "Tu negocio funciona con código abierto. Aprende a como formar parte."
+    maintainers: "Dale a tu proyecto algo de amor para ayudar a otros a contribuir donde tu más lo necesitas."
+    contributors: "Aprende que significa contribuir, y a como encontrar y empezar a trabajar en nuevos proyectos."
+  index:
+    main:
+      title: "Contribuye en Viernes de Código Abierto"
+      contribution: "Aprende a contribuir"
+      link_html: '<a href="https://opensource.guide/es/how-to-contribute/">Lee la guía</a>'
+    find:
+      title: "Encuentra un proyecto al que contribuir"
+      description: "Las contribuciones en código abierto suceden en todos los niveles, a través de proyectos y diseños, documentación, operaciones y código. No necesitas preocuparte por cual será tu primera contribución exactamente, o como se verá"
+      used:
+        title: "Un proyecto que ya uses"
+        description: "Empieza por pensar en proyectos que actualmente usas o quieres empezar a usar. Los proyectos con los que contribuirás de forma activa son aquellos que encuentras interesantes."
+      issue:
+        title: "Un problema que puedas arreglar"
+        description: "Revisa estos sitios para encontrar un proyecto que necesite tu ayuda:"
+        grabs: "En juego"
+        triage: "TriajeDeCódigo"
+      welcome:
+        title: "Una cálida bienvenida"
+        description: "Encuentre un proyecto que posee un historial y reputación de ser acogedores con los nuevos colaboradores en GitHub&apos;s un gran vitrina para los nuevos colaboradores."
+  business:
+    title: "Tu negocio funciona en base a software de código abierto"
+    description: "Una vez a la semana, cada semana. Tómate el tiempo para invertir en el software de código abierto que usas y amas."
+    reason:
+      title: "Tu negocio depende de esto"
+      description: "Compañías necesitan software de código abierto para funcionar de forma efectiva. "
+      technology:
+        title: "Mejora aquella tecnología de la que dependes"
+        description: "La participación directa en código abierto le da a su organización una voz en el software del que depende."
+    models:
+      title: "Trabajar mejor juntos"
+      description: "Los modelos de desarrollo de código abierto están a la vanguardia de la colaboración de software. Los desarrolladores que trabajan en código abierto aprenden intuitivamente a mejorar la calidad, la velocidad y la transparencia en su organización."
+    cost:
+      title: "Reducir gastos generales"
+      description: "Contribuir regularmente al código abierto ahorra dinero y horas de desarrollo al reducir el software personalizado que necesita mantener."
+    reputation:
+      title: "Atraer y retener el talento"
+      description: "Los empleados que trabajan en código abierto aumentan su reputación y la de sus empleadores."
+    plan:
+      title: "Viernes de Código Abierto en tu organización"
+      description: "Mejorar tu cultura de desarrollador es demasiado importante para dejarlo sin planificar."
+      encourage:
+        title: "Reservar tiempo"
+        description: "Cada viernes, aliente a sus gerentes, empleados y compañeros de trabajo a dedicar al menos dos horas a trabajar en los proyectos de código abierto que su organización ya utiliza."
+      policy:
+        title: "Hacerlo un habito"
+        description: "Cree políticas internas claras para que los empleados puedan contribuir de manera fácil y consistente al código abierto."
+  maintainers:
+    title: "Construir software con ayuda de otros"
+    description: "Todos los viernes, dele un poco de amor a su proyecto de software y facilite la contribución de otros."
+    involve:
+      title: "Ayudar a la gente a descubrir tu proyecto"
+      description: "Crear un proyecto es solo el comienzo. ¿Porqué no enlazarse?"
+      workload:
+        title: "Aminora tu carga de trabajo:"
+        description: 'Asegúrate que tu documento LÉEME detalle lo que hace tu proyecto, su propósito y las necesidades de contribución, y como contribuir a <a href="https://opensource.guide/es/best-practices/#aprovechando-la-comunidad">distribuir la carga de tu comunidad</a>.'
+      promote:
+        title: "Promociona tu trabajo"
+        description: 'Considere crearse una cuenta en Twitter, entradas en una bitácora y un sitio de internet to <a href="https://opensource.guide/es/finding-users/#ayuda-a-las-personas-a-encontrar-y-seguir-tu-proyecto">ayudar a la gente encontrar y seguir su proyecto</a>.'
+    growing:
+      title: "Haz crecer tu comunidad"
+      description: "Todos fueron nuevos una vez. Alivie el nerviosismo de la contribución de otra persona por primera vez."
+      document:
+        title: "Documenta todo"
+        description: "<a href='http://opensourcesurvey.org/2017/'>La encuesta de Código Abierto GitHub 2017</a> mostró que la documentación confusa e incompleta es el inconveniente más grande para los usuarios de código abierto. Asegúrese que está <a href='https://opensource.guide/es/best-practices/#documentando-tus-procesos'>documentando sus procesos</a> sobre cómo contribuir en su proyecto."
+      help:
+        title: "Recibe ayuda"
+        description: 'Esté atento a posibles contribuyentes o mantenedores prometedores para <a href="https://opensource.guide/es/building-community/#comparte-la-propiedad-de-tu-proyecto">compartir la propiedad de su proyecto.</a>Haga un esfuerzo para darles la bienvenida -en particular- a aquellos contribuyentes primerizos.'
+    workflow:
+      title: "Mejora tu flujo de trabajo"
+      description: "Aprende de otros mantenedores la forma de ser más efectivo."
+      boundaries:
+        title: "Establece límites"
+        description: 'Decide cual es el alcance del proyecto e <a href="https://opensource.guide/es/best-practices/#está-bien-poner-pausa">imponete límites claros para vos mismo</a>. Decir no <a href="https://opensource.guide/es/best-practices/#aprendiendo-a-decir-no"> es tan importante como decir sí</a>.'
+      automation:
+        title: "Automatización"
+        description: '<a href="https://opensource.guide/es/best-practices/#traigan-a-los-robots">Traigan a los robots</a> para automatizar tanto como sea posible las pruebas y otras verificaciones para ahorrarle tiempo.'
+    visitor:
+      title: "Prepárate para los Viernes de Código Abierto"
+      description: "Invierte tiempo ahora para ahorrar tiempo después."
+  endorsement:
+    title: "Tu estás en buena compañía"
+    Kim_Crayton:
+      title: "Ingeniero Comunitario, escritor, fundador"
+      name: "Kim Crayton"
+      message: "Contribuir al código abierto no solo permite a las empresas de todos los tamaños aprovechar y aprovechar los talentos de los demás, sino que también es una forma de que los nuevos en codificación se aclimaten al proceso de desarrollo de forma que les permita practicar, experimentar y exhibir. ellos mismos como miembros valiosos y contribuyentes de la comunidad."
+    Chris_Lamb:
+      title: "<a href='https://www.debian.org'>Debian Project</a> Lider"
+      name: "Chris Lamb"
+      message: "Llegué a donde estoy hoy contribuyendo al software de código abierto, lo que me permite no solo mejorar mis habilidades como desarrollador de software sino también aumentar mi red de colegas y conocer nuevos e interesantes amigos de culturas extremadamente diversas. Lo puedo recomendar."
+    Will_Norris:
+      title: "Código Abierto en <a href='https://github.com/google'>Google</a>"
+      name: "Will Norris"
+      message: 'Contribuir en proyectos de código abierto continúa ser uno de los proyectos 20% más populares para los ingenieros de Google. El código abierto juega un destacado rol en todo lo que hacemos, entonces tratamos que <a href="https://opensource.google.com/docs/patching/">el proceso</a> sea lo más sencillo posible.'
+    Christine_Abernathy:
+      title: "Código Abierto en <a href='https://github.com/facebook/'>Facebook</a>"
+      name: "Christine Abernathy"
+      message: "El código abierto se alinea con nuestra misión de hacer que el mundo sea más abierto y conectado. Trabajar con la comunidad nos brinda la oportunidad de compartir nuestro trabajo y los desafíos que intentamos resolver, y alienta a las personas talentosas a contribuir con sus ideas y esfuerzos para hacer avanzar al mundo."
+    Rich_Harris:
+      title: "mantenedor de <a href='https://github.com/rollup/rollup'>Rollup</a> y <a href='https://github.com/sveltejs/svelte'>Svelte</a>"
+      name: "Rich Harris"
+      message: "Lo que le falta a la mayoría de los proyectos de código abierto no es el dinero, sino el tiempo. Muchos mantenedores tienen trabajos a tiempo completo y no pueden reducir sus horas de manera realista. Lo que casi todos los proyectos necesitan es más contribuyentes. Open Source Friday es una forma perfecta para que las empresas respalden el ecosistema de código abierto del que dependen de manera significativa."
+    Brett_Cannon:
+      title: "<a href='https://github.com/python/cpython'>Python core</a> desarrollador"
+      name: "Brett Cannon"
+      message: 'Una vez que eres un mantenedor en un proyecto en el que otros confían, el código abierto va de "compartir el código" a "compartir el mantenimiento". Como todos sabemos, el "mantenimiento" requiere tiempo, que se gasta de manera más efectiva en un bloqueo continuo para ayudar a garantizar que se pueda terminar, por ejemplo, revisión del código antes de comenzar a perder el contexto.'
+  mailchimp:
+    title: "Mantente en contacto"
+    description: "Sé el primero en oír sobre los más recientes consejos y recursos sobre código abierto de GitHub"
+  with: "con"
+  by: "por"
+  and: "y "
+  friends: "amigos"

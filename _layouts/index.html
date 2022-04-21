@@ -1,0 +1,167 @@
+---
+layout: default
+---
+{% assign t = site.data.locales[page.lang][page.lang] %}
+
+{% if page.lang and page.lang != "en" %}
+{% assign lang_dir = page.lang | prepend: "/" %}
+{% endif %}
+
+<header class="jumbotron text-center bg-gray px-3 pb-0">
+  <div class="container-lg position-relative">
+    <h1 class="alt-h0 mb-2">
+      {{ t.OpenSourceFriday }}
+    </h1>
+    <p class="alt-lead text-gray mb-md-5 col-md-8 mx-auto">
+      {{ t.full_description }}
+    </p>
+    <img src="{{ site.baseurl }}/assets/images/oss-bike.svg" class="img-responsive bike-animate-in mt-4 mt-md-6 mb-n2">
+  </div>
+</header>
+
+<div class="border-top py-6 px-3 bg-gray-light" id="participate">
+  <div class="container-lg px-3 py-6">
+
+    <h2 class="alt-h2 text-center mb-3">
+      {{ t.index.main.title }}
+    </h2>
+
+    <div class="d-md-table direction-md-ltr mb-6 py-6 border-bottom">
+      <div class="d-md-table-cell v-align-middle col-md-6 text-center">
+        <a href="https://opensource.guide/how-to-contribute/">
+          <img src="{{ site.baseurl }}/assets/images/contribute.svg" class="img-responsive">
+        </a>
+      </div>
+      <div class="d-md-table-cell v-align-middle col-md-6 direction-md-ltr pl-md-6">
+        <h3 class="alt-h3 mb-2">
+          {{ t.index.main.contribution }}
+        </h3>
+
+        <p class="text-gray f4 mb-3">
+          {{ t.headline.contributors }}
+        </p>
+
+        <p>
+          {{ t.index.main.read_the_guide }}
+          {% include chevron-right.html %}
+        </p>
+      </div>
+    </div>
+
+    <h3 class="alt-h3 mb-2">
+      {{ t.index.find.title }}
+    </h3>
+    <p class="alt-lead f2 text-gray">
+      {{ t.index.find.description }}
+    </p>
+    <div class="d-md-flex gutter my-6">
+      <div class="col-md-4 mb-6">
+        <h4 class="mb-2">
+          {{ t.index.find.used.title }}
+        </h4>
+        <p class="text-gray">
+          {{ t.index.find.used.description }}
+        </p>
+      </div>
+      <div class="col-md-4 mb-6">
+        <h4 class="mb-2">
+          {{ t.index.find.issue.title }}
+        </h4>
+
+        <p class="text-gray">
+          {{ t.index.find.issue.description }}
+        </p>
+
+        <ul class="ml-3">
+          <li>
+            <a href="http://up-for-grabs.net/">
+              {{ t.index.find.issue.grabs }}
+            </a>
+          </li>
+          <li>
+            <a href="https://www.codetriage.com/">
+              {{ t.index.find.issue.triage }}
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-6">
+        <h4 class="mb-2">
+          {{ t.index.find.welcome.title }}
+        </h4>
+
+        <p>
+          {{ t.index.find.welcome.description }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="border-top py-5">
+  <div class="container-lg">
+    <h2 class="alt-h2 mt-6 text-center">
+      {{ t.endorsement.title }}
+    </h2>
+    <div class="mt-3 pb-6">
+      <div class="d-flex flex-wrap flex-items-stretch gutter">
+        <div class="col-md-6">
+          <aside class="pquote height-full">
+            <img src="https://avatars.githubusercontent.com/kmcrayton7?s=180" class="pquote-avatar" alt="avatar">
+            {{ t.endorsement.Kim_Crayton.message }}
+            <p markdown="1" class="pquote-credit">
+              &mdash;
+              {{ t.endorsement.Kim_Crayton.name }}
+              (<a href="https://github.com/kmcrayton7">@kmcrayton7</a>)
+              <br>
+              {{ t.endorsement.Kim_Crayton.title }}
+            </p>
+          </aside>
+        </div>
+        <div class="col-md-6">
+          <aside class="pquote height-full">
+            <img src="https://avatars.githubusercontent.com/lamby?s=180" class="pquote-avatar" alt="avatar">
+            {{ t.endorsement.Chris_Lamb.message }}
+            <p markdown="1" class="pquote-credit">
+              &mdash;
+              {{ t.endorsement.Chris_Lamb.name }}
+              (<a href="https://github.com/lamby">@lamby</a>)
+              <br>
+              {{ t.endorsement.Chris_Lamb.title }}
+            </p>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="py-3 border-top text-center">
+  <div class="container-lg">
+    <div class="d-flex flex-column flex-sm-row mx-2 my-6">
+      <div class="col-lg-4 mx-auto">
+        <h2 class="alt-h3 my-2">
+          <a href="{{ lang_dir }}/businesses">
+            {{ t.Businesses }}
+            {% include chevron-right.html %}
+          </a>
+        </h2>
+        <p class="text-gray f4">
+          {{ t.headline.businesses }}
+        </p>
+      </div>
+
+      <div class="col-lg-4 mx-auto">
+        <h2 class="alt-h3 my-2">
+          <a href="{{ lang_dir }}/maintainers">
+            {{ t.Maintainers }}
+            {% include chevron-right.html %}
+          </a>
+        </h2>
+        <p class="text-gray f4">
+          {{ t.headline.maintainers }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

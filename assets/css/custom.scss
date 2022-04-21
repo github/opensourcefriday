@@ -1,0 +1,123 @@
+.alt-h1 {
+  line-height: 1.25;
+}
+
+img.img-responsive {
+  max-width: 100%;
+}
+
+// Tweet button based on GitHub.com's About page
+.icon-twitter {
+  fill: #1da1f2 !important; //Twitter brand blue
+  position: relative;
+  top: 2px;
+}
+
+.btn-twitter:hover,
+.btn-twitter:active {
+  .icon-twitter {
+    fill: #fff;
+  }
+}
+
+// Pullquote stylings from opensource.guide
+.pquote-container {
+  flex-direction: column;
+  padding: $spacer-6;
+
+  @include breakpoint(md) {
+    flex-direction: row;
+    padding: 0;
+  }
+}
+
+.pquote {
+  border: $border;
+  border-radius: $border-radius * 2;
+  box-shadow: $box-shadow;
+  padding: $spacer-3;
+  margin-top: $spacer-3;
+  margin-bottom: $spacer-3;
+  text-align: center;
+
+  @include breakpoint(md) {
+    color: $gray-600;
+    padding: $spacer-6;
+  }
+}
+
+img.pquote-avatar {
+  border-radius: 50px;
+  border: 3px solid $gray-200;
+  height: 90px;
+  width: 90px;
+  display: block;
+  margin: 0 auto $spacer-2;
+
+  @include breakpoint(md) {
+    margin: 0 auto $spacer-4;
+  }
+}
+
+.pquote-credit {
+  margin-top: $spacer-3;
+  font-size: 14px;
+}
+
+@keyframes bikeIn {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.bike-animate-in {
+  animation: 2.5s ease-out 0s 1 bikeIn;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .bike-animate-in {
+    animation: none;
+  }
+}
+
+.company-logo {
+  display: inline-block;
+  max-height: 60px;
+  max-width: 160px;
+  margin: 15px;
+  vertical-align: middle;
+
+  &.smaller {
+    max-height: 45px;
+    max-width: 145px;
+  }
+}
+
+.desaturate {
+  filter: grayscale(100%);
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+    filter: none;
+    transition: opacity 0.3s, filter 0.3s;
+  }
+}
+
+.octicon {
+  display: inline-block;
+  vertical-align: text-top;
+  fill: currentColor;
+}
+
+#locale-form {
+  display: inline-block;
+}
+
+.form-select {
+  -webkit-appearance: none;
+}

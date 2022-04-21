@@ -1,0 +1,124 @@
+pl:
+  locale_name: Polski
+  OpenSourceFriday: "Open Source Friday"
+  full_description: "Open source jest tworzone przez ludzi takich jak ty. W ten piątek zainwestuj kilka godzin, rozwijając oprogramowanie, które używasz i które kochasz."
+  Contributors: "Współtwórcy"
+  Businesses: "Firmy"
+  Maintainers: "Opiekunowie"
+  YouTube: "YouTube"
+  headline:
+    businesses: "Twoja firma działa na zasadach open source. Dowiedz się, jak się zaangażować."
+    maintainers: "Daj swojemu projektowi trochę miłości, aby pomóc innym wnieść wkład tam, gdzie go najbardziej potrzebujesz."
+    contributors: "Dowiedz się, co to znaczy przyczynić się, jak znaleźć i rozpocząć nowy projekt."
+  index:
+    main:
+      title: "Wnieś wkład do Open Source Friday"
+      contribution: "Dowiedz się jak wnosić wkład"
+      read_the_guide: '<a href="https://opensource.guide/pl/how-to-contribute/">Przeczytaj przewodnik</a>'
+    find:
+      title: "Znajdź projekt do rozwijania"
+      description: "Wkład w open source odbywa się na wszystkich poziomach, w ramach różnych projektów i zamysłów, dokumentacji, operacji i kodu. Nie musisz zastanawiać się, jaki dokładnie będzie Twój pierwszy wkład ani jak będzie wyglądał"
+      used:
+        title: "Projekt, którego już używasz"
+        description: "Zacznij od zastanowienia się nad projektami, których już używasz lub których chcesz użyć. Projekty, do których będziesz aktywnie przyczyniać się, to te, do których wracasz."
+      issue:
+        title: "Problem, który możesz naprawić"
+        description: "Sprawdź te witryny, aby znaleźć projekt szukający twojej pomocy:"
+        grabs: "Do zgarnięcia"
+        triage: "CodeTriage"
+      welcome:
+        title: "Ciepłe powitanie"
+        description: 'Znajdź projekt, który ma historię i reputację dla zapraszanych nowych autorów <a href="https://github.com/showcases/great-for-new-contributors">GitHub&apos;s idealna dla nowych autorów</a> prezentacja.'
+  business:
+    title: "Twoja firma działa na oprogramowaniu open source"
+    description: "Raz w tygodniu, co tydzień. Poświęć trochę czasu na zainwestowanie w oprogramowanie open source, którego używasz i które kochasz."
+    reason:
+      title: "Twój interes zależy od tego"
+      description: "Firmy potrzebują oprogramowania typu open source, aby działać skutecznie."
+      technology:
+        title: "Ulepsz technologię, na której polegasz"
+        description: "Bezpośredni udział w oprogramowaniu open source daje twojej organizacji głos w oprogramowaniu, na którym polega."
+    models:
+      title: "Pracujmy lepiej wspólnie"
+      description: "Modele programistyczne typu open source są w czołówce współpracy oprogramowania. Programiści pracujący na otwartym oprogramowaniu uczą się intuicyjnie, aby poprawić jakość, szybkość i przejrzystość w organizacji."
+    cost:
+      title: "Zmniejszyć koszty ogólne"
+      description: "Regularne uczestnictwo w programach typu open source pozwala zaoszczędzić pieniądze i godziny pracy programistów, redukując niestandardowe oprogramowanie, które należy utrzymywać."
+    reputation:
+      title: "Przyciągaj i zatrzymuj talent"
+      description: "Pracownicy pracujący na otwartym oprogramowaniu podnoszą swoją reputację i swojego pracodawcy."
+    plan:
+      title: "Open Source Friday w twojej organizacji"
+      description: "Polepszanie kodowania jest zbyt ważne, aby pozostało nieplanowanym."
+      encourage:
+        title: "Wygospodaruj czas"
+        description: "W każdy piątek zachęcaj swoich menedżerów, pracowników i współpracowników do spędzenia co najmniej dwóch godzin na pracy nad projektami typu open source, z których już korzysta twoja organizacja."
+      policy:
+        title: "Zrób z tego nawyk"
+        description: "Twórz jasne, wewnętrzne zasady, aby pracownicy mogli łatwo i konsekwentnie wnosić wkład w open source."
+  maintainers:
+    title: "Twórz oprogramowanie z pomocą innych osób"
+    description: "W każdy piątek okaż projektowi trochę miłości i ułatw innym wkład."
+    involve:
+      title: "Pomóż innym odkryć twój projekt"
+      description: "Stworzenie projektu to dopiero początek. Dlaczego nie podzielić się dalej?"
+      workload:
+        title: "Zmniejsz obciążenie pracą:"
+        description: 'Upewnij się, że plik README zawiera szczegółowe informacje na temat tego, co robi Twój projekt, jego zakres i potrzeby w zakresie wkładu oraz sposób, w jaki można wnieść wkład <a href="https://opensource.guide/pl/best-practices/#wykorzystaj-swoją-społeczność">wykorzystaj swoją społeczność</a>.'
+      promote:
+        title: "Promuj swoją pracę"
+        description: 'Rozważ utworzenie konta na Twitterze, postów na blogu i witryny internetowej <a href="https://opensource.guide/pl/finding-users/#pomóż-ludziom-znaleźć-i-śledzić-twój-projekt">pomagaj ludziom znaleźć i śledzić twój projekt</a>.'
+    growing:
+      title: "Rozwijaj swoją społeczność"
+      description: "Wszyscy byli kiedyś nowi. Ułatw innym osobom spotkanie z pierwszą tremą."
+      document:
+        title: "Dokumentuj wszystko"
+        description: "<a href='http://opensourcesurvey.org/2017/'>GitHub's 2017 Open Source Survey</a> pokazuje, że niekompletna lub myląca dokumentacja jest największym problemem dla użytkowników open source. Upewnij się, że <a href='https://opensource.guide/pl/best-practices/#dokumentowanie-procesów'>dokumentujesz operacje</a> dla metod współtworzenia twojego projektu."
+      help:
+        title: "Uzyskaj pomoc"
+        description: 'Szukaj obiecujących potencjalnych współpracowników lub opiekunów <a href="https://opensource.guide/pl/building-community/#udostępnij-własność-swojego-projektu"> udostępnij własność swojego projektu.</a> W szczególności postaraj się przywitać osoby, które po raz pierwszy wnoszą wkład.'
+    workflow:
+      title: "Popraw swój przepływ pracy"
+      description: "Dowiedz się od innych opiekunów, jak być bardziej efektywnym."
+      boundaries:
+        title: "Wyznacz granice"
+        description: 'Zdecyduj, jaki jest zakres projektu i <a href="https://opensource.guide/pl/best-practices/#można-wcisnąć-pauzę">wyznacz jasne granice dla siebie</a>. Mówienie nie <a href="https://opensource.guide/pl/best-practices/#naucz-się-mówić-nie"> jest tak samo ważne jak mówienie tak</a>.'
+      automation:
+        title: "Automatyzacja"
+        description: '<a href="https://opensource.guide/pl/best-practices/#sprowadź-roboty">Skorzystaj z robotów</a> aby zautomatyzować w jak największym stopniu za pomocą testów i innych kontroli, aby zaoszczędzić czas.'
+    visitor:
+      title: "Przygotuj się na Open Source Friday"
+      description: "Poświęć teraz czas, aby zaoszczędzić czas później."
+  endorsement:
+    title: "Jesteś w dobrym towarzystwie"
+    Kim_Crayton:
+      title: "Community Engineer, Writer, Założyciel"
+      name: "Kim Crayton"
+      message: "Przyczynianie się do otwartego oprogramowania nie tylko pozwala firmom każdej wielkości korzystać z talentów innych, ale także umożliwia programistom zaaklimatyzowanie się w procesie rozwoju w sposób umożliwiający im ćwiczenie, eksperymentowanie i prezentację, jako samym cennym i wnoszącym wkład członków społeczności."
+    Chris_Lamb:
+      title: "<a href='https://www.debian.org'>Debian Project</a> Lider"
+      name: "Chris Lamb"
+      message: "Dotarłem do miejsca, w którym się dzisiaj znajduję, przyczyniając się do tworzenia oprogramowania typu open source, co pozwala mi nie tylko doskonalić umiejętności programistyczne, ale także zwiększać sieć współpracowników oraz poznawać nowych i interesujących przyjaciół z bardzo różnych kultur. Mogę gorąco polecić."
+    Will_Norris:
+      title: "Open Source w <a href='https://github.com/google'>Google</a>"
+      name: "Will Norris"
+      message: 'Wkład w projekty open source jest nadal jednym z 20% najpopularniejszych projektów dla inżynierów Google. Open source odgrywa tak ważną rolę w tak dużej części naszych działań, dlatego staramy się tworzyć <a href="https://opensource.google.com/docs/patching/"> proces</a> tak prosto, jak to możliwe.'
+    Christine_Abernathy:
+      title: "Open Source w <a href='https://github.com/facebook/'>Facebook</a>"
+      name: "Christine Abernathy"
+      message: "Open source jest zgodne z naszą misją, aby świat był bardziej otwarty i połączony. Współpraca ze społecznością daje nam możliwość dzielenia się naszą pracą i wyzwaniami, które chcemy rozwiązać, i zachęca utalentowanych ludzi do przekazywania swoich pomysłów i wysiłków, aby rozwijać świat."
+    Rich_Harris:
+      title: "<a href='https://github.com/rollup/rollup'>Rollup</a> oraz <a href='https://github.com/sveltejs/svelte'>Svelte</a> opiekun"
+      name: "Rich Harris"
+      message: "Tym, czego brakuje większości projektów open source, nie są pieniądze, ale czas. Wielu opiekunów ma pracę w pełnym wymiarze godzin i nie może realistycznie skrócić swoich godzin. Prawie wszystkie projekty potrzebują więcej osób wnoszących wkład. Open Source Friday to doskonały sposób dla firm na wsparcie ekosystemu open source, na którym polegają w znaczący sposób."
+    Brett_Cannon:
+      title: "<a href='https://github.com/python/cpython'>Python core</a> programista"
+      name: "Brett Cannon"
+      message: 'Gdy jesteś opiekunem projektu, na którym inni polegają, open source przechodzi od "dzielenia się kodem" do "dzielenia się utrzymaniem". Jak wszyscy wiemy, "utrzymanie" wymaga czasu, który najskuteczniej spędzany jest w bloku ciągłości, aby upewnić się, że możesz to zakończyć np. przeglądem kodu, zanim zaczniesz tracić kontekst.'
+  mailchimp:
+    title: "Pozostań w kontakcie"
+    description: "Bądź pierwszym, który usłyszy o najnowszych wskazówkach i zasobach GitHub."
+  with: "z"
+  by: "od"
+  and: "i "
+  friends: "znajomi"

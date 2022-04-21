@@ -3,9 +3,8 @@ name: GitHub Actions CI
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
-  
 jobs:
   tests:
     runs-on: ubuntu-latest
@@ -16,9 +15,6 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
 
-      - name: Check for correct Ruby version in Gemfile.lock
-        run: git grep -o "   ruby ${{ steps.ruby_version.outputs.RUBY_VERSION }}" HEAD -- Gemfile.lock
-
       - name: Get NodeJS version
         run: echo "::set-output name=NODE_VERSION::$(cat .node-version)"
         id: node_version
@@ -28,16 +24,10 @@ jobs:
         with:
           node-version: "${{ steps.node_version.outputs.NODE_VERSION }}"
 
-      - name: Set up PostgreSQL
-        run: |
-          sudo apt-get install postgresql libpq-dev
-          sudo service postgresql start
-          sudo -u postgres createuser --superuser "$USER"
-
       - name: Bootstrap
         run: script/bootstrap
 
-      - name: Check for uncommitted NodeJS modules
+      - name: Check for uncommitted or incorrect NodeJS modules
         run: |
           git diff --stat --exit-code node_modules || {
             echo '\n\nError: you must commit all NodeJS modules!'
@@ -48,18 +38,5 @@ jobs:
             exit 1
           }
 
-      - name: Set up Rails
-        run: script/setup
-        env:
-          RAILS_ENV: test
-
       - name: Run tests
-        run: bundle exec rake test
-
-      - name: Run RuboCop
-        uses: wearerequired/lint-action@v1
-        with:
-          auto_fix: true
-          rubocop: true
-          rubocop_command_prefix: bundle exec
-          
+        run: script/test
