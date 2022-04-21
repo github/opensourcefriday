@@ -2,34 +2,27 @@
 
 Want to contribute to Open Source Friday? That's great! Here are a couple of guidelines that will help you contribute. Before we get started: Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md) to ensure that this project is a welcoming place for **everyone** to contribute to. By participating in this project you agree to abide by its terms.
 
-#### Overview
-
-* [Contribution workflow](#contribution-workflow)
-* [Setup instructions](#setup-instructions)
-* [Localisation](#localisation)
-* [Reporting a bug](#reporting-a-bug)
-* [Additional info](#additional-info)
-
 ## Contribution workflow
 
- * Fork the project.
- * Make your feature addition or bug fix.
- * Add tests for it. This is important so we don't break it in a future version unintentionally.
- * Send a pull request. Bonus points for topic branches.
+* Fork the project.
+* Make your feature addition or bug fix.
+* Send a pull request. Bonus points for topic branches.
 
 ## Setup instructions
 
-You can find in-depth instructions to install the correct Ruby version, Postgres, and to set up the database in our [README](README.md#getting-started).
+You can find instructions to get setup in our [README](README.md#getting-started).
 
 ## Translation
 
- * Fork the project.
- * Clone your fork to your machine.
- * Create a new branch for your translation work.
- * Copy `config/locales/en.yml` to target locale file e.g. `config/locales/es.yml`.
- * Add target language in `config/initializers/locale.rb`:`I18n.available_locales = %i[en, ja]`
- * Translate messages in new locale file.
- * Send a pull request.
+* Fork the project.
+* Clone your fork to your machine.
+* Create a new branch for your translation work.
+* Copy `_data/locales/en.yml` to target locale file e.g. `_data/locales/es.yml`.
+* Create a new folder in the repository root e.g. `es/`.
+* Copy `businesses.html`, `index.html` and `maintainers.html` from the repository root into the new folder e.g. `es/businesses.html` etc.
+* Edit the `lang: en` to be the correct language in the new `businesses.html`, `index.html` and `maintainers.html` files e.g. `lang: es`
+* Translate messages in new locale file and use `script/server` to verify they are displayed correctly.
+* Send a pull request.
 
 ## Reporting a bug
 

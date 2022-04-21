@@ -1,0 +1,34 @@
+{% assign t = site.data.locales[page.lang][page.lang] %}
+
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+
+{% include head.html %}
+
+{% if page.lang and page.lang != "en" %}
+{% assign lang_dir = page.lang | prepend: "/" %}
+{% endif %}
+
+<body class="f4">
+  <div class="py-4 border-bottom px-3">
+    <div class="container-lg p-responsive">
+      <div class="d-md-flex mx-auto flex-justify-between flex-items-center">
+        <h1 class="alt-h4 text-center mb-4 mb-md-0">
+          <a class="text-inherit" href="{{ lang_dir }}/">
+            {{ t.OpenSourceFriday }}
+          </a>
+        </h1>
+
+        {% include nav.html %}
+      </div>
+    </div>
+  </div>
+
+  {{ content }}
+
+  <script src="{{ '/assets/js/index.js' | relative_url }}"></script>
+</body>
+
+{% include footer.html %}
+
+</html>

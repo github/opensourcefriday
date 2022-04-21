@@ -1,0 +1,48 @@
+title: Open Source Friday
+description: This Friday, invest a few hours contributing to the software you use and love.
+
+exclude:
+  - bin
+  - CNAME
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - docs
+  - Gemfile*
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README.md
+  - script
+  - test
+  - vendor
+
+permalink: "/:path/"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/social-graphic.jpg
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+sass:
+  sass_dir: assets/css/
+  style: compressed
+  load_paths:
+    - node_modules
+
+logo: /assets/images/social-graphic.jpg
+
+github:
+  repository_nwo: github/opensourcefriday
+
+twitter:
+  username: github
+
+facebook:
+  publisher: https://www.facebook.com/GitHub/

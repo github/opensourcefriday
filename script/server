@@ -1,6 +1,5 @@
 #!/bin/sh
+
 set -e
 
-cd "$(dirname "$0")/.."
-
-bundle exec ./bin/rails server
+bundle exec jekyll serve --watch --incremental --baseurl ''
