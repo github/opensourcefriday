@@ -36,6 +36,10 @@ class UsersController < ApplicationController
   rescue Octokit::NotFound
     flash[:error] = "GitHub user @#{params[:id]} not found!"
     redirect_to root_path
+  rescue Octokit::Unauthorized
+    sign_out(current_user)
+    flash[:error] = t(".token_unauthorized")
+    redirect_to root_path
   end
 
   private

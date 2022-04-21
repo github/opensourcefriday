@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/users/MikeMcQuaid
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - Octokit Ruby Gem 4.7.0
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      server:
+      - GitHub.com
+      date:
+      - Mon, 29 May 2017 14:09:06 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      status:
+      - 401 Unauthorized
+      x-ratelimit-limit:
+      - '5000'
+      x-ratelimit-remaining:
+      - '4991'
+      x-ratelimit-reset:
+      - '1496070428'
+      cache-control:
+      - private, max-age=60, s-maxage=60
+      vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding
+      etag:
+      - W/"2eaf444613f95b4a8a30c2c83aa36582"
+      last-modified:
+      - Fri, 12 May 2017 16:13:45 GMT
+      x-github-media-type:
+      - github.v3; format=json
+      access-control-expose-headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      access-control-allow-origin:
+      - "*"
+      content-security-policy:
+      - default-src 'none'
+      strict-transport-security:
+      - max-age=31536000; includeSubdomains; preload
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - deny
+      x-xss-protection:
+      - 1; mode=block
+      x-served-by:
+      - 3e3b9690823fb031da84658eb58aa83b
+      x-github-request-id:
+      - 8E55:2E0FD:401E260:4D515D5:592C2B82
+      body:
+        encoding: "UTF-8"
+        base64_string: "eyJtZXNzYWdlIjoiQmFkIGNyZWRlbnRpYWxzIiwiZG9jdW1lbnRhdGlvbl91\ncmwiOiJodHRwczovL2RldmVsb3Blci5naXRodWIuY29tL3YzIn0=\n"
+    http_version: 
+  recorded_at: Mon, 29 May 2017 14:09:06 GMT
+recorded_with: VCR 3.0.3

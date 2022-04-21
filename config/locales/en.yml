@@ -165,6 +165,7 @@ en:
     share_activity:
       description_html: 'Share your Open Source Friday contributions with others <a href="%{url}">using this URL</a>.'
       message_html: "Check out my contributions to open source on #OpenSourceFriday: %{url}"
+    token_unauthorized: "Your GitHub OAuth Token is invalid.  Please sign in again."
 
   # app/views/layouts/_calendar.erb
   calendar:

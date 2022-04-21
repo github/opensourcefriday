@@ -44,6 +44,24 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should handle invalid oauth token when getting show" do
+    # simulate production environment by having Octokit raise errors for non-2xx status codes
+    current_stack = Octokit.middleware
+    Octokit.middleware = Faraday::RackBuilder.new do |builder|
+      builder.use Octokit::Response::RaiseError
+    end
+
+    sign_in users(:MikeMcQuaid)
+    VCR.use_cassette("user_invalid") do
+      get user_url(:MikeMcQuaid)
+    end
+
+    assert_redirected_to root_path
+  ensure
+    # restore octokit middleware for the remainder of tests
+    Octokit.middleware = current_stack
+  end
+
   test "should sign in" do
     mock_omniauth!
     VCR.use_cassette("user_foobar") do
