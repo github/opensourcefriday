@@ -1,7 +1,8 @@
+bin/
+_site/
+vendor/
 .DS_Store
 .bundle
-_site/
 Brewfile.lock.json
-node_modules/
 Gemfile.lock
 .jekyll-metadata
