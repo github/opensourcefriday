@@ -53,4 +53,4 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 
 ## Copyright
 
-Copyright (c) Open Source Friday contributors. See [LICENSE](https://github.com/github/opensourcefriday/blob/master/LICENSE.txt) for details.
+Copyright (c) Open Source Friday contributors. See [LICENSE](https://github.com/github/opensourcefriday/blob/HEAD/LICENSE.txt) for details.
