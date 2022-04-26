@@ -18,7 +18,7 @@ ko:
     find:
       title: "컨트리뷰션 할 프로젝트 찾기"
       description: "오픈소스 컨트리뷰션은 프로젝트부터 디자인, 문서, 오퍼레이션 그리고 코드에 이르기까지 다양한 레벨에서 이루어질 수 있습니다. 당신의 첫 컨트리뷰션이 무엇이고 어떤 식으로 이루어져야 하는지 정해진 법은 없으니 너무 걱정하지 마세요."
-      used:
+      used
         title: "이미 사용하는 프로젝트"
         description: "당신이 이미 사용하거나 관심 있는 프로젝트를 떠올려보세요. 항상 돌아오게 되는 프로젝트가 있다면 그것이 바로 앞으로 당신이 가장 활발히 기여하게 될 프로젝트가 될 겁니다."
       issue:
@@ -67,7 +67,7 @@ ko:
         description: '<a href="https://opensource.guide/ko/best-practices/#커뮤니티-활용하기">커뮤니티의 도움을 최대한 효과적으로 얻기</a> 위해 README 파일에 당신의 프로젝트가 무엇을 하는지, 스코프는 무엇인지, 기여가 필요한 부분은 어디인지, 기여하는 방법은 무엇인지 적어주세요.'
       promote:
         title: "프로젝트를 홍보하기"
-        description: '트위터 계정이나 블로그, 웹사이트를 통해 <a href="https://opensource.guide/ko/finding-users/#help-people-find-and-follow-your-project">사람들이 당신의 프로젝트를 찾을 수 있도록 하세요</a>.'
+        description: '트위터 계정이나 블로그, 웹사이트를 통해 <a href="https://opensource.guide/ko/finding-users/#사람들이-당신의-프로젝트를-찾고-팔로우하도록-돕기">사람들이 당신의 프로젝트를 찾을 수 있도록 하세요</a>.'
     growing:
       title: "커뮤니티를 키워보세요"
       description: "누구나 처음은 있습니다. 누구나 쉽게 첫 컨트리뷰션을 할 수 있도록 도와주세요."
