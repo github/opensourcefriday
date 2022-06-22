@@ -12,7 +12,7 @@ en:
     contributors: "تعرف على معنى المساهمة وكيفية البحث عن مشروع جديد والبدء فيه."
   index:
     main:
-      title: "ساهم في Open Source Friday"
+      title: "ساهم في جمعة المصادر المفتوحة"
       contribution: "تعلم المساهمة"
       read_the_guide: '<a href="https://opensource.guide/how-to-contribute/">اقرأ الدليل</a>'
     find:
@@ -31,94 +31,98 @@ en:
         description: 'ابحث عن مشروع له تاريخ وسمعة في الترحيب بالمساهمين الجدد على <a href="https://github.com/showcases/great-for-new-contributors"> GitHub & apos؛ عرض رائع للمساهمين الجدد </a>.'
   business:
     title: "عملك يشتغل على  البرمجيات حرة المصدر."
-    description: "Once a week, every week. Take time to invest in the open source software you use and love."
+    description: "مرة في  كل أسبوع. وفر الوقت الكافي للاستثمار في البرامج مفتوحة المصدر التي تستخدمها وتحبها."
     reason:
-      title: "Your business depends on it"
-      description: "Companies need open source software to run effectively."
+      title: "عملك يعتمد عليه"
+      description: "تحتاج الشركات إلى برمجيات مجانية و مفتوحة المصدر لتعمل بفعالية."
       technology:
-        title: "Improve the technology you rely on"
-        description: "Direct participation in open source gives your organization a voice in the software you depend on."
+        title: "طور التقنيات التي تعتمد عليها"
+        description: "المشاركة المباشرة في البرامج  مفتوحة المصدر تمنح مؤسستك مساهمة  في  البرنامج الذي تعتمد عليه"
     models:
-      title: "Work better together"
-      description: "Open source development models are at the forefront of software collaboration. Developers who work on open source learn intuitively to improve quality, speed, and transparency at your organization."
+      title: "لنعمل معًا بشكل أفضل"
+      description: "تعد نماذج تطوير البرامج ذات المصادر المفتوحة في طليعة التعاون البرمجي. يتعلم المطورون الذين يعملون على المصدر المفتوح بشكل تلقائي تحسين الجودة والسرعة والشفافية في مؤسستك."
     cost:
-      title: "Reduce overhead"
-      description: "Contributing regularly to open source saves money and developer hours by reducing the custom software you need to maintain."
+      title: "تقليل النفقات العامة"
+      description: "تساهم المساهمة بانتظام في تطوير  المصادر المفتوح في توفير المال و تقليل ساعات المطور عن طريق تخفيض عدد  البرامج التي تحتاج إلى صيانتها."
     reputation:
-      title: "Attract and retain talent"
-      description: "Employees that work on open source boost their, and their employer's, reputation."
+      title: "جذب المواهب والاحتفاظ بها"
+      description: "يعزز الموظفون الذين يعملون في المصادر المفتوحة سمعتهم وسمعة صاحب العمل."
     plan:
-      title: "Open Source Friday in your organization"
-      description: "Improving your developer culture is too important to be left unplanned."
+      title: "الجمعة الحرة المصدر في مؤسستك"
+      description: "يعد تحسين ثقافة المطور لديك أمرًا مهمًا للغاية بحيث لا يمكن تركه بدون تخطيط."
       encourage:
-        title: "Set aside time"
-        description: "Each Friday, encourage your managers, employees, and coworkers to spend at least two hours working on the open source projects your organization already uses."
+        title: "تخصيص الوقت"
+        description: "شجع مديرك وموظفيك وزملائك في العمل كل يوم جمعة على قضاء ساعتين على الأقل في العمل على مشاريع مفتوحة المصدر تستخدمها مؤسستك أو تحتاجها."
       policy:
-        title: "Make it a habit"
-        description: "Create clear, internal policies so employees can easily and consistently contribute to open source."
+        title: "اجعلها عادة"
+        description: "ضع سياسات داخلية واضحة حتى يتمكن الموظفون من المساهمة بسهولة وثبات في المصادر المفتوحة."
   maintainers:
-    title: "Build software with help from others"
-    description: "Every Friday, give your software project some love and make it easier for others to contribute."
+    title: "بناء البرمجيات بمساعدة من الآخرين"
+    description: "كل يوم جمعة امنح مشروعك البرمجي بعض الوقت و الحب واجعل من السهل على الآخرين المساهمة فيه."
     involve:
-      title: "Help people discover your project"
-      description: "Creating a project is only the beginning. Why not spread the word?"
+      title: "ساعد الناس على اكتشاف مشروعك"
+      description: "إنشاء مشروع هو البداية فقط. لماذا لا تنشر هذه الكلمة؟"
       workload:
-        title: "Reduce your workload:"
-        description: 'Ensure your README file details what your project does, its scope and contribution needs, and how to contribute to <a href="https://opensource.guide/best-practices/#leverage-your-community">leverage your community</a>.'
+        title: "تقليل عبء العمل الخاص بك:"
+        description: 'تأكد من أن ملف README الخاص بك يشرح ما يفعله مشروعك ونطاقه واحتياجات مساهمته وكيفية المساهمة في <a href="https://opensource.guide/best-practices/#leverage-your-community"> الاستفادة من مجتمع المساهمين </a>.'
       promote:
-        title: "Promote your work"
-        description: 'Consider creating a Twitter account, blog posts and website to <a href="https://opensource.guide/finding-users/#help-people-find-and-follow-your-project">help people find and follow your project</a>.'
+        title: "الترويج لعملك"
+        description: 'ضع في اعتبارك إنشاء حساب تويتر أو  مدونة وموقع ويب <a href="https://opensource.guide/finding-users/#help-people-find-and-follow-your-project"> لمساعدة الأشخاص في العثور على بياناتك ومتابعة مشاريعك </a>.'
     growing:
-      title: "Grow your community"
-      description: "Everybody was new once. Ease someone else's first-time contribution jitters."
+      title: "تنمية مجتمعك من المساهيمن"
+      description: "كان الجميع جديدًا في البداية. خفف من توتر  شخص آخر في مساهمته الاولى."
       document:
-        title: "Document everything"
-        description: "<a href='http://opensourcesurvey.org/2017/'>GitHub's 2017 Open Source Survey</a> showed incomplete or confusing documentation is the biggest problem for open source users. Ensure you are <a href='https://opensource.guide/best-practices/#documenting-your-processes'>documenting your processes</a> for how to contribute to your project."
+        title: "توثيق كل شيء"
+        description: "أظهر <a href='http://opensourcesurvey.org/2017/'> مسح المصادر المفتوحة لعام 2017 من GitHub </a> أن التوثيق غير المكتمل أو المربك هو أكبر مشكلة لمستخدمي المصادر المفتوحة. تأكد من <a href='https://opensource.guide/best-practices/#documenting-your-processes'> توثيق عملياتك </a> حول كيفية المساهمة في مشروعك."
       help:
-        title: "Get help"
-        description: 'Look out for promising potential contributors or maintainers to <a href="https://opensource.guide/building-community/#share-ownership-of-your-project"> share ownership of your project.</a> Make an effort to welcome first-time contributors in particular.'
+        title: "احصل على مساعدة"
+        description: 'ابحث عن المساهمين أو المشرفين المحتملين الواعدين <a href="https://opensource.guide/building-community/#share-ownership-of-your-project"> لمشاركة ملكية مشروعك. </a> ابذل  جهدًا للترحيب بالمساهمين لأول مرة على وجه الخصوص.'
     workflow:
-      title: "Improve your workflow"
-      description: "Learn from other maintainers on how to be more effective."
+      title: "تحسين سير العمل الخاص بك"
+      description: "تعلم من المشرفين الآخرين كيفية أن تكون أكثر فعالية."
       boundaries:
-        title: "Set boundaries"
-        description: 'Decide on what the scope of the project is and <a href="https://opensource.guide/best-practices/#its-okay-to-hit-pause">set clear boundaries for yourself</a>. Saying no <a href="https://opensource.guide/best-practices/#learning-to-say-no"> is as important as saying yes</a>.'
+        title: "وضع الحدود"
+        description: 'حدد نطاق المشروع و <a href="https://opensource.guide/best-practices/#its-okay-to-hit-pause"> ضع حدودًا واضحة لنفسك </a>. إن قول "لا" <a href="https://opensource.guide/best-practices/#learning-to-say-no"> لا يقل أهمية عن قول "نعم" </a>.'
       automation:
-        title: "Automation"
-        description: '<a href="https://opensource.guide/best-practices/#bring-in-the-robots">Bring in the robots</a> to automate as much as possible through tests and other checks to save yourself time.'
+        title: "التشغيل الآلي"
+        description: '<a href="https://opensource.guide/best-practices/#bring-in-the-robots"> أحضر الروبوتات </a> لاجل أن يكون التشقل أليا قدر الإمكان من خلال الاختبارات والفحوصات الأخرى لتوفير الوقت .'
     visitor:
-      title: "Get ready for Open Source Friday"
-      description: "Spend time now to save time later."
+      title: "استعد ليوم الجمعة مفتوح المصدر"
+      description: "أعطي الوقت اللازم الأن لتوفير الوقت في وقت لاحق."
   endorsement:
-    title: "You're in good company"
+    title: "أنت في شركة جيدة"
     Kim_Crayton:
-      title: "Community Engineer, Writer, Founder"
-      name: "Kim Crayton"
-      message: "Contributing to open source not only allows businesses of every size to take advantage and build upon the talents of others, it's also an avenue for those new to coding to acclimate themselves to the development process in ways that allow them to practice, experiment, and showcase themselves as valuable and contributing members of the community."
+      title: "مجتمع المهندسين ، كاتب ، مؤسس"
+      name: "كيم كرايتون"
+      message: "لا تسمح المساهمة في المصدر المفتوح للشركات من كل حجم بالاستفادة من مواهب الآخرين والبناء عليها فحسب ، بل إنها أيضًا وسيلة لأولئك الجدد في البرمجة للتأقلم مع عملية التطوير بطرق تسمح لهم بالممارسة والتجربة و عرض  أنفسهم كأعضاء قيّمين ومساهمين في المجتمع."
     Chris_Lamb:
-      title: "<a href='https://www.debian.org'>Debian Project</a> Leader"
-      name: "Chris Lamb"
-      message: "I got to where I am today by contributing to open source software, allowing me to not only improve my skills as a software developer but also to increase my network of colleagues and to meet new and interesting friends from extremely diverse cultures. I can highly recommend it."
+      title: "<a href='https://www.debian.org'> مشروع دبيان </a> زعيم"
+      name: "كريس لامب"
+      message: "وصلت إلى ما أنا عليه اليوم من خلال المساهمة في برمجيات مفتوحة المصدر ، مما أتاح لي ليس فقط تحسين مهاراتي كمطور برمجيات ولكن أيضًا لزيادة شبكة زملائي والتعرف على أصدقاء جدد  مثيرين للاهتمام من ثقافات متنوعة للغاية. يمكنني أن أوصي بالمساهمة في المصادر المفتوحة بشدة."
     Will_Norris:
-      title: "Open Source at <a href='https://github.com/google'>Google</a>"
-      name: "Will Norris"
-      message: 'Contributing to open source projects continues to be one of the most popular 20% projects for Google engineers. Open source plays such an important role in so much of what we do, so we try to make <a href="https://opensource.google.com/docs/patching/"> the process</a> as easy as possible.'
+      title: "المصادر المفتوحة في <a href='https://github.com/google'> Google </a> "
+      name: "ويل نوريس"
+      message: 'لا تزال المساهمة في المشاريع مفتوحة المصدر واحدة من أكثر المشاريع 20٪ شيوعًا لمهندسي Google. تلعب المصادر المفتوحة دورًا مهمًا في الكثير مما نقوم به ، لذلك نحاول أن نجعل <a href="https://opensource.google.com/docs/patching/"> العملية </a> سهلة قدر المستطاع.'
     Christine_Abernathy:
-      title: "Open Source at <a href='https://github.com/facebook/'>Facebook</a>"
-      name: "Christine Abernathy"
-      message: "Open source aligns with our mission to make the world more open and connected. Working with the community gives us an opportunity to share our work and the challenges we're aiming to solve, and encourages talented people to contribute their ideas and effort to move the world forward."
+      title: "المصادر المفتوحة على <a href='https://github.com/facebook/'> Facebook </a>"
+      name: "كريستين أبرناثي"
+      message: "يتوافق المصدر المفتوح مع مهمتنا في جعل العالم أكثر انفتاحًا وترابطًا. يمنحنا العمل مع المجتمع فرصة لمشاركة عملنا والتحديات التي نهدف إلى حلها ، ويشجع الموهوبين على المساهمة بأفكارهم وجهودهم لدفع العالم إلى الأمام."
     Rich_Harris:
-      title: "<a href='https://github.com/rollup/rollup'>Rollup</a> and <a href='https://github.com/sveltejs/svelte'>Svelte</a> maintainer"
-      name: "Rich Harris"
-      message: "The thing that most open source projects lack is not money, but time. Many maintainers have full-time jobs and can't realistically cut back their hours. What almost all projects need is more contributors. Open Source Friday is a perfect way for companies to support the open source ecosystem they depend on in a meaningful way."
+      title: "<a href='https://github.com/rollup/rollup'> Rollup </a> و <a href='https://github.com/sveltejs/svelte'> Svelte </a> مشرف على"
+      name: "ريتش هاريس"
+      message: "الشيء الذي تفتقر إليه معظم المشاريع مفتوحة المصدر ليس المال ، بل الوقت. العديد من المشرفين لديهم وظائف بدوام كامل ولا يمكنهم تقليص ساعات عملهم بشكل واقعي. ما تحتاجه جميع المشاريع تقريبًا هو المزيد من المساهمين. تعد جمعة المصدر المفتوح طريقة مثالية للشركات لدعم الانظمة مفتوحة المصدر الذي تعتمد عليه بطريقة مفيدة."
     Brett_Cannon:
-      title: "<a href='https://github.com/python/cpython'>Python core</a> developer"
-      name: "Brett Cannon"
-      message: 'Once you are a maintainer on a project that others rely on, open source goes from "sharing the code" to "sharing the maintenance". As we all know, "maintenance" takes time which is most effectively spent in a continuous block to help make sure you can finish that e.g. code review before you start to lose context.'
+      title: "<a href='https://github.com/python/cpython'> Python core </a> مطور"
+      name: "بريت كانون"
+      message: 'بمجرد أن تصبح مشرفًا على مشروع يعتمد عليه الآخرون ، ينتقل المصدر المفتوح من "مشاركة الرمز" إلى "مشاركة الصيانة". كما نعلم جميعًا ، تستغرق "الصيانة" وقتًا يتم إنفاقه بشكل أكثر فاعلية في كتلة مستمرة للمساعدة في التأكد من أنه يمكنك إنهاء ذلك ، على سبيل المثال مراجعة التعليمات البرمجية قبل أن تبدأ في فقدان السياق.'
+    Slymbo:
+      title: "<a href='https://github.com/slymbo'>Full Stack Developer</a> مطور"
+      name: "سليمبو"
+      message: 'إن المساهمة في دعم البرمجيات الحرة ذات المصادر المفتوحة و المشاركة فيها عن طريق التطوير أو التوثيق أو باي شكل من الأشكال هي اول خطاك نحو الحرية.  '
   mailchimp:
-    title: "Stay in touch"
-    description: "Be the first to hear about GitHub's latest open source tips and resources."
-  with: "with"
-  by: "by"
-  and: "and "
-  friends: "friends"
+    title: "ابق على تواصل"
+    description: "كن أول من يسمع عن أحدث نصائح وموارد GitHub مفتوحة المصدر."
+  with: "مع"
+  by: "بواسطة"
+  and: "و "
+  friends: "الاصدقاء"
