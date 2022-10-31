@@ -5,17 +5,10 @@ url_ignores = [
   "http://comcast.com",
 ]
 
-HTMLProofer::Runner.new(
+HTMLProofer.check_directories(
   ["_site"],
-  parallel: { in_threads: 4 },
-  type: :directory,
-  url_ignore: url_ignores,
-  check_html: true,
-  check_opengraph: true,
-  check_img_http: true,
-  favicon: true,
-  assume_extension: true,
+  enforce_https: false,
+  ignore_status_codes: [429],
+  ignore_urls: url_ignores,
   only_4xx: true,
-  empty_alt_ignore: true,
-  http_status_ignore: [429],
 ).run
