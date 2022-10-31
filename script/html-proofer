@@ -7,7 +7,7 @@ url_ignores = [
 
 HTMLProofer.check_directories(
   ["_site"],
-  ignore_empty_alt: true,
+  enforce_https: false,
   ignore_status_codes: [429],
   ignore_urls: url_ignores,
   only_4xx: true,
