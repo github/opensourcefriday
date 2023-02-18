@@ -1,0 +1,124 @@
+de:
+  locale_name: Deutsch
+  OpenSourceFriday: "Open-Source-Freitag"
+  full_description: "Open-Source-Software ist von Menschen wir Ihnen gemacht. Investieren Sie diesen Freitag Zeit in die Projekte, die Sie verwenden und lieben."
+  Contributors: "Mitwirkende"
+  Businesses: "Unternehmen"
+  Maintainers: "Maintainer"
+  YouTube: "YouTube"
+  headline:
+    businesses: "Viele Unternehmen basieren auf Open-Source-Software. Lernen Sie, wie Sie dazu beitragen können."
+    maintainers: "Schenken Sie Ihrem Projekt etwas Liebe, damit Ihnen genau dort geholfen werden kann, wo Sie es brauchen."
+    contributors: "Lernen Sie, was es bedeutet, an Open-Source beizutragen, neue Projekte zu finden und beginnen zu können."
+  index:
+    main:
+      title: "Am Open-Source-Freitag mitwirken"
+      contribution: "Lernen, einen Beitrag zu leisten"
+      read_the_guide: '<a href="https://opensource.guide/de/how-to-contribute/">Weiter zum Leitfaden</a>'
+    find:
+      title: "Ein Projekt finden, an dem Sie mitwirken können"
+      description: "Zu Open-Source-Projekten kann auf vielen Ebenen beigetragen werden, von der Gestaltung, Dokumentation, Betrieb und natürlich auch dem Code. Sie müssen sich daher nicht den Kopf zerbrechen, was genau Ihr erster Beitrag sein wird oder wie er aussehen wird."
+      used:
+        title: "Ein Projekt, dass Sie bereits nutzen"
+        description: "Denken Sie in erster Linie an Projekte, die Sie bereits nutzen. Die Projekte, an denen Sie den meisten Beitrag leisten werden, sind oft jene, auf die Sie regelmäßig zurückkommen."
+      issue:
+        title: "Ein Issue, das Sie lösen können"
+        description: "Suchen Sie auf diesen Seiten nach Projekten, die Ihre Hilfe benötigen könnten:"
+        grabs: "Up For Grabs"
+        triage: "CodeTriage"
+      welcome:
+        title: "A warm welcome"
+        description: 'Unter <a href="https://github.com/showcases/great-for-new-contributors">GitHub&apos;s great for new contributors</a> finden Sie eine Liste von Projekten, die sich besonders über neue Mitwirkende freuen.'
+  business:
+    title: "Ihr Unternehmen nutzt Open-Source"
+    description: "Nehmen Sie sich Zeit, um an Open-Source-Projekten mitzuwirken, die Sie verwenden und lieben."
+    reason:
+      title: "Ihr Unternehmen ist auf Open-Source angewiesen"
+      description: "Alle Unternehmen brauchen Open-Source-Software, um erfolgreich zu sein."
+      technology:
+        title: "Verbessern Sie Technologien, die Sie nutzen"
+        description: "Direkte Beteiligung an Open-Source-Projekten gibt Unternehmen ein Mitsprache- und Einflussrecht auf die Technologien, die sie nutzen."
+    models:
+      title: "Gemeinsam ist besser"
+      description: "Gute Enwicklungsmodelle stehen im Mittelpunkt von Open-Source-Projekten. Entwickler*innen lernen somit, wie sie Qualität, Geschwindigkeit und Transparenz in eigene Unternehmen einbringen können."
+    cost:
+      title: "Kosten sparen"
+      description: "Regelmäßige Beiträge an Open-Source-Projekte können die Kosten für die Pflegung der Software senken."
+    reputation:
+      title: "Neue Talente anziehen"
+      description: "Mitarbeiter*innen, die an Open-Source-Projekten mitwirken, können so ihren Ruf als Entwickler stärken."
+    plan:
+      title: "Open-Source-Freitag in Ihrer eigenen Organisation"
+      description: "Das Verbessern der Enwicklerkultur ist viel zu wichtig, um sie dem Zufall zu überlassen."
+      encourage:
+        title: "Zeit einplanen"
+        description: "Ermutigen Sie Ihre Mitarbeiter*innen, sich jeden Freitag mindestens zwei Stunden Zeit für Open-Source-Projekte zu nehmen, die Ihr Unternehmen vielleicht sogar selbst nutzt."
+      policy:
+        title: "Machen Sie es zur Gewohnheit"
+        description: "Setzen sie klare Richtlinine, wie Mitarbeiter*innen an Open-Source-Projekten mitwirken können."
+  maintainers:
+    title: "Erstellen Sie Software nicht alleine"
+    description: "Schenken Sie Ihrem Projekt etwas Liebe und erleichtern Sie es anderen, einen Beitrag zu leisten."
+    involve:
+      title: "Lassen Sie andere Ihr Projekt entdecken"
+      description: "Das Erstellen eines Projekt ist nur der Anfang. Es ist wichtig, dass andere Menschen es entdecken und nutzen können."
+      workload:
+        title: "Sparen Sie sich Arbeit"
+        description: 'Beschreiben Sie in einer README-Datei genau, was Ihr Projekt macht, welchen Umfang es hat, wo Hilfe benötigt wird und wie andere dazu beitragen können, <a href="https://opensource.guide/de/best-practices/#nutzen-sie-ihre-community">um Ihre Community zu fördern</a>.'
+      promote:
+        title: "Machen Sie Werbung"
+        description: 'Ein eigener Twitter Account, Blogeinträge und sogar eine eigene Webseite können dazu beitragen, <a href="https://opensource.guide/de/finding-users/#helfen-sie-menschen-dabei-ihr-projekt-zu-finden-und-zu-beobachten">dass andere Ihr Projekt leichter finden</a>.'
+    growing:
+      title: "Sorgen Sie für Wachstum"
+      description: "Jeder stand einmal am Anfang. Helfen Sie anderen, sich an Open-Source heranzutasten."
+      document:
+        title: "Dokumentation ist alles"
+        description: "<a href='http://opensourcesurvey.org/2017/'>GitHubs Studie aus dem Jahr 2017</a> hat gezeigt, dass eine unvollständige bzw. unschlüssige Dokumentation Open-Source-Projekte oft daran hindert, erfolgreich zu sein. Sorgen Sie also für eine <a href='https://opensource.guide/de/best-practices/#dokumentieren-sie-ihre-prozesse'>sinnvolle Dokumentation</a>, damit andere an Ihrem Projekt mitwirken können."
+      help:
+        title: "Holen Sie sich Hilfe"
+        description: 'Halten Sie stets Ausschau nach potenziellen Mitwirkenden, die sich <a href="https://opensource.guide/de/building-community/#teilen-sie-die-eigent%C3%BCmerschaft-an-ihrem-projekt"> an Ihrem Projekt beteiligen wollen.</a> Vor allem Erstwirkende sollen sich willkommen fühlen.'
+    workflow:
+      title: "Verbessern Sie Ihren Workflow"
+      description: "Lernen sie von anderen, wie Sie effektiver arbeiten können."
+      boundaries:
+        title: "Setzen Sie Grenzen"
+        description: 'Entscheiden Sie sich für den optimalen Umfang des Projekts, <a href="hhttps://opensource.guide/de/best-practices/#es-ist-okay-pause-zu-machen">um klare Grenzen setzen zu können</a>. "Nein" zu sagen <a href="https://opensource.guide/de/best-practices/#lernen-nein-zu-sagen"> ist genauso wichtig wie "Ja" zu sagen</a>.'
+      automation:
+        title: "Automatisieren Sie"
+        description: '<a href="https://opensource.guide/de/best-practices/#delegieren-sie-an-bots">Delegieren Sie an Bots,</a> um so viele Tests und Prüfungen wie möglich zu automatisieren und damit Zeit zu sparen.'
+    visitor:
+      title: "Machen Sie sich startklar"
+      description: "Investieren Sie jetzt Zeit, um später Zeit zu sparen."
+  endorsement:
+    title: "Sie sind nicht allein"
+    Kim_Crayton:
+      title: "Community Engineer, Autor, Gründer"
+      name: "Kim Crayton"
+      message: "Das Mitwirken an Open-Source ermöglicht es Unternehmen jeder Größe nicht nur, von den Talenten anderer zu profitieren und darauf aufzubauen, sondern ist auch eine Möglichkeit für Programmieranfänger, sich an den Entwicklungsprozess zu gewöhnen, indem sie üben, experimentieren und sich als wertvolle Mitglieder der Gemeinschaft präsentieren können."
+    Chris_Lamb:
+      title: "<a href='https://www.debian.org'>Debian Project</a> Leader"
+      name: "Chris Lamb"
+      message: "Durch ständiges Beitragen an Open-Source-Projekten konnte ich nicht nur meine Fähigkeiten als Softwareentwickler verbessern, sondern auch mein Netzwerk von Kollegen erweitern und neue und interessante Freunde aus sehr unterschiedlichen Kulturen kennen lernen. Ich kann das sehr empfehlen."
+    Will_Norris:
+      title: "Open-Source bei <a href='https://github.com/google'>Google</a>"
+      name: "Will Norris"
+      message: 'Rund 20% Prozent der Projekte von Google Engineers ist das Mitarbeiten an Open-Source-Projekten, darum versuchen wir <a href="https://opensource.google.com/docs/patching/"> diesen Prozess</a> so einfach wie möglich zu gestalten.'
+    Christine_Abernathy:
+      title: "Open-Source bei <a href='https://github.com/facebook/'>Facebook</a>"
+      name: "Christine Abernathy"
+      message: "Open-Source steht im Einklang mit unserer Mission, die Welt offener und vernetzter zu machen. Die Zusammenarbeit mit der Community gibt uns die Möglichkeit, unsere Arbeit und die Herausforderungen, die wir lösen wollen, mit anderen zu teilen, und ermutigt talentierte Menschen, ihre Ideen und Bemühungen einzubringen, um die Welt voranzubringen."
+    Rich_Harris:
+      title: "<a href='https://github.com/rollup/rollup'>Rollup</a> und <a href='https://github.com/sveltejs/svelte'>Svelte</a> Maintainer"
+      name: "Rich Harris"
+      message: "Was den meisten Open-Source-Projekten fehlt, ist nicht Geld, sondern Zeit. Viele Maintainer arbeiten Vollzeit und können dadurch ihre Arbeitszeit nicht einfach reduzieren. Was fast alle Projekte brauchen, sind mehr Mitwirkende. Der Open-Source-Freitag ist eine perfekte Möglichkeit für Unternehmen, das Open-Source-Ökosystem, auf das sie angewiesen sind, auf sinnvolle Weise zu unterstützen."
+    Brett_Cannon:
+      title: "<a href='https://github.com/python/cpython'>Python core</a> Entwickler"
+      name: "Brett Cannon"
+      message: 'Sobald Sie ein Projekt betreuen, auf das sich andere verlassen, geht Open-Source vom "Teilen des Codes" zum "Teilen der Wartung" über. Wie wir alle wissen, braucht die Wartung Zeit, die am effektivsten in einem kontinuierlichen Block verbracht wird, um sicherzustellen, dass man z.B. die Codeüberprüfung abschließen kann, bevor der eigentliche Kontext verloren geht.'
+  mailchimp:
+    title: "Bleiben Sie auf dem Laufenden"
+    description: "Seien Sie der/die Erste, der/die von den neuesten Open-Source-Tipps und -Ressourcen von GitHub erfährt."
+  with: "mit"
+  by: "von"
+  and: "mit "
+  friends: "friends"
