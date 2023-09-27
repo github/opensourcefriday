@@ -1,0 +1,124 @@
+tr:
+  locale_name: Türkçe
+  OpenSourceFriday: "Open Source Friday"
+  full_description: "Açık kaynak yazılım sizin gibi insanlar tarafından yapılmaktadır. Bu Cuma, kullandığınız ve sevdiğiniz yazılıma katkıda bulunmak için birkaç saat ayırın."
+  Contributors: "Katkıda Bulunanlar"
+  Businesses: "İşletmeler"
+  Maintainers: "Proje Yürütenler"
+  YouTube: "YouTube"
+  headline:
+    businesses: "İşletmeniz açık kaynak yazılım üzerinde çalışıyor. Buna nasıl katkıda bulunacağınızı öğrenin."
+    maintainers: "Projenize biraz sevgi katarak diğerlerinin en çok ihtiyaç duyduğunuz yerde katkıda bulunmasına yardımcı olun."
+    contributors: "Katkıda bulunmanın ne anlama geldiğini ve yeni bir projeyi nasıl bulup ve katkıda bulunmaya başlayacağınızı öğrenin."
+  index:
+    main:
+      title: "Open Source Friday Projesine Katkıda Bulunun"
+      contribution: "Nasıl katkıda bulunacağınızı öğrenin"
+      read_the_guide: '<a href="https://opensource.guide/how-to-contribute/">Rehberi okuyun</a>'
+    find:
+      title: "Katılabileceğiniz bir proje bulun"
+      description: "Açık kaynak yazılıma katkıda bulunmak, projelerin ve tasarımın, belgelerin, işlemlerin ve kodun tüm seviyelerinde gerçekleşir. İlk katkınızın ne olacağını veya nasıl görüneceğini fazla düşünmenize gerek yoktur."
+      used:
+        title: "Zaten kullanmakta olduğunuz bir proje"
+        description: "Zaten kullandığınız veya kullanmak istediğiniz projeleri düşünerek başlayın. Aktif olarak katkıda bulunacağınız projeler, tekrar tekrar geri döndüğünüz projelerdir."
+      issue:
+        title: "Düzeltilmesi gereken bir sorun"
+        description: "Yardımınızı bekleyen sitelere bir göz atın:"
+        grabs: "Up For Grabs"
+        triage: "CodeTriage"
+      welcome:
+        title: "Sıcak bir karşılama"
+        description: ' Yeni gelenleri hoş karşılamasıyla ünlü olan bir projeyle başlayın <a href="https://github.com/showcases/great-for-new-contributors">GitHub&apos;s great for new contributors</a> showcase.'
+  business:
+    title: "İşletmeniz açık kaynak yazılım üzerinde çalışıyor"
+    description: "Haftada bir gün, her hafta. Kullandığınız ve sevdiğiniz açık kaynak yazılıma yatırım yapmak için zaman ayırın."
+    reason:
+      title: "İşletmeniz açık kaynak yazılıma bağlıdır"
+      description: "Şirketler efektif bir şekilde çalışmak için açık kaynak yazılıma ihtiyaç duyar."
+      technology:
+        title: "Kullandığınız teknolojiyi geliştirin"
+        description: "Açık kaynağa doğrudan katılım, kuruluşunuza güvendiğiniz yazılımda söz hakkı verir."
+    models:
+      title: "Birlikte daha iyi çalışın"
+      description: "Açık kaynak geliştirme modelleri, yazılım işbirliğinin ön saflarında yer alır. Açık kaynak üzerinde çalışan geliştiriciler, kuruluşunuzda kaliteyi, hızı ve şeffaflığı iyileştirmeyi sezgisel olarak öğrenirler."
+    cost:
+      title: "Ek yükü azaltın"
+      description: "Açık kaynağa düzenli olarak katkıda bulunmak, sürdürmeniz gereken özel yazılımı azaltarak paradan ve geliştirici saatlerinden tasarruf sağlar."
+    reputation:
+      title: "Yeteneği çekin ve elinizde tutun"
+      description: "Açık kaynak üzerinde çalışan çalışanlar, kendilerinin ve işverenlerinin itibarını artırır."
+    plan:
+      title: "Kuruluşunuzda Open Source Friday"
+      description: "Geliştirici kültürünüzü geliştirmek plansız bırakılmayacak kadar önemlidir."
+      encourage:
+        title: "Zaman ayırın"
+        description: "Her Cuma, yöneticilerinizi, çalışanlarınızı ve iş arkadaşlarınızı kuruluşunuzun hâlihazırda kullanmakta olduğu açık kaynaklı projelerde en az iki saat çalışmaya teşvik edin."
+      policy:
+        title: "Alışkanlık haline getirin"
+        description: "Çalışanların açık kaynağa kolayca ve tutarlı bir şekilde katkıda bulunabilmesi için net iç politikalar oluşturun."
+  maintainers:
+    title: "Başkalarını yardımıyla yazılım geliştirin"
+    description: "Her Cuma, yazılım projenize biraz ilgi gösterin ve başkalarının katkıda bulunmasını kolaylaştırın."
+    involve:
+      title: "İnsanların projenizi keşfetmesine yardımcı olun"
+      description: "Bir proje oluşturmak sadece başlangıçtır. Neden bu haberi yaymayalım?"
+      workload:
+        title: "İş yükünüzü azaltın:"
+        description: 'README dosyanızın projenizin ne işe yaradığını, kapsamını ve katkı ihtiyaçlarını ve projeye nasıl katkıda bulunacağınızı ayrıntılarıyla anlattığından emin olarak <a href="https://opensource.guide/best-practices/#leverage-your-community">topluluğunuzdan yararlanın</a>.'
+      promote:
+        title: "Çalışmanızı tanıtın"
+        description: '<a href="https://opensource.guide/finding-users/#help-people-find-and-follow-your-project">İnsanların projenizi keşfetmesi ve takip etmesi için</a> bir Twitter hesabı, websitesi ya da blog açmayı düşünebilirsiniz.'
+    growing:
+      title: "Topluluğunuzu genişletin"
+      description: "Herkes bir zamanlar yeniydi. Başkalarının ilk kez katkı yaparken yaşadığı gerginliği azaltın."
+      document:
+        title: "Her şeyi dokümente edin"
+        description: "<a href='http://opensourcesurvey.org/2017/'>GitHub '2017 Açık Kaynak Anketi</a> açık kaynak kullanıcıları için en büyük sorunun, eksik veya kafa karıştırıcı dokümantasyon olduğunu gösterdi. Projenize katkıda bulunma süreçlerini <a href='https://opensource.guide/best-practices/#documenting-your-processes'>dokümente ettiğinizden</a> emin olun."
+      help:
+        title: "Yardım alın"
+        description: '<a href="https://opensource.guide/building-community/#share-ownership-of-your-project"> Projenizin sahipliğini paylaşmak için</a> Gelecek vaat eden potansiyel geliştiricileri bulun. Özellikle ilk kez katkıda bulunanları hoş karşılamaya çalışın.'
+    workflow:
+      title: "İş akışınızı iyileştirin"
+      description: "Diğer proje yürütücülerinden nasıl daha efektif olabileceğinizi öğrenin."
+      boundaries:
+        title: "Sınırları belirleyin"
+        description: 'Projenizin kapsamına karar verin ve <a href="https://opensource.guide/best-practices/#its-okay-to-hit-pause">kendinize net sınırlar çizin. </a>. Hayır diyebilmek <a href="https://opensource.guide/best-practices/#learning-to-say-no">en az evet diyebilmek kadar önemlidir</a>.'
+      automation:
+        title: "Otomasyon"
+        description: '<a href="https://opensource.guide/best-practices/#bring-in-the-robots">Robotları devreye sokun</a>ve testler gibi kontrollerle süreçleri otomatikleştirip kendinize zaman kazandırın.'
+    visitor:
+      title: "Open Source Friday için hazırlanın"
+      description: "Daha sonra zaman kazanmak için şimdi zaman harcayın."
+  endorsement:
+    title: "Emin ellerdesiniz"
+    Kim_Crayton:
+      title: "Topluluk Mühendisi, Yazar, Kurucu"
+      name: "Kim Crayton"
+      message: "Açık kaynağa katkıda bulunmak, yalnızca her büyüklükteki işletmenin avantaj sağlamasına ve başkalarının yeteneklerini geliştirmesine olanak sağlamakla kalmaz, aynı zamanda kodlamaya yeni başlayanların pratik yapmalarına, deney yapmalarına ve kendilerini toplumun değerli ve katkıda bulunan üyeleri olarak göstermelerine izin verecek şekilde kendilerini geliştirme sürecine alıştırmaları için bir yoldur."
+    Chris_Lamb:
+      title: "<a href='https://www.debian.org'>Debian Projesi</a> Lideri"
+      name: "Chris Lamb"
+      message: "Açık kaynaklı yazılıma katkıda bulunarak bugün bulunduğum yere geldim, bu sadece bir yazılım geliştirici olarak becerilerimi geliştirmeme değil, aynı zamanda meslektaş ağımı genişletmeme ve son derece farklı kültürlerden yeni ve ilginç arkadaşlar edinmeme olanak sağladı. Bunu gerçekten tavsiye ederim."
+    Will_Norris:
+      title: "<a href='https://github.com/google'>Google</a>'da Açık Kaynak"
+      name: "Will Norris"
+      message: 'Açık kaynak projelerine katkıda bulunmak, Google mühendisleri için en popüler projeler arasında %20 içinde olmaya devam ediyor. Açık kaynak yaptığımız birçok işte çok önemli bir rol oynuyor, bu nedenle <a href="https://opensource.google.com/docs/patching/"> süreci </a> olabildiğince kolay hale getirmeye çalışıyoruz.'
+    Christine_Abernathy:
+      title: "<a href='https://github.com/facebook/'>Facebook</a>'ta Açık Kaynak"
+      name: "Christine Abernathy"
+      message: "Açık kaynak, dünyayı daha açık ve bağlantılı hale getirme misyonumuzla uyumludur. Toplulukla birlikte çalışmak, bize çalışmalarımızı ve çözmeyi amaçladığımız zorlukları paylaşma fırsatı verir ve yetenekli insanları dünyayı ileriye taşımak için fikirlerine ve çabalarına katkıda bulunmaya teşvik eder."
+    Rich_Harris:
+      title: "<a href='https://github.com/rollup/rollup'>Rollup</a> ve <a href='https://github.com/sveltejs/svelte'>Svelte</a> sahibi"
+      name: "Rich Harris"
+      message: "Çoğu açık kaynak projesinde eksik olan şey para değil, zamandır. Pek çok proje sahibinin tam zamanlı işleri var ve çalışma saatlerini gerçekçi bir şekilde kısamazlar. Neredeyse tüm projelerin ihtiyaç duyduğu şey, daha fazla katkıda bulunanlardır. Open Source Friday, şirketlerin bağlı oldukları açık kaynak ekosistemini anlamlı bir şekilde desteklemeleri için mükemmel bir yoldur."
+    Brett_Cannon:
+      title: "<a href='https://github.com/python/cpython'>Python core</a> geliştiricisi"
+      name: "Brett Cannon"
+      message: 'Başkalarının güvendiği bir projeden sorumlu olduğunuzda, açık kaynak "kodu paylaşmaktan" "bakımı paylaşmaya" geçer. Hepimizin bildiği gibi, "bakım", işi bitirebilmenize yardımcı olmak için sürekli bir blokta en etkili şekilde harcanan zaman alır; bağlamı kaybetmeye başlamadan önce kod incelemesi.'
+  mailchimp:
+    title: "İletişimde kalın"
+    description: "GitHub'ın en son açık kaynak ipuçlarını ve kaynaklarını ilk duyan siz olun."
+  with: "with"
+  by: "by"
+  and: "and"
+  friends: "friends"
