@@ -1,6 +1,7 @@
 {
   "private": true,
   "dependencies": {
+    "bootstrap": "^5.3.2",
     "primer-core": "6.7.0",
     "primer-marketing": "6.2.0"
   }
