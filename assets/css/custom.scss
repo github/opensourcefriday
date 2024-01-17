@@ -121,3 +121,14 @@ img.pquote-avatar {
 .form-select {
   -webkit-appearance: none;
 }
+
+//Sicky Navbar contibution by nidhi
+//inside this container id >> navbar is made sticky
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.95); //slight background color is added to avoid text overlap during scrolling
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25), 0 1px 3px rgba(0, 0, 0, 0.1); //slight box shadow
+  backdrop-filter: blur(5px); //slight glassmorphism 
+}
