@@ -64,7 +64,7 @@ bg:
       description: "Създаването на проект е само началото. Защо не разпространите новината?"
       workload:
         title: "Намалете натоварването си:"
-        description: 'Уверете се, че вашият файл README описва подробно какво прави вашият проект, неговия обхват, нуждите от принос и как да допринесете за <a href="https://opensource.guide/best-practices/#leverage-your-community "> използвайте общността си</a>.'
+        description: 'Уверете се, че вашият файл README описва подробно какво прави вашият проект, неговия обхват, нуждите от принос и как да допринесете за <a href="https://opensource.guide/best-practices/#leverage-your-community"> използвайте общността си</a>.'
       promote:
         title: "Популяризирайте работата си"
         description: 'Помислете за създаване на акаунт в Twitter, публикации в блогове и уебсайт, за да <a href="https://opensource.guide/finding-users/#help-people-find-and-follow-your-project" >помогнете на хората да намират и следват вашият проект</a>.'
@@ -120,5 +120,5 @@ bg:
     description: "Бъдете първите, които ще научат за най-новите съвети и ресурси с отворен код на GitHub."
   with: "с"
   by: "от"
-  and: "и "
+  and: "и"
   friends: "приятели"
