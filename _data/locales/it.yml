@@ -1,29 +1,29 @@
 it:
   locale_name: Italiano
   OpenSourceFriday: "Open Source Friday"
-  full_description: "L'open source è creato da persone come te. Questo venerdì, investi qualche ora contribuendo al software che usi e ami."
+  full_description: "Lʼopen source è creato da persone come te. Questo venerdì, investi qualche ora contribuendo al software che usi e ami."
   Contributors: "Contributori"
   Businesses: "Imprese"
   Maintainers: "Manutentori"
   YouTube: "YouTube"
   headline:
-    businesses: "La tua azienda funziona con l'open source. Scopri come partecipare."
-    maintainers: "Dai al tuo progetto un po' d'amore per aiutare gli altri a contribuire dove ne hai più bisogno."
+    businesses: "La tua azienda funziona con lʼopen source. Scopri come partecipare."
+    maintainers: "Dai al tuo progetto un poʼ dʼamore per aiutare gli altri a contribuire dove ne hai più bisogno."
     contributors: "Scopri cosa significa contribuire e come trovare e iniziare un nuovo progetto."
   index:
     main:
-      title: "Contribuisci all'Open Source Friday"
+      title: "Contribuisci allʼOpen Source Friday"
       contribution: "Impara a contribuire"
       read_the_guide: '<a href="https://opensource.guide/how-to-contribute/">Leggi la guida</a>'
     find:
       title: "Trova un progetto a cui contribuire"
-      description: "Il contributo all'open source avviene a tutti i livelli, attraverso progetti e progettazione, documentazione, operazioni e codice. Non devi pensare troppo a quale sarà esattamente il tuo primo contributo o come apparirà"
+      description: "Il contributo allʼopen source avviene a tutti i livelli, attraverso progetti e progettazione, documentazione, operazioni e codice. Non devi pensare troppo a quale sarà esattamente il tuo primo contributo o come apparirà"
       used:
         title: "Un progetto che già usi"
         description: "Inizia pensando ai progetti che già usi o che desideri utilizzare. I progetti a cui contribuirai attivamente sono quelli a cui ti ritrovi a tornare."
       issue:
         title: "Un problema che puoi risolvere"
-        description: "Dai un'occhiata a questi siti per trovare un progetto che richiede il tuo aiuto:"
+        description: "Dai unʼocchiata a questi siti per trovare un progetto che richiede il tuo aiuto:"
         grabs: "In palio"
         triage: "CodeTriage"
       welcome:
@@ -37,16 +37,16 @@ it:
       description: "Le aziende hanno bisogno di software open source per funzionare in modo efficace."
       technology:
         title: "Migliora la tecnologia su cui fai affidamento"
-        description: "La partecipazione diretta all'open source dà alla tua organizzazione voce in capitolo riguardo al software da cui dipendi."
+        description: "La partecipazione diretta allʼopen source dà alla tua organizzazione voce in capitolo riguardo al software da cui dipendi."
     models:
       title: "Lavorare meglio insieme"
-      description: "I modelli di sviluppo open source sono in prima linea nella collaborazione software. Gli sviluppatori che lavorano sull'open source imparano in modo intuitivo a migliorare la qualità, la velocità e la trasparenza della tua organizzazione."
+      description: "I modelli di sviluppo open source sono in prima linea nella collaborazione software. Gli sviluppatori che lavorano sullʼopen source imparano in modo intuitivo a migliorare la qualità, la velocità e la trasparenza della tua organizzazione."
     cost:
       title: "Ridurre le spese generali"
-      description: "Contribuire regolarmente all'open source fa risparmiare denaro e ore agli sviluppatori riducendo il software personalizzato che è necessario mantenere."
+      description: "Contribuire regolarmente allʼopen source fa risparmiare denaro e ore agli sviluppatori riducendo il software personalizzato che è necessario mantenere."
     reputation:
       title: "Attrarre e trattenere i talenti"
-      description: "I dipendenti che lavorano sull'open source aumentano la loro reputazione e quella del loro datore di lavoro."
+      description: "I dipendenti che lavorano sullʼopen source aumentano la loro reputazione e quella del loro datore di lavoro."
     plan:
       title: "Venerdì Open Source nella tua organizzazione"
       description: "Migliorare la cultura dello sviluppatore è troppo importante per essere lasciato non pianificato."
@@ -57,8 +57,8 @@ it:
         title: "Make it a habit"
         description: "Create clear, internal policies so employees can easily and consistently contribute to open source."
   maintainers:
-    title: "Crea software con l'aiuto di altri"
-    description: "Ogni venerdì, dai un po' di amore al tuo progetto software e rendi più facile per gli altri contribuire."
+    title: "Crea software con lʼaiuto di altri"
+    description: "Ogni venerdì, dai un poʼ di amore al tuo progetto software e rendi più facile per gli altri contribuire."
     involve:
       title: "Aiuta le persone a scoprire il tuo progetto"
       description: "La creazione di un progetto è solo l'inizio. Perché non spargere la voce?"
@@ -87,14 +87,14 @@ it:
         title: "Automazione"
         description: '<a href="https://opensource.guide/best-practices/#bring-in-the-robots">Coinvolgi i robot</a> per automatizzare il più possibile attraverso test e altri controlli per risparmiare tempo.'
     visitor:
-      title: "Preparatevi per l'Open Source Friday"
+      title: "Preparatevi per lʼOpen Source Friday"
       description: "Trascorri del tempo ora per risparmiare tempo in seguito."
   endorsement:
     title: "Sei in buona compagnia"
     Kim_Crayton:
       title: "Ingegnere comunitario, scrittore, fondatore"
       name: "Kim Crayton"
-      message: "Contribuire all'open source non solo consente alle aziende di ogni dimensione di trarre vantaggio e sfruttare i talenti degli altri, ma è anche una strada per coloro che sono nuovi alla programmazione per acclimatarsi al processo di sviluppo in modi che consentano loro di esercitarsi, sperimentare e mostrare stessi come membri preziosi e contribuenti della comunità."
+      message: "Contribuire allʼopen source non solo consente alle aziende di ogni dimensione di trarre vantaggio e sfruttare i talenti degli altri, ma è anche una strada per coloro che sono nuovi alla programmazione per acclimatarsi al processo di sviluppo in modi che consentano loro di esercitarsi, sperimentare e mostrare stessi come membri preziosi e contribuenti della comunità."
     Chris_Lamb:
       title: "Responsabile del <a href='https://www.debian.org'>progetto Debian</a>"
       name: "Chris Lamb"
@@ -102,19 +102,19 @@ it:
     Will_Norris:
       title: "Open Source su <a href='https://github.com/google'>Google</a>"
       name: "Will Norris"
-      message: 'Contribuire a progetti open source continua a essere uno dei progetti più apprezzati dal 20% degli ingegneri di Google. L'open source svolge un ruolo così importante in gran parte di ciò che facciamo, quindi cerchiamo di rendere <a href="https://opensource.google.com/docs/patching/"> il processo</a> il più semplice possibile possibile.'
+      message: 'Contribuire a progetti open source continua a essere uno dei progetti più apprezzati dal 20% degli ingegneri di Google. Lʼopen source svolge un ruolo così importante in gran parte di ciò che facciamo, quindi cerchiamo di rendere <a href="https://opensource.google.com/docs/patching/"> il processo</a> il più semplice possibile possibile.'
     Christine_Abernathy:
       title: "Open Source su <a href='https://github.com/facebook/'>Facebook</a>"
       name: "Christine Abernathy"
-      message: "L'open source è in linea con la nostra missione di rendere il mondo più aperto e connesso. Lavorare con la comunità ci dà l'opportunità di condividere il nostro lavoro e le sfide che miriamo a risolvere e incoraggia le persone di talento a contribuire con le loro idee e i loro sforzi per far progredire il mondo."
+      message: "L'open source è in linea con la nostra missione di rendere il mondo più aperto e connesso. Lavorare con la comunità ci dà lʼopportunità di condividere il nostro lavoro e le sfide che miriamo a risolvere e incoraggia le persone di talento a contribuire con le loro idee e i loro sforzi per far progredire il mondo."
     Rich_Harris:
       title: "<a href='https://github.com/rollup/rollup'>Rollup</a> e <a href='https://github.com/sveltejs/svelte'>Svelte</a> manutentore"
       name: "Rich Harris"
-      message: "Ciò che manca alla maggior parte dei progetti open source non è il denaro, ma il tempo. Molti manutentori hanno un lavoro a tempo pieno e non possono realisticamente ridurre le proprie ore. Ciò di cui quasi tutti i progetti hanno bisogno sono più contributori. L'Open Source Friday è un modo perfetto per le aziende di supportare l'ecosistema open source da cui dipendono in modo significativo."
+      message: "Ciò che manca alla maggior parte dei progetti open source non è il denaro, ma il tempo. Molti manutentori hanno un lavoro a tempo pieno e non possono realisticamente ridurre le proprie ore. Ciò di cui quasi tutti i progetti hanno bisogno sono più contributori. LʼOpen Source Friday è un modo perfetto per le aziende di supportare lʼecosistema open source da cui dipendono in modo significativo."
     Brett_Cannon:
       title: "<a href='https://github.com/python/cpython'>Python core</a> sviluppatore"
       name: "Brett Cannon"
-      message: 'Una volta che sei manutentore di un progetto su cui fanno affidamento altri, l'open source passa dalla "condivisione del codice" alla "condivisione della manutenzione". Come tutti sappiamo, la "manutenzione" richiede tempo che viene speso in modo più efficace in un blocco continuo per assicurarsi di poterlo completare, ad es. revisione del codice prima di iniziare a perdere il contesto.'
+      message: 'Una volta che sei manutentore di un progetto su cui fanno affidamento altri, lʼopen source passa dalla "condivisione del codice" alla "condivisione della manutenzione". Come tutti sappiamo, la "manutenzione" richiede tempo che viene speso in modo più efficace in un blocco continuo per assicurarsi di poterlo completare, ad es. revisione del codice prima di iniziare a perdere il contesto.'
   mailchimp:
     title: "Rimani in contatto"
     description: "Sii il primo a conoscere gli ultimi suggerimenti e risorse open source di GitHub."
