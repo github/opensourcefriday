@@ -26,6 +26,7 @@ ko:
         description: "다음 사이트에서 당신이 도울 수 있는 프로젝트를 찾아보세요:"
         grabs: "Up For Grabs"
         triage: "CodeTriage"
+        good_first: "For Good First Issue"
       welcome:
         title: "환영합니다"
         description: '항상 새로운 컨트리뷰터를 환영해 온 프로젝트를 <a href="https://github.com/showcases/great-for-new-contributors">신입 컨트리뷰터를 위한 깃헙 프로젝트</a> 쇼케이스에서 만나보세요.'

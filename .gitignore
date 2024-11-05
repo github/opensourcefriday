@@ -6,3 +6,4 @@ vendor/
 Brewfile.lock.json
 Gemfile.lock
 .jekyll-metadata
+.vscode

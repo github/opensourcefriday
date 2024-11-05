@@ -26,6 +26,7 @@ tr:
         description: "Yardımınızı bekleyen sitelere bir göz atın:"
         grabs: "Up For Grabs"
         triage: "CodeTriage"
+        good_first: "For Good First Issue"
       welcome:
         title: "Sıcak bir karşılama"
         description: ' Yeni gelenleri hoş karşılamasıyla ünlü olan bir projeyle başlayın <a href="https://github.com/showcases/great-for-new-contributors">GitHub&apos;s great for new contributors</a> showcase.'

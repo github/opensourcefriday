@@ -26,6 +26,7 @@ zh:
         description: "从下列网站中找一个等着你出手相助的项目："
         grabs: "Up For Grabs"
         triage: "CodeTriage"
+        good_first: "For Good First Issue"
       welcome:
         title: "热烈欢迎"
         description: '在 <a href="https://github.com/showcases/great-for-new-contributors">GitHub 上适合新贡献者的项目</a>案例库中找一个欢迎新贡献者的有一定历史和声誉的项目。'

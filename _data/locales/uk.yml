@@ -26,6 +26,7 @@ uk:
         description: "Перевірте ці сайти, щоб знайти проект, який шукає вашу допомогу:"
         grabs: "Up For Grabs - доступно всім бажаючим"
         triage: "CodeTriage"
+        good_first: "For Good First Issue"
       welcome:
         title: "Теплий прийом"
         description: 'Знайдіть проект, який має історію і репутацію гостинності для нових учасників в <a href="https://github.com/showcases/great-for-new-contributors"> GitHub і відмінно підходить для нових учасників </a>.'

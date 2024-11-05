@@ -26,6 +26,7 @@ ja:
         description: "次のサイトをみて、助けるプロジェクトを見つけよう:"
         grabs: "Up For Grabs"
         triage: "CodeTriage"
+        good_first: "For Good First Issue"
       welcome:
         title: "あなたを待っています"
         description: 'GitHubの<a href="https://github.com/showcases/great-for-new-contributors">プロジェクト一覧</a>で歴史があり、評判の良い新規貢献者向けのプロジェクトを見つける。'
