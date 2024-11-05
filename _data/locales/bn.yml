@@ -26,6 +26,7 @@ bn:
         description: "এই সাইটগুলো দেখুন একটি প্রোজেক্ট খুঁজতে যেটি আপনার সাহায্য খুঁজছে:"
         grabs: "Up For Grabs"
         triage: "CodeTriage"
+        good_first: "For Good First Issue"
       welcome:
         title: "একটি সুস্বাগতম"
         description: 'একটি প্রোজেক্ট খুঁজুন যার একটি ইতিহাস এবং খ্যাতি রয়েছে নতুন অবদানকারীদের স্বাগতম জানানোর জন্য <a href="https://github.com/showcases/great-for-new-contributors">গিটহাবের নতুন অবদানকারীদের জন্য দুর্দান্ত</a> প্রদর্শনীতে।'

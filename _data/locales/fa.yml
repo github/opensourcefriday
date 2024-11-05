@@ -26,6 +26,7 @@ fa:
         description: "برای یافتن یک پروژه در جستجوی خود از این سایتها کمک بگیرید:"
         grabs: "برای گرفتن"
         triage: "CodeTriage"
+        good_first: "For Good First Issue"
       welcome:
         title: "یک خوش آمدگویی گرم"
         description: 'Encuentre un proyecto que posee un historial y reputación de ser acogedores con los nuevos colaboradores en <a href="https://github.com/showcases/great-for-new-contributors">GitHub&apos;s un gran vitrina para los nuevos colaboradores</a>.'

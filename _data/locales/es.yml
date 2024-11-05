@@ -26,6 +26,7 @@ es:
         description: "Revisa estos sitios para encontrar un proyecto que necesite tu ayuda:"
         grabs: "En juego"
         triage: "TriajeDeCódigo"
+        good_first: "For Good First Issue"
       welcome:
         title: "Una cálida bienvenida"
         description: "Encuentre un proyecto que posee un historial y reputación de ser acogedores con los nuevos colaboradores en GitHub&apos;s un gran vitrina para los nuevos colaboradores."

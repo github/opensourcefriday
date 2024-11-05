@@ -26,6 +26,7 @@ ar:
         description: "تحقق من هذه المواقع للعثور على مشروع يحتاج إلى مساعدتك:"
         grabs: "للحصول على"
         triage: "فرز الكود"
+        good_first: "للعدد الأول الجيد"
       welcome:
         title: "ترحيب حار"
         description: 'ابحث عن مشروع له تاريخ وسمعة في الترحيب بالمساهمين الجدد على <a href="https://github.com/showcases/great-for-new-contributors"> GitHub & apos؛ عرض رائع للمساهمين الجدد </a>.'
