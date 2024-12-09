@@ -5,22 +5,26 @@ on:
     branches:
       - main
   pull_request:
+
+permissions:
+  contents: read
+
 jobs:
   tests:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
-        uses: actions/checkout@v1
+        uses: actions/checkout@v4.2.2
 
       - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+        uses: ruby/setup-ruby@a2bbe5b1b236842c1cb7dd11e8e3b51e0a616acc
 
       - name: Get NodeJS version
         run: echo "NODE_VERSION=$(cat .node-version)" >> $GITHUB_OUTPUT
         id: node_version
 
       - name: Set up NodeJS
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4.1.0
         with:
           node-version: "${{ steps.node_version.outputs.NODE_VERSION }}"
 
