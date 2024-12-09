@@ -1,0 +1,14 @@
+{
+  "name": "opensource friday",
+  "image": "mcr.microsoft.com/vscode/devcontainers/jekyll",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "23.3.0"
+    },
+    "ghcr.io/devcontainers/features/ruby:1": {
+      "version": "3.3.6"
+    }
+  },
+  "forwardPorts": [4000],
+  "postCreateCommand": "bundle exec jekyll serve --watch --incremental --baseurl ''"
+}
