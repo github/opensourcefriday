@@ -6,7 +6,9 @@ cd "$(dirname "$0")/.."
 
 echo "==> Installing gem dependencies…"
 bundle check --path vendor/gems &>/dev/null || {
-  time bundle install --binstubs bin --path vendor/gems
+  time bundle config set path 'vendor/gems'
+  time bundle install
+  time bundle binstubs --all
 }
 
 echo "==> Installing node dependencies…"
