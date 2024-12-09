@@ -39,6 +39,10 @@ To start up the local Jekyll server run:
 
 Now point your browser to <http://localhost:4000> to view the site.
 
+### Devcontainer
+
+This project includes a `.devcontainer` folder with a `Dockerfile` and `devcontainer.json` to use with [Visual Studio Code Remote - Containers](https://code.visualstudio.com/docs/remote/containers). This will set up a development environment with all the necessary dependencies.
+
 ### Note on Patches/Pull Requests
 
 * Fork the project.
