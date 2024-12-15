@@ -88,10 +88,17 @@ hi:
         title: "स्वचालन"
         description: '<a href="https://opensource.guide/best-practices/#bring-in-the-robots">बोट्स को लागू करें</a> ताकि आप परीक्षणों और अन्य सत्यापन कार्यों को अधिकतम स्वचालित कर सकें।'
     visitor:
+<<<<<<< HEAD
       title: "Open Source Friday  के लिए तैयार रहें "
       description: "अब समय बिताएं, ताकि बाद में समय बचा सकें।"
   endorsement:
     title: "आप बेहतरीन कंपनी में हैं "
+=======
+      title: "Open Source Friday के लिए तैयार रहें"
+      description: "अब समय बिताएं, ताकि बाद में समय बचा सकें।"
+  endorsement:
+    title: "आप बेहतरीन कंपनी में हैं"
+>>>>>>> with-Hindi
     Kim_Crayton:
       title: "Community Engineer, Writer, Founder"
       name: "किम क्रेटन"
