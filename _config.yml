@@ -19,11 +19,21 @@ exclude:
 
 permalink: "/:path/"
 
+collections:
+  articles:
+    output: true
+    permalink: "/:path/"
+
 defaults:
   - scope:
       path: ""
     values:
       image: /assets/images/social-graphic.jpg
+  - scope:
+      path: ""
+      type: articles
+    values:
+       layout: default
 
 plugins:
   - jekyll-redirect-from
