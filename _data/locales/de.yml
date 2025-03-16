@@ -83,7 +83,7 @@ de:
       description: "Lernen sie von anderen, wie Sie effektiver arbeiten können."
       boundaries:
         title: "Setzen Sie Grenzen"
-        description: 'Entscheiden Sie sich für den optimalen Umfang des Projekts, <a href="hhttps://opensource.guide/de/best-practices/#es-ist-okay-pause-zu-machen">um klare Grenzen setzen zu können</a>. "Nein" zu sagen <a href="https://opensource.guide/de/best-practices/#lernen-nein-zu-sagen"> ist genauso wichtig wie "Ja" zu sagen</a>.'
+        description: 'Entscheiden Sie sich für den optimalen Umfang des Projekts, <a href="https://opensource.guide/de/best-practices/#es-ist-okay-pause-zu-machen">um klare Grenzen setzen zu können</a>. "Nein" zu sagen <a href="https://opensource.guide/de/best-practices/#lernen-nein-zu-sagen"> ist genauso wichtig wie "Ja" zu sagen</a>.'
       automation:
         title: "Automatisieren Sie"
         description: '<a href="https://opensource.guide/de/best-practices/#delegieren-sie-an-bots">Delegieren Sie an Bots,</a> um so viele Tests und Prüfungen wie möglich zu automatisieren und damit Zeit zu sparen.'
