@@ -41,7 +41,7 @@ de:
         description: "Direkte Beteiligung an Open-Source-Projekten gibt Unternehmen ein Mitsprache- und Einflussrecht auf die Technologien, die sie nutzen."
     models:
       title: "Gemeinsam ist besser"
-      description: "Gute Enwicklungsmodelle stehen im Mittelpunkt von Open-Source-Projekten. Entwickler*innen lernen somit, wie sie Qualität, Geschwindigkeit und Transparenz in eigene Unternehmen einbringen können."
+      description: "Gute Entwicklungsmodelle stehen im Mittelpunkt von Open-Source-Projekten. Entwickler*innen lernen somit, wie sie Qualität, Geschwindigkeit und Transparenz in eigene Unternehmen einbringen können."
     cost:
       title: "Kosten sparen"
       description: "Regelmäßige Beiträge an Open-Source-Projekte können die Kosten für die Pflegung der Software senken."
@@ -56,7 +56,7 @@ de:
         description: "Ermutigen Sie Ihre Mitarbeiter*innen, sich jeden Freitag mindestens zwei Stunden Zeit für Open-Source-Projekte zu nehmen, die Ihr Unternehmen vielleicht sogar selbst nutzt."
       policy:
         title: "Machen Sie es zur Gewohnheit"
-        description: "Setzen sie klare Richtlinine, wie Mitarbeiter*innen an Open-Source-Projekten mitwirken können."
+        description: "Setzen sie klare Richtlinien, wie Mitarbeiter*innen an Open-Source-Projekten mitwirken können."
   maintainers:
     title: "Erstellen Sie Software nicht alleine"
     description: "Schenken Sie Ihrem Projekt etwas Liebe und erleichtern Sie es anderen, einen Beitrag zu leisten."
