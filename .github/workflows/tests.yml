@@ -17,14 +17,14 @@ jobs:
         uses: actions/checkout@v4.2.2
 
       - name: Set up Ruby
-        uses: ruby/setup-ruby@354a1ad156761f5ee2b7b13fa8e09943a5e8d252
+        uses: ruby/setup-ruby@e5ac7b085f6e63d49c8973eb0c6e04d876b881f1
 
       - name: Get NodeJS version
         run: echo "NODE_VERSION=$(cat .node-version)" >> $GITHUB_OUTPUT
         id: node_version
 
       - name: Set up NodeJS
-        uses: actions/setup-node@v4.3.0
+        uses: actions/setup-node@v4.4.0
         with:
           node-version: "${{ steps.node_version.outputs.NODE_VERSION }}"
 
