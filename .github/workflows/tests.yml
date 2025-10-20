@@ -24,7 +24,7 @@ jobs:
         id: node_version
 
       - name: Set up NodeJS
-        uses: actions/setup-node@v5.0.0
+        uses: actions/setup-node@v6.0.0
         with:
           node-version: "${{ steps.node_version.outputs.NODE_VERSION }}"
 
