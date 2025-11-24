@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
-        uses: actions/checkout@v5.0.0
+        uses: actions/checkout@v6.0.0
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@d5126b9b3579e429dd52e51e68624dda2e05be25
