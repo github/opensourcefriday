@@ -103,7 +103,7 @@ ru:
     Will_Norris:
       title: "Open Source at <a href='https://github.com/google'>Google</a>"
       name: "Will Norris"
-      message: 'Вклад в проекты с открытым исходным кодом продолжает оставаться одним из самых популярных для 20% проектов у инженеров в Google. Открытый исходный код играет такую важную роль во многих аспектах нашей деятельности, поэтому мы стараемся максимально упростить этот <a href="https://opensource.google.com/docs/patching/">процесс</a>.'
+      message: 'Вклад в проекты с открытым исходным кодом продолжает оставаться одним из самых популярных 20% проектов для инженеров Google. Открытый исходный код играет такую важную роль во многом, что мы делаем, поэтому мы стараемся сделать <a href="https://opensource.google.com/docs/patching/">этот процесс</a> как можно проще.'
     Christine_Abernathy:
       title: "Open Source at <a href='https://github.com/facebook/'>Facebook</a>"
       name: "Christine Abernathy"
