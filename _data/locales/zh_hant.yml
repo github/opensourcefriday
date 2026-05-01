@@ -1,0 +1,125 @@
+zh_hant:
+  locale_name: 繁體中文
+  OpenSourceFriday: "開源星期五"
+  full_description: "眾人拾柴火焰高。這個星期五，為你在用的、喜歡的項目做出貢獻。"
+  Contributors: "貢獻者"
+  Businesses: "業務"
+  Maintainers: "維護者"
+  YouTube: "YouTube"
+  headline:
+    businesses: "你的業務基於開源。了解如何參與。"
+    maintainers: "給予你的項目多些關愛，好讓他人做出你急需的貢獻。"
+    contributors: "了解貢獻的意義，以及如何探索和開始貢獻新項目。"
+  index:
+    main:
+      title: "在開源星期五做出貢獻"
+      contribution: "學習如何貢獻"
+      read_the_guide: '<a href="https://opensource.guide/how-to-contribute/">閱讀指南</a>'
+    find:
+      title: "發現一個要貢獻的項目"
+      description: "貢獻到項目的各個層面，包括項目、設計、文件、運作和程式碼。不必反覆斟酌你的首次貢獻。"
+      used:
+        title: "一個你在用的項目"
+        description: "從一個你在用或想用的項目著手。你會持續貢獻的項目，是那些你發現自己會不斷翻出來看的。"
+      issue:
+        title: "一個你能解決的問題"
+        description: "從下列網站中找一個等著你出手相助的項目："
+        grabs: "Up For Grabs"
+        triage: "CodeTriage"
+        good_first: "For Good First Issue"
+      welcome:
+        title: "熱烈歡迎"
+        description: '在 <a href="https://github.com/showcases/great-for-new-contributors">GitHub 上適合新貢獻者的項目</a>案例庫中找一個歡迎新貢獻者的有一定歷史和聲譽的項目。'
+  business:
+    title: "你的業務基於開源軟體"
+    description: "每周一次，周周堅持。投資些時間給在用和喜歡的開源軟體。"
+    reason:
+      title: "你的業務依賴於它"
+      description: "公司需要開源軟體以便高效運作。"
+      technology:
+        title: "改善你依賴的技術"
+        description: "直接參與開源，在你所依賴的軟體中，會給你的組織帶來話語權。"
+    models:
+      title: "更好地協作"
+      description: "開源開發模式是前沿的軟體協作。從事開源工作的開發者，直觀地從你的組織中學習，從而改進編碼質量，編碼速度，和易讀性。"
+    cost:
+      title: "減少日常成本"
+      description: "減少那些需要你維護的定制軟體，經常給開源項目做出貢獻，來節約費用和開發者的時間。"
+    reputation:
+      title: "吸引和留住人才"
+      description: "從事開源工作的員工，給他們自己和雇主帶來聲譽。"
+    plan:
+      title: "在你的組織中推動開源星期五"
+      description: "改善你們的開發者文化，刻不容緩。"
+      encourage:
+        title: "騰點時間"
+        description: "每個星期五，鼓勵你的經理、員工和合作者給你的組織在用的開源項目花上至少兩小時。"
+      policy:
+        title: "保持習慣"
+        description: "創建明確的內部政策，讓員工始終可以輕易的為開源貢獻。"
+  maintainers:
+    title: "與他人協助構建軟體"
+    description: "每個星期五，給你的軟體項目一些愛，讓別人更容易地給它貢獻。"
+    involve:
+      title: "幫助人們發現你的項目"
+      description: "創建了項目僅僅是個開始。為什麽不把它推向世界？"
+      workload:
+        title: "減少你的工作量"
+        description: '確保你的 README 文件寫了你的項目作用，它的範圍和貢獻需求，以及如何<a href="https://opensource.guide/best-practices/#leverage-your-community">借助社區</a>。'
+      promote:
+        title: "推廣你的作品"
+        description: '考慮創建一個 Twitter 帳號、部落客文章及網站, 以<a href="https://opensource.guide/finding-users/#help-people-find-and-follow-your-project">幫助人們找到和關註你的項目</a>。'
+    growing:
+      title: "讓你的社區成長"
+      description: "每個人都曾是新手。緩解他人在首次貢獻時的緊張。"
+      document:
+        title: "配上文案"
+        description: "<a href='http://opensourcesurvey.org/2017/'>GitHub 2017 年開源調查</a>顯示，對開源用戶來說，不完整、模糊的文件是最大問題。確保有<a href='https://opensource.guide/best-practices/#documenting-your-processes'>貢獻流程文件</a>。"
+      help:
+        title: "取得幫助"
+        description: '挑選有希望的潛在貢獻者或維護者，<a href="https://opensource.guide/building-community/#share-ownership-of-your-project">共享你項目的所有權</a>。盡力用獨特的方式去歡迎首次貢獻者。'
+    workflow:
+      title: "改進你的工作流程"
+      description: "在提高效率上向其他維護者學習。"
+      boundaries:
+        title: "設定邊界"
+        description: '確定項目範圍並<a href="https://opensource.guide/best-practices/#its-okay-to-hit-pause">給自己劃定明確界線</a>。拒絕<a href="https://opensource.guide/best-practices/#learning-to-say-no">和接受同等重要</a>。'
+      automation:
+        title: "自動化"
+        description: '盡可能通過<a href="https://opensource.guide/best-practices/#bring-in-the-robots">引進機器人</a>來自動化測試和檢測來節約你的時間。'
+    visitor:
+      title: "準備好開源星期五"
+      description: "磨刀不誤砍柴工。"
+  endorsement:
+    title: "身處好公司"
+    Kim_Crayton:
+      title: "社區工程師、作家、創始人"
+      name: "Kim Crayton"
+      message: "給開源做貢獻不僅允許各種規模的商業機構，在他人智慧的基礎上獲益，對那些剛開始接觸編程，通過實際操作、試驗來適應開發過程，證明自己是對社區有價值的貢獻者的人來說，也是康莊大道。"
+    Chris_Lamb:
+      title: "<a href='https://www.debian.org'>Debian Project</a> 項目負責人"
+      name: "Chris Lamb"
+      message: "今天通過為開源項目做貢獻，讓我提高了軟體開發者技能，也讓我認識了多元文化中有意思的新朋友，拓寬了行業朋友圈。我強烈推薦它。"
+    Will_Norris:
+      title: "在 <a href='https://github.com/google'>Google</a> 做開源"
+      name: "Will Norris"
+      message: '貢獻開源項目將繼續成為 Google 最流行的 20% 的項目的工程師的選擇。 開源在我們的所做的許多事情中扮演著如此重要的角色，所以我們嘗試讓<a href="https://opensource.google.com/docs/patching/">處理過程</a>盡可能的輕松。'
+    Christine_Abernathy:
+      title: "在 <a href='https://github.com/facebook/'>Facebook</a> 做開源"
+      name: "Christine Abernathy"
+      message: "開源賦予了我們讓世界更加開放和連接的使命。在社區中工作就有機會去分享自己的作品和面對的挑戰, 鼓勵智慧的人們去貢獻他們的思想和努力推動世界進步。"
+    Rich_Harris:
+      title: "<a href='https://github.com/rollup/rollup'>Rollup</a> 和 <a href='https://github.com/sveltejs/svelte'>Svelte</a> 的維護者"
+      name: "Rich Harris"
+      message: "許多開源項目缺乏的不是資金，而是時間。許多維護者都有全職工作，這些時間不可能縮減。通常所有項目需要的是更多的貢獻者。開源星期五對依賴並支持開源生態的公司來說，是一個完美的途徑。"
+    Brett_Cannon:
+      title: "<a href='https://github.com/python/cpython'>Python core</a> 開發者"
+      name: "Brett Cannon"
+      message: "一旦你成為一個其他人都在依賴的項目的維護者，開源就從“共享程式碼”變為“共享維護”。眾所周知，最有效用的一段連續時間進行“維護”，以幫助在當你遺忘當時情景前進行程式碼審查。"
+  mailchimp:
+    title: "保持聯絡"
+    description: "獲取 GitHub 最新開源提示和資源。"
+  with: "和"
+  by: "源自"
+  and: "和 "
+  friends: "夥伴們"
