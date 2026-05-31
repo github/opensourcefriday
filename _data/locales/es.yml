@@ -83,7 +83,7 @@ es:
       description: "Aprende de otros mantenedores la forma de ser más efectivo."
       boundaries:
         title: "Establece límites"
-        description: 'Decide cual es el alcance del proyecto e <a href="https://opensource.guide/es/best-practices/#está-bien-poner-pausa">imponete límites claros para vos mismo</a>. Decir no <a href="https://opensource.guide/es/best-practices/#aprendiendo-a-decir-no"> es tan importante como decir sí</a>.'
+        description: 'Decide cual es el alcance del proyecto e <a href="https://opensource.guide/es/best-practices/#está-bien-poner-pausa">imponente límites claros para vos mismo</a>. Decir no <a href="https://opensource.guide/es/best-practices/#aprendiendo-a-decir-no"> es tan importante como decir sí</a>.'
       automation:
         title: "Automatización"
         description: '<a href="https://opensource.guide/es/best-practices/#traigan-a-los-robots">Traigan a los robots</a> para automatizar tanto como sea posible las pruebas y otras verificaciones para ahorrarle tiempo.'
