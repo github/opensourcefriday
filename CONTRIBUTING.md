@@ -30,7 +30,7 @@ So you've found a bug, and want to help us fix it? Before filing a bug report, p
 
 * On which page did the error happen?
 * How can the error be reproduced?
-* If possible, please also provide an error message or a screenshot to illustrate the problem
+* If possible, please provide an error message or a screenshot to illustrate the problem
 
 If you want to be really thorough, there is a great overview on Stack Overflow of [what you should consider when reporting a bug](http://stackoverflow.com/questions/240323/how-to-report-bugs-the-smart-way).
 
