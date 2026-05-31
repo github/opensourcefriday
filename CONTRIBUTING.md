@@ -18,8 +18,8 @@ You can find instructions to get setup in our [README](README.md#getting-started
 * Clone your fork to your machine.
 * Create a new branch for your translation work.
 * Copy `_data/locales/en.yml` to target locale file e.g. `_data/locales/es.yml`.
-* Create a new folder in the repository root e.g. `es/`.
-* Copy `businesses.html`, `index.html` and `maintainers.html` from the repository root into the new folder e.g. `es/businesses.html` etc.
+* Create a new folder in `_articles/` e.g. [`_articles/es/`](_articles/es/).
+* Copy `businesses.html`, `index.html` and `maintainers.html` from `_articles/` into the new folder e.g. `_articles/es/businesses.html`, etc.
 * Edit the `lang: en` to be the correct language in the new `businesses.html`, `index.html` and `maintainers.html` files e.g. `lang: es`
 * Translate messages in new locale file and use `script/server` to verify they are displayed correctly.
 * Send a pull request.
@@ -30,7 +30,7 @@ So you've found a bug, and want to help us fix it? Before filing a bug report, p
 
 * On which page did the error happen?
 * How can the error be reproduced?
-* If possible, please also provide an error message or a screenshot to illustrate the problem
+* If possible, please provide an error message or a screenshot to illustrate the problem
 
 If you want to be really thorough, there is a great overview on Stack Overflow of [what you should consider when reporting a bug](http://stackoverflow.com/questions/240323/how-to-report-bugs-the-smart-way).
 
@@ -38,4 +38,4 @@ It goes without saying that you're welcome to help investigate further and/or fi
 
 ## Additional info
 
-Especially if you're a newcomer to Open Source and you've found some little bumps along the way while contributing, we recommend you write about them. [Here](https://medium.freecodecamp.com/new-contributors-to-open-source-please-blog-more-920af14cffd)'s a great article about why writing about your experience is important; this will encourage other beginners to try their luck at Open Source, too!
+Especially if you're a newcomer to Open Source and you've found some little bumps along the way while contributing, we recommend you write about them. See [Shubheksha Jalan's great article about why writing about your experience is important](https://medium.freecodecamp.com/new-contributors-to-open-source-please-blog-more-920af14cffd); this will encourage other beginners to try their luck at Open Source, too!
