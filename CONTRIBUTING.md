@@ -18,8 +18,8 @@ You can find instructions to get setup in our [README](README.md#getting-started
 * Clone your fork to your machine.
 * Create a new branch for your translation work.
 * Copy `_data/locales/en.yml` to target locale file e.g. `_data/locales/es.yml`.
-* Create a new folder in the repository root e.g. `es/`.
-* Copy `businesses.html`, `index.html` and `maintainers.html` from the repository root into the new folder e.g. `es/businesses.html` etc.
+* Create a new folder in `_articles/` the repository root e.g. [`_articles/es/`](_articles/es/).
+* Copy `businesses.html`, `index.html` and `maintainers.html` from the repository root into the new folder e.g. `_articles/es/businesses.html`, etc.
 * Edit the `lang: en` to be the correct language in the new `businesses.html`, `index.html` and `maintainers.html` files e.g. `lang: es`
 * Translate messages in new locale file and use `script/server` to verify they are displayed correctly.
 * Send a pull request.
