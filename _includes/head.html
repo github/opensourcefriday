@@ -11,13 +11,15 @@
   {% assign locales = site.data.locales | sort %}
   {% for locale in locales %}
   {% assign lang = locale[0] %}
+  {% assign lang_data = locale[1][lang] %}
+  {% assign hreflang_tag = lang_data.hreflang | default: lang %}
   {% assign page_lang_slash = page.lang | append: '/' | prepend: '/' %}
   {% assign default_url = page.url | replace: page_lang_slash, '/' %}
   {% if lang == "en" %}
   <link rel="alternate" hreflang="en" href="{{ site.url }}{{ default_url }}" />
   <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ default_url }}" />
   {% else %}
-  <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url }}/{{ lang }}{{ default_url }}" />
+  <link rel="alternate" hreflang="{{ hreflang_tag }}" href="{{ site.url }}/{{ lang }}{{ default_url }}" />
   {% endif %}
   {% endfor %}
   {% endif %}

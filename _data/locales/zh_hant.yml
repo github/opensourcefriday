@@ -1,5 +1,6 @@
 zh_hant:
   locale_name: 繁體中文
+  hreflang: zh-Hant
   OpenSourceFriday: "開源星期五"
   full_description: "眾人拾柴火焰高。這個星期五，為你在用的、喜歡的項目做出貢獻。"
   Contributors: "貢獻者"
