@@ -38,4 +38,4 @@ It goes without saying that you're welcome to help investigate further and/or fi
 
 ## Additional info
 
-Especially if you're a newcomer to Open Source and you've found some little bumps along the way while contributing, we recommend you write about them. [Here](https://medium.freecodecamp.com/new-contributors-to-open-source-please-blog-more-920af14cffd)'s a great article about why writing about your experience is important; this will encourage other beginners to try their luck at Open Source, too!
+Especially if you're a newcomer to Open Source and you've found some little bumps along the way while contributing, we recommend you write about them. See [Shubheksha Jalan's great article about why writing about your experience is important](https://medium.freecodecamp.com/new-contributors-to-open-source-please-blog-more-920af14cffd); this will encourage other beginners to try their luck at Open Source, too!
