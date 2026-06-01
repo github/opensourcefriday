@@ -8,3 +8,4 @@ Gemfile.lock
 .jekyll-metadata
 .vscode
 .tool-versions
+node_modules/
