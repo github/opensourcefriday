@@ -68,13 +68,13 @@ uk:
         description: 'Переконайтеся, що ваш файл README містить детальну інформацію про те, що робить ваш проект, про його масштаб і потреби, а також про те, <a href="https://opensource.guide/best-practices/#leverage-your-community"> як зробити внесок в розвиток спільноти </a>.'
       promote:
         title: "Рекламуйте свою роботу"
-        description: 'Подумайте щодо створення аккаунта в X(Твіттері), постів в блозі і веб-сайту, щоб люди могли <a href="https://opensource.guide/finding-users/#help-people-find-and-follow-your-project"> знаходити і відстежувати ваш проект </a>.'
+        description: 'Подумайте щодо створення облікового запису в X(Твіттері), постів в блозі і веб-сайту, щоб люди могли <a href="https://opensource.guide/finding-users/#help-people-find-and-follow-your-project"> знаходити і відстежувати ваш проект </a>.'
     growing:
       title: "Розвивайте свою спільноту"
       description: "Всі були колись новачками. Полегшіть чийсь перший внесок."
       document:
         title: "Документуємо все"
-        description: "<a href='http://opensourcesurvey.org/2017/'> GitHub's 2017 Open Source Survey</a> показав, що неповна або заплутана документація є найбільшою проблемою для користувачів відкритого вихідного коду. Переконайтеся, що ви <a href='https://opensource.guide/best-practices/#documenting-your-processes'> документіруете свої процеси </a>, щоб внести свій внесок в ваш проект."
+        description: "<a href='http://opensourcesurvey.org/2017/'> GitHub's 2017 Open Source Survey</a> показав, що неповна або заплутана документація є найбільшою проблемою для користувачів відкритого вихідного коду. Переконайтеся, що ви <a href='https://opensource.guide/best-practices/#documenting-your-processes'> документуєте свої процеси </a>, щоб внести свій внесок в ваш проект."
       help:
         title: "Отримати допомогу"
         description: 'Шукайте перспективних потенційних учасників або основних вкладників, щоб <a href="https://opensource.guide/building-community/#share-ownership-of-your-project"> розділити право власності на ваш проект.</a> Зокрема, докладіть зусиль щоб вітати нових учасників.'
