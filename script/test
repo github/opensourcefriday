@@ -3,4 +3,8 @@
 set -e
 
 script/build
-bundle exec script/html-proofer
+
+# Skip external URL checks in normal CI. They are slow and frequently fail
+# due to rate limiting on third-party sites. The full external link check
+# runs on a weekly schedule (see .github/workflows/link-check.yml).
+CHECK_EXTERNAL_LINKS=false bundle exec script/html-proofer
