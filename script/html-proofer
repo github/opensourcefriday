@@ -1,12 +1,26 @@
 #!/usr/bin/env ruby
 require "html-proofer"
 
+# External (remote) link checking is opt-in.
+# Set CHECK_EXTERNAL_LINKS=true to enable (used by weekly scheduled run).
+check_external = %w[1 true yes].include?(
+  ENV.fetch("CHECK_EXTERNAL_LINKS", "").strip.downcase
+)
+
+if check_external
+  puts "==> Running HTMLProofer WITH external link checks"
+else
+  puts "==> Running HTMLProofer WITHOUT external link checks " \
+       "(set CHECK_EXTERNAL_LINKS=true to enable)"
+end
+
 url_ignores = [
   "http://comcast.com",
 ]
 
 HTMLProofer.check_directories(
   ["_site"],
+  disable_external: !check_external,
   enforce_https: false,
   ignore_status_codes: [429],
   ignore_urls: url_ignores,
