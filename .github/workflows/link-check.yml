@@ -13,7 +13,7 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v7
       - name: Set up Ruby
-        uses: ruby/setup-ruby@9eb537ca036ebaed86729dcb9309076e4c5c3b74
+        uses: ruby/setup-ruby@003a5c4d8d6321bd302e38f6f0ec593f77f06600
       - name: Get NodeJS version
         run: echo "NODE_VERSION=$(cat .node-version)" >> $GITHUB_OUTPUT
         id: node_version
